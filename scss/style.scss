@@ -1,0 +1,16 @@
+
+@use "custom" as *;
+@use "component/mixins" as *;
+
+// COMPONENTS IMPORTS 
+@use "component/animations";
+@use "component/buttons";
+@use "component/mixins";
+@use "component/typography";
+
+// SECTIONS IMPORTS 
+@use "sections/filter-section";
+@use "sections/header-section";
+@use "sections/home-section";
+@use "sections/input-section";
+@use "sections/view-section";

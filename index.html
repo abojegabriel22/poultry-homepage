@@ -1,0 +1,136 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>poultry management | database</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- --- web fonts ---  -->
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+     <!-- --- Font Awesome ---  -->
+      <link rel="stylesheet" href="assets/css/fontawesome.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-primary navbar-dark shadow fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">Poultry Management</a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <!-- Responsive row container -->
+            <div class="d-lg-flex align-items-center justify-content-between w-100 flex-wrap">
+              
+              <!-- Left filler to assist centering -->
+              <div class="d-none d-lg-block" style="width: 15%;"></div>
+
+              <!-- Center nav -->
+              <div class="navbar-nav mx-auto text-center nav-colors">
+                <a class="nav-link active me-lg-3" href="#">Home</a>
+                <a class="nav-link me-lg-3" href="#">Take record</a>
+                <a class="nav-link" href="#">View record</a>
+              </div>
+
+              <!-- Right nav -->
+              <div class="navbar-nav ms-lg-auto text-center mt-2 mt-lg-0 nav-colors d-flex justify-content-center align-items-center">
+                <a class="nav-link" href="#">Login</a>
+                <a class="nav-link me-lg-3" href="#">Register</a>
+                <!-- Toggle button -->
+                <span class="theme-toggle mt-1 d-inline-block" id="themeToggle" role="button" aria-label="Toggle Theme">
+                  <!-- Moon (outline) -->
+                  <svg id="iconLight" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-moon-stars d-block mt-1" viewBox="0 0 16 16">
+                    <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286" />
+                    <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z" />
+                  </svg>
+                  <!-- Moon (filled) -->
+                  <svg id="iconDark" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-moon-stars-fill d-none" viewBox="0 0 16 16">
+                    <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278" />
+                    <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- ------- welcome page content -------- -->
+    <div class="home">
+      <div class="overlay"></div>
+      <div class="container">
+        <h1 class="text-center">Welcome to Poultry Management</h1>
+        <p class="text-center pb-5">Manage your poultry farm efficiently with our comprehensive tools.</p>
+        <!-- ///////form //////// -->
+        <div class="d-flex justify-content-center align-items-center vh-50">
+          <form class="needs-validation w-100" style="max-width: 500px;" novalidate>
+            <div class="mb-3">
+              <label for="validationCustom01" class="form-label">First name</label>
+              <input type="text" class="form-control" id="validationCustom01" placeholder="Aboje..." required>
+              <div class="valid-feedback">Looks good!</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="validationCustomUsername" class="form-label">Username</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text">@</span>
+                <input type="text" class="form-control" id="validationCustomUsername" required>
+                <div class="invalid-feedback">Please choose a username.</div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="validationCustom04" class="form-label">Role</label>
+              <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">default role</option>
+                <option>admin</option>
+                <option>viewer</option>
+              </select>
+              <div class="invalid-feedback">Please select a valid state.</div>
+            </div>
+
+            <button class="btn btn-primary w-100" type="submit">Submit form</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script> -->
+     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+     <script>
+      const toggleButton = document.getElementById('themeToggle');
+      const iconLight = document.getElementById('iconLight');
+      const iconDark = document.getElementById('iconDark');
+
+      toggleButton.addEventListener('click', () => {
+        iconLight.classList.toggle('d-none');
+        iconDark.classList.toggle('d-none');
+      });
+    </script>
+    <script>
+  // Bootstrap 5 custom validation
+      (() => {
+        'use strict'
+
+        const forms = document.querySelectorAll('.needs-validation')
+
+        Array.from(forms).forEach(form => {
+          form.addEventListener('submit', event => {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+          }, false)
+        })
+      })()
+    </script>
+
+
+  </body>
+</html>

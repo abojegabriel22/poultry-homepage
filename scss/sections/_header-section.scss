@@ -1,0 +1,25 @@
+
+@use "../custom" as *;
+// .nav-link{
+//     padding: 0 3rem;
+// }
+.navbar-brand{
+    font-weight: 900;
+}
+.nav-colors {
+    .nav-link {
+        color: $white !important;
+        font-size: 1.1rem;
+        font-weight: 600;
+        &:hover {
+            color: $black !important;
+        }
+    }
+}
+.navbar-toggler{
+    padding-top: 0.8rem;
+    padding-left: 1rem;
+    padding-right: 0.3rem;
+    padding-bottom: 0;
+}
+
