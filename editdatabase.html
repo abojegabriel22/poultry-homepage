@@ -38,7 +38,7 @@
 
               <!-- Right nav -->
               <div class="navbar-nav ms-lg-auto text-center mt-2 mt-lg-0 nav-colors d-flex justify-content-center align-items-center">
-                <a class="nav-link" href="editdatabase.html">Login</a>
+                <a class="nav-link" href="#">Login</a>
                 <a class="nav-link me-lg-3" href="#">Register</a>
                 <!-- Toggle button -->
                 <span class="theme-toggle mt-1 d-inline-block" id="themeToggle" role="button" aria-label="Toggle Theme">
@@ -59,46 +59,58 @@
         </div>
       </nav>
     </header>
-    <!-- ------- welcome page content -------- -->
-    <div class="home">
-      <div class="overlay"></div>
-      <div class="container">
-        <h1 class="text-center">Welcome to Poultry Management</h1>
-        <p class="text-center pb-5">Manage your poultry farm efficiently with our comprehensive tools.</p>
-        <!-- ///////form //////// -->
-        <div class="d-flex justify-content-center align-items-center vh-50">
-          <form class="needs-validation w-100" style="max-width: 500px;" novalidate>
-            <div class="mb-3">
-              <label for="validationCustom01" class="form-label">First name</label>
-              <input type="text" class="form-control" id="validationCustom01" placeholder="Aboje..." required>
-              <div class="valid-feedback">Looks good!</div>
+    <!-- ------- edit page content -------- -->
+    <section class="editdatabase pt-5 background-dark">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-2 border-right">
+            <h5 class="pt-5 text-center text-color-light">Edit details</h5>
+            <p class="text-center text-color-light">section B | batch A</p>
+            <div class="buttons">
+              <span class="text-center text-color-light d-block span-button text-size" type="button">
+                <span><img class="flip-image" src="https://i.ibb.co/N4qbNH8/chick-img.png" width="25" height="25" alt="chicks"></span>
+                chickens bought
+              </span>
             </div>
-
-            <div class="mb-3">
-              <label for="validationCustomUsername" class="form-label">Username</label>
-              <div class="input-group has-validation">
-                <span class="input-group-text">@</span>
-                <input type="text" class="form-control" id="validationCustomUsername" required>
-                <div class="invalid-feedback">Please choose a username.</div>
-              </div>
+          </div>
+          <div class="col-md-10 mx-auto">
+            <h3 class="text-center pt-md-5 text-color-light">Admin database</h3>
+            <p class="text-center text-color-light">Edit your poultry farm records here.</p>
+            <div class="inputs d-flex align-items-center justify-content-center">
+              <form class="row g-3 needs-validation d-flex justify-content-md-center" novalidate>
+                <div class="row">
+                  <div class="col-md-4 ms-lg-5">
+                    <h4 class="ps-lg-2 pt-5">Add purchase</h4>
+                  </div>
+                  <div class="col-md-4">
+                    <!-- empty column just to keep spacing symmetrical (optional) -->
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <label for="validationCustom01" class="form-label">Quantity</label>
+                  <input type="number" class="form-control" id="validationCustom01" value="" placeholder="0" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <label for="validationCustom02" class="form-label">Amounts</label>
+                  <input type="number" class="form-control" id="validationCustom02" value="" placeholder="0" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="row g-3">
+                  <div class="col-12 ms-lg-5">
+                    <button class="btn btn-primary ms-lg-3" type="submit">Submit form</button>
+                  </div>
+                </div>
+              </form>
             </div>
-
-            <div class="mb-3">
-              <label for="validationCustom04" class="form-label">Role</label>
-              <select class="form-select" id="validationCustom04" required>
-                <option selected disabled value="">default role</option>
-                <option>admin</option>
-                <option>viewer</option>
-              </select>
-              <div class="invalid-feedback">Please select a valid state.</div>
-            </div>
-
-            <button class="btn btn-primary w-100" type="submit">Submit form</button>
-          </form>
+          </div>
         </div>
-
       </div>
-    </div>
+    </section>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script> -->
      <script src="assets/js/bootstrap.bundle.min.js"></script>
      <script>
@@ -112,7 +124,18 @@
       });
     </script>
     <script>
-  // Bootstrap 5 custom validation
+      document.querySelectorAll('.span-button').forEach(button => {
+        button.addEventListener('click', () => {
+          // Optional: if you want only one active at a time, remove from all
+          document.querySelectorAll('.span-button').forEach(btn => btn.classList.remove('active'));
+
+          // Add active class to clicked element
+          button.classList.add('active');
+        });
+      });
+    </script>
+    <script>
+      // Bootstrap 5 custom validation
       (() => {
         'use strict'
 
@@ -130,6 +153,7 @@
         })
       })()
     </script>
+
 
 
   </body>
