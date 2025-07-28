@@ -32,7 +32,7 @@
               <!-- Center nav -->
               <div class="navbar-nav mx-auto text-center nav-colors">
                 <a class="nav-link active me-lg-3" href="#">Home</a>
-                <a class="nav-link me-lg-3" href="mortality.html">Take record</a>
+                <a class="nav-link me-lg-3" href="sales.html">Take record</a>
                 <a class="nav-link" href="#">View record</a>
               </div>
 
@@ -84,6 +84,12 @@
                 mortality
               </span>
             </div>
+            <div class="buttons mt-3">
+              <span class="text-center text-color-light d-block span-button text-size" type="button">
+                <span><img class="flip-image flips me-1" src="https://i.ibb.co/3mpT5psw/vaccines.png" width="25" height="25" alt="chicks feed"></span>
+                vaccines
+              </span>
+            </div>
           </div>
           <div class="col-md-10 mx-auto">
             <h3 class="text-center pt-md-5 text-color-light">Admin database</h3>
@@ -91,21 +97,21 @@
             <div class="inputs d-flex align-items-center justify-content-center">
               <form class="row g-3 needs-validation d-flex justify-content-md-center" novalidate>
                 <div class="col-md-6">
-                  <h4 class="pt-5">Add feeds</h4>
+                  <h4 class="pt-5">Add vaccines</h4>
                 </div>
                 <div class="col-md-6">
                   <!-- empty column just to keep spacing symmetrical (optional) -->
                 </div>
                 <div class="col-md-6">
-                  <label for="validationCustom01" class="form-label">Number of feed</label>
-                  <input type="number" class="form-control" id="validationCustom01" value="" placeholder="0" required>
+                  <label for="validationCustom01" class="form-label">Name of vaccine (seperated with comma)</label>
+                  <input type="text" class="form-control" id="validationCustom01" value="" placeholder="name1, name2, name3..." required>
                   <div class="invalid-feedback">
                     Bad credentials!
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <label for="validationCustom02" class="form-label">Price NGN</label>
-                  <input type="number" class="form-control" id="validationCustom02" placeholder="0" required>
+                  <label for="validationCustom02" class="form-label">price: NGN</label>
+                  <input type="number" class="form-control" id="validationCustom02" placeholder="NGN 0.00" required>
                   <div class="invalid-feedback">
                     Bad credentials!
                   </div>

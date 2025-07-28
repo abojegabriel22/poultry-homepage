@@ -2,6 +2,16 @@
 @use "../custom" as *;
 @use "../component/mixins" as *;
 
+.bg-primary-reduced{
+    background-color: $primary-reduced;
+}
+.small-screen-display {
+    display: none;
+}
+.sidebar-fixed-icon{
+    display: none;
+}
+
 .border-right {
     height: 100vh;
     border-right: 2px solid $primary;
@@ -9,17 +19,18 @@
 .span-button{
     border: 0.1px solid $black;
     border-radius: 5px;
-    padding: 5px 0px;
-<<<<<<< HEAD
+    // padding: 5px 0px;
+    font-weight: 600;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
 
     img.flips{
         transform: scale(1.3);
     }
-=======
->>>>>>> 49742fe7c9ba4f3b62a9ed4f6016e2f34b13bccd
 }
 .span-button:hover, .span-button.active{
     background-color: $primary;
+    font-weight: 800;
     color: $white;
     border-color: $white;
     transition: .8s;
@@ -28,9 +39,44 @@
         transform: rotateY(180deg);
     }
 }
-// @include media-breakpoint-down(md){
-//     .text-size{
-//         font-size: 0.8rem;
-
-//     }
+.padding-small-screen {
+    padding-top: 70px;
+}
+// .sidebar-fixed {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   height: 100vh;
+//   overflow-y: auto;
+//   background-color: #fff; // or use your background color
+//   z-index: 1000;
+//   padding-left: 1rem;
+//   padding-right: 1rem;
 // }
+
+@include media-breakpoint-down(md){
+    .display-0 {
+        display: none;
+        visibility: hidden;
+    }
+    // .padding-sm-screen{
+    //     padding-top: 70px;
+    // }
+    .small-screen-display {
+        display: block;
+    }
+    .sidebar-fixed-icon {
+        display: block;
+    }
+}
+@media (max-width: 800px) {
+    .span-button {
+        font-weight: 100;
+        gap: 0.4rem;
+        padding: 0.5rem .5rem;
+        font-size: 14px;
+    }
+    .span-button:hover, .span-button.active{
+        font-weight: 500;
+    }
+}

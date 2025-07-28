@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*!
  * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -22,2123 +21,2123 @@
 }
 
 .fa-monero {
-  --fa: "";
+  --fa: "\f3d0";
 }
 
 .fa-hooli {
-  --fa: "";
+  --fa: "\f427";
 }
 
 .fa-yelp {
-  --fa: "";
+  --fa: "\f1e9";
 }
 
 .fa-cc-visa {
-  --fa: "";
+  --fa: "\f1f0";
 }
 
 .fa-lastfm {
-  --fa: "";
+  --fa: "\f202";
 }
 
 .fa-shopware {
-  --fa: "";
+  --fa: "\f5b5";
 }
 
 .fa-creative-commons-nc {
-  --fa: "";
+  --fa: "\f4e8";
 }
 
 .fa-aws {
-  --fa: "";
+  --fa: "\f375";
 }
 
 .fa-redhat {
-  --fa: "";
+  --fa: "\f7bc";
 }
 
 .fa-yoast {
-  --fa: "";
+  --fa: "\f2b1";
 }
 
 .fa-cloudflare {
-  --fa: "";
+  --fa: "\e07d";
 }
 
 .fa-ups {
-  --fa: "";
+  --fa: "\f7e0";
 }
 
 .fa-pixiv {
-  --fa: "";
+  --fa: "\e640";
 }
 
 .fa-wpexplorer {
-  --fa: "";
+  --fa: "\f2de";
 }
 
 .fa-dyalog {
-  --fa: "";
+  --fa: "\f399";
 }
 
 .fa-bity {
-  --fa: "";
+  --fa: "\f37a";
 }
 
 .fa-stackpath {
-  --fa: "";
+  --fa: "\f842";
 }
 
 .fa-buysellads {
-  --fa: "";
+  --fa: "\f20d";
 }
 
 .fa-first-order {
-  --fa: "";
+  --fa: "\f2b0";
 }
 
 .fa-modx {
-  --fa: "";
+  --fa: "\f285";
 }
 
 .fa-guilded {
-  --fa: "";
+  --fa: "\e07e";
 }
 
 .fa-vnv {
-  --fa: "";
+  --fa: "\f40b";
 }
 
 .fa-square-js {
-  --fa: "";
+  --fa: "\f3b9";
 }
 
 .fa-js-square {
-  --fa: "";
+  --fa: "\f3b9";
 }
 
 .fa-microsoft {
-  --fa: "";
+  --fa: "\f3ca";
 }
 
 .fa-qq {
-  --fa: "";
+  --fa: "\f1d6";
 }
 
 .fa-orcid {
-  --fa: "";
+  --fa: "\f8d2";
 }
 
 .fa-java {
-  --fa: "";
+  --fa: "\f4e4";
 }
 
 .fa-invision {
-  --fa: "";
+  --fa: "\f7b0";
 }
 
 .fa-creative-commons-pd-alt {
-  --fa: "";
+  --fa: "\f4ed";
 }
 
 .fa-centercode {
-  --fa: "";
+  --fa: "\f380";
 }
 
 .fa-glide-g {
-  --fa: "";
+  --fa: "\f2a6";
 }
 
 .fa-drupal {
-  --fa: "";
+  --fa: "\f1a9";
 }
 
 .fa-jxl {
-  --fa: "";
+  --fa: "\e67b";
 }
 
 .fa-dart-lang {
-  --fa: "";
+  --fa: "\e693";
 }
 
 .fa-hire-a-helper {
-  --fa: "";
+  --fa: "\f3b0";
 }
 
 .fa-creative-commons-by {
-  --fa: "";
+  --fa: "\f4e7";
 }
 
 .fa-unity {
-  --fa: "";
+  --fa: "\e049";
 }
 
 .fa-whmcs {
-  --fa: "";
+  --fa: "\f40d";
 }
 
 .fa-rocketchat {
-  --fa: "";
+  --fa: "\f3e8";
 }
 
 .fa-vk {
-  --fa: "";
+  --fa: "\f189";
 }
 
 .fa-untappd {
-  --fa: "";
+  --fa: "\f405";
 }
 
 .fa-mailchimp {
-  --fa: "";
+  --fa: "\f59e";
 }
 
 .fa-css3-alt {
-  --fa: "";
+  --fa: "\f38b";
 }
 
 .fa-square-reddit {
-  --fa: "";
+  --fa: "\f1a2";
 }
 
 .fa-reddit-square {
-  --fa: "";
+  --fa: "\f1a2";
 }
 
 .fa-vimeo-v {
-  --fa: "";
+  --fa: "\f27d";
 }
 
 .fa-contao {
-  --fa: "";
+  --fa: "\f26d";
 }
 
 .fa-square-font-awesome {
-  --fa: "";
+  --fa: "\e5ad";
 }
 
 .fa-deskpro {
-  --fa: "";
+  --fa: "\f38f";
 }
 
 .fa-brave {
-  --fa: "";
+  --fa: "\e63c";
 }
 
 .fa-sistrix {
-  --fa: "";
+  --fa: "\f3ee";
 }
 
 .fa-square-instagram {
-  --fa: "";
+  --fa: "\e055";
 }
 
 .fa-instagram-square {
-  --fa: "";
+  --fa: "\e055";
 }
 
 .fa-battle-net {
-  --fa: "";
+  --fa: "\f835";
 }
 
 .fa-the-red-yeti {
-  --fa: "";
+  --fa: "\f69d";
 }
 
 .fa-square-hacker-news {
-  --fa: "";
+  --fa: "\f3af";
 }
 
 .fa-hacker-news-square {
-  --fa: "";
+  --fa: "\f3af";
 }
 
 .fa-edge {
-  --fa: "";
+  --fa: "\f282";
 }
 
 .fa-threads {
-  --fa: "";
+  --fa: "\e618";
 }
 
 .fa-napster {
-  --fa: "";
+  --fa: "\f3d2";
 }
 
 .fa-square-snapchat {
-  --fa: "";
+  --fa: "\f2ad";
 }
 
 .fa-snapchat-square {
-  --fa: "";
+  --fa: "\f2ad";
 }
 
 .fa-google-plus-g {
-  --fa: "";
+  --fa: "\f0d5";
 }
 
 .fa-artstation {
-  --fa: "";
+  --fa: "\f77a";
 }
 
 .fa-markdown {
-  --fa: "";
+  --fa: "\f60f";
 }
 
 .fa-sourcetree {
-  --fa: "";
+  --fa: "\f7d3";
 }
 
 .fa-google-plus {
-  --fa: "";
+  --fa: "\f2b3";
 }
 
 .fa-diaspora {
-  --fa: "";
+  --fa: "\f791";
 }
 
 .fa-foursquare {
-  --fa: "";
+  --fa: "\f180";
 }
 
 .fa-stack-overflow {
-  --fa: "";
+  --fa: "\f16c";
 }
 
 .fa-github-alt {
-  --fa: "";
+  --fa: "\f113";
 }
 
 .fa-phoenix-squadron {
-  --fa: "";
+  --fa: "\f511";
 }
 
 .fa-pagelines {
-  --fa: "";
+  --fa: "\f18c";
 }
 
 .fa-algolia {
-  --fa: "";
+  --fa: "\f36c";
 }
 
 .fa-red-river {
-  --fa: "";
+  --fa: "\f3e3";
 }
 
 .fa-creative-commons-sa {
-  --fa: "";
+  --fa: "\f4ef";
 }
 
 .fa-safari {
-  --fa: "";
+  --fa: "\f267";
 }
 
 .fa-google {
-  --fa: "";
+  --fa: "\f1a0";
 }
 
 .fa-square-font-awesome-stroke {
-  --fa: "";
+  --fa: "\f35c";
 }
 
 .fa-font-awesome-alt {
-  --fa: "";
+  --fa: "\f35c";
 }
 
 .fa-atlassian {
-  --fa: "";
+  --fa: "\f77b";
 }
 
 .fa-linkedin-in {
-  --fa: "";
+  --fa: "\f0e1";
 }
 
 .fa-digital-ocean {
-  --fa: "";
+  --fa: "\f391";
 }
 
 .fa-nimblr {
-  --fa: "";
+  --fa: "\f5a8";
 }
 
 .fa-chromecast {
-  --fa: "";
+  --fa: "\f838";
 }
 
 .fa-evernote {
-  --fa: "";
+  --fa: "\f839";
 }
 
 .fa-hacker-news {
-  --fa: "";
+  --fa: "\f1d4";
 }
 
 .fa-creative-commons-sampling {
-  --fa: "";
+  --fa: "\f4f0";
 }
 
 .fa-adversal {
-  --fa: "";
+  --fa: "\f36a";
 }
 
 .fa-creative-commons {
-  --fa: "";
+  --fa: "\f25e";
 }
 
 .fa-watchman-monitoring {
-  --fa: "";
+  --fa: "\e087";
 }
 
 .fa-fonticons {
-  --fa: "";
+  --fa: "\f280";
 }
 
 .fa-weixin {
-  --fa: "";
+  --fa: "\f1d7";
 }
 
 .fa-shirtsinbulk {
-  --fa: "";
+  --fa: "\f214";
 }
 
 .fa-codepen {
-  --fa: "";
+  --fa: "\f1cb";
 }
 
 .fa-git-alt {
-  --fa: "";
+  --fa: "\f841";
 }
 
 .fa-lyft {
-  --fa: "";
+  --fa: "\f3c3";
 }
 
 .fa-rev {
-  --fa: "";
+  --fa: "\f5b2";
 }
 
 .fa-windows {
-  --fa: "";
+  --fa: "\f17a";
 }
 
 .fa-wizards-of-the-coast {
-  --fa: "";
+  --fa: "\f730";
 }
 
 .fa-square-viadeo {
-  --fa: "";
+  --fa: "\f2aa";
 }
 
 .fa-viadeo-square {
-  --fa: "";
+  --fa: "\f2aa";
 }
 
 .fa-meetup {
-  --fa: "";
+  --fa: "\f2e0";
 }
 
 .fa-centos {
-  --fa: "";
+  --fa: "\f789";
 }
 
 .fa-adn {
-  --fa: "";
+  --fa: "\f170";
 }
 
 .fa-cloudsmith {
-  --fa: "";
+  --fa: "\f384";
 }
 
 .fa-opensuse {
-  --fa: "";
+  --fa: "\e62b";
 }
 
 .fa-pied-piper-alt {
-  --fa: "";
+  --fa: "\f1a8";
 }
 
 .fa-square-dribbble {
-  --fa: "";
+  --fa: "\f397";
 }
 
 .fa-dribbble-square {
-  --fa: "";
+  --fa: "\f397";
 }
 
 .fa-codiepie {
-  --fa: "";
+  --fa: "\f284";
 }
 
 .fa-node {
-  --fa: "";
+  --fa: "\f419";
 }
 
 .fa-mix {
-  --fa: "";
+  --fa: "\f3cb";
 }
 
 .fa-steam {
-  --fa: "";
+  --fa: "\f1b6";
 }
 
 .fa-cc-apple-pay {
-  --fa: "";
+  --fa: "\f416";
 }
 
 .fa-scribd {
-  --fa: "";
+  --fa: "\f28a";
 }
 
 .fa-debian {
-  --fa: "";
+  --fa: "\e60b";
 }
 
 .fa-openid {
-  --fa: "";
+  --fa: "\f19b";
 }
 
 .fa-instalod {
-  --fa: "";
+  --fa: "\e081";
 }
 
 .fa-files-pinwheel {
-  --fa: "";
+  --fa: "\e69f";
 }
 
 .fa-expeditedssl {
-  --fa: "";
+  --fa: "\f23e";
 }
 
 .fa-sellcast {
-  --fa: "";
+  --fa: "\f2da";
 }
 
 .fa-square-twitter {
-  --fa: "";
+  --fa: "\f081";
 }
 
 .fa-twitter-square {
-  --fa: "";
+  --fa: "\f081";
 }
 
 .fa-r-project {
-  --fa: "";
+  --fa: "\f4f7";
 }
 
 .fa-delicious {
-  --fa: "";
+  --fa: "\f1a5";
 }
 
 .fa-freebsd {
-  --fa: "";
+  --fa: "\f3a4";
 }
 
 .fa-vuejs {
-  --fa: "";
+  --fa: "\f41f";
 }
 
 .fa-accusoft {
-  --fa: "";
+  --fa: "\f369";
 }
 
 .fa-ioxhost {
-  --fa: "";
+  --fa: "\f208";
 }
 
 .fa-fonticons-fi {
-  --fa: "";
+  --fa: "\f3a2";
 }
 
 .fa-app-store {
-  --fa: "";
+  --fa: "\f36f";
 }
 
 .fa-cc-mastercard {
-  --fa: "";
+  --fa: "\f1f1";
 }
 
 .fa-itunes-note {
-  --fa: "";
+  --fa: "\f3b5";
 }
 
 .fa-golang {
-  --fa: "";
+  --fa: "\e40f";
 }
 
 .fa-kickstarter {
-  --fa: "";
+  --fa: "\f3bb";
 }
 
 .fa-square-kickstarter {
-  --fa: "";
+  --fa: "\f3bb";
 }
 
 .fa-grav {
-  --fa: "";
+  --fa: "\f2d6";
 }
 
 .fa-weibo {
-  --fa: "";
+  --fa: "\f18a";
 }
 
 .fa-uncharted {
-  --fa: "";
+  --fa: "\e084";
 }
 
 .fa-firstdraft {
-  --fa: "";
+  --fa: "\f3a1";
 }
 
 .fa-square-youtube {
-  --fa: "";
+  --fa: "\f431";
 }
 
 .fa-youtube-square {
-  --fa: "";
+  --fa: "\f431";
 }
 
 .fa-wikipedia-w {
-  --fa: "";
+  --fa: "\f266";
 }
 
 .fa-wpressr {
-  --fa: "";
+  --fa: "\f3e4";
 }
 
 .fa-rendact {
-  --fa: "";
+  --fa: "\f3e4";
 }
 
 .fa-angellist {
-  --fa: "";
+  --fa: "\f209";
 }
 
 .fa-galactic-republic {
-  --fa: "";
+  --fa: "\f50c";
 }
 
 .fa-nfc-directional {
-  --fa: "";
+  --fa: "\e530";
 }
 
 .fa-skype {
-  --fa: "";
+  --fa: "\f17e";
 }
 
 .fa-joget {
-  --fa: "";
+  --fa: "\f3b7";
 }
 
 .fa-fedora {
-  --fa: "";
+  --fa: "\f798";
 }
 
 .fa-stripe-s {
-  --fa: "";
+  --fa: "\f42a";
 }
 
 .fa-meta {
-  --fa: "";
+  --fa: "\e49b";
 }
 
 .fa-laravel {
-  --fa: "";
+  --fa: "\f3bd";
 }
 
 .fa-hotjar {
-  --fa: "";
+  --fa: "\f3b1";
 }
 
 .fa-bluetooth-b {
-  --fa: "";
+  --fa: "\f294";
 }
 
 .fa-square-letterboxd {
-  --fa: "";
+  --fa: "\e62e";
 }
 
 .fa-sticker-mule {
-  --fa: "";
+  --fa: "\f3f7";
 }
 
 .fa-creative-commons-zero {
-  --fa: "";
+  --fa: "\f4f3";
 }
 
 .fa-hips {
-  --fa: "";
+  --fa: "\f452";
 }
 
 .fa-css {
-  --fa: "";
+  --fa: "\e6a2";
 }
 
 .fa-behance {
-  --fa: "";
+  --fa: "\f1b4";
 }
 
 .fa-reddit {
-  --fa: "";
+  --fa: "\f1a1";
 }
 
 .fa-discord {
-  --fa: "";
+  --fa: "\f392";
 }
 
 .fa-chrome {
-  --fa: "";
+  --fa: "\f268";
 }
 
 .fa-app-store-ios {
-  --fa: "";
+  --fa: "\f370";
 }
 
 .fa-cc-discover {
-  --fa: "";
+  --fa: "\f1f2";
 }
 
 .fa-wpbeginner {
-  --fa: "";
+  --fa: "\f297";
 }
 
 .fa-confluence {
-  --fa: "";
+  --fa: "\f78d";
 }
 
 .fa-shoelace {
-  --fa: "";
+  --fa: "\e60c";
 }
 
 .fa-mdb {
-  --fa: "";
+  --fa: "\f8ca";
 }
 
 .fa-dochub {
-  --fa: "";
+  --fa: "\f394";
 }
 
 .fa-accessible-icon {
-  --fa: "";
+  --fa: "\f368";
 }
 
 .fa-ebay {
-  --fa: "";
+  --fa: "\f4f4";
 }
 
 .fa-amazon {
-  --fa: "";
+  --fa: "\f270";
 }
 
 .fa-unsplash {
-  --fa: "";
+  --fa: "\e07c";
 }
 
 .fa-yarn {
-  --fa: "";
+  --fa: "\f7e3";
 }
 
 .fa-square-steam {
-  --fa: "";
+  --fa: "\f1b7";
 }
 
 .fa-steam-square {
-  --fa: "";
+  --fa: "\f1b7";
 }
 
 .fa-500px {
-  --fa: "";
+  --fa: "\f26e";
 }
 
 .fa-square-vimeo {
-  --fa: "";
+  --fa: "\f194";
 }
 
 .fa-vimeo-square {
-  --fa: "";
+  --fa: "\f194";
 }
 
 .fa-asymmetrik {
-  --fa: "";
+  --fa: "\f372";
 }
 
 .fa-font-awesome {
-  --fa: "";
+  --fa: "\f2b4";
 }
 
 .fa-font-awesome-flag {
-  --fa: "";
+  --fa: "\f2b4";
 }
 
 .fa-font-awesome-logo-full {
-  --fa: "";
+  --fa: "\f2b4";
 }
 
 .fa-gratipay {
-  --fa: "";
+  --fa: "\f184";
 }
 
 .fa-apple {
-  --fa: "";
+  --fa: "\f179";
 }
 
 .fa-hive {
-  --fa: "";
+  --fa: "\e07f";
 }
 
 .fa-gitkraken {
-  --fa: "";
+  --fa: "\f3a6";
 }
 
 .fa-keybase {
-  --fa: "";
+  --fa: "\f4f5";
 }
 
 .fa-apple-pay {
-  --fa: "";
+  --fa: "\f415";
 }
 
 .fa-padlet {
-  --fa: "";
+  --fa: "\e4a0";
 }
 
 .fa-amazon-pay {
-  --fa: "";
+  --fa: "\f42c";
 }
 
 .fa-square-github {
-  --fa: "";
+  --fa: "\f092";
 }
 
 .fa-github-square {
-  --fa: "";
+  --fa: "\f092";
 }
 
 .fa-stumbleupon {
-  --fa: "";
+  --fa: "\f1a4";
 }
 
 .fa-fedex {
-  --fa: "";
+  --fa: "\f797";
 }
 
 .fa-phoenix-framework {
-  --fa: "";
+  --fa: "\f3dc";
 }
 
 .fa-shopify {
-  --fa: "";
+  --fa: "\e057";
 }
 
 .fa-neos {
-  --fa: "";
+  --fa: "\f612";
 }
 
 .fa-square-threads {
-  --fa: "";
+  --fa: "\e619";
 }
 
 .fa-hackerrank {
-  --fa: "";
+  --fa: "\f5f7";
 }
 
 .fa-researchgate {
-  --fa: "";
+  --fa: "\f4f8";
 }
 
 .fa-swift {
-  --fa: "";
+  --fa: "\f8e1";
 }
 
 .fa-angular {
-  --fa: "";
+  --fa: "\f420";
 }
 
 .fa-speakap {
-  --fa: "";
+  --fa: "\f3f3";
 }
 
 .fa-angrycreative {
-  --fa: "";
+  --fa: "\f36e";
 }
 
 .fa-y-combinator {
-  --fa: "";
+  --fa: "\f23b";
 }
 
 .fa-empire {
-  --fa: "";
+  --fa: "\f1d1";
 }
 
 .fa-envira {
-  --fa: "";
+  --fa: "\f299";
 }
 
 .fa-google-scholar {
-  --fa: "";
+  --fa: "\e63b";
 }
 
 .fa-square-gitlab {
-  --fa: "";
+  --fa: "\e5ae";
 }
 
 .fa-gitlab-square {
-  --fa: "";
+  --fa: "\e5ae";
 }
 
 .fa-studiovinari {
-  --fa: "";
+  --fa: "\f3f8";
 }
 
 .fa-pied-piper {
-  --fa: "";
+  --fa: "\f2ae";
 }
 
 .fa-wordpress {
-  --fa: "";
+  --fa: "\f19a";
 }
 
 .fa-product-hunt {
-  --fa: "";
+  --fa: "\f288";
 }
 
 .fa-firefox {
-  --fa: "";
+  --fa: "\f269";
 }
 
 .fa-linode {
-  --fa: "";
+  --fa: "\f2b8";
 }
 
 .fa-goodreads {
-  --fa: "";
+  --fa: "\f3a8";
 }
 
 .fa-square-odnoklassniki {
-  --fa: "";
+  --fa: "\f264";
 }
 
 .fa-odnoklassniki-square {
-  --fa: "";
+  --fa: "\f264";
 }
 
 .fa-jsfiddle {
-  --fa: "";
+  --fa: "\f1cc";
 }
 
 .fa-sith {
-  --fa: "";
+  --fa: "\f512";
 }
 
 .fa-themeisle {
-  --fa: "";
+  --fa: "\f2b2";
 }
 
 .fa-page4 {
-  --fa: "";
+  --fa: "\f3d7";
 }
 
 .fa-hashnode {
-  --fa: "";
+  --fa: "\e499";
 }
 
 .fa-react {
-  --fa: "";
+  --fa: "\f41b";
 }
 
 .fa-cc-paypal {
-  --fa: "";
+  --fa: "\f1f4";
 }
 
 .fa-squarespace {
-  --fa: "";
+  --fa: "\f5be";
 }
 
 .fa-cc-stripe {
-  --fa: "";
+  --fa: "\f1f5";
 }
 
 .fa-creative-commons-share {
-  --fa: "";
+  --fa: "\f4f2";
 }
 
 .fa-bitcoin {
-  --fa: "";
+  --fa: "\f379";
 }
 
 .fa-keycdn {
-  --fa: "";
+  --fa: "\f3ba";
 }
 
 .fa-opera {
-  --fa: "";
+  --fa: "\f26a";
 }
 
 .fa-itch-io {
-  --fa: "";
+  --fa: "\f83a";
 }
 
 .fa-umbraco {
-  --fa: "";
+  --fa: "\f8e8";
 }
 
 .fa-galactic-senate {
-  --fa: "";
+  --fa: "\f50d";
 }
 
 .fa-ubuntu {
-  --fa: "";
+  --fa: "\f7df";
 }
 
 .fa-draft2digital {
-  --fa: "";
+  --fa: "\f396";
 }
 
 .fa-stripe {
-  --fa: "";
+  --fa: "\f429";
 }
 
 .fa-houzz {
-  --fa: "";
+  --fa: "\f27c";
 }
 
 .fa-gg {
-  --fa: "";
+  --fa: "\f260";
 }
 
 .fa-dhl {
-  --fa: "";
+  --fa: "\f790";
 }
 
 .fa-square-pinterest {
-  --fa: "";
+  --fa: "\f0d3";
 }
 
 .fa-pinterest-square {
-  --fa: "";
+  --fa: "\f0d3";
 }
 
 .fa-xing {
-  --fa: "";
+  --fa: "\f168";
 }
 
 .fa-blackberry {
-  --fa: "";
+  --fa: "\f37b";
 }
 
 .fa-creative-commons-pd {
-  --fa: "";
+  --fa: "\f4ec";
 }
 
 .fa-playstation {
-  --fa: "";
+  --fa: "\f3df";
 }
 
 .fa-quinscape {
-  --fa: "";
+  --fa: "\f459";
 }
 
 .fa-less {
-  --fa: "";
+  --fa: "\f41d";
 }
 
 .fa-blogger-b {
-  --fa: "";
+  --fa: "\f37d";
 }
 
 .fa-opencart {
-  --fa: "";
+  --fa: "\f23d";
 }
 
 .fa-vine {
-  --fa: "";
+  --fa: "\f1ca";
 }
 
 .fa-signal-messenger {
-  --fa: "";
+  --fa: "\e663";
 }
 
 .fa-paypal {
-  --fa: "";
+  --fa: "\f1ed";
 }
 
 .fa-gitlab {
-  --fa: "";
+  --fa: "\f296";
 }
 
 .fa-typo3 {
-  --fa: "";
+  --fa: "\f42b";
 }
 
 .fa-reddit-alien {
-  --fa: "";
+  --fa: "\f281";
 }
 
 .fa-yahoo {
-  --fa: "";
+  --fa: "\f19e";
 }
 
 .fa-dailymotion {
-  --fa: "";
+  --fa: "\e052";
 }
 
 .fa-affiliatetheme {
-  --fa: "";
+  --fa: "\f36b";
 }
 
 .fa-pied-piper-pp {
-  --fa: "";
+  --fa: "\f1a7";
 }
 
 .fa-bootstrap {
-  --fa: "";
+  --fa: "\f836";
 }
 
 .fa-odnoklassniki {
-  --fa: "";
+  --fa: "\f263";
 }
 
 .fa-nfc-symbol {
-  --fa: "";
+  --fa: "\e531";
 }
 
 .fa-mintbit {
-  --fa: "";
+  --fa: "\e62f";
 }
 
 .fa-ethereum {
-  --fa: "";
+  --fa: "\f42e";
 }
 
 .fa-speaker-deck {
-  --fa: "";
+  --fa: "\f83c";
 }
 
 .fa-creative-commons-nc-eu {
-  --fa: "";
+  --fa: "\f4e9";
 }
 
 .fa-patreon {
-  --fa: "";
+  --fa: "\f3d9";
 }
 
 .fa-avianex {
-  --fa: "";
+  --fa: "\f374";
 }
 
 .fa-ello {
-  --fa: "";
+  --fa: "\f5f1";
 }
 
 .fa-gofore {
-  --fa: "";
+  --fa: "\f3a7";
 }
 
 .fa-bimobject {
-  --fa: "";
+  --fa: "\f378";
 }
 
 .fa-brave-reverse {
-  --fa: "";
+  --fa: "\e63d";
 }
 
 .fa-facebook-f {
-  --fa: "";
+  --fa: "\f39e";
 }
 
 .fa-square-google-plus {
-  --fa: "";
+  --fa: "\f0d4";
 }
 
 .fa-google-plus-square {
-  --fa: "";
+  --fa: "\f0d4";
 }
 
 .fa-web-awesome {
-  --fa: "";
+  --fa: "\e682";
 }
 
 .fa-mandalorian {
-  --fa: "";
+  --fa: "\f50f";
 }
 
 .fa-first-order-alt {
-  --fa: "";
+  --fa: "\f50a";
 }
 
 .fa-osi {
-  --fa: "";
+  --fa: "\f41a";
 }
 
 .fa-google-wallet {
-  --fa: "";
+  --fa: "\f1ee";
 }
 
 .fa-d-and-d-beyond {
-  --fa: "";
+  --fa: "\f6ca";
 }
 
 .fa-periscope {
-  --fa: "";
+  --fa: "\f3da";
 }
 
 .fa-fulcrum {
-  --fa: "";
+  --fa: "\f50b";
 }
 
 .fa-cloudscale {
-  --fa: "";
+  --fa: "\f383";
 }
 
 .fa-forumbee {
-  --fa: "";
+  --fa: "\f211";
 }
 
 .fa-mizuni {
-  --fa: "";
+  --fa: "\f3cc";
 }
 
 .fa-schlix {
-  --fa: "";
+  --fa: "\f3ea";
 }
 
 .fa-square-xing {
-  --fa: "";
+  --fa: "\f169";
 }
 
 .fa-xing-square {
-  --fa: "";
+  --fa: "\f169";
 }
 
 .fa-bandcamp {
-  --fa: "";
+  --fa: "\f2d5";
 }
 
 .fa-wpforms {
-  --fa: "";
+  --fa: "\f298";
 }
 
 .fa-cloudversify {
-  --fa: "";
+  --fa: "\f385";
 }
 
 .fa-usps {
-  --fa: "";
+  --fa: "\f7e1";
 }
 
 .fa-megaport {
-  --fa: "";
+  --fa: "\f5a3";
 }
 
 .fa-magento {
-  --fa: "";
+  --fa: "\f3c4";
 }
 
 .fa-spotify {
-  --fa: "";
+  --fa: "\f1bc";
 }
 
 .fa-optin-monster {
-  --fa: "";
+  --fa: "\f23c";
 }
 
 .fa-fly {
-  --fa: "";
+  --fa: "\f417";
 }
 
 .fa-square-bluesky {
-  --fa: "";
+  --fa: "\e6a3";
 }
 
 .fa-aviato {
-  --fa: "";
+  --fa: "\f421";
 }
 
 .fa-itunes {
-  --fa: "";
+  --fa: "\f3b4";
 }
 
 .fa-cuttlefish {
-  --fa: "";
+  --fa: "\f38c";
 }
 
 .fa-blogger {
-  --fa: "";
+  --fa: "\f37c";
 }
 
 .fa-flickr {
-  --fa: "";
+  --fa: "\f16e";
 }
 
 .fa-viber {
-  --fa: "";
+  --fa: "\f409";
 }
 
 .fa-soundcloud {
-  --fa: "";
+  --fa: "\f1be";
 }
 
 .fa-digg {
-  --fa: "";
+  --fa: "\f1a6";
 }
 
 .fa-tencent-weibo {
-  --fa: "";
+  --fa: "\f1d5";
 }
 
 .fa-letterboxd {
-  --fa: "";
+  --fa: "\e62d";
 }
 
 .fa-symfony {
-  --fa: "";
+  --fa: "\f83d";
 }
 
 .fa-maxcdn {
-  --fa: "";
+  --fa: "\f136";
 }
 
 .fa-etsy {
-  --fa: "";
+  --fa: "\f2d7";
 }
 
 .fa-facebook-messenger {
-  --fa: "";
+  --fa: "\f39f";
 }
 
 .fa-audible {
-  --fa: "";
+  --fa: "\f373";
 }
 
 .fa-think-peaks {
-  --fa: "";
+  --fa: "\f731";
 }
 
 .fa-bilibili {
-  --fa: "";
+  --fa: "\e3d9";
 }
 
 .fa-erlang {
-  --fa: "";
+  --fa: "\f39d";
 }
 
 .fa-x-twitter {
-  --fa: "";
+  --fa: "\e61b";
 }
 
 .fa-cotton-bureau {
-  --fa: "";
+  --fa: "\f89e";
 }
 
 .fa-dashcube {
-  --fa: "";
+  --fa: "\f210";
 }
 
 .fa-42-group {
-  --fa: "";
+  --fa: "\e080";
 }
 
 .fa-innosoft {
-  --fa: "";
+  --fa: "\e080";
 }
 
 .fa-stack-exchange {
-  --fa: "";
+  --fa: "\f18d";
 }
 
 .fa-elementor {
-  --fa: "";
+  --fa: "\f430";
 }
 
 .fa-square-pied-piper {
-  --fa: "";
+  --fa: "\e01e";
 }
 
 .fa-pied-piper-square {
-  --fa: "";
+  --fa: "\e01e";
 }
 
 .fa-creative-commons-nd {
-  --fa: "";
+  --fa: "\f4eb";
 }
 
 .fa-palfed {
-  --fa: "";
+  --fa: "\f3d8";
 }
 
 .fa-superpowers {
-  --fa: "";
+  --fa: "\f2dd";
 }
 
 .fa-resolving {
-  --fa: "";
+  --fa: "\f3e7";
 }
 
 .fa-xbox {
-  --fa: "";
+  --fa: "\f412";
 }
 
 .fa-square-web-awesome-stroke {
-  --fa: "";
+  --fa: "\e684";
 }
 
 .fa-searchengin {
-  --fa: "";
+  --fa: "\f3eb";
 }
 
 .fa-tiktok {
-  --fa: "";
+  --fa: "\e07b";
 }
 
 .fa-square-facebook {
-  --fa: "";
+  --fa: "\f082";
 }
 
 .fa-facebook-square {
-  --fa: "";
+  --fa: "\f082";
 }
 
 .fa-renren {
-  --fa: "";
+  --fa: "\f18b";
 }
 
 .fa-linux {
-  --fa: "";
+  --fa: "\f17c";
 }
 
 .fa-glide {
-  --fa: "";
+  --fa: "\f2a5";
 }
 
 .fa-linkedin {
-  --fa: "";
+  --fa: "\f08c";
 }
 
 .fa-hubspot {
-  --fa: "";
+  --fa: "\f3b2";
 }
 
 .fa-deploydog {
-  --fa: "";
+  --fa: "\f38e";
 }
 
 .fa-twitch {
-  --fa: "";
+  --fa: "\f1e8";
 }
 
 .fa-flutter {
-  --fa: "";
+  --fa: "\e694";
 }
 
 .fa-ravelry {
-  --fa: "";
+  --fa: "\f2d9";
 }
 
 .fa-mixer {
-  --fa: "";
+  --fa: "\e056";
 }
 
 .fa-square-lastfm {
-  --fa: "";
+  --fa: "\f203";
 }
 
 .fa-lastfm-square {
-  --fa: "";
+  --fa: "\f203";
 }
 
 .fa-vimeo {
-  --fa: "";
+  --fa: "\f40a";
 }
 
 .fa-mendeley {
-  --fa: "";
+  --fa: "\f7b3";
 }
 
 .fa-uniregistry {
-  --fa: "";
+  --fa: "\f404";
 }
 
 .fa-figma {
-  --fa: "";
+  --fa: "\f799";
 }
 
 .fa-creative-commons-remix {
-  --fa: "";
+  --fa: "\f4ee";
 }
 
 .fa-cc-amazon-pay {
-  --fa: "";
+  --fa: "\f42d";
 }
 
 .fa-dropbox {
-  --fa: "";
+  --fa: "\f16b";
 }
 
 .fa-instagram {
-  --fa: "";
+  --fa: "\f16d";
 }
 
 .fa-cmplid {
-  --fa: "";
+  --fa: "\e360";
 }
 
 .fa-upwork {
-  --fa: "";
+  --fa: "\e641";
 }
 
 .fa-facebook {
-  --fa: "";
+  --fa: "\f09a";
 }
 
 .fa-gripfire {
-  --fa: "";
+  --fa: "\f3ac";
 }
 
 .fa-jedi-order {
-  --fa: "";
+  --fa: "\f50e";
 }
 
 .fa-uikit {
-  --fa: "";
+  --fa: "\f403";
 }
 
 .fa-fort-awesome-alt {
-  --fa: "";
+  --fa: "\f3a3";
 }
 
 .fa-phabricator {
-  --fa: "";
+  --fa: "\f3db";
 }
 
 .fa-ussunnah {
-  --fa: "";
+  --fa: "\f407";
 }
 
 .fa-earlybirds {
-  --fa: "";
+  --fa: "\f39a";
 }
 
 .fa-trade-federation {
-  --fa: "";
+  --fa: "\f513";
 }
 
 .fa-autoprefixer {
-  --fa: "";
+  --fa: "\f41c";
 }
 
 .fa-whatsapp {
-  --fa: "";
+  --fa: "\f232";
 }
 
 .fa-square-upwork {
-  --fa: "";
+  --fa: "\e67c";
 }
 
 .fa-slideshare {
-  --fa: "";
+  --fa: "\f1e7";
 }
 
 .fa-google-play {
-  --fa: "";
+  --fa: "\f3ab";
 }
 
 .fa-viadeo {
-  --fa: "";
+  --fa: "\f2a9";
 }
 
 .fa-line {
-  --fa: "";
+  --fa: "\f3c0";
 }
 
 .fa-google-drive {
-  --fa: "";
+  --fa: "\f3aa";
 }
 
 .fa-servicestack {
-  --fa: "";
+  --fa: "\f3ec";
 }
 
 .fa-simplybuilt {
-  --fa: "";
+  --fa: "\f215";
 }
 
 .fa-bitbucket {
-  --fa: "";
+  --fa: "\f171";
 }
 
 .fa-imdb {
-  --fa: "";
+  --fa: "\f2d8";
 }
 
 .fa-deezer {
-  --fa: "";
+  --fa: "\e077";
 }
 
 .fa-raspberry-pi {
-  --fa: "";
+  --fa: "\f7bb";
 }
 
 .fa-jira {
-  --fa: "";
+  --fa: "\f7b1";
 }
 
 .fa-docker {
-  --fa: "";
+  --fa: "\f395";
 }
 
 .fa-screenpal {
-  --fa: "";
+  --fa: "\e570";
 }
 
 .fa-bluetooth {
-  --fa: "";
+  --fa: "\f293";
 }
 
 .fa-gitter {
-  --fa: "";
+  --fa: "\f426";
 }
 
 .fa-d-and-d {
-  --fa: "";
+  --fa: "\f38d";
 }
 
 .fa-microblog {
-  --fa: "";
+  --fa: "\e01a";
 }
 
 .fa-cc-diners-club {
-  --fa: "";
+  --fa: "\f24c";
 }
 
 .fa-gg-circle {
-  --fa: "";
+  --fa: "\f261";
 }
 
 .fa-pied-piper-hat {
-  --fa: "";
+  --fa: "\f4e5";
 }
 
 .fa-kickstarter-k {
-  --fa: "";
+  --fa: "\f3bc";
 }
 
 .fa-yandex {
-  --fa: "";
+  --fa: "\f413";
 }
 
 .fa-readme {
-  --fa: "";
+  --fa: "\f4d5";
 }
 
 .fa-html5 {
-  --fa: "";
+  --fa: "\f13b";
 }
 
 .fa-sellsy {
-  --fa: "";
+  --fa: "\f213";
 }
 
 .fa-square-web-awesome {
-  --fa: "";
+  --fa: "\e683";
 }
 
 .fa-sass {
-  --fa: "";
+  --fa: "\f41e";
 }
 
 .fa-wirsindhandwerk {
-  --fa: "";
+  --fa: "\e2d0";
 }
 
 .fa-wsh {
-  --fa: "";
+  --fa: "\e2d0";
 }
 
 .fa-buromobelexperte {
-  --fa: "";
+  --fa: "\f37f";
 }
 
 .fa-salesforce {
-  --fa: "";
+  --fa: "\f83b";
 }
 
 .fa-octopus-deploy {
-  --fa: "";
+  --fa: "\e082";
 }
 
 .fa-medapps {
-  --fa: "";
+  --fa: "\f3c6";
 }
 
 .fa-ns8 {
-  --fa: "";
+  --fa: "\f3d5";
 }
 
 .fa-pinterest-p {
-  --fa: "";
+  --fa: "\f231";
 }
 
 .fa-apper {
-  --fa: "";
+  --fa: "\f371";
 }
 
 .fa-fort-awesome {
-  --fa: "";
+  --fa: "\f286";
 }
 
 .fa-waze {
-  --fa: "";
+  --fa: "\f83f";
 }
 
 .fa-bluesky {
-  --fa: "";
+  --fa: "\e671";
 }
 
 .fa-cc-jcb {
-  --fa: "";
+  --fa: "\f24b";
 }
 
 .fa-snapchat {
-  --fa: "";
+  --fa: "\f2ab";
 }
 
 .fa-snapchat-ghost {
-  --fa: "";
+  --fa: "\f2ab";
 }
 
 .fa-fantasy-flight-games {
-  --fa: "";
+  --fa: "\f6dc";
 }
 
 .fa-rust {
-  --fa: "";
+  --fa: "\e07a";
 }
 
 .fa-wix {
-  --fa: "";
+  --fa: "\f5cf";
 }
 
 .fa-square-behance {
-  --fa: "";
+  --fa: "\f1b5";
 }
 
 .fa-behance-square {
-  --fa: "";
+  --fa: "\f1b5";
 }
 
 .fa-supple {
-  --fa: "";
+  --fa: "\f3f9";
 }
 
 .fa-webflow {
-  --fa: "";
+  --fa: "\e65c";
 }
 
 .fa-rebel {
-  --fa: "";
+  --fa: "\f1d0";
 }
 
 .fa-css3 {
-  --fa: "";
+  --fa: "\f13c";
 }
 
 .fa-staylinked {
-  --fa: "";
+  --fa: "\f3f5";
 }
 
 .fa-kaggle {
-  --fa: "";
+  --fa: "\f5fa";
 }
 
 .fa-space-awesome {
-  --fa: "";
+  --fa: "\e5ac";
 }
 
 .fa-deviantart {
-  --fa: "";
+  --fa: "\f1bd";
 }
 
 .fa-cpanel {
-  --fa: "";
+  --fa: "\f388";
 }
 
 .fa-goodreads-g {
-  --fa: "";
+  --fa: "\f3a9";
 }
 
 .fa-square-git {
-  --fa: "";
+  --fa: "\f1d2";
 }
 
 .fa-git-square {
-  --fa: "";
+  --fa: "\f1d2";
 }
 
 .fa-square-tumblr {
-  --fa: "";
+  --fa: "\f174";
 }
 
 .fa-tumblr-square {
-  --fa: "";
+  --fa: "\f174";
 }
 
 .fa-trello {
-  --fa: "";
+  --fa: "\f181";
 }
 
 .fa-creative-commons-nc-jp {
-  --fa: "";
+  --fa: "\f4ea";
 }
 
 .fa-get-pocket {
-  --fa: "";
+  --fa: "\f265";
 }
 
 .fa-perbyte {
-  --fa: "";
+  --fa: "\e083";
 }
 
 .fa-grunt {
-  --fa: "";
+  --fa: "\f3ad";
 }
 
 .fa-weebly {
-  --fa: "";
+  --fa: "\f5cc";
 }
 
 .fa-connectdevelop {
-  --fa: "";
+  --fa: "\f20e";
 }
 
 .fa-leanpub {
-  --fa: "";
+  --fa: "\f212";
 }
 
 .fa-black-tie {
-  --fa: "";
+  --fa: "\f27e";
 }
 
 .fa-themeco {
-  --fa: "";
+  --fa: "\f5c6";
 }
 
 .fa-python {
-  --fa: "";
+  --fa: "\f3e2";
 }
 
 .fa-android {
-  --fa: "";
+  --fa: "\f17b";
 }
 
 .fa-bots {
-  --fa: "";
+  --fa: "\e340";
 }
 
 .fa-free-code-camp {
-  --fa: "";
+  --fa: "\f2c5";
 }
 
 .fa-hornbill {
-  --fa: "";
+  --fa: "\f592";
 }
 
 .fa-js {
-  --fa: "";
+  --fa: "\f3b8";
 }
 
 .fa-ideal {
-  --fa: "";
+  --fa: "\e013";
 }
 
 .fa-git {
-  --fa: "";
+  --fa: "\f1d3";
 }
 
 .fa-dev {
-  --fa: "";
+  --fa: "\f6cc";
 }
 
 .fa-sketch {
-  --fa: "";
+  --fa: "\f7c6";
 }
 
 .fa-yandex-international {
-  --fa: "";
+  --fa: "\f414";
 }
 
 .fa-cc-amex {
-  --fa: "";
+  --fa: "\f1f3";
 }
 
 .fa-uber {
-  --fa: "";
+  --fa: "\f402";
 }
 
 .fa-github {
-  --fa: "";
+  --fa: "\f09b";
 }
 
 .fa-php {
-  --fa: "";
+  --fa: "\f457";
 }
 
 .fa-alipay {
-  --fa: "";
+  --fa: "\f642";
 }
 
 .fa-youtube {
-  --fa: "";
+  --fa: "\f167";
 }
 
 .fa-skyatlas {
-  --fa: "";
+  --fa: "\f216";
 }
 
 .fa-firefox-browser {
-  --fa: "";
+  --fa: "\e007";
 }
 
 .fa-replyd {
-  --fa: "";
+  --fa: "\f3e6";
 }
 
 .fa-suse {
-  --fa: "";
+  --fa: "\f7d6";
 }
 
 .fa-jenkins {
-  --fa: "";
+  --fa: "\f3b6";
 }
 
 .fa-twitter {
-  --fa: "";
+  --fa: "\f099";
 }
 
 .fa-rockrms {
-  --fa: "";
+  --fa: "\f3e9";
 }
 
 .fa-pinterest {
-  --fa: "";
+  --fa: "\f0d2";
 }
 
 .fa-buffer {
-  --fa: "";
+  --fa: "\f837";
 }
 
 .fa-npm {
-  --fa: "";
+  --fa: "\f3d4";
 }
 
 .fa-yammer {
-  --fa: "";
+  --fa: "\f840";
 }
 
 .fa-btc {
-  --fa: "";
+  --fa: "\f15a";
 }
 
 .fa-dribbble {
-  --fa: "";
+  --fa: "\f17d";
 }
 
 .fa-stumbleupon-circle {
-  --fa: "";
+  --fa: "\f1a3";
 }
 
 .fa-internet-explorer {
-  --fa: "";
+  --fa: "\f26b";
 }
 
 .fa-stubber {
-  --fa: "";
+  --fa: "\e5c7";
 }
 
 .fa-telegram {
-  --fa: "";
+  --fa: "\f2c6";
 }
 
 .fa-telegram-plane {
-  --fa: "";
+  --fa: "\f2c6";
 }
 
 .fa-old-republic {
-  --fa: "";
+  --fa: "\f510";
 }
 
 .fa-odysee {
-  --fa: "";
+  --fa: "\e5c6";
 }
 
 .fa-square-whatsapp {
-  --fa: "";
+  --fa: "\f40c";
 }
 
 .fa-whatsapp-square {
-  --fa: "";
+  --fa: "\f40c";
 }
 
 .fa-node-js {
-  --fa: "";
+  --fa: "\f3d3";
 }
 
 .fa-edge-legacy {
-  --fa: "";
+  --fa: "\e078";
 }
 
 .fa-slack {
-  --fa: "";
+  --fa: "\f198";
 }
 
 .fa-slack-hash {
-  --fa: "";
+  --fa: "\f198";
 }
 
 .fa-medrt {
-  --fa: "";
+  --fa: "\f3c8";
 }
 
 .fa-usb {
-  --fa: "";
+  --fa: "\f287";
 }
 
 .fa-tumblr {
-  --fa: "";
+  --fa: "\f173";
 }
 
 .fa-vaadin {
-  --fa: "";
+  --fa: "\f408";
 }
 
 .fa-quora {
-  --fa: "";
+  --fa: "\f2c4";
 }
 
 .fa-square-x-twitter {
-  --fa: "";
+  --fa: "\e61a";
 }
 
 .fa-reacteurope {
-  --fa: "";
+  --fa: "\f75d";
 }
 
 .fa-medium {
-  --fa: "";
+  --fa: "\f23a";
 }
 
 .fa-medium-m {
-  --fa: "";
+  --fa: "\f23a";
 }
 
 .fa-amilia {
-  --fa: "";
+  --fa: "\f36d";
 }
 
 .fa-mixcloud {
-  --fa: "";
+  --fa: "\f289";
 }
 
 .fa-flipboard {
-  --fa: "";
+  --fa: "\f44d";
 }
 
 .fa-viacoin {
-  --fa: "";
+  --fa: "\f237";
 }
 
 .fa-critical-role {
-  --fa: "";
+  --fa: "\f6c9";
 }
 
 .fa-sitrox {
-  --fa: "";
+  --fa: "\e44a";
 }
 
 .fa-discourse {
-  --fa: "";
+  --fa: "\f393";
 }
 
 .fa-joomla {
-  --fa: "";
+  --fa: "\f1aa";
 }
 
 .fa-mastodon {
-  --fa: "";
+  --fa: "\f4f6";
 }
 
 .fa-airbnb {
-  --fa: "";
+  --fa: "\f834";
 }
 
 .fa-wolf-pack-battalion {
-  --fa: "";
+  --fa: "\f514";
 }
 
 .fa-buy-n-large {
-  --fa: "";
+  --fa: "\f8a6";
 }
 
 .fa-gulp {
-  --fa: "";
+  --fa: "\f3ae";
 }
 
 .fa-creative-commons-sampling-plus {
-  --fa: "";
+  --fa: "\f4f1";
 }
 
 .fa-strava {
-  --fa: "";
+  --fa: "\f428";
 }
 
 .fa-ember {
-  --fa: "";
+  --fa: "\f423";
 }
 
 .fa-canadian-maple-leaf {
-  --fa: "";
+  --fa: "\f785";
 }
 
 .fa-teamspeak {
-  --fa: "";
+  --fa: "\f4f9";
 }
 
 .fa-pushed {
-  --fa: "";
+  --fa: "\f3e1";
 }
 
 .fa-wordpress-simple {
-  --fa: "";
+  --fa: "\f411";
 }
 
 .fa-nutritionix {
-  --fa: "";
+  --fa: "\f3d6";
 }
 
 .fa-wodu {
-  --fa: "";
+  --fa: "\e088";
 }
 
 .fa-google-pay {
-  --fa: "";
+  --fa: "\e079";
 }
 
 .fa-intercom {
-  --fa: "";
+  --fa: "\f7af";
 }
 
 .fa-zhihu {
-  --fa: "";
+  --fa: "\f63f";
 }
 
 .fa-korvue {
-  --fa: "";
+  --fa: "\f42f";
 }
 
 .fa-pix {
-  --fa: "";
+  --fa: "\e43a";
 }
 
 .fa-steam-symbol {
-  --fa: "";
+  --fa: "\f3f6";
 }
 
 /*!
@@ -2298,7 +2297,6 @@
   margin-left: var(--fa-li-margin, 2.5em);
   padding-left: 0;
 }
-
 .fa-ul > li {
   position: relative;
 }
@@ -2572,427 +2570,427 @@
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
 readers do not read off random characters that represent icons */
 .fa-0 {
-  --fa: "0";
+  --fa: "\30 ";
 }
 
 .fa-1 {
-  --fa: "1";
+  --fa: "\31 ";
 }
 
 .fa-2 {
-  --fa: "2";
+  --fa: "\32 ";
 }
 
 .fa-3 {
-  --fa: "3";
+  --fa: "\33 ";
 }
 
 .fa-4 {
-  --fa: "4";
+  --fa: "\34 ";
 }
 
 .fa-5 {
-  --fa: "5";
+  --fa: "\35 ";
 }
 
 .fa-6 {
-  --fa: "6";
+  --fa: "\36 ";
 }
 
 .fa-7 {
-  --fa: "7";
+  --fa: "\37 ";
 }
 
 .fa-8 {
-  --fa: "8";
+  --fa: "\38 ";
 }
 
 .fa-9 {
-  --fa: "9";
+  --fa: "\39 ";
 }
 
 .fa-fill-drip {
-  --fa: "";
+  --fa: "\f576";
 }
 
 .fa-arrows-to-circle {
-  --fa: "";
+  --fa: "\e4bd";
 }
 
 .fa-circle-chevron-right {
-  --fa: "";
+  --fa: "\f138";
 }
 
 .fa-chevron-circle-right {
-  --fa: "";
+  --fa: "\f138";
 }
 
 .fa-at {
-  --fa: "@";
+  --fa: "\@";
 }
 
 .fa-trash-can {
-  --fa: "";
+  --fa: "\f2ed";
 }
 
 .fa-trash-alt {
-  --fa: "";
+  --fa: "\f2ed";
 }
 
 .fa-text-height {
-  --fa: "";
+  --fa: "\f034";
 }
 
 .fa-user-xmark {
-  --fa: "";
+  --fa: "\f235";
 }
 
 .fa-user-times {
-  --fa: "";
+  --fa: "\f235";
 }
 
 .fa-stethoscope {
-  --fa: "";
+  --fa: "\f0f1";
 }
 
 .fa-message {
-  --fa: "";
+  --fa: "\f27a";
 }
 
 .fa-comment-alt {
-  --fa: "";
+  --fa: "\f27a";
 }
 
 .fa-info {
-  --fa: "";
+  --fa: "\f129";
 }
 
 .fa-down-left-and-up-right-to-center {
-  --fa: "";
+  --fa: "\f422";
 }
 
 .fa-compress-alt {
-  --fa: "";
+  --fa: "\f422";
 }
 
 .fa-explosion {
-  --fa: "";
+  --fa: "\e4e9";
 }
 
 .fa-file-lines {
-  --fa: "";
+  --fa: "\f15c";
 }
 
 .fa-file-alt {
-  --fa: "";
+  --fa: "\f15c";
 }
 
 .fa-file-text {
-  --fa: "";
+  --fa: "\f15c";
 }
 
 .fa-wave-square {
-  --fa: "";
+  --fa: "\f83e";
 }
 
 .fa-ring {
-  --fa: "";
+  --fa: "\f70b";
 }
 
 .fa-building-un {
-  --fa: "";
+  --fa: "\e4d9";
 }
 
 .fa-dice-three {
-  --fa: "";
+  --fa: "\f527";
 }
 
 .fa-calendar-days {
-  --fa: "";
+  --fa: "\f073";
 }
 
 .fa-calendar-alt {
-  --fa: "";
+  --fa: "\f073";
 }
 
 .fa-anchor-circle-check {
-  --fa: "";
+  --fa: "\e4aa";
 }
 
 .fa-building-circle-arrow-right {
-  --fa: "";
+  --fa: "\e4d1";
 }
 
 .fa-volleyball {
-  --fa: "";
+  --fa: "\f45f";
 }
 
 .fa-volleyball-ball {
-  --fa: "";
+  --fa: "\f45f";
 }
 
 .fa-arrows-up-to-line {
-  --fa: "";
+  --fa: "\e4c2";
 }
 
 .fa-sort-down {
-  --fa: "";
+  --fa: "\f0dd";
 }
 
 .fa-sort-desc {
-  --fa: "";
+  --fa: "\f0dd";
 }
 
 .fa-circle-minus {
-  --fa: "";
+  --fa: "\f056";
 }
 
 .fa-minus-circle {
-  --fa: "";
+  --fa: "\f056";
 }
 
 .fa-door-open {
-  --fa: "";
+  --fa: "\f52b";
 }
 
 .fa-right-from-bracket {
-  --fa: "";
+  --fa: "\f2f5";
 }
 
 .fa-sign-out-alt {
-  --fa: "";
+  --fa: "\f2f5";
 }
 
 .fa-atom {
-  --fa: "";
+  --fa: "\f5d2";
 }
 
 .fa-soap {
-  --fa: "";
+  --fa: "\e06e";
 }
 
 .fa-icons {
-  --fa: "";
+  --fa: "\f86d";
 }
 
 .fa-heart-music-camera-bolt {
-  --fa: "";
+  --fa: "\f86d";
 }
 
 .fa-microphone-lines-slash {
-  --fa: "";
+  --fa: "\f539";
 }
 
 .fa-microphone-alt-slash {
-  --fa: "";
+  --fa: "\f539";
 }
 
 .fa-bridge-circle-check {
-  --fa: "";
+  --fa: "\e4c9";
 }
 
 .fa-pump-medical {
-  --fa: "";
+  --fa: "\e06a";
 }
 
 .fa-fingerprint {
-  --fa: "";
+  --fa: "\f577";
 }
 
 .fa-hand-point-right {
-  --fa: "";
+  --fa: "\f0a4";
 }
 
 .fa-magnifying-glass-location {
-  --fa: "";
+  --fa: "\f689";
 }
 
 .fa-search-location {
-  --fa: "";
+  --fa: "\f689";
 }
 
 .fa-forward-step {
-  --fa: "";
+  --fa: "\f051";
 }
 
 .fa-step-forward {
-  --fa: "";
+  --fa: "\f051";
 }
 
 .fa-face-smile-beam {
-  --fa: "";
+  --fa: "\f5b8";
 }
 
 .fa-smile-beam {
-  --fa: "";
+  --fa: "\f5b8";
 }
 
 .fa-flag-checkered {
-  --fa: "";
+  --fa: "\f11e";
 }
 
 .fa-football {
-  --fa: "";
+  --fa: "\f44e";
 }
 
 .fa-football-ball {
-  --fa: "";
+  --fa: "\f44e";
 }
 
 .fa-school-circle-exclamation {
-  --fa: "";
+  --fa: "\e56c";
 }
 
 .fa-crop {
-  --fa: "";
+  --fa: "\f125";
 }
 
 .fa-angles-down {
-  --fa: "";
+  --fa: "\f103";
 }
 
 .fa-angle-double-down {
-  --fa: "";
+  --fa: "\f103";
 }
 
 .fa-users-rectangle {
-  --fa: "";
+  --fa: "\e594";
 }
 
 .fa-people-roof {
-  --fa: "";
+  --fa: "\e537";
 }
 
 .fa-people-line {
-  --fa: "";
+  --fa: "\e534";
 }
 
 .fa-beer-mug-empty {
-  --fa: "";
+  --fa: "\f0fc";
 }
 
 .fa-beer {
-  --fa: "";
+  --fa: "\f0fc";
 }
 
 .fa-diagram-predecessor {
-  --fa: "";
+  --fa: "\e477";
 }
 
 .fa-arrow-up-long {
-  --fa: "";
+  --fa: "\f176";
 }
 
 .fa-long-arrow-up {
-  --fa: "";
+  --fa: "\f176";
 }
 
 .fa-fire-flame-simple {
-  --fa: "";
+  --fa: "\f46a";
 }
 
 .fa-burn {
-  --fa: "";
+  --fa: "\f46a";
 }
 
 .fa-person {
-  --fa: "";
+  --fa: "\f183";
 }
 
 .fa-male {
-  --fa: "";
+  --fa: "\f183";
 }
 
 .fa-laptop {
-  --fa: "";
+  --fa: "\f109";
 }
 
 .fa-file-csv {
-  --fa: "";
+  --fa: "\f6dd";
 }
 
 .fa-menorah {
-  --fa: "";
+  --fa: "\f676";
 }
 
 .fa-truck-plane {
-  --fa: "";
+  --fa: "\e58f";
 }
 
 .fa-record-vinyl {
-  --fa: "";
+  --fa: "\f8d9";
 }
 
 .fa-face-grin-stars {
-  --fa: "";
+  --fa: "\f587";
 }
 
 .fa-grin-stars {
-  --fa: "";
+  --fa: "\f587";
 }
 
 .fa-bong {
-  --fa: "";
+  --fa: "\f55c";
 }
 
 .fa-spaghetti-monster-flying {
-  --fa: "";
+  --fa: "\f67b";
 }
 
 .fa-pastafarianism {
-  --fa: "";
+  --fa: "\f67b";
 }
 
 .fa-arrow-down-up-across-line {
-  --fa: "";
+  --fa: "\e4af";
 }
 
 .fa-spoon {
-  --fa: "";
+  --fa: "\f2e5";
 }
 
 .fa-utensil-spoon {
-  --fa: "";
+  --fa: "\f2e5";
 }
 
 .fa-jar-wheat {
-  --fa: "";
+  --fa: "\e517";
 }
 
 .fa-envelopes-bulk {
-  --fa: "";
+  --fa: "\f674";
 }
 
 .fa-mail-bulk {
-  --fa: "";
+  --fa: "\f674";
 }
 
 .fa-file-circle-exclamation {
-  --fa: "";
+  --fa: "\e4eb";
 }
 
 .fa-circle-h {
-  --fa: "";
+  --fa: "\f47e";
 }
 
 .fa-hospital-symbol {
-  --fa: "";
+  --fa: "\f47e";
 }
 
 .fa-pager {
-  --fa: "";
+  --fa: "\f815";
 }
 
 .fa-address-book {
-  --fa: "";
+  --fa: "\f2b9";
 }
 
 .fa-contact-book {
-  --fa: "";
+  --fa: "\f2b9";
 }
 
 .fa-strikethrough {
-  --fa: "";
+  --fa: "\f0cc";
 }
 
 .fa-k {
@@ -3000,139 +2998,139 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-landmark-flag {
-  --fa: "";
+  --fa: "\e51c";
 }
 
 .fa-pencil {
-  --fa: "";
+  --fa: "\f303";
 }
 
 .fa-pencil-alt {
-  --fa: "";
+  --fa: "\f303";
 }
 
 .fa-backward {
-  --fa: "";
+  --fa: "\f04a";
 }
 
 .fa-caret-right {
-  --fa: "";
+  --fa: "\f0da";
 }
 
 .fa-comments {
-  --fa: "";
+  --fa: "\f086";
 }
 
 .fa-paste {
-  --fa: "";
+  --fa: "\f0ea";
 }
 
 .fa-file-clipboard {
-  --fa: "";
+  --fa: "\f0ea";
 }
 
 .fa-code-pull-request {
-  --fa: "";
+  --fa: "\e13c";
 }
 
 .fa-clipboard-list {
-  --fa: "";
+  --fa: "\f46d";
 }
 
 .fa-truck-ramp-box {
-  --fa: "";
+  --fa: "\f4de";
 }
 
 .fa-truck-loading {
-  --fa: "";
+  --fa: "\f4de";
 }
 
 .fa-user-check {
-  --fa: "";
+  --fa: "\f4fc";
 }
 
 .fa-vial-virus {
-  --fa: "";
+  --fa: "\e597";
 }
 
 .fa-sheet-plastic {
-  --fa: "";
+  --fa: "\e571";
 }
 
 .fa-blog {
-  --fa: "";
+  --fa: "\f781";
 }
 
 .fa-user-ninja {
-  --fa: "";
+  --fa: "\f504";
 }
 
 .fa-person-arrow-up-from-line {
-  --fa: "";
+  --fa: "\e539";
 }
 
 .fa-scroll-torah {
-  --fa: "";
+  --fa: "\f6a0";
 }
 
 .fa-torah {
-  --fa: "";
+  --fa: "\f6a0";
 }
 
 .fa-broom-ball {
-  --fa: "";
+  --fa: "\f458";
 }
 
 .fa-quidditch {
-  --fa: "";
+  --fa: "\f458";
 }
 
 .fa-quidditch-broom-ball {
-  --fa: "";
+  --fa: "\f458";
 }
 
 .fa-toggle-off {
-  --fa: "";
+  --fa: "\f204";
 }
 
 .fa-box-archive {
-  --fa: "";
+  --fa: "\f187";
 }
 
 .fa-archive {
-  --fa: "";
+  --fa: "\f187";
 }
 
 .fa-person-drowning {
-  --fa: "";
+  --fa: "\e545";
 }
 
 .fa-arrow-down-9-1 {
-  --fa: "";
+  --fa: "\f886";
 }
 
 .fa-sort-numeric-desc {
-  --fa: "";
+  --fa: "\f886";
 }
 
 .fa-sort-numeric-down-alt {
-  --fa: "";
+  --fa: "\f886";
 }
 
 .fa-face-grin-tongue-squint {
-  --fa: "";
+  --fa: "\f58a";
 }
 
 .fa-grin-tongue-squint {
-  --fa: "";
+  --fa: "\f58a";
 }
 
 .fa-spray-can {
-  --fa: "";
+  --fa: "\f5bd";
 }
 
 .fa-truck-monster {
-  --fa: "";
+  --fa: "\f63b";
 }
 
 .fa-w {
@@ -3140,739 +3138,739 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-earth-africa {
-  --fa: "";
+  --fa: "\f57c";
 }
 
 .fa-globe-africa {
-  --fa: "";
+  --fa: "\f57c";
 }
 
 .fa-rainbow {
-  --fa: "";
+  --fa: "\f75b";
 }
 
 .fa-circle-notch {
-  --fa: "";
+  --fa: "\f1ce";
 }
 
 .fa-tablet-screen-button {
-  --fa: "";
+  --fa: "\f3fa";
 }
 
 .fa-tablet-alt {
-  --fa: "";
+  --fa: "\f3fa";
 }
 
 .fa-paw {
-  --fa: "";
+  --fa: "\f1b0";
 }
 
 .fa-cloud {
-  --fa: "";
+  --fa: "\f0c2";
 }
 
 .fa-trowel-bricks {
-  --fa: "";
+  --fa: "\e58a";
 }
 
 .fa-face-flushed {
-  --fa: "";
+  --fa: "\f579";
 }
 
 .fa-flushed {
-  --fa: "";
+  --fa: "\f579";
 }
 
 .fa-hospital-user {
-  --fa: "";
+  --fa: "\f80d";
 }
 
 .fa-tent-arrow-left-right {
-  --fa: "";
+  --fa: "\e57f";
 }
 
 .fa-gavel {
-  --fa: "";
+  --fa: "\f0e3";
 }
 
 .fa-legal {
-  --fa: "";
+  --fa: "\f0e3";
 }
 
 .fa-binoculars {
-  --fa: "";
+  --fa: "\f1e5";
 }
 
 .fa-microphone-slash {
-  --fa: "";
+  --fa: "\f131";
 }
 
 .fa-box-tissue {
-  --fa: "";
+  --fa: "\e05b";
 }
 
 .fa-motorcycle {
-  --fa: "";
+  --fa: "\f21c";
 }
 
 .fa-bell-concierge {
-  --fa: "";
+  --fa: "\f562";
 }
 
 .fa-concierge-bell {
-  --fa: "";
+  --fa: "\f562";
 }
 
 .fa-pen-ruler {
-  --fa: "";
+  --fa: "\f5ae";
 }
 
 .fa-pencil-ruler {
-  --fa: "";
+  --fa: "\f5ae";
 }
 
 .fa-people-arrows {
-  --fa: "";
+  --fa: "\e068";
 }
 
 .fa-people-arrows-left-right {
-  --fa: "";
+  --fa: "\e068";
 }
 
 .fa-mars-and-venus-burst {
-  --fa: "";
+  --fa: "\e523";
 }
 
 .fa-square-caret-right {
-  --fa: "";
+  --fa: "\f152";
 }
 
 .fa-caret-square-right {
-  --fa: "";
+  --fa: "\f152";
 }
 
 .fa-scissors {
-  --fa: "";
+  --fa: "\f0c4";
 }
 
 .fa-cut {
-  --fa: "";
+  --fa: "\f0c4";
 }
 
 .fa-sun-plant-wilt {
-  --fa: "";
+  --fa: "\e57a";
 }
 
 .fa-toilets-portable {
-  --fa: "";
+  --fa: "\e584";
 }
 
 .fa-hockey-puck {
-  --fa: "";
+  --fa: "\f453";
 }
 
 .fa-table {
-  --fa: "";
+  --fa: "\f0ce";
 }
 
 .fa-magnifying-glass-arrow-right {
-  --fa: "";
+  --fa: "\e521";
 }
 
 .fa-tachograph-digital {
-  --fa: "";
+  --fa: "\f566";
 }
 
 .fa-digital-tachograph {
-  --fa: "";
+  --fa: "\f566";
 }
 
 .fa-users-slash {
-  --fa: "";
+  --fa: "\e073";
 }
 
 .fa-clover {
-  --fa: "";
+  --fa: "\e139";
 }
 
 .fa-reply {
-  --fa: "";
+  --fa: "\f3e5";
 }
 
 .fa-mail-reply {
-  --fa: "";
+  --fa: "\f3e5";
 }
 
 .fa-star-and-crescent {
-  --fa: "";
+  --fa: "\f699";
 }
 
 .fa-house-fire {
-  --fa: "";
+  --fa: "\e50c";
 }
 
 .fa-square-minus {
-  --fa: "";
+  --fa: "\f146";
 }
 
 .fa-minus-square {
-  --fa: "";
+  --fa: "\f146";
 }
 
 .fa-helicopter {
-  --fa: "";
+  --fa: "\f533";
 }
 
 .fa-compass {
-  --fa: "";
+  --fa: "\f14e";
 }
 
 .fa-square-caret-down {
-  --fa: "";
+  --fa: "\f150";
 }
 
 .fa-caret-square-down {
-  --fa: "";
+  --fa: "\f150";
 }
 
 .fa-file-circle-question {
-  --fa: "";
+  --fa: "\e4ef";
 }
 
 .fa-laptop-code {
-  --fa: "";
+  --fa: "\f5fc";
 }
 
 .fa-swatchbook {
-  --fa: "";
+  --fa: "\f5c3";
 }
 
 .fa-prescription-bottle {
-  --fa: "";
+  --fa: "\f485";
 }
 
 .fa-bars {
-  --fa: "";
+  --fa: "\f0c9";
 }
 
 .fa-navicon {
-  --fa: "";
+  --fa: "\f0c9";
 }
 
 .fa-people-group {
-  --fa: "";
+  --fa: "\e533";
 }
 
 .fa-hourglass-end {
-  --fa: "";
+  --fa: "\f253";
 }
 
 .fa-hourglass-3 {
-  --fa: "";
+  --fa: "\f253";
 }
 
 .fa-heart-crack {
-  --fa: "";
+  --fa: "\f7a9";
 }
 
 .fa-heart-broken {
-  --fa: "";
+  --fa: "\f7a9";
 }
 
 .fa-square-up-right {
-  --fa: "";
+  --fa: "\f360";
 }
 
 .fa-external-link-square-alt {
-  --fa: "";
+  --fa: "\f360";
 }
 
 .fa-face-kiss-beam {
-  --fa: "";
+  --fa: "\f597";
 }
 
 .fa-kiss-beam {
-  --fa: "";
+  --fa: "\f597";
 }
 
 .fa-film {
-  --fa: "";
+  --fa: "\f008";
 }
 
 .fa-ruler-horizontal {
-  --fa: "";
+  --fa: "\f547";
 }
 
 .fa-people-robbery {
-  --fa: "";
+  --fa: "\e536";
 }
 
 .fa-lightbulb {
-  --fa: "";
+  --fa: "\f0eb";
 }
 
 .fa-caret-left {
-  --fa: "";
+  --fa: "\f0d9";
 }
 
 .fa-circle-exclamation {
-  --fa: "";
+  --fa: "\f06a";
 }
 
 .fa-exclamation-circle {
-  --fa: "";
+  --fa: "\f06a";
 }
 
 .fa-school-circle-xmark {
-  --fa: "";
+  --fa: "\e56d";
 }
 
 .fa-arrow-right-from-bracket {
-  --fa: "";
+  --fa: "\f08b";
 }
 
 .fa-sign-out {
-  --fa: "";
+  --fa: "\f08b";
 }
 
 .fa-circle-chevron-down {
-  --fa: "";
+  --fa: "\f13a";
 }
 
 .fa-chevron-circle-down {
-  --fa: "";
+  --fa: "\f13a";
 }
 
 .fa-unlock-keyhole {
-  --fa: "";
+  --fa: "\f13e";
 }
 
 .fa-unlock-alt {
-  --fa: "";
+  --fa: "\f13e";
 }
 
 .fa-cloud-showers-heavy {
-  --fa: "";
+  --fa: "\f740";
 }
 
 .fa-headphones-simple {
-  --fa: "";
+  --fa: "\f58f";
 }
 
 .fa-headphones-alt {
-  --fa: "";
+  --fa: "\f58f";
 }
 
 .fa-sitemap {
-  --fa: "";
+  --fa: "\f0e8";
 }
 
 .fa-circle-dollar-to-slot {
-  --fa: "";
+  --fa: "\f4b9";
 }
 
 .fa-donate {
-  --fa: "";
+  --fa: "\f4b9";
 }
 
 .fa-memory {
-  --fa: "";
+  --fa: "\f538";
 }
 
 .fa-road-spikes {
-  --fa: "";
+  --fa: "\e568";
 }
 
 .fa-fire-burner {
-  --fa: "";
+  --fa: "\e4f1";
 }
 
 .fa-flag {
-  --fa: "";
+  --fa: "\f024";
 }
 
 .fa-hanukiah {
-  --fa: "";
+  --fa: "\f6e6";
 }
 
 .fa-feather {
-  --fa: "";
+  --fa: "\f52d";
 }
 
 .fa-volume-low {
-  --fa: "";
+  --fa: "\f027";
 }
 
 .fa-volume-down {
-  --fa: "";
+  --fa: "\f027";
 }
 
 .fa-comment-slash {
-  --fa: "";
+  --fa: "\f4b3";
 }
 
 .fa-cloud-sun-rain {
-  --fa: "";
+  --fa: "\f743";
 }
 
 .fa-compress {
-  --fa: "";
+  --fa: "\f066";
 }
 
 .fa-wheat-awn {
-  --fa: "";
+  --fa: "\e2cd";
 }
 
 .fa-wheat-alt {
-  --fa: "";
+  --fa: "\e2cd";
 }
 
 .fa-ankh {
-  --fa: "";
+  --fa: "\f644";
 }
 
 .fa-hands-holding-child {
-  --fa: "";
+  --fa: "\e4fa";
 }
 
 .fa-asterisk {
-  --fa: "*";
+  --fa: "\*";
 }
 
 .fa-square-check {
-  --fa: "";
+  --fa: "\f14a";
 }
 
 .fa-check-square {
-  --fa: "";
+  --fa: "\f14a";
 }
 
 .fa-peseta-sign {
-  --fa: "";
+  --fa: "\e221";
 }
 
 .fa-heading {
-  --fa: "";
+  --fa: "\f1dc";
 }
 
 .fa-header {
-  --fa: "";
+  --fa: "\f1dc";
 }
 
 .fa-ghost {
-  --fa: "";
+  --fa: "\f6e2";
 }
 
 .fa-list {
-  --fa: "";
+  --fa: "\f03a";
 }
 
 .fa-list-squares {
-  --fa: "";
+  --fa: "\f03a";
 }
 
 .fa-square-phone-flip {
-  --fa: "";
+  --fa: "\f87b";
 }
 
 .fa-phone-square-alt {
-  --fa: "";
+  --fa: "\f87b";
 }
 
 .fa-cart-plus {
-  --fa: "";
+  --fa: "\f217";
 }
 
 .fa-gamepad {
-  --fa: "";
+  --fa: "\f11b";
 }
 
 .fa-circle-dot {
-  --fa: "";
+  --fa: "\f192";
 }
 
 .fa-dot-circle {
-  --fa: "";
+  --fa: "\f192";
 }
 
 .fa-face-dizzy {
-  --fa: "";
+  --fa: "\f567";
 }
 
 .fa-dizzy {
-  --fa: "";
+  --fa: "\f567";
 }
 
 .fa-egg {
-  --fa: "";
+  --fa: "\f7fb";
 }
 
 .fa-house-medical-circle-xmark {
-  --fa: "";
+  --fa: "\e513";
 }
 
 .fa-campground {
-  --fa: "";
+  --fa: "\f6bb";
 }
 
 .fa-folder-plus {
-  --fa: "";
+  --fa: "\f65e";
 }
 
 .fa-futbol {
-  --fa: "";
+  --fa: "\f1e3";
 }
 
 .fa-futbol-ball {
-  --fa: "";
+  --fa: "\f1e3";
 }
 
 .fa-soccer-ball {
-  --fa: "";
+  --fa: "\f1e3";
 }
 
 .fa-paintbrush {
-  --fa: "";
+  --fa: "\f1fc";
 }
 
 .fa-paint-brush {
-  --fa: "";
+  --fa: "\f1fc";
 }
 
 .fa-lock {
-  --fa: "";
+  --fa: "\f023";
 }
 
 .fa-gas-pump {
-  --fa: "";
+  --fa: "\f52f";
 }
 
 .fa-hot-tub-person {
-  --fa: "";
+  --fa: "\f593";
 }
 
 .fa-hot-tub {
-  --fa: "";
+  --fa: "\f593";
 }
 
 .fa-map-location {
-  --fa: "";
+  --fa: "\f59f";
 }
 
 .fa-map-marked {
-  --fa: "";
+  --fa: "\f59f";
 }
 
 .fa-house-flood-water {
-  --fa: "";
+  --fa: "\e50e";
 }
 
 .fa-tree {
-  --fa: "";
+  --fa: "\f1bb";
 }
 
 .fa-bridge-lock {
-  --fa: "";
+  --fa: "\e4cc";
 }
 
 .fa-sack-dollar {
-  --fa: "";
+  --fa: "\f81d";
 }
 
 .fa-pen-to-square {
-  --fa: "";
+  --fa: "\f044";
 }
 
 .fa-edit {
-  --fa: "";
+  --fa: "\f044";
 }
 
 .fa-car-side {
-  --fa: "";
+  --fa: "\f5e4";
 }
 
 .fa-share-nodes {
-  --fa: "";
+  --fa: "\f1e0";
 }
 
 .fa-share-alt {
-  --fa: "";
+  --fa: "\f1e0";
 }
 
 .fa-heart-circle-minus {
-  --fa: "";
+  --fa: "\e4ff";
 }
 
 .fa-hourglass-half {
-  --fa: "";
+  --fa: "\f252";
 }
 
 .fa-hourglass-2 {
-  --fa: "";
+  --fa: "\f252";
 }
 
 .fa-microscope {
-  --fa: "";
+  --fa: "\f610";
 }
 
 .fa-sink {
-  --fa: "";
+  --fa: "\e06d";
 }
 
 .fa-bag-shopping {
-  --fa: "";
+  --fa: "\f290";
 }
 
 .fa-shopping-bag {
-  --fa: "";
+  --fa: "\f290";
 }
 
 .fa-arrow-down-z-a {
-  --fa: "";
+  --fa: "\f881";
 }
 
 .fa-sort-alpha-desc {
-  --fa: "";
+  --fa: "\f881";
 }
 
 .fa-sort-alpha-down-alt {
-  --fa: "";
+  --fa: "\f881";
 }
 
 .fa-mitten {
-  --fa: "";
+  --fa: "\f7b5";
 }
 
 .fa-person-rays {
-  --fa: "";
+  --fa: "\e54d";
 }
 
 .fa-users {
-  --fa: "";
+  --fa: "\f0c0";
 }
 
 .fa-eye-slash {
-  --fa: "";
+  --fa: "\f070";
 }
 
 .fa-flask-vial {
-  --fa: "";
+  --fa: "\e4f3";
 }
 
 .fa-hand {
-  --fa: "";
+  --fa: "\f256";
 }
 
 .fa-hand-paper {
-  --fa: "";
+  --fa: "\f256";
 }
 
 .fa-om {
-  --fa: "";
+  --fa: "\f679";
 }
 
 .fa-worm {
-  --fa: "";
+  --fa: "\e599";
 }
 
 .fa-house-circle-xmark {
-  --fa: "";
+  --fa: "\e50b";
 }
 
 .fa-plug {
-  --fa: "";
+  --fa: "\f1e6";
 }
 
 .fa-chevron-up {
-  --fa: "";
+  --fa: "\f077";
 }
 
 .fa-hand-spock {
-  --fa: "";
+  --fa: "\f259";
 }
 
 .fa-stopwatch {
-  --fa: "";
+  --fa: "\f2f2";
 }
 
 .fa-face-kiss {
-  --fa: "";
+  --fa: "\f596";
 }
 
 .fa-kiss {
-  --fa: "";
+  --fa: "\f596";
 }
 
 .fa-bridge-circle-xmark {
-  --fa: "";
+  --fa: "\e4cb";
 }
 
 .fa-face-grin-tongue {
-  --fa: "";
+  --fa: "\f589";
 }
 
 .fa-grin-tongue {
-  --fa: "";
+  --fa: "\f589";
 }
 
 .fa-chess-bishop {
-  --fa: "";
+  --fa: "\f43a";
 }
 
 .fa-face-grin-wink {
-  --fa: "";
+  --fa: "\f58c";
 }
 
 .fa-grin-wink {
-  --fa: "";
+  --fa: "\f58c";
 }
 
 .fa-ear-deaf {
-  --fa: "";
+  --fa: "\f2a4";
 }
 
 .fa-deaf {
-  --fa: "";
+  --fa: "\f2a4";
 }
 
 .fa-deafness {
-  --fa: "";
+  --fa: "\f2a4";
 }
 
 .fa-hard-of-hearing {
-  --fa: "";
+  --fa: "\f2a4";
 }
 
 .fa-road-circle-check {
-  --fa: "";
+  --fa: "\e564";
 }
 
 .fa-dice-five {
-  --fa: "";
+  --fa: "\f523";
 }
 
 .fa-square-rss {
-  --fa: "";
+  --fa: "\f143";
 }
 
 .fa-rss-square {
-  --fa: "";
+  --fa: "\f143";
 }
 
 .fa-land-mine-on {
-  --fa: "";
+  --fa: "\e51b";
 }
 
 .fa-i-cursor {
-  --fa: "";
+  --fa: "\f246";
 }
 
 .fa-stamp {
-  --fa: "";
+  --fa: "\f5bf";
 }
 
 .fa-stairs {
-  --fa: "";
+  --fa: "\e289";
 }
 
 .fa-i {
@@ -3880,27 +3878,27 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-hryvnia-sign {
-  --fa: "";
+  --fa: "\f6f2";
 }
 
 .fa-hryvnia {
-  --fa: "";
+  --fa: "\f6f2";
 }
 
 .fa-pills {
-  --fa: "";
+  --fa: "\f484";
 }
 
 .fa-face-grin-wide {
-  --fa: "";
+  --fa: "\f581";
 }
 
 .fa-grin-alt {
-  --fa: "";
+  --fa: "\f581";
 }
 
 .fa-tooth {
-  --fa: "";
+  --fa: "\f5c9";
 }
 
 .fa-v {
@@ -3908,75 +3906,75 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-bangladeshi-taka-sign {
-  --fa: "";
+  --fa: "\e2e6";
 }
 
 .fa-bicycle {
-  --fa: "";
+  --fa: "\f206";
 }
 
 .fa-staff-snake {
-  --fa: "";
+  --fa: "\e579";
 }
 
 .fa-rod-asclepius {
-  --fa: "";
+  --fa: "\e579";
 }
 
 .fa-rod-snake {
-  --fa: "";
+  --fa: "\e579";
 }
 
 .fa-staff-aesculapius {
-  --fa: "";
+  --fa: "\e579";
 }
 
 .fa-head-side-cough-slash {
-  --fa: "";
+  --fa: "\e062";
 }
 
 .fa-truck-medical {
-  --fa: "";
+  --fa: "\f0f9";
 }
 
 .fa-ambulance {
-  --fa: "";
+  --fa: "\f0f9";
 }
 
 .fa-wheat-awn-circle-exclamation {
-  --fa: "";
+  --fa: "\e598";
 }
 
 .fa-snowman {
-  --fa: "";
+  --fa: "\f7d0";
 }
 
 .fa-mortar-pestle {
-  --fa: "";
+  --fa: "\f5a7";
 }
 
 .fa-road-barrier {
-  --fa: "";
+  --fa: "\e562";
 }
 
 .fa-school {
-  --fa: "";
+  --fa: "\f549";
 }
 
 .fa-igloo {
-  --fa: "";
+  --fa: "\f7ae";
 }
 
 .fa-joint {
-  --fa: "";
+  --fa: "\f595";
 }
 
 .fa-angle-right {
-  --fa: "";
+  --fa: "\f105";
 }
 
 .fa-horse {
-  --fa: "";
+  --fa: "\f6f0";
 }
 
 .fa-q {
@@ -3988,143 +3986,143 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-notes-medical {
-  --fa: "";
+  --fa: "\f481";
 }
 
 .fa-temperature-half {
-  --fa: "";
+  --fa: "\f2c9";
 }
 
 .fa-temperature-2 {
-  --fa: "";
+  --fa: "\f2c9";
 }
 
 .fa-thermometer-2 {
-  --fa: "";
+  --fa: "\f2c9";
 }
 
 .fa-thermometer-half {
-  --fa: "";
+  --fa: "\f2c9";
 }
 
 .fa-dong-sign {
-  --fa: "";
+  --fa: "\e169";
 }
 
 .fa-capsules {
-  --fa: "";
+  --fa: "\f46b";
 }
 
 .fa-poo-storm {
-  --fa: "";
+  --fa: "\f75a";
 }
 
 .fa-poo-bolt {
-  --fa: "";
+  --fa: "\f75a";
 }
 
 .fa-face-frown-open {
-  --fa: "";
+  --fa: "\f57a";
 }
 
 .fa-frown-open {
-  --fa: "";
+  --fa: "\f57a";
 }
 
 .fa-hand-point-up {
-  --fa: "";
+  --fa: "\f0a6";
 }
 
 .fa-money-bill {
-  --fa: "";
+  --fa: "\f0d6";
 }
 
 .fa-bookmark {
-  --fa: "";
+  --fa: "\f02e";
 }
 
 .fa-align-justify {
-  --fa: "";
+  --fa: "\f039";
 }
 
 .fa-umbrella-beach {
-  --fa: "";
+  --fa: "\f5ca";
 }
 
 .fa-helmet-un {
-  --fa: "";
+  --fa: "\e503";
 }
 
 .fa-bullseye {
-  --fa: "";
+  --fa: "\f140";
 }
 
 .fa-bacon {
-  --fa: "";
+  --fa: "\f7e5";
 }
 
 .fa-hand-point-down {
-  --fa: "";
+  --fa: "\f0a7";
 }
 
 .fa-arrow-up-from-bracket {
-  --fa: "";
+  --fa: "\e09a";
 }
 
 .fa-folder {
-  --fa: "";
+  --fa: "\f07b";
 }
 
 .fa-folder-blank {
-  --fa: "";
+  --fa: "\f07b";
 }
 
 .fa-file-waveform {
-  --fa: "";
+  --fa: "\f478";
 }
 
 .fa-file-medical-alt {
-  --fa: "";
+  --fa: "\f478";
 }
 
 .fa-radiation {
-  --fa: "";
+  --fa: "\f7b9";
 }
 
 .fa-chart-simple {
-  --fa: "";
+  --fa: "\e473";
 }
 
 .fa-mars-stroke {
-  --fa: "";
+  --fa: "\f229";
 }
 
 .fa-vial {
-  --fa: "";
+  --fa: "\f492";
 }
 
 .fa-gauge {
-  --fa: "";
+  --fa: "\f624";
 }
 
 .fa-dashboard {
-  --fa: "";
+  --fa: "\f624";
 }
 
 .fa-gauge-med {
-  --fa: "";
+  --fa: "\f624";
 }
 
 .fa-tachometer-alt-average {
-  --fa: "";
+  --fa: "\f624";
 }
 
 .fa-wand-magic-sparkles {
-  --fa: "";
+  --fa: "\e2ca";
 }
 
 .fa-magic-wand-sparkles {
-  --fa: "";
+  --fa: "\e2ca";
 }
 
 .fa-e {
@@ -4132,79 +4130,79 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-pen-clip {
-  --fa: "";
+  --fa: "\f305";
 }
 
 .fa-pen-alt {
-  --fa: "";
+  --fa: "\f305";
 }
 
 .fa-bridge-circle-exclamation {
-  --fa: "";
+  --fa: "\e4ca";
 }
 
 .fa-user {
-  --fa: "";
+  --fa: "\f007";
 }
 
 .fa-school-circle-check {
-  --fa: "";
+  --fa: "\e56b";
 }
 
 .fa-dumpster {
-  --fa: "";
+  --fa: "\f793";
 }
 
 .fa-van-shuttle {
-  --fa: "";
+  --fa: "\f5b6";
 }
 
 .fa-shuttle-van {
-  --fa: "";
+  --fa: "\f5b6";
 }
 
 .fa-building-user {
-  --fa: "";
+  --fa: "\e4da";
 }
 
 .fa-square-caret-left {
-  --fa: "";
+  --fa: "\f191";
 }
 
 .fa-caret-square-left {
-  --fa: "";
+  --fa: "\f191";
 }
 
 .fa-highlighter {
-  --fa: "";
+  --fa: "\f591";
 }
 
 .fa-key {
-  --fa: "";
+  --fa: "\f084";
 }
 
 .fa-bullhorn {
-  --fa: "";
+  --fa: "\f0a1";
 }
 
 .fa-globe {
-  --fa: "";
+  --fa: "\f0ac";
 }
 
 .fa-synagogue {
-  --fa: "";
+  --fa: "\f69b";
 }
 
 .fa-person-half-dress {
-  --fa: "";
+  --fa: "\e548";
 }
 
 .fa-road-bridge {
-  --fa: "";
+  --fa: "\e563";
 }
 
 .fa-location-arrow {
-  --fa: "";
+  --fa: "\f124";
 }
 
 .fa-c {
@@ -4212,335 +4210,335 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-tablet-button {
-  --fa: "";
+  --fa: "\f10a";
 }
 
 .fa-building-lock {
-  --fa: "";
+  --fa: "\e4d6";
 }
 
 .fa-pizza-slice {
-  --fa: "";
+  --fa: "\f818";
 }
 
 .fa-money-bill-wave {
-  --fa: "";
+  --fa: "\f53a";
 }
 
 .fa-chart-area {
-  --fa: "";
+  --fa: "\f1fe";
 }
 
 .fa-area-chart {
-  --fa: "";
+  --fa: "\f1fe";
 }
 
 .fa-house-flag {
-  --fa: "";
+  --fa: "\e50d";
 }
 
 .fa-person-circle-minus {
-  --fa: "";
+  --fa: "\e540";
 }
 
 .fa-ban {
-  --fa: "";
+  --fa: "\f05e";
 }
 
 .fa-cancel {
-  --fa: "";
+  --fa: "\f05e";
 }
 
 .fa-camera-rotate {
-  --fa: "";
+  --fa: "\e0d8";
 }
 
 .fa-spray-can-sparkles {
-  --fa: "";
+  --fa: "\f5d0";
 }
 
 .fa-air-freshener {
-  --fa: "";
+  --fa: "\f5d0";
 }
 
 .fa-star {
-  --fa: "";
+  --fa: "\f005";
 }
 
 .fa-repeat {
-  --fa: "";
+  --fa: "\f363";
 }
 
 .fa-cross {
-  --fa: "";
+  --fa: "\f654";
 }
 
 .fa-box {
-  --fa: "";
+  --fa: "\f466";
 }
 
 .fa-venus-mars {
-  --fa: "";
+  --fa: "\f228";
 }
 
 .fa-arrow-pointer {
-  --fa: "";
+  --fa: "\f245";
 }
 
 .fa-mouse-pointer {
-  --fa: "";
+  --fa: "\f245";
 }
 
 .fa-maximize {
-  --fa: "";
+  --fa: "\f31e";
 }
 
 .fa-expand-arrows-alt {
-  --fa: "";
+  --fa: "\f31e";
 }
 
 .fa-charging-station {
-  --fa: "";
+  --fa: "\f5e7";
 }
 
 .fa-shapes {
-  --fa: "";
+  --fa: "\f61f";
 }
 
 .fa-triangle-circle-square {
-  --fa: "";
+  --fa: "\f61f";
 }
 
 .fa-shuffle {
-  --fa: "";
+  --fa: "\f074";
 }
 
 .fa-random {
-  --fa: "";
+  --fa: "\f074";
 }
 
 .fa-person-running {
-  --fa: "";
+  --fa: "\f70c";
 }
 
 .fa-running {
-  --fa: "";
+  --fa: "\f70c";
 }
 
 .fa-mobile-retro {
-  --fa: "";
+  --fa: "\e527";
 }
 
 .fa-grip-lines-vertical {
-  --fa: "";
+  --fa: "\f7a5";
 }
 
 .fa-spider {
-  --fa: "";
+  --fa: "\f717";
 }
 
 .fa-hands-bound {
-  --fa: "";
+  --fa: "\e4f9";
 }
 
 .fa-file-invoice-dollar {
-  --fa: "";
+  --fa: "\f571";
 }
 
 .fa-plane-circle-exclamation {
-  --fa: "";
+  --fa: "\e556";
 }
 
 .fa-x-ray {
-  --fa: "";
+  --fa: "\f497";
 }
 
 .fa-spell-check {
-  --fa: "";
+  --fa: "\f891";
 }
 
 .fa-slash {
-  --fa: "";
+  --fa: "\f715";
 }
 
 .fa-computer-mouse {
-  --fa: "";
+  --fa: "\f8cc";
 }
 
 .fa-mouse {
-  --fa: "";
+  --fa: "\f8cc";
 }
 
 .fa-arrow-right-to-bracket {
-  --fa: "";
+  --fa: "\f090";
 }
 
 .fa-sign-in {
-  --fa: "";
+  --fa: "\f090";
 }
 
 .fa-shop-slash {
-  --fa: "";
+  --fa: "\e070";
 }
 
 .fa-store-alt-slash {
-  --fa: "";
+  --fa: "\e070";
 }
 
 .fa-server {
-  --fa: "";
+  --fa: "\f233";
 }
 
 .fa-virus-covid-slash {
-  --fa: "";
+  --fa: "\e4a9";
 }
 
 .fa-shop-lock {
-  --fa: "";
+  --fa: "\e4a5";
 }
 
 .fa-hourglass-start {
-  --fa: "";
+  --fa: "\f251";
 }
 
 .fa-hourglass-1 {
-  --fa: "";
+  --fa: "\f251";
 }
 
 .fa-blender-phone {
-  --fa: "";
+  --fa: "\f6b6";
 }
 
 .fa-building-wheat {
-  --fa: "";
+  --fa: "\e4db";
 }
 
 .fa-person-breastfeeding {
-  --fa: "";
+  --fa: "\e53a";
 }
 
 .fa-right-to-bracket {
-  --fa: "";
+  --fa: "\f2f6";
 }
 
 .fa-sign-in-alt {
-  --fa: "";
+  --fa: "\f2f6";
 }
 
 .fa-venus {
-  --fa: "";
+  --fa: "\f221";
 }
 
 .fa-passport {
-  --fa: "";
+  --fa: "\f5ab";
 }
 
 .fa-thumbtack-slash {
-  --fa: "";
+  --fa: "\e68f";
 }
 
 .fa-thumb-tack-slash {
-  --fa: "";
+  --fa: "\e68f";
 }
 
 .fa-heart-pulse {
-  --fa: "";
+  --fa: "\f21e";
 }
 
 .fa-heartbeat {
-  --fa: "";
+  --fa: "\f21e";
 }
 
 .fa-people-carry-box {
-  --fa: "";
+  --fa: "\f4ce";
 }
 
 .fa-people-carry {
-  --fa: "";
+  --fa: "\f4ce";
 }
 
 .fa-temperature-high {
-  --fa: "";
+  --fa: "\f769";
 }
 
 .fa-microchip {
-  --fa: "";
+  --fa: "\f2db";
 }
 
 .fa-crown {
-  --fa: "";
+  --fa: "\f521";
 }
 
 .fa-weight-hanging {
-  --fa: "";
+  --fa: "\f5cd";
 }
 
 .fa-xmarks-lines {
-  --fa: "";
+  --fa: "\e59a";
 }
 
 .fa-file-prescription {
-  --fa: "";
+  --fa: "\f572";
 }
 
 .fa-weight-scale {
-  --fa: "";
+  --fa: "\f496";
 }
 
 .fa-weight {
-  --fa: "";
+  --fa: "\f496";
 }
 
 .fa-user-group {
-  --fa: "";
+  --fa: "\f500";
 }
 
 .fa-user-friends {
-  --fa: "";
+  --fa: "\f500";
 }
 
 .fa-arrow-up-a-z {
-  --fa: "";
+  --fa: "\f15e";
 }
 
 .fa-sort-alpha-up {
-  --fa: "";
+  --fa: "\f15e";
 }
 
 .fa-chess-knight {
-  --fa: "";
+  --fa: "\f441";
 }
 
 .fa-face-laugh-squint {
-  --fa: "";
+  --fa: "\f59b";
 }
 
 .fa-laugh-squint {
-  --fa: "";
+  --fa: "\f59b";
 }
 
 .fa-wheelchair {
-  --fa: "";
+  --fa: "\f193";
 }
 
 .fa-circle-arrow-up {
-  --fa: "";
+  --fa: "\f0aa";
 }
 
 .fa-arrow-circle-up {
-  --fa: "";
+  --fa: "\f0aa";
 }
 
 .fa-toggle-on {
-  --fa: "";
+  --fa: "\f205";
 }
 
 .fa-person-walking {
-  --fa: "";
+  --fa: "\f554";
 }
 
 .fa-walking {
-  --fa: "";
+  --fa: "\f554";
 }
 
 .fa-l {
@@ -4548,1087 +4546,1087 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-fire {
-  --fa: "";
+  --fa: "\f06d";
 }
 
 .fa-bed-pulse {
-  --fa: "";
+  --fa: "\f487";
 }
 
 .fa-procedures {
-  --fa: "";
+  --fa: "\f487";
 }
 
 .fa-shuttle-space {
-  --fa: "";
+  --fa: "\f197";
 }
 
 .fa-space-shuttle {
-  --fa: "";
+  --fa: "\f197";
 }
 
 .fa-face-laugh {
-  --fa: "";
+  --fa: "\f599";
 }
 
 .fa-laugh {
-  --fa: "";
+  --fa: "\f599";
 }
 
 .fa-folder-open {
-  --fa: "";
+  --fa: "\f07c";
 }
 
 .fa-heart-circle-plus {
-  --fa: "";
+  --fa: "\e500";
 }
 
 .fa-code-fork {
-  --fa: "";
+  --fa: "\e13b";
 }
 
 .fa-city {
-  --fa: "";
+  --fa: "\f64f";
 }
 
 .fa-microphone-lines {
-  --fa: "";
+  --fa: "\f3c9";
 }
 
 .fa-microphone-alt {
-  --fa: "";
+  --fa: "\f3c9";
 }
 
 .fa-pepper-hot {
-  --fa: "";
+  --fa: "\f816";
 }
 
 .fa-unlock {
-  --fa: "";
+  --fa: "\f09c";
 }
 
 .fa-colon-sign {
-  --fa: "";
+  --fa: "\e140";
 }
 
 .fa-headset {
-  --fa: "";
+  --fa: "\f590";
 }
 
 .fa-store-slash {
-  --fa: "";
+  --fa: "\e071";
 }
 
 .fa-road-circle-xmark {
-  --fa: "";
+  --fa: "\e566";
 }
 
 .fa-user-minus {
-  --fa: "";
+  --fa: "\f503";
 }
 
 .fa-mars-stroke-up {
-  --fa: "";
+  --fa: "\f22a";
 }
 
 .fa-mars-stroke-v {
-  --fa: "";
+  --fa: "\f22a";
 }
 
 .fa-champagne-glasses {
-  --fa: "";
+  --fa: "\f79f";
 }
 
 .fa-glass-cheers {
-  --fa: "";
+  --fa: "\f79f";
 }
 
 .fa-clipboard {
-  --fa: "";
+  --fa: "\f328";
 }
 
 .fa-house-circle-exclamation {
-  --fa: "";
+  --fa: "\e50a";
 }
 
 .fa-file-arrow-up {
-  --fa: "";
+  --fa: "\f574";
 }
 
 .fa-file-upload {
-  --fa: "";
+  --fa: "\f574";
 }
 
 .fa-wifi {
-  --fa: "";
+  --fa: "\f1eb";
 }
 
 .fa-wifi-3 {
-  --fa: "";
+  --fa: "\f1eb";
 }
 
 .fa-wifi-strong {
-  --fa: "";
+  --fa: "\f1eb";
 }
 
 .fa-bath {
-  --fa: "";
+  --fa: "\f2cd";
 }
 
 .fa-bathtub {
-  --fa: "";
+  --fa: "\f2cd";
 }
 
 .fa-underline {
-  --fa: "";
+  --fa: "\f0cd";
 }
 
 .fa-user-pen {
-  --fa: "";
+  --fa: "\f4ff";
 }
 
 .fa-user-edit {
-  --fa: "";
+  --fa: "\f4ff";
 }
 
 .fa-signature {
-  --fa: "";
+  --fa: "\f5b7";
 }
 
 .fa-stroopwafel {
-  --fa: "";
+  --fa: "\f551";
 }
 
 .fa-bold {
-  --fa: "";
+  --fa: "\f032";
 }
 
 .fa-anchor-lock {
-  --fa: "";
+  --fa: "\e4ad";
 }
 
 .fa-building-ngo {
-  --fa: "";
+  --fa: "\e4d7";
 }
 
 .fa-manat-sign {
-  --fa: "";
+  --fa: "\e1d5";
 }
 
 .fa-not-equal {
-  --fa: "";
+  --fa: "\f53e";
 }
 
 .fa-border-top-left {
-  --fa: "";
+  --fa: "\f853";
 }
 
 .fa-border-style {
-  --fa: "";
+  --fa: "\f853";
 }
 
 .fa-map-location-dot {
-  --fa: "";
+  --fa: "\f5a0";
 }
 
 .fa-map-marked-alt {
-  --fa: "";
+  --fa: "\f5a0";
 }
 
 .fa-jedi {
-  --fa: "";
+  --fa: "\f669";
 }
 
 .fa-square-poll-vertical {
-  --fa: "";
+  --fa: "\f681";
 }
 
 .fa-poll {
-  --fa: "";
+  --fa: "\f681";
 }
 
 .fa-mug-hot {
-  --fa: "";
+  --fa: "\f7b6";
 }
 
 .fa-car-battery {
-  --fa: "";
+  --fa: "\f5df";
 }
 
 .fa-battery-car {
-  --fa: "";
+  --fa: "\f5df";
 }
 
 .fa-gift {
-  --fa: "";
+  --fa: "\f06b";
 }
 
 .fa-dice-two {
-  --fa: "";
+  --fa: "\f528";
 }
 
 .fa-chess-queen {
-  --fa: "";
+  --fa: "\f445";
 }
 
 .fa-glasses {
-  --fa: "";
+  --fa: "\f530";
 }
 
 .fa-chess-board {
-  --fa: "";
+  --fa: "\f43c";
 }
 
 .fa-building-circle-check {
-  --fa: "";
+  --fa: "\e4d2";
 }
 
 .fa-person-chalkboard {
-  --fa: "";
+  --fa: "\e53d";
 }
 
 .fa-mars-stroke-right {
-  --fa: "";
+  --fa: "\f22b";
 }
 
 .fa-mars-stroke-h {
-  --fa: "";
+  --fa: "\f22b";
 }
 
 .fa-hand-back-fist {
-  --fa: "";
+  --fa: "\f255";
 }
 
 .fa-hand-rock {
-  --fa: "";
+  --fa: "\f255";
 }
 
 .fa-square-caret-up {
-  --fa: "";
+  --fa: "\f151";
 }
 
 .fa-caret-square-up {
-  --fa: "";
+  --fa: "\f151";
 }
 
 .fa-cloud-showers-water {
-  --fa: "";
+  --fa: "\e4e4";
 }
 
 .fa-chart-bar {
-  --fa: "";
+  --fa: "\f080";
 }
 
 .fa-bar-chart {
-  --fa: "";
+  --fa: "\f080";
 }
 
 .fa-hands-bubbles {
-  --fa: "";
+  --fa: "\e05e";
 }
 
 .fa-hands-wash {
-  --fa: "";
+  --fa: "\e05e";
 }
 
 .fa-less-than-equal {
-  --fa: "";
+  --fa: "\f537";
 }
 
 .fa-train {
-  --fa: "";
+  --fa: "\f238";
 }
 
 .fa-eye-low-vision {
-  --fa: "";
+  --fa: "\f2a8";
 }
 
 .fa-low-vision {
-  --fa: "";
+  --fa: "\f2a8";
 }
 
 .fa-crow {
-  --fa: "";
+  --fa: "\f520";
 }
 
 .fa-sailboat {
-  --fa: "";
+  --fa: "\e445";
 }
 
 .fa-window-restore {
-  --fa: "";
+  --fa: "\f2d2";
 }
 
 .fa-square-plus {
-  --fa: "";
+  --fa: "\f0fe";
 }
 
 .fa-plus-square {
-  --fa: "";
+  --fa: "\f0fe";
 }
 
 .fa-torii-gate {
-  --fa: "";
+  --fa: "\f6a1";
 }
 
 .fa-frog {
-  --fa: "";
+  --fa: "\f52e";
 }
 
 .fa-bucket {
-  --fa: "";
+  --fa: "\e4cf";
 }
 
 .fa-image {
-  --fa: "";
+  --fa: "\f03e";
 }
 
 .fa-microphone {
-  --fa: "";
+  --fa: "\f130";
 }
 
 .fa-cow {
-  --fa: "";
+  --fa: "\f6c8";
 }
 
 .fa-caret-up {
-  --fa: "";
+  --fa: "\f0d8";
 }
 
 .fa-screwdriver {
-  --fa: "";
+  --fa: "\f54a";
 }
 
 .fa-folder-closed {
-  --fa: "";
+  --fa: "\e185";
 }
 
 .fa-house-tsunami {
-  --fa: "";
+  --fa: "\e515";
 }
 
 .fa-square-nfi {
-  --fa: "";
+  --fa: "\e576";
 }
 
 .fa-arrow-up-from-ground-water {
-  --fa: "";
+  --fa: "\e4b5";
 }
 
 .fa-martini-glass {
-  --fa: "";
+  --fa: "\f57b";
 }
 
 .fa-glass-martini-alt {
-  --fa: "";
+  --fa: "\f57b";
 }
 
 .fa-square-binary {
-  --fa: "";
+  --fa: "\e69b";
 }
 
 .fa-rotate-left {
-  --fa: "";
+  --fa: "\f2ea";
 }
 
 .fa-rotate-back {
-  --fa: "";
+  --fa: "\f2ea";
 }
 
 .fa-rotate-backward {
-  --fa: "";
+  --fa: "\f2ea";
 }
 
 .fa-undo-alt {
-  --fa: "";
+  --fa: "\f2ea";
 }
 
 .fa-table-columns {
-  --fa: "";
+  --fa: "\f0db";
 }
 
 .fa-columns {
-  --fa: "";
+  --fa: "\f0db";
 }
 
 .fa-lemon {
-  --fa: "";
+  --fa: "\f094";
 }
 
 .fa-head-side-mask {
-  --fa: "";
+  --fa: "\e063";
 }
 
 .fa-handshake {
-  --fa: "";
+  --fa: "\f2b5";
 }
 
 .fa-gem {
-  --fa: "";
+  --fa: "\f3a5";
 }
 
 .fa-dolly {
-  --fa: "";
+  --fa: "\f472";
 }
 
 .fa-dolly-box {
-  --fa: "";
+  --fa: "\f472";
 }
 
 .fa-smoking {
-  --fa: "";
+  --fa: "\f48d";
 }
 
 .fa-minimize {
-  --fa: "";
+  --fa: "\f78c";
 }
 
 .fa-compress-arrows-alt {
-  --fa: "";
+  --fa: "\f78c";
 }
 
 .fa-monument {
-  --fa: "";
+  --fa: "\f5a6";
 }
 
 .fa-snowplow {
-  --fa: "";
+  --fa: "\f7d2";
 }
 
 .fa-angles-right {
-  --fa: "";
+  --fa: "\f101";
 }
 
 .fa-angle-double-right {
-  --fa: "";
+  --fa: "\f101";
 }
 
 .fa-cannabis {
-  --fa: "";
+  --fa: "\f55f";
 }
 
 .fa-circle-play {
-  --fa: "";
+  --fa: "\f144";
 }
 
 .fa-play-circle {
-  --fa: "";
+  --fa: "\f144";
 }
 
 .fa-tablets {
-  --fa: "";
+  --fa: "\f490";
 }
 
 .fa-ethernet {
-  --fa: "";
+  --fa: "\f796";
 }
 
 .fa-euro-sign {
-  --fa: "";
+  --fa: "\f153";
 }
 
 .fa-eur {
-  --fa: "";
+  --fa: "\f153";
 }
 
 .fa-euro {
-  --fa: "";
+  --fa: "\f153";
 }
 
 .fa-chair {
-  --fa: "";
+  --fa: "\f6c0";
 }
 
 .fa-circle-check {
-  --fa: "";
+  --fa: "\f058";
 }
 
 .fa-check-circle {
-  --fa: "";
+  --fa: "\f058";
 }
 
 .fa-circle-stop {
-  --fa: "";
+  --fa: "\f28d";
 }
 
 .fa-stop-circle {
-  --fa: "";
+  --fa: "\f28d";
 }
 
 .fa-compass-drafting {
-  --fa: "";
+  --fa: "\f568";
 }
 
 .fa-drafting-compass {
-  --fa: "";
+  --fa: "\f568";
 }
 
 .fa-plate-wheat {
-  --fa: "";
+  --fa: "\e55a";
 }
 
 .fa-icicles {
-  --fa: "";
+  --fa: "\f7ad";
 }
 
 .fa-person-shelter {
-  --fa: "";
+  --fa: "\e54f";
 }
 
 .fa-neuter {
-  --fa: "";
+  --fa: "\f22c";
 }
 
 .fa-id-badge {
-  --fa: "";
+  --fa: "\f2c1";
 }
 
 .fa-marker {
-  --fa: "";
+  --fa: "\f5a1";
 }
 
 .fa-face-laugh-beam {
-  --fa: "";
+  --fa: "\f59a";
 }
 
 .fa-laugh-beam {
-  --fa: "";
+  --fa: "\f59a";
 }
 
 .fa-helicopter-symbol {
-  --fa: "";
+  --fa: "\e502";
 }
 
 .fa-universal-access {
-  --fa: "";
+  --fa: "\f29a";
 }
 
 .fa-circle-chevron-up {
-  --fa: "";
+  --fa: "\f139";
 }
 
 .fa-chevron-circle-up {
-  --fa: "";
+  --fa: "\f139";
 }
 
 .fa-lari-sign {
-  --fa: "";
+  --fa: "\e1c8";
 }
 
 .fa-volcano {
-  --fa: "";
+  --fa: "\f770";
 }
 
 .fa-person-walking-dashed-line-arrow-right {
-  --fa: "";
+  --fa: "\e553";
 }
 
 .fa-sterling-sign {
-  --fa: "";
+  --fa: "\f154";
 }
 
 .fa-gbp {
-  --fa: "";
+  --fa: "\f154";
 }
 
 .fa-pound-sign {
-  --fa: "";
+  --fa: "\f154";
 }
 
 .fa-viruses {
-  --fa: "";
+  --fa: "\e076";
 }
 
 .fa-square-person-confined {
-  --fa: "";
+  --fa: "\e577";
 }
 
 .fa-user-tie {
-  --fa: "";
+  --fa: "\f508";
 }
 
 .fa-arrow-down-long {
-  --fa: "";
+  --fa: "\f175";
 }
 
 .fa-long-arrow-down {
-  --fa: "";
+  --fa: "\f175";
 }
 
 .fa-tent-arrow-down-to-line {
-  --fa: "";
+  --fa: "\e57e";
 }
 
 .fa-certificate {
-  --fa: "";
+  --fa: "\f0a3";
 }
 
 .fa-reply-all {
-  --fa: "";
+  --fa: "\f122";
 }
 
 .fa-mail-reply-all {
-  --fa: "";
+  --fa: "\f122";
 }
 
 .fa-suitcase {
-  --fa: "";
+  --fa: "\f0f2";
 }
 
 .fa-person-skating {
-  --fa: "";
+  --fa: "\f7c5";
 }
 
 .fa-skating {
-  --fa: "";
+  --fa: "\f7c5";
 }
 
 .fa-filter-circle-dollar {
-  --fa: "";
+  --fa: "\f662";
 }
 
 .fa-funnel-dollar {
-  --fa: "";
+  --fa: "\f662";
 }
 
 .fa-camera-retro {
-  --fa: "";
+  --fa: "\f083";
 }
 
 .fa-circle-arrow-down {
-  --fa: "";
+  --fa: "\f0ab";
 }
 
 .fa-arrow-circle-down {
-  --fa: "";
+  --fa: "\f0ab";
 }
 
 .fa-file-import {
-  --fa: "";
+  --fa: "\f56f";
 }
 
 .fa-arrow-right-to-file {
-  --fa: "";
+  --fa: "\f56f";
 }
 
 .fa-square-arrow-up-right {
-  --fa: "";
+  --fa: "\f14c";
 }
 
 .fa-external-link-square {
-  --fa: "";
+  --fa: "\f14c";
 }
 
 .fa-box-open {
-  --fa: "";
+  --fa: "\f49e";
 }
 
 .fa-scroll {
-  --fa: "";
+  --fa: "\f70e";
 }
 
 .fa-spa {
-  --fa: "";
+  --fa: "\f5bb";
 }
 
 .fa-location-pin-lock {
-  --fa: "";
+  --fa: "\e51f";
 }
 
 .fa-pause {
-  --fa: "";
+  --fa: "\f04c";
 }
 
 .fa-hill-avalanche {
-  --fa: "";
+  --fa: "\e507";
 }
 
 .fa-temperature-empty {
-  --fa: "";
+  --fa: "\f2cb";
 }
 
 .fa-temperature-0 {
-  --fa: "";
+  --fa: "\f2cb";
 }
 
 .fa-thermometer-0 {
-  --fa: "";
+  --fa: "\f2cb";
 }
 
 .fa-thermometer-empty {
-  --fa: "";
+  --fa: "\f2cb";
 }
 
 .fa-bomb {
-  --fa: "";
+  --fa: "\f1e2";
 }
 
 .fa-registered {
-  --fa: "";
+  --fa: "\f25d";
 }
 
 .fa-address-card {
-  --fa: "";
+  --fa: "\f2bb";
 }
 
 .fa-contact-card {
-  --fa: "";
+  --fa: "\f2bb";
 }
 
 .fa-vcard {
-  --fa: "";
+  --fa: "\f2bb";
 }
 
 .fa-scale-unbalanced-flip {
-  --fa: "";
+  --fa: "\f516";
 }
 
 .fa-balance-scale-right {
-  --fa: "";
+  --fa: "\f516";
 }
 
 .fa-subscript {
-  --fa: "";
+  --fa: "\f12c";
 }
 
 .fa-diamond-turn-right {
-  --fa: "";
+  --fa: "\f5eb";
 }
 
 .fa-directions {
-  --fa: "";
+  --fa: "\f5eb";
 }
 
 .fa-burst {
-  --fa: "";
+  --fa: "\e4dc";
 }
 
 .fa-house-laptop {
-  --fa: "";
+  --fa: "\e066";
 }
 
 .fa-laptop-house {
-  --fa: "";
+  --fa: "\e066";
 }
 
 .fa-face-tired {
-  --fa: "";
+  --fa: "\f5c8";
 }
 
 .fa-tired {
-  --fa: "";
+  --fa: "\f5c8";
 }
 
 .fa-money-bills {
-  --fa: "";
+  --fa: "\e1f3";
 }
 
 .fa-smog {
-  --fa: "";
+  --fa: "\f75f";
 }
 
 .fa-crutch {
-  --fa: "";
+  --fa: "\f7f7";
 }
 
 .fa-cloud-arrow-up {
-  --fa: "";
+  --fa: "\f0ee";
 }
 
 .fa-cloud-upload {
-  --fa: "";
+  --fa: "\f0ee";
 }
 
 .fa-cloud-upload-alt {
-  --fa: "";
+  --fa: "\f0ee";
 }
 
 .fa-palette {
-  --fa: "";
+  --fa: "\f53f";
 }
 
 .fa-arrows-turn-right {
-  --fa: "";
+  --fa: "\e4c0";
 }
 
 .fa-vest {
-  --fa: "";
+  --fa: "\e085";
 }
 
 .fa-ferry {
-  --fa: "";
+  --fa: "\e4ea";
 }
 
 .fa-arrows-down-to-people {
-  --fa: "";
+  --fa: "\e4b9";
 }
 
 .fa-seedling {
-  --fa: "";
+  --fa: "\f4d8";
 }
 
 .fa-sprout {
-  --fa: "";
+  --fa: "\f4d8";
 }
 
 .fa-left-right {
-  --fa: "";
+  --fa: "\f337";
 }
 
 .fa-arrows-alt-h {
-  --fa: "";
+  --fa: "\f337";
 }
 
 .fa-boxes-packing {
-  --fa: "";
+  --fa: "\e4c7";
 }
 
 .fa-circle-arrow-left {
-  --fa: "";
+  --fa: "\f0a8";
 }
 
 .fa-arrow-circle-left {
-  --fa: "";
+  --fa: "\f0a8";
 }
 
 .fa-group-arrows-rotate {
-  --fa: "";
+  --fa: "\e4f6";
 }
 
 .fa-bowl-food {
-  --fa: "";
+  --fa: "\e4c6";
 }
 
 .fa-candy-cane {
-  --fa: "";
+  --fa: "\f786";
 }
 
 .fa-arrow-down-wide-short {
-  --fa: "";
+  --fa: "\f160";
 }
 
 .fa-sort-amount-asc {
-  --fa: "";
+  --fa: "\f160";
 }
 
 .fa-sort-amount-down {
-  --fa: "";
+  --fa: "\f160";
 }
 
 .fa-cloud-bolt {
-  --fa: "";
+  --fa: "\f76c";
 }
 
 .fa-thunderstorm {
-  --fa: "";
+  --fa: "\f76c";
 }
 
 .fa-text-slash {
-  --fa: "";
+  --fa: "\f87d";
 }
 
 .fa-remove-format {
-  --fa: "";
+  --fa: "\f87d";
 }
 
 .fa-face-smile-wink {
-  --fa: "";
+  --fa: "\f4da";
 }
 
 .fa-smile-wink {
-  --fa: "";
+  --fa: "\f4da";
 }
 
 .fa-file-word {
-  --fa: "";
+  --fa: "\f1c2";
 }
 
 .fa-file-powerpoint {
-  --fa: "";
+  --fa: "\f1c4";
 }
 
 .fa-arrows-left-right {
-  --fa: "";
+  --fa: "\f07e";
 }
 
 .fa-arrows-h {
-  --fa: "";
+  --fa: "\f07e";
 }
 
 .fa-house-lock {
-  --fa: "";
+  --fa: "\e510";
 }
 
 .fa-cloud-arrow-down {
-  --fa: "";
+  --fa: "\f0ed";
 }
 
 .fa-cloud-download {
-  --fa: "";
+  --fa: "\f0ed";
 }
 
 .fa-cloud-download-alt {
-  --fa: "";
+  --fa: "\f0ed";
 }
 
 .fa-children {
-  --fa: "";
+  --fa: "\e4e1";
 }
 
 .fa-chalkboard {
-  --fa: "";
+  --fa: "\f51b";
 }
 
 .fa-blackboard {
-  --fa: "";
+  --fa: "\f51b";
 }
 
 .fa-user-large-slash {
-  --fa: "";
+  --fa: "\f4fa";
 }
 
 .fa-user-alt-slash {
-  --fa: "";
+  --fa: "\f4fa";
 }
 
 .fa-envelope-open {
-  --fa: "";
+  --fa: "\f2b6";
 }
 
 .fa-handshake-simple-slash {
-  --fa: "";
+  --fa: "\e05f";
 }
 
 .fa-handshake-alt-slash {
-  --fa: "";
+  --fa: "\e05f";
 }
 
 .fa-mattress-pillow {
-  --fa: "";
+  --fa: "\e525";
 }
 
 .fa-guarani-sign {
-  --fa: "";
+  --fa: "\e19a";
 }
 
 .fa-arrows-rotate {
-  --fa: "";
+  --fa: "\f021";
 }
 
 .fa-refresh {
-  --fa: "";
+  --fa: "\f021";
 }
 
 .fa-sync {
-  --fa: "";
+  --fa: "\f021";
 }
 
 .fa-fire-extinguisher {
-  --fa: "";
+  --fa: "\f134";
 }
 
 .fa-cruzeiro-sign {
-  --fa: "";
+  --fa: "\e152";
 }
 
 .fa-greater-than-equal {
-  --fa: "";
+  --fa: "\f532";
 }
 
 .fa-shield-halved {
-  --fa: "";
+  --fa: "\f3ed";
 }
 
 .fa-shield-alt {
-  --fa: "";
+  --fa: "\f3ed";
 }
 
 .fa-book-atlas {
-  --fa: "";
+  --fa: "\f558";
 }
 
 .fa-atlas {
-  --fa: "";
+  --fa: "\f558";
 }
 
 .fa-virus {
-  --fa: "";
+  --fa: "\e074";
 }
 
 .fa-envelope-circle-check {
-  --fa: "";
+  --fa: "\e4e8";
 }
 
 .fa-layer-group {
-  --fa: "";
+  --fa: "\f5fd";
 }
 
 .fa-arrows-to-dot {
-  --fa: "";
+  --fa: "\e4be";
 }
 
 .fa-archway {
-  --fa: "";
+  --fa: "\f557";
 }
 
 .fa-heart-circle-check {
-  --fa: "";
+  --fa: "\e4fd";
 }
 
 .fa-house-chimney-crack {
-  --fa: "";
+  --fa: "\f6f1";
 }
 
 .fa-house-damage {
-  --fa: "";
+  --fa: "\f6f1";
 }
 
 .fa-file-zipper {
-  --fa: "";
+  --fa: "\f1c6";
 }
 
 .fa-file-archive {
-  --fa: "";
+  --fa: "\f1c6";
 }
 
 .fa-square {
-  --fa: "";
+  --fa: "\f0c8";
 }
 
 .fa-martini-glass-empty {
-  --fa: "";
+  --fa: "\f000";
 }
 
 .fa-glass-martini {
-  --fa: "";
+  --fa: "\f000";
 }
 
 .fa-couch {
-  --fa: "";
+  --fa: "\f4b8";
 }
 
 .fa-cedi-sign {
-  --fa: "";
+  --fa: "\e0df";
 }
 
 .fa-italic {
-  --fa: "";
+  --fa: "\f033";
 }
 
 .fa-table-cells-column-lock {
-  --fa: "";
+  --fa: "\e678";
 }
 
 .fa-church {
-  --fa: "";
+  --fa: "\f51d";
 }
 
 .fa-comments-dollar {
-  --fa: "";
+  --fa: "\f653";
 }
 
 .fa-democrat {
-  --fa: "";
+  --fa: "\f747";
 }
 
 .fa-z {
@@ -5636,15 +5634,15 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-person-skiing {
-  --fa: "";
+  --fa: "\f7c9";
 }
 
 .fa-skiing {
-  --fa: "";
+  --fa: "\f7c9";
 }
 
 .fa-road-lock {
-  --fa: "";
+  --fa: "\e567";
 }
 
 .fa-a {
@@ -5652,19 +5650,19 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-temperature-arrow-down {
-  --fa: "";
+  --fa: "\e03f";
 }
 
 .fa-temperature-down {
-  --fa: "";
+  --fa: "\e03f";
 }
 
 .fa-feather-pointed {
-  --fa: "";
+  --fa: "\f56b";
 }
 
 .fa-feather-alt {
-  --fa: "";
+  --fa: "\f56b";
 }
 
 .fa-p {
@@ -5672,183 +5670,183 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-snowflake {
-  --fa: "";
+  --fa: "\f2dc";
 }
 
 .fa-newspaper {
-  --fa: "";
+  --fa: "\f1ea";
 }
 
 .fa-rectangle-ad {
-  --fa: "";
+  --fa: "\f641";
 }
 
 .fa-ad {
-  --fa: "";
+  --fa: "\f641";
 }
 
 .fa-circle-arrow-right {
-  --fa: "";
+  --fa: "\f0a9";
 }
 
 .fa-arrow-circle-right {
-  --fa: "";
+  --fa: "\f0a9";
 }
 
 .fa-filter-circle-xmark {
-  --fa: "";
+  --fa: "\e17b";
 }
 
 .fa-locust {
-  --fa: "";
+  --fa: "\e520";
 }
 
 .fa-sort {
-  --fa: "";
+  --fa: "\f0dc";
 }
 
 .fa-unsorted {
-  --fa: "";
+  --fa: "\f0dc";
 }
 
 .fa-list-ol {
-  --fa: "";
+  --fa: "\f0cb";
 }
 
 .fa-list-1-2 {
-  --fa: "";
+  --fa: "\f0cb";
 }
 
 .fa-list-numeric {
-  --fa: "";
+  --fa: "\f0cb";
 }
 
 .fa-person-dress-burst {
-  --fa: "";
+  --fa: "\e544";
 }
 
 .fa-money-check-dollar {
-  --fa: "";
+  --fa: "\f53d";
 }
 
 .fa-money-check-alt {
-  --fa: "";
+  --fa: "\f53d";
 }
 
 .fa-vector-square {
-  --fa: "";
+  --fa: "\f5cb";
 }
 
 .fa-bread-slice {
-  --fa: "";
+  --fa: "\f7ec";
 }
 
 .fa-language {
-  --fa: "";
+  --fa: "\f1ab";
 }
 
 .fa-face-kiss-wink-heart {
-  --fa: "";
+  --fa: "\f598";
 }
 
 .fa-kiss-wink-heart {
-  --fa: "";
+  --fa: "\f598";
 }
 
 .fa-filter {
-  --fa: "";
+  --fa: "\f0b0";
 }
 
 .fa-question {
-  --fa: "?";
+  --fa: "\?";
 }
 
 .fa-file-signature {
-  --fa: "";
+  --fa: "\f573";
 }
 
 .fa-up-down-left-right {
-  --fa: "";
+  --fa: "\f0b2";
 }
 
 .fa-arrows-alt {
-  --fa: "";
+  --fa: "\f0b2";
 }
 
 .fa-house-chimney-user {
-  --fa: "";
+  --fa: "\e065";
 }
 
 .fa-hand-holding-heart {
-  --fa: "";
+  --fa: "\f4be";
 }
 
 .fa-puzzle-piece {
-  --fa: "";
+  --fa: "\f12e";
 }
 
 .fa-money-check {
-  --fa: "";
+  --fa: "\f53c";
 }
 
 .fa-star-half-stroke {
-  --fa: "";
+  --fa: "\f5c0";
 }
 
 .fa-star-half-alt {
-  --fa: "";
+  --fa: "\f5c0";
 }
 
 .fa-code {
-  --fa: "";
+  --fa: "\f121";
 }
 
 .fa-whiskey-glass {
-  --fa: "";
+  --fa: "\f7a0";
 }
 
 .fa-glass-whiskey {
-  --fa: "";
+  --fa: "\f7a0";
 }
 
 .fa-building-circle-exclamation {
-  --fa: "";
+  --fa: "\e4d3";
 }
 
 .fa-magnifying-glass-chart {
-  --fa: "";
+  --fa: "\e522";
 }
 
 .fa-arrow-up-right-from-square {
-  --fa: "";
+  --fa: "\f08e";
 }
 
 .fa-external-link {
-  --fa: "";
+  --fa: "\f08e";
 }
 
 .fa-cubes-stacked {
-  --fa: "";
+  --fa: "\e4e6";
 }
 
 .fa-won-sign {
-  --fa: "";
+  --fa: "\f159";
 }
 
 .fa-krw {
-  --fa: "";
+  --fa: "\f159";
 }
 
 .fa-won {
-  --fa: "";
+  --fa: "\f159";
 }
 
 .fa-virus-covid {
-  --fa: "";
+  --fa: "\e4a8";
 }
 
 .fa-austral-sign {
-  --fa: "";
+  --fa: "\e0a9";
 }
 
 .fa-f {
@@ -5856,159 +5854,159 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-leaf {
-  --fa: "";
+  --fa: "\f06c";
 }
 
 .fa-road {
-  --fa: "";
+  --fa: "\f018";
 }
 
 .fa-taxi {
-  --fa: "";
+  --fa: "\f1ba";
 }
 
 .fa-cab {
-  --fa: "";
+  --fa: "\f1ba";
 }
 
 .fa-person-circle-plus {
-  --fa: "";
+  --fa: "\e541";
 }
 
 .fa-chart-pie {
-  --fa: "";
+  --fa: "\f200";
 }
 
 .fa-pie-chart {
-  --fa: "";
+  --fa: "\f200";
 }
 
 .fa-bolt-lightning {
-  --fa: "";
+  --fa: "\e0b7";
 }
 
 .fa-sack-xmark {
-  --fa: "";
+  --fa: "\e56a";
 }
 
 .fa-file-excel {
-  --fa: "";
+  --fa: "\f1c3";
 }
 
 .fa-file-contract {
-  --fa: "";
+  --fa: "\f56c";
 }
 
 .fa-fish-fins {
-  --fa: "";
+  --fa: "\e4f2";
 }
 
 .fa-building-flag {
-  --fa: "";
+  --fa: "\e4d5";
 }
 
 .fa-face-grin-beam {
-  --fa: "";
+  --fa: "\f582";
 }
 
 .fa-grin-beam {
-  --fa: "";
+  --fa: "\f582";
 }
 
 .fa-object-ungroup {
-  --fa: "";
+  --fa: "\f248";
 }
 
 .fa-poop {
-  --fa: "";
+  --fa: "\f619";
 }
 
 .fa-location-pin {
-  --fa: "";
+  --fa: "\f041";
 }
 
 .fa-map-marker {
-  --fa: "";
+  --fa: "\f041";
 }
 
 .fa-kaaba {
-  --fa: "";
+  --fa: "\f66b";
 }
 
 .fa-toilet-paper {
-  --fa: "";
+  --fa: "\f71e";
 }
 
 .fa-helmet-safety {
-  --fa: "";
+  --fa: "\f807";
 }
 
 .fa-hard-hat {
-  --fa: "";
+  --fa: "\f807";
 }
 
 .fa-hat-hard {
-  --fa: "";
+  --fa: "\f807";
 }
 
 .fa-eject {
-  --fa: "";
+  --fa: "\f052";
 }
 
 .fa-circle-right {
-  --fa: "";
+  --fa: "\f35a";
 }
 
 .fa-arrow-alt-circle-right {
-  --fa: "";
+  --fa: "\f35a";
 }
 
 .fa-plane-circle-check {
-  --fa: "";
+  --fa: "\e555";
 }
 
 .fa-face-rolling-eyes {
-  --fa: "";
+  --fa: "\f5a5";
 }
 
 .fa-meh-rolling-eyes {
-  --fa: "";
+  --fa: "\f5a5";
 }
 
 .fa-object-group {
-  --fa: "";
+  --fa: "\f247";
 }
 
 .fa-chart-line {
-  --fa: "";
+  --fa: "\f201";
 }
 
 .fa-line-chart {
-  --fa: "";
+  --fa: "\f201";
 }
 
 .fa-mask-ventilator {
-  --fa: "";
+  --fa: "\e524";
 }
 
 .fa-arrow-right {
-  --fa: "";
+  --fa: "\f061";
 }
 
 .fa-signs-post {
-  --fa: "";
+  --fa: "\f277";
 }
 
 .fa-map-signs {
-  --fa: "";
+  --fa: "\f277";
 }
 
 .fa-cash-register {
-  --fa: "";
+  --fa: "\f788";
 }
 
 .fa-person-circle-question {
-  --fa: "";
+  --fa: "\e542";
 }
 
 .fa-h {
@@ -6016,91 +6014,91 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-tarp {
-  --fa: "";
+  --fa: "\e57b";
 }
 
 .fa-screwdriver-wrench {
-  --fa: "";
+  --fa: "\f7d9";
 }
 
 .fa-tools {
-  --fa: "";
+  --fa: "\f7d9";
 }
 
 .fa-arrows-to-eye {
-  --fa: "";
+  --fa: "\e4bf";
 }
 
 .fa-plug-circle-bolt {
-  --fa: "";
+  --fa: "\e55b";
 }
 
 .fa-heart {
-  --fa: "";
+  --fa: "\f004";
 }
 
 .fa-mars-and-venus {
-  --fa: "";
+  --fa: "\f224";
 }
 
 .fa-house-user {
-  --fa: "";
+  --fa: "\e1b0";
 }
 
 .fa-home-user {
-  --fa: "";
+  --fa: "\e1b0";
 }
 
 .fa-dumpster-fire {
-  --fa: "";
+  --fa: "\f794";
 }
 
 .fa-house-crack {
-  --fa: "";
+  --fa: "\e3b1";
 }
 
 .fa-martini-glass-citrus {
-  --fa: "";
+  --fa: "\f561";
 }
 
 .fa-cocktail {
-  --fa: "";
+  --fa: "\f561";
 }
 
 .fa-face-surprise {
-  --fa: "";
+  --fa: "\f5c2";
 }
 
 .fa-surprise {
-  --fa: "";
+  --fa: "\f5c2";
 }
 
 .fa-bottle-water {
-  --fa: "";
+  --fa: "\e4c5";
 }
 
 .fa-circle-pause {
-  --fa: "";
+  --fa: "\f28b";
 }
 
 .fa-pause-circle {
-  --fa: "";
+  --fa: "\f28b";
 }
 
 .fa-toilet-paper-slash {
-  --fa: "";
+  --fa: "\e072";
 }
 
 .fa-apple-whole {
-  --fa: "";
+  --fa: "\f5d1";
 }
 
 .fa-apple-alt {
-  --fa: "";
+  --fa: "\f5d1";
 }
 
 .fa-kitchen-set {
-  --fa: "";
+  --fa: "\e51a";
 }
 
 .fa-r {
@@ -6108,763 +6106,763 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-temperature-quarter {
-  --fa: "";
+  --fa: "\f2ca";
 }
 
 .fa-temperature-1 {
-  --fa: "";
+  --fa: "\f2ca";
 }
 
 .fa-thermometer-1 {
-  --fa: "";
+  --fa: "\f2ca";
 }
 
 .fa-thermometer-quarter {
-  --fa: "";
+  --fa: "\f2ca";
 }
 
 .fa-cube {
-  --fa: "";
+  --fa: "\f1b2";
 }
 
 .fa-bitcoin-sign {
-  --fa: "";
+  --fa: "\e0b4";
 }
 
 .fa-shield-dog {
-  --fa: "";
+  --fa: "\e573";
 }
 
 .fa-solar-panel {
-  --fa: "";
+  --fa: "\f5ba";
 }
 
 .fa-lock-open {
-  --fa: "";
+  --fa: "\f3c1";
 }
 
 .fa-elevator {
-  --fa: "";
+  --fa: "\e16d";
 }
 
 .fa-money-bill-transfer {
-  --fa: "";
+  --fa: "\e528";
 }
 
 .fa-money-bill-trend-up {
-  --fa: "";
+  --fa: "\e529";
 }
 
 .fa-house-flood-water-circle-arrow-right {
-  --fa: "";
+  --fa: "\e50f";
 }
 
 .fa-square-poll-horizontal {
-  --fa: "";
+  --fa: "\f682";
 }
 
 .fa-poll-h {
-  --fa: "";
+  --fa: "\f682";
 }
 
 .fa-circle {
-  --fa: "";
+  --fa: "\f111";
 }
 
 .fa-backward-fast {
-  --fa: "";
+  --fa: "\f049";
 }
 
 .fa-fast-backward {
-  --fa: "";
+  --fa: "\f049";
 }
 
 .fa-recycle {
-  --fa: "";
+  --fa: "\f1b8";
 }
 
 .fa-user-astronaut {
-  --fa: "";
+  --fa: "\f4fb";
 }
 
 .fa-plane-slash {
-  --fa: "";
+  --fa: "\e069";
 }
 
 .fa-trademark {
-  --fa: "";
+  --fa: "\f25c";
 }
 
 .fa-basketball {
-  --fa: "";
+  --fa: "\f434";
 }
 
 .fa-basketball-ball {
-  --fa: "";
+  --fa: "\f434";
 }
 
 .fa-satellite-dish {
-  --fa: "";
+  --fa: "\f7c0";
 }
 
 .fa-circle-up {
-  --fa: "";
+  --fa: "\f35b";
 }
 
 .fa-arrow-alt-circle-up {
-  --fa: "";
+  --fa: "\f35b";
 }
 
 .fa-mobile-screen-button {
-  --fa: "";
+  --fa: "\f3cd";
 }
 
 .fa-mobile-alt {
-  --fa: "";
+  --fa: "\f3cd";
 }
 
 .fa-volume-high {
-  --fa: "";
+  --fa: "\f028";
 }
 
 .fa-volume-up {
-  --fa: "";
+  --fa: "\f028";
 }
 
 .fa-users-rays {
-  --fa: "";
+  --fa: "\e593";
 }
 
 .fa-wallet {
-  --fa: "";
+  --fa: "\f555";
 }
 
 .fa-clipboard-check {
-  --fa: "";
+  --fa: "\f46c";
 }
 
 .fa-file-audio {
-  --fa: "";
+  --fa: "\f1c7";
 }
 
 .fa-burger {
-  --fa: "";
+  --fa: "\f805";
 }
 
 .fa-hamburger {
-  --fa: "";
+  --fa: "\f805";
 }
 
 .fa-wrench {
-  --fa: "";
+  --fa: "\f0ad";
 }
 
 .fa-bugs {
-  --fa: "";
+  --fa: "\e4d0";
 }
 
 .fa-rupee-sign {
-  --fa: "";
+  --fa: "\f156";
 }
 
 .fa-rupee {
-  --fa: "";
+  --fa: "\f156";
 }
 
 .fa-file-image {
-  --fa: "";
+  --fa: "\f1c5";
 }
 
 .fa-circle-question {
-  --fa: "";
+  --fa: "\f059";
 }
 
 .fa-question-circle {
-  --fa: "";
+  --fa: "\f059";
 }
 
 .fa-plane-departure {
-  --fa: "";
+  --fa: "\f5b0";
 }
 
 .fa-handshake-slash {
-  --fa: "";
+  --fa: "\e060";
 }
 
 .fa-book-bookmark {
-  --fa: "";
+  --fa: "\e0bb";
 }
 
 .fa-code-branch {
-  --fa: "";
+  --fa: "\f126";
 }
 
 .fa-hat-cowboy {
-  --fa: "";
+  --fa: "\f8c0";
 }
 
 .fa-bridge {
-  --fa: "";
+  --fa: "\e4c8";
 }
 
 .fa-phone-flip {
-  --fa: "";
+  --fa: "\f879";
 }
 
 .fa-phone-alt {
-  --fa: "";
+  --fa: "\f879";
 }
 
 .fa-truck-front {
-  --fa: "";
+  --fa: "\e2b7";
 }
 
 .fa-cat {
-  --fa: "";
+  --fa: "\f6be";
 }
 
 .fa-anchor-circle-exclamation {
-  --fa: "";
+  --fa: "\e4ab";
 }
 
 .fa-truck-field {
-  --fa: "";
+  --fa: "\e58d";
 }
 
 .fa-route {
-  --fa: "";
+  --fa: "\f4d7";
 }
 
 .fa-clipboard-question {
-  --fa: "";
+  --fa: "\e4e3";
 }
 
 .fa-panorama {
-  --fa: "";
+  --fa: "\e209";
 }
 
 .fa-comment-medical {
-  --fa: "";
+  --fa: "\f7f5";
 }
 
 .fa-teeth-open {
-  --fa: "";
+  --fa: "\f62f";
 }
 
 .fa-file-circle-minus {
-  --fa: "";
+  --fa: "\e4ed";
 }
 
 .fa-tags {
-  --fa: "";
+  --fa: "\f02c";
 }
 
 .fa-wine-glass {
-  --fa: "";
+  --fa: "\f4e3";
 }
 
 .fa-forward-fast {
-  --fa: "";
+  --fa: "\f050";
 }
 
 .fa-fast-forward {
-  --fa: "";
+  --fa: "\f050";
 }
 
 .fa-face-meh-blank {
-  --fa: "";
+  --fa: "\f5a4";
 }
 
 .fa-meh-blank {
-  --fa: "";
+  --fa: "\f5a4";
 }
 
 .fa-square-parking {
-  --fa: "";
+  --fa: "\f540";
 }
 
 .fa-parking {
-  --fa: "";
+  --fa: "\f540";
 }
 
 .fa-house-signal {
-  --fa: "";
+  --fa: "\e012";
 }
 
 .fa-bars-progress {
-  --fa: "";
+  --fa: "\f828";
 }
 
 .fa-tasks-alt {
-  --fa: "";
+  --fa: "\f828";
 }
 
 .fa-faucet-drip {
-  --fa: "";
+  --fa: "\e006";
 }
 
 .fa-cart-flatbed {
-  --fa: "";
+  --fa: "\f474";
 }
 
 .fa-dolly-flatbed {
-  --fa: "";
+  --fa: "\f474";
 }
 
 .fa-ban-smoking {
-  --fa: "";
+  --fa: "\f54d";
 }
 
 .fa-smoking-ban {
-  --fa: "";
+  --fa: "\f54d";
 }
 
 .fa-terminal {
-  --fa: "";
+  --fa: "\f120";
 }
 
 .fa-mobile-button {
-  --fa: "";
+  --fa: "\f10b";
 }
 
 .fa-house-medical-flag {
-  --fa: "";
+  --fa: "\e514";
 }
 
 .fa-basket-shopping {
-  --fa: "";
+  --fa: "\f291";
 }
 
 .fa-shopping-basket {
-  --fa: "";
+  --fa: "\f291";
 }
 
 .fa-tape {
-  --fa: "";
+  --fa: "\f4db";
 }
 
 .fa-bus-simple {
-  --fa: "";
+  --fa: "\f55e";
 }
 
 .fa-bus-alt {
-  --fa: "";
+  --fa: "\f55e";
 }
 
 .fa-eye {
-  --fa: "";
+  --fa: "\f06e";
 }
 
 .fa-face-sad-cry {
-  --fa: "";
+  --fa: "\f5b3";
 }
 
 .fa-sad-cry {
-  --fa: "";
+  --fa: "\f5b3";
 }
 
 .fa-audio-description {
-  --fa: "";
+  --fa: "\f29e";
 }
 
 .fa-person-military-to-person {
-  --fa: "";
+  --fa: "\e54c";
 }
 
 .fa-file-shield {
-  --fa: "";
+  --fa: "\e4f0";
 }
 
 .fa-user-slash {
-  --fa: "";
+  --fa: "\f506";
 }
 
 .fa-pen {
-  --fa: "";
+  --fa: "\f304";
 }
 
 .fa-tower-observation {
-  --fa: "";
+  --fa: "\e586";
 }
 
 .fa-file-code {
-  --fa: "";
+  --fa: "\f1c9";
 }
 
 .fa-signal {
-  --fa: "";
+  --fa: "\f012";
 }
 
 .fa-signal-5 {
-  --fa: "";
+  --fa: "\f012";
 }
 
 .fa-signal-perfect {
-  --fa: "";
+  --fa: "\f012";
 }
 
 .fa-bus {
-  --fa: "";
+  --fa: "\f207";
 }
 
 .fa-heart-circle-xmark {
-  --fa: "";
+  --fa: "\e501";
 }
 
 .fa-house-chimney {
-  --fa: "";
+  --fa: "\e3af";
 }
 
 .fa-home-lg {
-  --fa: "";
+  --fa: "\e3af";
 }
 
 .fa-window-maximize {
-  --fa: "";
+  --fa: "\f2d0";
 }
 
 .fa-face-frown {
-  --fa: "";
+  --fa: "\f119";
 }
 
 .fa-frown {
-  --fa: "";
+  --fa: "\f119";
 }
 
 .fa-prescription {
-  --fa: "";
+  --fa: "\f5b1";
 }
 
 .fa-shop {
-  --fa: "";
+  --fa: "\f54f";
 }
 
 .fa-store-alt {
-  --fa: "";
+  --fa: "\f54f";
 }
 
 .fa-floppy-disk {
-  --fa: "";
+  --fa: "\f0c7";
 }
 
 .fa-save {
-  --fa: "";
+  --fa: "\f0c7";
 }
 
 .fa-vihara {
-  --fa: "";
+  --fa: "\f6a7";
 }
 
 .fa-scale-unbalanced {
-  --fa: "";
+  --fa: "\f515";
 }
 
 .fa-balance-scale-left {
-  --fa: "";
+  --fa: "\f515";
 }
 
 .fa-sort-up {
-  --fa: "";
+  --fa: "\f0de";
 }
 
 .fa-sort-asc {
-  --fa: "";
+  --fa: "\f0de";
 }
 
 .fa-comment-dots {
-  --fa: "";
+  --fa: "\f4ad";
 }
 
 .fa-commenting {
-  --fa: "";
+  --fa: "\f4ad";
 }
 
 .fa-plant-wilt {
-  --fa: "";
+  --fa: "\e5aa";
 }
 
 .fa-diamond {
-  --fa: "";
+  --fa: "\f219";
 }
 
 .fa-face-grin-squint {
-  --fa: "";
+  --fa: "\f585";
 }
 
 .fa-grin-squint {
-  --fa: "";
+  --fa: "\f585";
 }
 
 .fa-hand-holding-dollar {
-  --fa: "";
+  --fa: "\f4c0";
 }
 
 .fa-hand-holding-usd {
-  --fa: "";
+  --fa: "\f4c0";
 }
 
 .fa-chart-diagram {
-  --fa: "";
+  --fa: "\e695";
 }
 
 .fa-bacterium {
-  --fa: "";
+  --fa: "\e05a";
 }
 
 .fa-hand-pointer {
-  --fa: "";
+  --fa: "\f25a";
 }
 
 .fa-drum-steelpan {
-  --fa: "";
+  --fa: "\f56a";
 }
 
 .fa-hand-scissors {
-  --fa: "";
+  --fa: "\f257";
 }
 
 .fa-hands-praying {
-  --fa: "";
+  --fa: "\f684";
 }
 
 .fa-praying-hands {
-  --fa: "";
+  --fa: "\f684";
 }
 
 .fa-arrow-rotate-right {
-  --fa: "";
+  --fa: "\f01e";
 }
 
 .fa-arrow-right-rotate {
-  --fa: "";
+  --fa: "\f01e";
 }
 
 .fa-arrow-rotate-forward {
-  --fa: "";
+  --fa: "\f01e";
 }
 
 .fa-redo {
-  --fa: "";
+  --fa: "\f01e";
 }
 
 .fa-biohazard {
-  --fa: "";
+  --fa: "\f780";
 }
 
 .fa-location-crosshairs {
-  --fa: "";
+  --fa: "\f601";
 }
 
 .fa-location {
-  --fa: "";
+  --fa: "\f601";
 }
 
 .fa-mars-double {
-  --fa: "";
+  --fa: "\f227";
 }
 
 .fa-child-dress {
-  --fa: "";
+  --fa: "\e59c";
 }
 
 .fa-users-between-lines {
-  --fa: "";
+  --fa: "\e591";
 }
 
 .fa-lungs-virus {
-  --fa: "";
+  --fa: "\e067";
 }
 
 .fa-face-grin-tears {
-  --fa: "";
+  --fa: "\f588";
 }
 
 .fa-grin-tears {
-  --fa: "";
+  --fa: "\f588";
 }
 
 .fa-phone {
-  --fa: "";
+  --fa: "\f095";
 }
 
 .fa-calendar-xmark {
-  --fa: "";
+  --fa: "\f273";
 }
 
 .fa-calendar-times {
-  --fa: "";
+  --fa: "\f273";
 }
 
 .fa-child-reaching {
-  --fa: "";
+  --fa: "\e59d";
 }
 
 .fa-head-side-virus {
-  --fa: "";
+  --fa: "\e064";
 }
 
 .fa-user-gear {
-  --fa: "";
+  --fa: "\f4fe";
 }
 
 .fa-user-cog {
-  --fa: "";
+  --fa: "\f4fe";
 }
 
 .fa-arrow-up-1-9 {
-  --fa: "";
+  --fa: "\f163";
 }
 
 .fa-sort-numeric-up {
-  --fa: "";
+  --fa: "\f163";
 }
 
 .fa-door-closed {
-  --fa: "";
+  --fa: "\f52a";
 }
 
 .fa-shield-virus {
-  --fa: "";
+  --fa: "\e06c";
 }
 
 .fa-dice-six {
-  --fa: "";
+  --fa: "\f526";
 }
 
 .fa-mosquito-net {
-  --fa: "";
+  --fa: "\e52c";
 }
 
 .fa-file-fragment {
-  --fa: "";
+  --fa: "\e697";
 }
 
 .fa-bridge-water {
-  --fa: "";
+  --fa: "\e4ce";
 }
 
 .fa-person-booth {
-  --fa: "";
+  --fa: "\f756";
 }
 
 .fa-text-width {
-  --fa: "";
+  --fa: "\f035";
 }
 
 .fa-hat-wizard {
-  --fa: "";
+  --fa: "\f6e8";
 }
 
 .fa-pen-fancy {
-  --fa: "";
+  --fa: "\f5ac";
 }
 
 .fa-person-digging {
-  --fa: "";
+  --fa: "\f85e";
 }
 
 .fa-digging {
-  --fa: "";
+  --fa: "\f85e";
 }
 
 .fa-trash {
-  --fa: "";
+  --fa: "\f1f8";
 }
 
 .fa-gauge-simple {
-  --fa: "";
+  --fa: "\f629";
 }
 
 .fa-gauge-simple-med {
-  --fa: "";
+  --fa: "\f629";
 }
 
 .fa-tachometer-average {
-  --fa: "";
+  --fa: "\f629";
 }
 
 .fa-book-medical {
-  --fa: "";
+  --fa: "\f7e6";
 }
 
 .fa-poo {
-  --fa: "";
+  --fa: "\f2fe";
 }
 
 .fa-quote-right {
-  --fa: "";
+  --fa: "\f10e";
 }
 
 .fa-quote-right-alt {
-  --fa: "";
+  --fa: "\f10e";
 }
 
 .fa-shirt {
-  --fa: "";
+  --fa: "\f553";
 }
 
 .fa-t-shirt {
-  --fa: "";
+  --fa: "\f553";
 }
 
 .fa-tshirt {
-  --fa: "";
+  --fa: "\f553";
 }
 
 .fa-cubes {
-  --fa: "";
+  --fa: "\f1b3";
 }
 
 .fa-divide {
-  --fa: "";
+  --fa: "\f529";
 }
 
 .fa-tenge-sign {
-  --fa: "";
+  --fa: "\f7d7";
 }
 
 .fa-tenge {
-  --fa: "";
+  --fa: "\f7d7";
 }
 
 .fa-headphones {
-  --fa: "";
+  --fa: "\f025";
 }
 
 .fa-hands-holding {
-  --fa: "";
+  --fa: "\f4c2";
 }
 
 .fa-hands-clapping {
-  --fa: "";
+  --fa: "\e1a8";
 }
 
 .fa-republican {
-  --fa: "";
+  --fa: "\f75e";
 }
 
 .fa-arrow-left {
-  --fa: "";
+  --fa: "\f060";
 }
 
 .fa-person-circle-xmark {
-  --fa: "";
+  --fa: "\e543";
 }
 
 .fa-ruler {
-  --fa: "";
+  --fa: "\f545";
 }
 
 .fa-align-left {
-  --fa: "";
+  --fa: "\f036";
 }
 
 .fa-dice-d6 {
-  --fa: "";
+  --fa: "\f6d1";
 }
 
 .fa-restroom {
-  --fa: "";
+  --fa: "\f7bd";
 }
 
 .fa-j {
@@ -6872,39 +6870,39 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-users-viewfinder {
-  --fa: "";
+  --fa: "\e595";
 }
 
 .fa-file-video {
-  --fa: "";
+  --fa: "\f1c8";
 }
 
 .fa-up-right-from-square {
-  --fa: "";
+  --fa: "\f35d";
 }
 
 .fa-external-link-alt {
-  --fa: "";
+  --fa: "\f35d";
 }
 
 .fa-table-cells {
-  --fa: "";
+  --fa: "\f00a";
 }
 
 .fa-th {
-  --fa: "";
+  --fa: "\f00a";
 }
 
 .fa-file-pdf {
-  --fa: "";
+  --fa: "\f1c1";
 }
 
 .fa-book-bible {
-  --fa: "";
+  --fa: "\f647";
 }
 
 .fa-bible {
-  --fa: "";
+  --fa: "\f647";
 }
 
 .fa-o {
@@ -6912,567 +6910,567 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-suitcase-medical {
-  --fa: "";
+  --fa: "\f0fa";
 }
 
 .fa-medkit {
-  --fa: "";
+  --fa: "\f0fa";
 }
 
 .fa-user-secret {
-  --fa: "";
+  --fa: "\f21b";
 }
 
 .fa-otter {
-  --fa: "";
+  --fa: "\f700";
 }
 
 .fa-person-dress {
-  --fa: "";
+  --fa: "\f182";
 }
 
 .fa-female {
-  --fa: "";
+  --fa: "\f182";
 }
 
 .fa-comment-dollar {
-  --fa: "";
+  --fa: "\f651";
 }
 
 .fa-business-time {
-  --fa: "";
+  --fa: "\f64a";
 }
 
 .fa-briefcase-clock {
-  --fa: "";
+  --fa: "\f64a";
 }
 
 .fa-table-cells-large {
-  --fa: "";
+  --fa: "\f009";
 }
 
 .fa-th-large {
-  --fa: "";
+  --fa: "\f009";
 }
 
 .fa-book-tanakh {
-  --fa: "";
+  --fa: "\f827";
 }
 
 .fa-tanakh {
-  --fa: "";
+  --fa: "\f827";
 }
 
 .fa-phone-volume {
-  --fa: "";
+  --fa: "\f2a0";
 }
 
 .fa-volume-control-phone {
-  --fa: "";
+  --fa: "\f2a0";
 }
 
 .fa-hat-cowboy-side {
-  --fa: "";
+  --fa: "\f8c1";
 }
 
 .fa-clipboard-user {
-  --fa: "";
+  --fa: "\f7f3";
 }
 
 .fa-child {
-  --fa: "";
+  --fa: "\f1ae";
 }
 
 .fa-lira-sign {
-  --fa: "";
+  --fa: "\f195";
 }
 
 .fa-satellite {
-  --fa: "";
+  --fa: "\f7bf";
 }
 
 .fa-plane-lock {
-  --fa: "";
+  --fa: "\e558";
 }
 
 .fa-tag {
-  --fa: "";
+  --fa: "\f02b";
 }
 
 .fa-comment {
-  --fa: "";
+  --fa: "\f075";
 }
 
 .fa-cake-candles {
-  --fa: "";
+  --fa: "\f1fd";
 }
 
 .fa-birthday-cake {
-  --fa: "";
+  --fa: "\f1fd";
 }
 
 .fa-cake {
-  --fa: "";
+  --fa: "\f1fd";
 }
 
 .fa-envelope {
-  --fa: "";
+  --fa: "\f0e0";
 }
 
 .fa-angles-up {
-  --fa: "";
+  --fa: "\f102";
 }
 
 .fa-angle-double-up {
-  --fa: "";
+  --fa: "\f102";
 }
 
 .fa-paperclip {
-  --fa: "";
+  --fa: "\f0c6";
 }
 
 .fa-arrow-right-to-city {
-  --fa: "";
+  --fa: "\e4b3";
 }
 
 .fa-ribbon {
-  --fa: "";
+  --fa: "\f4d6";
 }
 
 .fa-lungs {
-  --fa: "";
+  --fa: "\f604";
 }
 
 .fa-arrow-up-9-1 {
-  --fa: "";
+  --fa: "\f887";
 }
 
 .fa-sort-numeric-up-alt {
-  --fa: "";
+  --fa: "\f887";
 }
 
 .fa-litecoin-sign {
-  --fa: "";
+  --fa: "\e1d3";
 }
 
 .fa-border-none {
-  --fa: "";
+  --fa: "\f850";
 }
 
 .fa-circle-nodes {
-  --fa: "";
+  --fa: "\e4e2";
 }
 
 .fa-parachute-box {
-  --fa: "";
+  --fa: "\f4cd";
 }
 
 .fa-indent {
-  --fa: "";
+  --fa: "\f03c";
 }
 
 .fa-truck-field-un {
-  --fa: "";
+  --fa: "\e58e";
 }
 
 .fa-hourglass {
-  --fa: "";
+  --fa: "\f254";
 }
 
 .fa-hourglass-empty {
-  --fa: "";
+  --fa: "\f254";
 }
 
 .fa-mountain {
-  --fa: "";
+  --fa: "\f6fc";
 }
 
 .fa-user-doctor {
-  --fa: "";
+  --fa: "\f0f0";
 }
 
 .fa-user-md {
-  --fa: "";
+  --fa: "\f0f0";
 }
 
 .fa-circle-info {
-  --fa: "";
+  --fa: "\f05a";
 }
 
 .fa-info-circle {
-  --fa: "";
+  --fa: "\f05a";
 }
 
 .fa-cloud-meatball {
-  --fa: "";
+  --fa: "\f73b";
 }
 
 .fa-camera {
-  --fa: "";
+  --fa: "\f030";
 }
 
 .fa-camera-alt {
-  --fa: "";
+  --fa: "\f030";
 }
 
 .fa-square-virus {
-  --fa: "";
+  --fa: "\e578";
 }
 
 .fa-meteor {
-  --fa: "";
+  --fa: "\f753";
 }
 
 .fa-car-on {
-  --fa: "";
+  --fa: "\e4dd";
 }
 
 .fa-sleigh {
-  --fa: "";
+  --fa: "\f7cc";
 }
 
 .fa-arrow-down-1-9 {
-  --fa: "";
+  --fa: "\f162";
 }
 
 .fa-sort-numeric-asc {
-  --fa: "";
+  --fa: "\f162";
 }
 
 .fa-sort-numeric-down {
-  --fa: "";
+  --fa: "\f162";
 }
 
 .fa-hand-holding-droplet {
-  --fa: "";
+  --fa: "\f4c1";
 }
 
 .fa-hand-holding-water {
-  --fa: "";
+  --fa: "\f4c1";
 }
 
 .fa-water {
-  --fa: "";
+  --fa: "\f773";
 }
 
 .fa-calendar-check {
-  --fa: "";
+  --fa: "\f274";
 }
 
 .fa-braille {
-  --fa: "";
+  --fa: "\f2a1";
 }
 
 .fa-prescription-bottle-medical {
-  --fa: "";
+  --fa: "\f486";
 }
 
 .fa-prescription-bottle-alt {
-  --fa: "";
+  --fa: "\f486";
 }
 
 .fa-landmark {
-  --fa: "";
+  --fa: "\f66f";
 }
 
 .fa-truck {
-  --fa: "";
+  --fa: "\f0d1";
 }
 
 .fa-crosshairs {
-  --fa: "";
+  --fa: "\f05b";
 }
 
 .fa-person-cane {
-  --fa: "";
+  --fa: "\e53c";
 }
 
 .fa-tent {
-  --fa: "";
+  --fa: "\e57d";
 }
 
 .fa-vest-patches {
-  --fa: "";
+  --fa: "\e086";
 }
 
 .fa-check-double {
-  --fa: "";
+  --fa: "\f560";
 }
 
 .fa-arrow-down-a-z {
-  --fa: "";
+  --fa: "\f15d";
 }
 
 .fa-sort-alpha-asc {
-  --fa: "";
+  --fa: "\f15d";
 }
 
 .fa-sort-alpha-down {
-  --fa: "";
+  --fa: "\f15d";
 }
 
 .fa-money-bill-wheat {
-  --fa: "";
+  --fa: "\e52a";
 }
 
 .fa-cookie {
-  --fa: "";
+  --fa: "\f563";
 }
 
 .fa-arrow-rotate-left {
-  --fa: "";
+  --fa: "\f0e2";
 }
 
 .fa-arrow-left-rotate {
-  --fa: "";
+  --fa: "\f0e2";
 }
 
 .fa-arrow-rotate-back {
-  --fa: "";
+  --fa: "\f0e2";
 }
 
 .fa-arrow-rotate-backward {
-  --fa: "";
+  --fa: "\f0e2";
 }
 
 .fa-undo {
-  --fa: "";
+  --fa: "\f0e2";
 }
 
 .fa-hard-drive {
-  --fa: "";
+  --fa: "\f0a0";
 }
 
 .fa-hdd {
-  --fa: "";
+  --fa: "\f0a0";
 }
 
 .fa-face-grin-squint-tears {
-  --fa: "";
+  --fa: "\f586";
 }
 
 .fa-grin-squint-tears {
-  --fa: "";
+  --fa: "\f586";
 }
 
 .fa-dumbbell {
-  --fa: "";
+  --fa: "\f44b";
 }
 
 .fa-rectangle-list {
-  --fa: "";
+  --fa: "\f022";
 }
 
 .fa-list-alt {
-  --fa: "";
+  --fa: "\f022";
 }
 
 .fa-tarp-droplet {
-  --fa: "";
+  --fa: "\e57c";
 }
 
 .fa-house-medical-circle-check {
-  --fa: "";
+  --fa: "\e511";
 }
 
 .fa-person-skiing-nordic {
-  --fa: "";
+  --fa: "\f7ca";
 }
 
 .fa-skiing-nordic {
-  --fa: "";
+  --fa: "\f7ca";
 }
 
 .fa-calendar-plus {
-  --fa: "";
+  --fa: "\f271";
 }
 
 .fa-plane-arrival {
-  --fa: "";
+  --fa: "\f5af";
 }
 
 .fa-circle-left {
-  --fa: "";
+  --fa: "\f359";
 }
 
 .fa-arrow-alt-circle-left {
-  --fa: "";
+  --fa: "\f359";
 }
 
 .fa-train-subway {
-  --fa: "";
+  --fa: "\f239";
 }
 
 .fa-subway {
-  --fa: "";
+  --fa: "\f239";
 }
 
 .fa-chart-gantt {
-  --fa: "";
+  --fa: "\e0e4";
 }
 
 .fa-indian-rupee-sign {
-  --fa: "";
+  --fa: "\e1bc";
 }
 
 .fa-indian-rupee {
-  --fa: "";
+  --fa: "\e1bc";
 }
 
 .fa-inr {
-  --fa: "";
+  --fa: "\e1bc";
 }
 
 .fa-crop-simple {
-  --fa: "";
+  --fa: "\f565";
 }
 
 .fa-crop-alt {
-  --fa: "";
+  --fa: "\f565";
 }
 
 .fa-money-bill-1 {
-  --fa: "";
+  --fa: "\f3d1";
 }
 
 .fa-money-bill-alt {
-  --fa: "";
+  --fa: "\f3d1";
 }
 
 .fa-left-long {
-  --fa: "";
+  --fa: "\f30a";
 }
 
 .fa-long-arrow-alt-left {
-  --fa: "";
+  --fa: "\f30a";
 }
 
 .fa-dna {
-  --fa: "";
+  --fa: "\f471";
 }
 
 .fa-virus-slash {
-  --fa: "";
+  --fa: "\e075";
 }
 
 .fa-minus {
-  --fa: "";
+  --fa: "\f068";
 }
 
 .fa-subtract {
-  --fa: "";
+  --fa: "\f068";
 }
 
 .fa-chess {
-  --fa: "";
+  --fa: "\f439";
 }
 
 .fa-arrow-left-long {
-  --fa: "";
+  --fa: "\f177";
 }
 
 .fa-long-arrow-left {
-  --fa: "";
+  --fa: "\f177";
 }
 
 .fa-plug-circle-check {
-  --fa: "";
+  --fa: "\e55c";
 }
 
 .fa-street-view {
-  --fa: "";
+  --fa: "\f21d";
 }
 
 .fa-franc-sign {
-  --fa: "";
+  --fa: "\e18f";
 }
 
 .fa-volume-off {
-  --fa: "";
+  --fa: "\f026";
 }
 
 .fa-hands-asl-interpreting {
-  --fa: "";
+  --fa: "\f2a3";
 }
 
 .fa-american-sign-language-interpreting {
-  --fa: "";
+  --fa: "\f2a3";
 }
 
 .fa-asl-interpreting {
-  --fa: "";
+  --fa: "\f2a3";
 }
 
 .fa-hands-american-sign-language-interpreting {
-  --fa: "";
+  --fa: "\f2a3";
 }
 
 .fa-gear {
-  --fa: "";
+  --fa: "\f013";
 }
 
 .fa-cog {
-  --fa: "";
+  --fa: "\f013";
 }
 
 .fa-droplet-slash {
-  --fa: "";
+  --fa: "\f5c7";
 }
 
 .fa-tint-slash {
-  --fa: "";
+  --fa: "\f5c7";
 }
 
 .fa-mosque {
-  --fa: "";
+  --fa: "\f678";
 }
 
 .fa-mosquito {
-  --fa: "";
+  --fa: "\e52b";
 }
 
 .fa-star-of-david {
-  --fa: "";
+  --fa: "\f69a";
 }
 
 .fa-person-military-rifle {
-  --fa: "";
+  --fa: "\e54b";
 }
 
 .fa-cart-shopping {
-  --fa: "";
+  --fa: "\f07a";
 }
 
 .fa-shopping-cart {
-  --fa: "";
+  --fa: "\f07a";
 }
 
 .fa-vials {
-  --fa: "";
+  --fa: "\f493";
 }
 
 .fa-plug-circle-plus {
-  --fa: "";
+  --fa: "\e55f";
 }
 
 .fa-place-of-worship {
-  --fa: "";
+  --fa: "\f67f";
 }
 
 .fa-grip-vertical {
-  --fa: "";
+  --fa: "\f58e";
 }
 
 .fa-hexagon-nodes {
-  --fa: "";
+  --fa: "\e699";
 }
 
 .fa-arrow-turn-up {
-  --fa: "";
+  --fa: "\f148";
 }
 
 .fa-level-up {
-  --fa: "";
+  --fa: "\f148";
 }
 
 .fa-u {
@@ -7480,39 +7478,39 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-square-root-variable {
-  --fa: "";
+  --fa: "\f698";
 }
 
 .fa-square-root-alt {
-  --fa: "";
+  --fa: "\f698";
 }
 
 .fa-clock {
-  --fa: "";
+  --fa: "\f017";
 }
 
 .fa-clock-four {
-  --fa: "";
+  --fa: "\f017";
 }
 
 .fa-backward-step {
-  --fa: "";
+  --fa: "\f048";
 }
 
 .fa-step-backward {
-  --fa: "";
+  --fa: "\f048";
 }
 
 .fa-pallet {
-  --fa: "";
+  --fa: "\f482";
 }
 
 .fa-faucet {
-  --fa: "";
+  --fa: "\e005";
 }
 
 .fa-baseball-bat-ball {
-  --fa: "";
+  --fa: "\f432";
 }
 
 .fa-s {
@@ -7520,195 +7518,195 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-timeline {
-  --fa: "";
+  --fa: "\e29c";
 }
 
 .fa-keyboard {
-  --fa: "";
+  --fa: "\f11c";
 }
 
 .fa-caret-down {
-  --fa: "";
+  --fa: "\f0d7";
 }
 
 .fa-house-chimney-medical {
-  --fa: "";
+  --fa: "\f7f2";
 }
 
 .fa-clinic-medical {
-  --fa: "";
+  --fa: "\f7f2";
 }
 
 .fa-temperature-three-quarters {
-  --fa: "";
+  --fa: "\f2c8";
 }
 
 .fa-temperature-3 {
-  --fa: "";
+  --fa: "\f2c8";
 }
 
 .fa-thermometer-3 {
-  --fa: "";
+  --fa: "\f2c8";
 }
 
 .fa-thermometer-three-quarters {
-  --fa: "";
+  --fa: "\f2c8";
 }
 
 .fa-mobile-screen {
-  --fa: "";
+  --fa: "\f3cf";
 }
 
 .fa-mobile-android-alt {
-  --fa: "";
+  --fa: "\f3cf";
 }
 
 .fa-plane-up {
-  --fa: "";
+  --fa: "\e22d";
 }
 
 .fa-piggy-bank {
-  --fa: "";
+  --fa: "\f4d3";
 }
 
 .fa-battery-half {
-  --fa: "";
+  --fa: "\f242";
 }
 
 .fa-battery-3 {
-  --fa: "";
+  --fa: "\f242";
 }
 
 .fa-mountain-city {
-  --fa: "";
+  --fa: "\e52e";
 }
 
 .fa-coins {
-  --fa: "";
+  --fa: "\f51e";
 }
 
 .fa-khanda {
-  --fa: "";
+  --fa: "\f66d";
 }
 
 .fa-sliders {
-  --fa: "";
+  --fa: "\f1de";
 }
 
 .fa-sliders-h {
-  --fa: "";
+  --fa: "\f1de";
 }
 
 .fa-folder-tree {
-  --fa: "";
+  --fa: "\f802";
 }
 
 .fa-network-wired {
-  --fa: "";
+  --fa: "\f6ff";
 }
 
 .fa-map-pin {
-  --fa: "";
+  --fa: "\f276";
 }
 
 .fa-hamsa {
-  --fa: "";
+  --fa: "\f665";
 }
 
 .fa-cent-sign {
-  --fa: "";
+  --fa: "\e3f5";
 }
 
 .fa-flask {
-  --fa: "";
+  --fa: "\f0c3";
 }
 
 .fa-person-pregnant {
-  --fa: "";
+  --fa: "\e31e";
 }
 
 .fa-wand-sparkles {
-  --fa: "";
+  --fa: "\f72b";
 }
 
 .fa-ellipsis-vertical {
-  --fa: "";
+  --fa: "\f142";
 }
 
 .fa-ellipsis-v {
-  --fa: "";
+  --fa: "\f142";
 }
 
 .fa-ticket {
-  --fa: "";
+  --fa: "\f145";
 }
 
 .fa-power-off {
-  --fa: "";
+  --fa: "\f011";
 }
 
 .fa-right-long {
-  --fa: "";
+  --fa: "\f30b";
 }
 
 .fa-long-arrow-alt-right {
-  --fa: "";
+  --fa: "\f30b";
 }
 
 .fa-flag-usa {
-  --fa: "";
+  --fa: "\f74d";
 }
 
 .fa-laptop-file {
-  --fa: "";
+  --fa: "\e51d";
 }
 
 .fa-tty {
-  --fa: "";
+  --fa: "\f1e4";
 }
 
 .fa-teletype {
-  --fa: "";
+  --fa: "\f1e4";
 }
 
 .fa-diagram-next {
-  --fa: "";
+  --fa: "\e476";
 }
 
 .fa-person-rifle {
-  --fa: "";
+  --fa: "\e54e";
 }
 
 .fa-house-medical-circle-exclamation {
-  --fa: "";
+  --fa: "\e512";
 }
 
 .fa-closed-captioning {
-  --fa: "";
+  --fa: "\f20a";
 }
 
 .fa-person-hiking {
-  --fa: "";
+  --fa: "\f6ec";
 }
 
 .fa-hiking {
-  --fa: "";
+  --fa: "\f6ec";
 }
 
 .fa-venus-double {
-  --fa: "";
+  --fa: "\f226";
 }
 
 .fa-images {
-  --fa: "";
+  --fa: "\f302";
 }
 
 .fa-calculator {
-  --fa: "";
+  --fa: "\f1ec";
 }
 
 .fa-people-pulling {
-  --fa: "";
+  --fa: "\e535";
 }
 
 .fa-n {
@@ -7716,143 +7714,143 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-cable-car {
-  --fa: "";
+  --fa: "\f7da";
 }
 
 .fa-tram {
-  --fa: "";
+  --fa: "\f7da";
 }
 
 .fa-cloud-rain {
-  --fa: "";
+  --fa: "\f73d";
 }
 
 .fa-building-circle-xmark {
-  --fa: "";
+  --fa: "\e4d4";
 }
 
 .fa-ship {
-  --fa: "";
+  --fa: "\f21a";
 }
 
 .fa-arrows-down-to-line {
-  --fa: "";
+  --fa: "\e4b8";
 }
 
 .fa-download {
-  --fa: "";
+  --fa: "\f019";
 }
 
 .fa-face-grin {
-  --fa: "";
+  --fa: "\f580";
 }
 
 .fa-grin {
-  --fa: "";
+  --fa: "\f580";
 }
 
 .fa-delete-left {
-  --fa: "";
+  --fa: "\f55a";
 }
 
 .fa-backspace {
-  --fa: "";
+  --fa: "\f55a";
 }
 
 .fa-eye-dropper {
-  --fa: "";
+  --fa: "\f1fb";
 }
 
 .fa-eye-dropper-empty {
-  --fa: "";
+  --fa: "\f1fb";
 }
 
 .fa-eyedropper {
-  --fa: "";
+  --fa: "\f1fb";
 }
 
 .fa-file-circle-check {
-  --fa: "";
+  --fa: "\e5a0";
 }
 
 .fa-forward {
-  --fa: "";
+  --fa: "\f04e";
 }
 
 .fa-mobile {
-  --fa: "";
+  --fa: "\f3ce";
 }
 
 .fa-mobile-android {
-  --fa: "";
+  --fa: "\f3ce";
 }
 
 .fa-mobile-phone {
-  --fa: "";
+  --fa: "\f3ce";
 }
 
 .fa-face-meh {
-  --fa: "";
+  --fa: "\f11a";
 }
 
 .fa-meh {
-  --fa: "";
+  --fa: "\f11a";
 }
 
 .fa-align-center {
-  --fa: "";
+  --fa: "\f037";
 }
 
 .fa-book-skull {
-  --fa: "";
+  --fa: "\f6b7";
 }
 
 .fa-book-dead {
-  --fa: "";
+  --fa: "\f6b7";
 }
 
 .fa-id-card {
-  --fa: "";
+  --fa: "\f2c2";
 }
 
 .fa-drivers-license {
-  --fa: "";
+  --fa: "\f2c2";
 }
 
 .fa-outdent {
-  --fa: "";
+  --fa: "\f03b";
 }
 
 .fa-dedent {
-  --fa: "";
+  --fa: "\f03b";
 }
 
 .fa-heart-circle-exclamation {
-  --fa: "";
+  --fa: "\e4fe";
 }
 
 .fa-house {
-  --fa: "";
+  --fa: "\f015";
 }
 
 .fa-home {
-  --fa: "";
+  --fa: "\f015";
 }
 
 .fa-home-alt {
-  --fa: "";
+  --fa: "\f015";
 }
 
 .fa-home-lg-alt {
-  --fa: "";
+  --fa: "\f015";
 }
 
 .fa-calendar-week {
-  --fa: "";
+  --fa: "\f784";
 }
 
 .fa-laptop-medical {
-  --fa: "";
+  --fa: "\f812";
 }
 
 .fa-b {
@@ -7860,887 +7858,887 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-file-medical {
-  --fa: "";
+  --fa: "\f477";
 }
 
 .fa-dice-one {
-  --fa: "";
+  --fa: "\f525";
 }
 
 .fa-kiwi-bird {
-  --fa: "";
+  --fa: "\f535";
 }
 
 .fa-arrow-right-arrow-left {
-  --fa: "";
+  --fa: "\f0ec";
 }
 
 .fa-exchange {
-  --fa: "";
+  --fa: "\f0ec";
 }
 
 .fa-rotate-right {
-  --fa: "";
+  --fa: "\f2f9";
 }
 
 .fa-redo-alt {
-  --fa: "";
+  --fa: "\f2f9";
 }
 
 .fa-rotate-forward {
-  --fa: "";
+  --fa: "\f2f9";
 }
 
 .fa-utensils {
-  --fa: "";
+  --fa: "\f2e7";
 }
 
 .fa-cutlery {
-  --fa: "";
+  --fa: "\f2e7";
 }
 
 .fa-arrow-up-wide-short {
-  --fa: "";
+  --fa: "\f161";
 }
 
 .fa-sort-amount-up {
-  --fa: "";
+  --fa: "\f161";
 }
 
 .fa-mill-sign {
-  --fa: "";
+  --fa: "\e1ed";
 }
 
 .fa-bowl-rice {
-  --fa: "";
+  --fa: "\e2eb";
 }
 
 .fa-skull {
-  --fa: "";
+  --fa: "\f54c";
 }
 
 .fa-tower-broadcast {
-  --fa: "";
+  --fa: "\f519";
 }
 
 .fa-broadcast-tower {
-  --fa: "";
+  --fa: "\f519";
 }
 
 .fa-truck-pickup {
-  --fa: "";
+  --fa: "\f63c";
 }
 
 .fa-up-long {
-  --fa: "";
+  --fa: "\f30c";
 }
 
 .fa-long-arrow-alt-up {
-  --fa: "";
+  --fa: "\f30c";
 }
 
 .fa-stop {
-  --fa: "";
+  --fa: "\f04d";
 }
 
 .fa-code-merge {
-  --fa: "";
+  --fa: "\f387";
 }
 
 .fa-upload {
-  --fa: "";
+  --fa: "\f093";
 }
 
 .fa-hurricane {
-  --fa: "";
+  --fa: "\f751";
 }
 
 .fa-mound {
-  --fa: "";
+  --fa: "\e52d";
 }
 
 .fa-toilet-portable {
-  --fa: "";
+  --fa: "\e583";
 }
 
 .fa-compact-disc {
-  --fa: "";
+  --fa: "\f51f";
 }
 
 .fa-file-arrow-down {
-  --fa: "";
+  --fa: "\f56d";
 }
 
 .fa-file-download {
-  --fa: "";
+  --fa: "\f56d";
 }
 
 .fa-caravan {
-  --fa: "";
+  --fa: "\f8ff";
 }
 
 .fa-shield-cat {
-  --fa: "";
+  --fa: "\e572";
 }
 
 .fa-bolt {
-  --fa: "";
+  --fa: "\f0e7";
 }
 
 .fa-zap {
-  --fa: "";
+  --fa: "\f0e7";
 }
 
 .fa-glass-water {
-  --fa: "";
+  --fa: "\e4f4";
 }
 
 .fa-oil-well {
-  --fa: "";
+  --fa: "\e532";
 }
 
 .fa-vault {
-  --fa: "";
+  --fa: "\e2c5";
 }
 
 .fa-mars {
-  --fa: "";
+  --fa: "\f222";
 }
 
 .fa-toilet {
-  --fa: "";
+  --fa: "\f7d8";
 }
 
 .fa-plane-circle-xmark {
-  --fa: "";
+  --fa: "\e557";
 }
 
 .fa-yen-sign {
-  --fa: "";
+  --fa: "\f157";
 }
 
 .fa-cny {
-  --fa: "";
+  --fa: "\f157";
 }
 
 .fa-jpy {
-  --fa: "";
+  --fa: "\f157";
 }
 
 .fa-rmb {
-  --fa: "";
+  --fa: "\f157";
 }
 
 .fa-yen {
-  --fa: "";
+  --fa: "\f157";
 }
 
 .fa-ruble-sign {
-  --fa: "";
+  --fa: "\f158";
 }
 
 .fa-rouble {
-  --fa: "";
+  --fa: "\f158";
 }
 
 .fa-rub {
-  --fa: "";
+  --fa: "\f158";
 }
 
 .fa-ruble {
-  --fa: "";
+  --fa: "\f158";
 }
 
 .fa-sun {
-  --fa: "";
+  --fa: "\f185";
 }
 
 .fa-guitar {
-  --fa: "";
+  --fa: "\f7a6";
 }
 
 .fa-face-laugh-wink {
-  --fa: "";
+  --fa: "\f59c";
 }
 
 .fa-laugh-wink {
-  --fa: "";
+  --fa: "\f59c";
 }
 
 .fa-horse-head {
-  --fa: "";
+  --fa: "\f7ab";
 }
 
 .fa-bore-hole {
-  --fa: "";
+  --fa: "\e4c3";
 }
 
 .fa-industry {
-  --fa: "";
+  --fa: "\f275";
 }
 
 .fa-circle-down {
-  --fa: "";
+  --fa: "\f358";
 }
 
 .fa-arrow-alt-circle-down {
-  --fa: "";
+  --fa: "\f358";
 }
 
 .fa-arrows-turn-to-dots {
-  --fa: "";
+  --fa: "\e4c1";
 }
 
 .fa-florin-sign {
-  --fa: "";
+  --fa: "\e184";
 }
 
 .fa-arrow-down-short-wide {
-  --fa: "";
+  --fa: "\f884";
 }
 
 .fa-sort-amount-desc {
-  --fa: "";
+  --fa: "\f884";
 }
 
 .fa-sort-amount-down-alt {
-  --fa: "";
+  --fa: "\f884";
 }
 
 .fa-less-than {
-  --fa: "<";
+  --fa: "\<";
 }
 
 .fa-angle-down {
-  --fa: "";
+  --fa: "\f107";
 }
 
 .fa-car-tunnel {
-  --fa: "";
+  --fa: "\e4de";
 }
 
 .fa-head-side-cough {
-  --fa: "";
+  --fa: "\e061";
 }
 
 .fa-grip-lines {
-  --fa: "";
+  --fa: "\f7a4";
 }
 
 .fa-thumbs-down {
-  --fa: "";
+  --fa: "\f165";
 }
 
 .fa-user-lock {
-  --fa: "";
+  --fa: "\f502";
 }
 
 .fa-arrow-right-long {
-  --fa: "";
+  --fa: "\f178";
 }
 
 .fa-long-arrow-right {
-  --fa: "";
+  --fa: "\f178";
 }
 
 .fa-anchor-circle-xmark {
-  --fa: "";
+  --fa: "\e4ac";
 }
 
 .fa-ellipsis {
-  --fa: "";
+  --fa: "\f141";
 }
 
 .fa-ellipsis-h {
-  --fa: "";
+  --fa: "\f141";
 }
 
 .fa-chess-pawn {
-  --fa: "";
+  --fa: "\f443";
 }
 
 .fa-kit-medical {
-  --fa: "";
+  --fa: "\f479";
 }
 
 .fa-first-aid {
-  --fa: "";
+  --fa: "\f479";
 }
 
 .fa-person-through-window {
-  --fa: "";
+  --fa: "\e5a9";
 }
 
 .fa-toolbox {
-  --fa: "";
+  --fa: "\f552";
 }
 
 .fa-hands-holding-circle {
-  --fa: "";
+  --fa: "\e4fb";
 }
 
 .fa-bug {
-  --fa: "";
+  --fa: "\f188";
 }
 
 .fa-credit-card {
-  --fa: "";
+  --fa: "\f09d";
 }
 
 .fa-credit-card-alt {
-  --fa: "";
+  --fa: "\f09d";
 }
 
 .fa-car {
-  --fa: "";
+  --fa: "\f1b9";
 }
 
 .fa-automobile {
-  --fa: "";
+  --fa: "\f1b9";
 }
 
 .fa-hand-holding-hand {
-  --fa: "";
+  --fa: "\e4f7";
 }
 
 .fa-book-open-reader {
-  --fa: "";
+  --fa: "\f5da";
 }
 
 .fa-book-reader {
-  --fa: "";
+  --fa: "\f5da";
 }
 
 .fa-mountain-sun {
-  --fa: "";
+  --fa: "\e52f";
 }
 
 .fa-arrows-left-right-to-line {
-  --fa: "";
+  --fa: "\e4ba";
 }
 
 .fa-dice-d20 {
-  --fa: "";
+  --fa: "\f6cf";
 }
 
 .fa-truck-droplet {
-  --fa: "";
+  --fa: "\e58c";
 }
 
 .fa-file-circle-xmark {
-  --fa: "";
+  --fa: "\e5a1";
 }
 
 .fa-temperature-arrow-up {
-  --fa: "";
+  --fa: "\e040";
 }
 
 .fa-temperature-up {
-  --fa: "";
+  --fa: "\e040";
 }
 
 .fa-medal {
-  --fa: "";
+  --fa: "\f5a2";
 }
 
 .fa-bed {
-  --fa: "";
+  --fa: "\f236";
 }
 
 .fa-square-h {
-  --fa: "";
+  --fa: "\f0fd";
 }
 
 .fa-h-square {
-  --fa: "";
+  --fa: "\f0fd";
 }
 
 .fa-podcast {
-  --fa: "";
+  --fa: "\f2ce";
 }
 
 .fa-temperature-full {
-  --fa: "";
+  --fa: "\f2c7";
 }
 
 .fa-temperature-4 {
-  --fa: "";
+  --fa: "\f2c7";
 }
 
 .fa-thermometer-4 {
-  --fa: "";
+  --fa: "\f2c7";
 }
 
 .fa-thermometer-full {
-  --fa: "";
+  --fa: "\f2c7";
 }
 
 .fa-bell {
-  --fa: "";
+  --fa: "\f0f3";
 }
 
 .fa-superscript {
-  --fa: "";
+  --fa: "\f12b";
 }
 
 .fa-plug-circle-xmark {
-  --fa: "";
+  --fa: "\e560";
 }
 
 .fa-star-of-life {
-  --fa: "";
+  --fa: "\f621";
 }
 
 .fa-phone-slash {
-  --fa: "";
+  --fa: "\f3dd";
 }
 
 .fa-paint-roller {
-  --fa: "";
+  --fa: "\f5aa";
 }
 
 .fa-handshake-angle {
-  --fa: "";
+  --fa: "\f4c4";
 }
 
 .fa-hands-helping {
-  --fa: "";
+  --fa: "\f4c4";
 }
 
 .fa-location-dot {
-  --fa: "";
+  --fa: "\f3c5";
 }
 
 .fa-map-marker-alt {
-  --fa: "";
+  --fa: "\f3c5";
 }
 
 .fa-file {
-  --fa: "";
+  --fa: "\f15b";
 }
 
 .fa-greater-than {
-  --fa: ">";
+  --fa: "\>";
 }
 
 .fa-person-swimming {
-  --fa: "";
+  --fa: "\f5c4";
 }
 
 .fa-swimmer {
-  --fa: "";
+  --fa: "\f5c4";
 }
 
 .fa-arrow-down {
-  --fa: "";
+  --fa: "\f063";
 }
 
 .fa-droplet {
-  --fa: "";
+  --fa: "\f043";
 }
 
 .fa-tint {
-  --fa: "";
+  --fa: "\f043";
 }
 
 .fa-eraser {
-  --fa: "";
+  --fa: "\f12d";
 }
 
 .fa-earth-americas {
-  --fa: "";
+  --fa: "\f57d";
 }
 
 .fa-earth {
-  --fa: "";
+  --fa: "\f57d";
 }
 
 .fa-earth-america {
-  --fa: "";
+  --fa: "\f57d";
 }
 
 .fa-globe-americas {
-  --fa: "";
+  --fa: "\f57d";
 }
 
 .fa-person-burst {
-  --fa: "";
+  --fa: "\e53b";
 }
 
 .fa-dove {
-  --fa: "";
+  --fa: "\f4ba";
 }
 
 .fa-battery-empty {
-  --fa: "";
+  --fa: "\f244";
 }
 
 .fa-battery-0 {
-  --fa: "";
+  --fa: "\f244";
 }
 
 .fa-socks {
-  --fa: "";
+  --fa: "\f696";
 }
 
 .fa-inbox {
-  --fa: "";
+  --fa: "\f01c";
 }
 
 .fa-section {
-  --fa: "";
+  --fa: "\e447";
 }
 
 .fa-gauge-high {
-  --fa: "";
+  --fa: "\f625";
 }
 
 .fa-tachometer-alt {
-  --fa: "";
+  --fa: "\f625";
 }
 
 .fa-tachometer-alt-fast {
-  --fa: "";
+  --fa: "\f625";
 }
 
 .fa-envelope-open-text {
-  --fa: "";
+  --fa: "\f658";
 }
 
 .fa-hospital {
-  --fa: "";
+  --fa: "\f0f8";
 }
 
 .fa-hospital-alt {
-  --fa: "";
+  --fa: "\f0f8";
 }
 
 .fa-hospital-wide {
-  --fa: "";
+  --fa: "\f0f8";
 }
 
 .fa-wine-bottle {
-  --fa: "";
+  --fa: "\f72f";
 }
 
 .fa-chess-rook {
-  --fa: "";
+  --fa: "\f447";
 }
 
 .fa-bars-staggered {
-  --fa: "";
+  --fa: "\f550";
 }
 
 .fa-reorder {
-  --fa: "";
+  --fa: "\f550";
 }
 
 .fa-stream {
-  --fa: "";
+  --fa: "\f550";
 }
 
 .fa-dharmachakra {
-  --fa: "";
+  --fa: "\f655";
 }
 
 .fa-hotdog {
-  --fa: "";
+  --fa: "\f80f";
 }
 
 .fa-person-walking-with-cane {
-  --fa: "";
+  --fa: "\f29d";
 }
 
 .fa-blind {
-  --fa: "";
+  --fa: "\f29d";
 }
 
 .fa-drum {
-  --fa: "";
+  --fa: "\f569";
 }
 
 .fa-ice-cream {
-  --fa: "";
+  --fa: "\f810";
 }
 
 .fa-heart-circle-bolt {
-  --fa: "";
+  --fa: "\e4fc";
 }
 
 .fa-fax {
-  --fa: "";
+  --fa: "\f1ac";
 }
 
 .fa-paragraph {
-  --fa: "";
+  --fa: "\f1dd";
 }
 
 .fa-check-to-slot {
-  --fa: "";
+  --fa: "\f772";
 }
 
 .fa-vote-yea {
-  --fa: "";
+  --fa: "\f772";
 }
 
 .fa-star-half {
-  --fa: "";
+  --fa: "\f089";
 }
 
 .fa-boxes-stacked {
-  --fa: "";
+  --fa: "\f468";
 }
 
 .fa-boxes {
-  --fa: "";
+  --fa: "\f468";
 }
 
 .fa-boxes-alt {
-  --fa: "";
+  --fa: "\f468";
 }
 
 .fa-link {
-  --fa: "";
+  --fa: "\f0c1";
 }
 
 .fa-chain {
-  --fa: "";
+  --fa: "\f0c1";
 }
 
 .fa-ear-listen {
-  --fa: "";
+  --fa: "\f2a2";
 }
 
 .fa-assistive-listening-systems {
-  --fa: "";
+  --fa: "\f2a2";
 }
 
 .fa-tree-city {
-  --fa: "";
+  --fa: "\e587";
 }
 
 .fa-play {
-  --fa: "";
+  --fa: "\f04b";
 }
 
 .fa-font {
-  --fa: "";
+  --fa: "\f031";
 }
 
 .fa-table-cells-row-lock {
-  --fa: "";
+  --fa: "\e67a";
 }
 
 .fa-rupiah-sign {
-  --fa: "";
+  --fa: "\e23d";
 }
 
 .fa-magnifying-glass {
-  --fa: "";
+  --fa: "\f002";
 }
 
 .fa-search {
-  --fa: "";
+  --fa: "\f002";
 }
 
 .fa-table-tennis-paddle-ball {
-  --fa: "";
+  --fa: "\f45d";
 }
 
 .fa-ping-pong-paddle-ball {
-  --fa: "";
+  --fa: "\f45d";
 }
 
 .fa-table-tennis {
-  --fa: "";
+  --fa: "\f45d";
 }
 
 .fa-person-dots-from-line {
-  --fa: "";
+  --fa: "\f470";
 }
 
 .fa-diagnoses {
-  --fa: "";
+  --fa: "\f470";
 }
 
 .fa-trash-can-arrow-up {
-  --fa: "";
+  --fa: "\f82a";
 }
 
 .fa-trash-restore-alt {
-  --fa: "";
+  --fa: "\f82a";
 }
 
 .fa-naira-sign {
-  --fa: "";
+  --fa: "\e1f6";
 }
 
 .fa-cart-arrow-down {
-  --fa: "";
+  --fa: "\f218";
 }
 
 .fa-walkie-talkie {
-  --fa: "";
+  --fa: "\f8ef";
 }
 
 .fa-file-pen {
-  --fa: "";
+  --fa: "\f31c";
 }
 
 .fa-file-edit {
-  --fa: "";
+  --fa: "\f31c";
 }
 
 .fa-receipt {
-  --fa: "";
+  --fa: "\f543";
 }
 
 .fa-square-pen {
-  --fa: "";
+  --fa: "\f14b";
 }
 
 .fa-pen-square {
-  --fa: "";
+  --fa: "\f14b";
 }
 
 .fa-pencil-square {
-  --fa: "";
+  --fa: "\f14b";
 }
 
 .fa-suitcase-rolling {
-  --fa: "";
+  --fa: "\f5c1";
 }
 
 .fa-person-circle-exclamation {
-  --fa: "";
+  --fa: "\e53f";
 }
 
 .fa-chevron-down {
-  --fa: "";
+  --fa: "\f078";
 }
 
 .fa-battery-full {
-  --fa: "";
+  --fa: "\f240";
 }
 
 .fa-battery {
-  --fa: "";
+  --fa: "\f240";
 }
 
 .fa-battery-5 {
-  --fa: "";
+  --fa: "\f240";
 }
 
 .fa-skull-crossbones {
-  --fa: "";
+  --fa: "\f714";
 }
 
 .fa-code-compare {
-  --fa: "";
+  --fa: "\e13a";
 }
 
 .fa-list-ul {
-  --fa: "";
+  --fa: "\f0ca";
 }
 
 .fa-list-dots {
-  --fa: "";
+  --fa: "\f0ca";
 }
 
 .fa-school-lock {
-  --fa: "";
+  --fa: "\e56f";
 }
 
 .fa-tower-cell {
-  --fa: "";
+  --fa: "\e585";
 }
 
 .fa-down-long {
-  --fa: "";
+  --fa: "\f309";
 }
 
 .fa-long-arrow-alt-down {
-  --fa: "";
+  --fa: "\f309";
 }
 
 .fa-ranking-star {
-  --fa: "";
+  --fa: "\e561";
 }
 
 .fa-chess-king {
-  --fa: "";
+  --fa: "\f43f";
 }
 
 .fa-person-harassing {
-  --fa: "";
+  --fa: "\e549";
 }
 
 .fa-brazilian-real-sign {
-  --fa: "";
+  --fa: "\e46c";
 }
 
 .fa-landmark-dome {
-  --fa: "";
+  --fa: "\f752";
 }
 
 .fa-landmark-alt {
-  --fa: "";
+  --fa: "\f752";
 }
 
 .fa-arrow-up {
-  --fa: "";
+  --fa: "\f062";
 }
 
 .fa-tv {
-  --fa: "";
+  --fa: "\f26c";
 }
 
 .fa-television {
-  --fa: "";
+  --fa: "\f26c";
 }
 
 .fa-tv-alt {
-  --fa: "";
+  --fa: "\f26c";
 }
 
 .fa-shrimp {
-  --fa: "";
+  --fa: "\e448";
 }
 
 .fa-list-check {
-  --fa: "";
+  --fa: "\f0ae";
 }
 
 .fa-tasks {
-  --fa: "";
+  --fa: "\f0ae";
 }
 
 .fa-jug-detergent {
-  --fa: "";
+  --fa: "\e519";
 }
 
 .fa-circle-user {
-  --fa: "";
+  --fa: "\f2bd";
 }
 
 .fa-user-circle {
-  --fa: "";
+  --fa: "\f2bd";
 }
 
 .fa-user-shield {
-  --fa: "";
+  --fa: "\f505";
 }
 
 .fa-wind {
-  --fa: "";
+  --fa: "\f72e";
 }
 
 .fa-car-burst {
-  --fa: "";
+  --fa: "\f5e1";
 }
 
 .fa-car-crash {
-  --fa: "";
+  --fa: "\f5e1";
 }
 
 .fa-y {
@@ -8748,775 +8746,775 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-person-snowboarding {
-  --fa: "";
+  --fa: "\f7ce";
 }
 
 .fa-snowboarding {
-  --fa: "";
+  --fa: "\f7ce";
 }
 
 .fa-truck-fast {
-  --fa: "";
+  --fa: "\f48b";
 }
 
 .fa-shipping-fast {
-  --fa: "";
+  --fa: "\f48b";
 }
 
 .fa-fish {
-  --fa: "";
+  --fa: "\f578";
 }
 
 .fa-user-graduate {
-  --fa: "";
+  --fa: "\f501";
 }
 
 .fa-circle-half-stroke {
-  --fa: "";
+  --fa: "\f042";
 }
 
 .fa-adjust {
-  --fa: "";
+  --fa: "\f042";
 }
 
 .fa-clapperboard {
-  --fa: "";
+  --fa: "\e131";
 }
 
 .fa-circle-radiation {
-  --fa: "";
+  --fa: "\f7ba";
 }
 
 .fa-radiation-alt {
-  --fa: "";
+  --fa: "\f7ba";
 }
 
 .fa-baseball {
-  --fa: "";
+  --fa: "\f433";
 }
 
 .fa-baseball-ball {
-  --fa: "";
+  --fa: "\f433";
 }
 
 .fa-jet-fighter-up {
-  --fa: "";
+  --fa: "\e518";
 }
 
 .fa-diagram-project {
-  --fa: "";
+  --fa: "\f542";
 }
 
 .fa-project-diagram {
-  --fa: "";
+  --fa: "\f542";
 }
 
 .fa-copy {
-  --fa: "";
+  --fa: "\f0c5";
 }
 
 .fa-volume-xmark {
-  --fa: "";
+  --fa: "\f6a9";
 }
 
 .fa-volume-mute {
-  --fa: "";
+  --fa: "\f6a9";
 }
 
 .fa-volume-times {
-  --fa: "";
+  --fa: "\f6a9";
 }
 
 .fa-hand-sparkles {
-  --fa: "";
+  --fa: "\e05d";
 }
 
 .fa-grip {
-  --fa: "";
+  --fa: "\f58d";
 }
 
 .fa-grip-horizontal {
-  --fa: "";
+  --fa: "\f58d";
 }
 
 .fa-share-from-square {
-  --fa: "";
+  --fa: "\f14d";
 }
 
 .fa-share-square {
-  --fa: "";
+  --fa: "\f14d";
 }
 
 .fa-child-combatant {
-  --fa: "";
+  --fa: "\e4e0";
 }
 
 .fa-child-rifle {
-  --fa: "";
+  --fa: "\e4e0";
 }
 
 .fa-gun {
-  --fa: "";
+  --fa: "\e19b";
 }
 
 .fa-square-phone {
-  --fa: "";
+  --fa: "\f098";
 }
 
 .fa-phone-square {
-  --fa: "";
+  --fa: "\f098";
 }
 
 .fa-plus {
-  --fa: "+";
+  --fa: "\+";
 }
 
 .fa-add {
-  --fa: "+";
+  --fa: "\+";
 }
 
 .fa-expand {
-  --fa: "";
+  --fa: "\f065";
 }
 
 .fa-computer {
-  --fa: "";
+  --fa: "\e4e5";
 }
 
 .fa-xmark {
-  --fa: "";
+  --fa: "\f00d";
 }
 
 .fa-close {
-  --fa: "";
+  --fa: "\f00d";
 }
 
 .fa-multiply {
-  --fa: "";
+  --fa: "\f00d";
 }
 
 .fa-remove {
-  --fa: "";
+  --fa: "\f00d";
 }
 
 .fa-times {
-  --fa: "";
+  --fa: "\f00d";
 }
 
 .fa-arrows-up-down-left-right {
-  --fa: "";
+  --fa: "\f047";
 }
 
 .fa-arrows {
-  --fa: "";
+  --fa: "\f047";
 }
 
 .fa-chalkboard-user {
-  --fa: "";
+  --fa: "\f51c";
 }
 
 .fa-chalkboard-teacher {
-  --fa: "";
+  --fa: "\f51c";
 }
 
 .fa-peso-sign {
-  --fa: "";
+  --fa: "\e222";
 }
 
 .fa-building-shield {
-  --fa: "";
+  --fa: "\e4d8";
 }
 
 .fa-baby {
-  --fa: "";
+  --fa: "\f77c";
 }
 
 .fa-users-line {
-  --fa: "";
+  --fa: "\e592";
 }
 
 .fa-quote-left {
-  --fa: "";
+  --fa: "\f10d";
 }
 
 .fa-quote-left-alt {
-  --fa: "";
+  --fa: "\f10d";
 }
 
 .fa-tractor {
-  --fa: "";
+  --fa: "\f722";
 }
 
 .fa-trash-arrow-up {
-  --fa: "";
+  --fa: "\f829";
 }
 
 .fa-trash-restore {
-  --fa: "";
+  --fa: "\f829";
 }
 
 .fa-arrow-down-up-lock {
-  --fa: "";
+  --fa: "\e4b0";
 }
 
 .fa-lines-leaning {
-  --fa: "";
+  --fa: "\e51e";
 }
 
 .fa-ruler-combined {
-  --fa: "";
+  --fa: "\f546";
 }
 
 .fa-copyright {
-  --fa: "";
+  --fa: "\f1f9";
 }
 
 .fa-equals {
-  --fa: "=";
+  --fa: "\=";
 }
 
 .fa-blender {
-  --fa: "";
+  --fa: "\f517";
 }
 
 .fa-teeth {
-  --fa: "";
+  --fa: "\f62e";
 }
 
 .fa-shekel-sign {
-  --fa: "";
+  --fa: "\f20b";
 }
 
 .fa-ils {
-  --fa: "";
+  --fa: "\f20b";
 }
 
 .fa-shekel {
-  --fa: "";
+  --fa: "\f20b";
 }
 
 .fa-sheqel {
-  --fa: "";
+  --fa: "\f20b";
 }
 
 .fa-sheqel-sign {
-  --fa: "";
+  --fa: "\f20b";
 }
 
 .fa-map {
-  --fa: "";
+  --fa: "\f279";
 }
 
 .fa-rocket {
-  --fa: "";
+  --fa: "\f135";
 }
 
 .fa-photo-film {
-  --fa: "";
+  --fa: "\f87c";
 }
 
 .fa-photo-video {
-  --fa: "";
+  --fa: "\f87c";
 }
 
 .fa-folder-minus {
-  --fa: "";
+  --fa: "\f65d";
 }
 
 .fa-hexagon-nodes-bolt {
-  --fa: "";
+  --fa: "\e69a";
 }
 
 .fa-store {
-  --fa: "";
+  --fa: "\f54e";
 }
 
 .fa-arrow-trend-up {
-  --fa: "";
+  --fa: "\e098";
 }
 
 .fa-plug-circle-minus {
-  --fa: "";
+  --fa: "\e55e";
 }
 
 .fa-sign-hanging {
-  --fa: "";
+  --fa: "\f4d9";
 }
 
 .fa-sign {
-  --fa: "";
+  --fa: "\f4d9";
 }
 
 .fa-bezier-curve {
-  --fa: "";
+  --fa: "\f55b";
 }
 
 .fa-bell-slash {
-  --fa: "";
+  --fa: "\f1f6";
 }
 
 .fa-tablet {
-  --fa: "";
+  --fa: "\f3fb";
 }
 
 .fa-tablet-android {
-  --fa: "";
+  --fa: "\f3fb";
 }
 
 .fa-school-flag {
-  --fa: "";
+  --fa: "\e56e";
 }
 
 .fa-fill {
-  --fa: "";
+  --fa: "\f575";
 }
 
 .fa-angle-up {
-  --fa: "";
+  --fa: "\f106";
 }
 
 .fa-drumstick-bite {
-  --fa: "";
+  --fa: "\f6d7";
 }
 
 .fa-holly-berry {
-  --fa: "";
+  --fa: "\f7aa";
 }
 
 .fa-chevron-left {
-  --fa: "";
+  --fa: "\f053";
 }
 
 .fa-bacteria {
-  --fa: "";
+  --fa: "\e059";
 }
 
 .fa-hand-lizard {
-  --fa: "";
+  --fa: "\f258";
 }
 
 .fa-notdef {
-  --fa: "";
+  --fa: "\e1fe";
 }
 
 .fa-disease {
-  --fa: "";
+  --fa: "\f7fa";
 }
 
 .fa-briefcase-medical {
-  --fa: "";
+  --fa: "\f469";
 }
 
 .fa-genderless {
-  --fa: "";
+  --fa: "\f22d";
 }
 
 .fa-chevron-right {
-  --fa: "";
+  --fa: "\f054";
 }
 
 .fa-retweet {
-  --fa: "";
+  --fa: "\f079";
 }
 
 .fa-car-rear {
-  --fa: "";
+  --fa: "\f5de";
 }
 
 .fa-car-alt {
-  --fa: "";
+  --fa: "\f5de";
 }
 
 .fa-pump-soap {
-  --fa: "";
+  --fa: "\e06b";
 }
 
 .fa-video-slash {
-  --fa: "";
+  --fa: "\f4e2";
 }
 
 .fa-battery-quarter {
-  --fa: "";
+  --fa: "\f243";
 }
 
 .fa-battery-2 {
-  --fa: "";
+  --fa: "\f243";
 }
 
 .fa-radio {
-  --fa: "";
+  --fa: "\f8d7";
 }
 
 .fa-baby-carriage {
-  --fa: "";
+  --fa: "\f77d";
 }
 
 .fa-carriage-baby {
-  --fa: "";
+  --fa: "\f77d";
 }
 
 .fa-traffic-light {
-  --fa: "";
+  --fa: "\f637";
 }
 
 .fa-thermometer {
-  --fa: "";
+  --fa: "\f491";
 }
 
 .fa-vr-cardboard {
-  --fa: "";
+  --fa: "\f729";
 }
 
 .fa-hand-middle-finger {
-  --fa: "";
+  --fa: "\f806";
 }
 
 .fa-percent {
-  --fa: "%";
+  --fa: "\%";
 }
 
 .fa-percentage {
-  --fa: "%";
+  --fa: "\%";
 }
 
 .fa-truck-moving {
-  --fa: "";
+  --fa: "\f4df";
 }
 
 .fa-glass-water-droplet {
-  --fa: "";
+  --fa: "\e4f5";
 }
 
 .fa-display {
-  --fa: "";
+  --fa: "\e163";
 }
 
 .fa-face-smile {
-  --fa: "";
+  --fa: "\f118";
 }
 
 .fa-smile {
-  --fa: "";
+  --fa: "\f118";
 }
 
 .fa-thumbtack {
-  --fa: "";
+  --fa: "\f08d";
 }
 
 .fa-thumb-tack {
-  --fa: "";
+  --fa: "\f08d";
 }
 
 .fa-trophy {
-  --fa: "";
+  --fa: "\f091";
 }
 
 .fa-person-praying {
-  --fa: "";
+  --fa: "\f683";
 }
 
 .fa-pray {
-  --fa: "";
+  --fa: "\f683";
 }
 
 .fa-hammer {
-  --fa: "";
+  --fa: "\f6e3";
 }
 
 .fa-hand-peace {
-  --fa: "";
+  --fa: "\f25b";
 }
 
 .fa-rotate {
-  --fa: "";
+  --fa: "\f2f1";
 }
 
 .fa-sync-alt {
-  --fa: "";
+  --fa: "\f2f1";
 }
 
 .fa-spinner {
-  --fa: "";
+  --fa: "\f110";
 }
 
 .fa-robot {
-  --fa: "";
+  --fa: "\f544";
 }
 
 .fa-peace {
-  --fa: "";
+  --fa: "\f67c";
 }
 
 .fa-gears {
-  --fa: "";
+  --fa: "\f085";
 }
 
 .fa-cogs {
-  --fa: "";
+  --fa: "\f085";
 }
 
 .fa-warehouse {
-  --fa: "";
+  --fa: "\f494";
 }
 
 .fa-arrow-up-right-dots {
-  --fa: "";
+  --fa: "\e4b7";
 }
 
 .fa-splotch {
-  --fa: "";
+  --fa: "\f5bc";
 }
 
 .fa-face-grin-hearts {
-  --fa: "";
+  --fa: "\f584";
 }
 
 .fa-grin-hearts {
-  --fa: "";
+  --fa: "\f584";
 }
 
 .fa-dice-four {
-  --fa: "";
+  --fa: "\f524";
 }
 
 .fa-sim-card {
-  --fa: "";
+  --fa: "\f7c4";
 }
 
 .fa-transgender {
-  --fa: "";
+  --fa: "\f225";
 }
 
 .fa-transgender-alt {
-  --fa: "";
+  --fa: "\f225";
 }
 
 .fa-mercury {
-  --fa: "";
+  --fa: "\f223";
 }
 
 .fa-arrow-turn-down {
-  --fa: "";
+  --fa: "\f149";
 }
 
 .fa-level-down {
-  --fa: "";
+  --fa: "\f149";
 }
 
 .fa-person-falling-burst {
-  --fa: "";
+  --fa: "\e547";
 }
 
 .fa-award {
-  --fa: "";
+  --fa: "\f559";
 }
 
 .fa-ticket-simple {
-  --fa: "";
+  --fa: "\f3ff";
 }
 
 .fa-ticket-alt {
-  --fa: "";
+  --fa: "\f3ff";
 }
 
 .fa-building {
-  --fa: "";
+  --fa: "\f1ad";
 }
 
 .fa-angles-left {
-  --fa: "";
+  --fa: "\f100";
 }
 
 .fa-angle-double-left {
-  --fa: "";
+  --fa: "\f100";
 }
 
 .fa-qrcode {
-  --fa: "";
+  --fa: "\f029";
 }
 
 .fa-clock-rotate-left {
-  --fa: "";
+  --fa: "\f1da";
 }
 
 .fa-history {
-  --fa: "";
+  --fa: "\f1da";
 }
 
 .fa-face-grin-beam-sweat {
-  --fa: "";
+  --fa: "\f583";
 }
 
 .fa-grin-beam-sweat {
-  --fa: "";
+  --fa: "\f583";
 }
 
 .fa-file-export {
-  --fa: "";
+  --fa: "\f56e";
 }
 
 .fa-arrow-right-from-file {
-  --fa: "";
+  --fa: "\f56e";
 }
 
 .fa-shield {
-  --fa: "";
+  --fa: "\f132";
 }
 
 .fa-shield-blank {
-  --fa: "";
+  --fa: "\f132";
 }
 
 .fa-arrow-up-short-wide {
-  --fa: "";
+  --fa: "\f885";
 }
 
 .fa-sort-amount-up-alt {
-  --fa: "";
+  --fa: "\f885";
 }
 
 .fa-comment-nodes {
-  --fa: "";
+  --fa: "\e696";
 }
 
 .fa-house-medical {
-  --fa: "";
+  --fa: "\e3b2";
 }
 
 .fa-golf-ball-tee {
-  --fa: "";
+  --fa: "\f450";
 }
 
 .fa-golf-ball {
-  --fa: "";
+  --fa: "\f450";
 }
 
 .fa-circle-chevron-left {
-  --fa: "";
+  --fa: "\f137";
 }
 
 .fa-chevron-circle-left {
-  --fa: "";
+  --fa: "\f137";
 }
 
 .fa-house-chimney-window {
-  --fa: "";
+  --fa: "\e00d";
 }
 
 .fa-pen-nib {
-  --fa: "";
+  --fa: "\f5ad";
 }
 
 .fa-tent-arrow-turn-left {
-  --fa: "";
+  --fa: "\e580";
 }
 
 .fa-tents {
-  --fa: "";
+  --fa: "\e582";
 }
 
 .fa-wand-magic {
-  --fa: "";
+  --fa: "\f0d0";
 }
 
 .fa-magic {
-  --fa: "";
+  --fa: "\f0d0";
 }
 
 .fa-dog {
-  --fa: "";
+  --fa: "\f6d3";
 }
 
 .fa-carrot {
-  --fa: "";
+  --fa: "\f787";
 }
 
 .fa-moon {
-  --fa: "";
+  --fa: "\f186";
 }
 
 .fa-wine-glass-empty {
-  --fa: "";
+  --fa: "\f5ce";
 }
 
 .fa-wine-glass-alt {
-  --fa: "";
+  --fa: "\f5ce";
 }
 
 .fa-cheese {
-  --fa: "";
+  --fa: "\f7ef";
 }
 
 .fa-yin-yang {
-  --fa: "";
+  --fa: "\f6ad";
 }
 
 .fa-music {
-  --fa: "";
+  --fa: "\f001";
 }
 
 .fa-code-commit {
-  --fa: "";
+  --fa: "\f386";
 }
 
 .fa-temperature-low {
-  --fa: "";
+  --fa: "\f76b";
 }
 
 .fa-person-biking {
-  --fa: "";
+  --fa: "\f84a";
 }
 
 .fa-biking {
-  --fa: "";
+  --fa: "\f84a";
 }
 
 .fa-broom {
-  --fa: "";
+  --fa: "\f51a";
 }
 
 .fa-shield-heart {
-  --fa: "";
+  --fa: "\e574";
 }
 
 .fa-gopuram {
-  --fa: "";
+  --fa: "\f664";
 }
 
 .fa-earth-oceania {
-  --fa: "";
+  --fa: "\e47b";
 }
 
 .fa-globe-oceania {
-  --fa: "";
+  --fa: "\e47b";
 }
 
 .fa-square-xmark {
-  --fa: "";
+  --fa: "\f2d3";
 }
 
 .fa-times-square {
-  --fa: "";
+  --fa: "\f2d3";
 }
 
 .fa-xmark-square {
-  --fa: "";
+  --fa: "\f2d3";
 }
 
 .fa-hashtag {
-  --fa: "#";
+  --fa: "\#";
 }
 
 .fa-up-right-and-down-left-from-center {
-  --fa: "";
+  --fa: "\f424";
 }
 
 .fa-expand-alt {
-  --fa: "";
+  --fa: "\f424";
 }
 
 .fa-oil-can {
-  --fa: "";
+  --fa: "\f613";
 }
 
 .fa-t {
@@ -9524,223 +9522,223 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-hippo {
-  --fa: "";
+  --fa: "\f6ed";
 }
 
 .fa-chart-column {
-  --fa: "";
+  --fa: "\e0e3";
 }
 
 .fa-infinity {
-  --fa: "";
+  --fa: "\f534";
 }
 
 .fa-vial-circle-check {
-  --fa: "";
+  --fa: "\e596";
 }
 
 .fa-person-arrow-down-to-line {
-  --fa: "";
+  --fa: "\e538";
 }
 
 .fa-voicemail {
-  --fa: "";
+  --fa: "\f897";
 }
 
 .fa-fan {
-  --fa: "";
+  --fa: "\f863";
 }
 
 .fa-person-walking-luggage {
-  --fa: "";
+  --fa: "\e554";
 }
 
 .fa-up-down {
-  --fa: "";
+  --fa: "\f338";
 }
 
 .fa-arrows-alt-v {
-  --fa: "";
+  --fa: "\f338";
 }
 
 .fa-cloud-moon-rain {
-  --fa: "";
+  --fa: "\f73c";
 }
 
 .fa-calendar {
-  --fa: "";
+  --fa: "\f133";
 }
 
 .fa-trailer {
-  --fa: "";
+  --fa: "\e041";
 }
 
 .fa-bahai {
-  --fa: "";
+  --fa: "\f666";
 }
 
 .fa-haykal {
-  --fa: "";
+  --fa: "\f666";
 }
 
 .fa-sd-card {
-  --fa: "";
+  --fa: "\f7c2";
 }
 
 .fa-dragon {
-  --fa: "";
+  --fa: "\f6d5";
 }
 
 .fa-shoe-prints {
-  --fa: "";
+  --fa: "\f54b";
 }
 
 .fa-circle-plus {
-  --fa: "";
+  --fa: "\f055";
 }
 
 .fa-plus-circle {
-  --fa: "";
+  --fa: "\f055";
 }
 
 .fa-face-grin-tongue-wink {
-  --fa: "";
+  --fa: "\f58b";
 }
 
 .fa-grin-tongue-wink {
-  --fa: "";
+  --fa: "\f58b";
 }
 
 .fa-hand-holding {
-  --fa: "";
+  --fa: "\f4bd";
 }
 
 .fa-plug-circle-exclamation {
-  --fa: "";
+  --fa: "\e55d";
 }
 
 .fa-link-slash {
-  --fa: "";
+  --fa: "\f127";
 }
 
 .fa-chain-broken {
-  --fa: "";
+  --fa: "\f127";
 }
 
 .fa-chain-slash {
-  --fa: "";
+  --fa: "\f127";
 }
 
 .fa-unlink {
-  --fa: "";
+  --fa: "\f127";
 }
 
 .fa-clone {
-  --fa: "";
+  --fa: "\f24d";
 }
 
 .fa-person-walking-arrow-loop-left {
-  --fa: "";
+  --fa: "\e551";
 }
 
 .fa-arrow-up-z-a {
-  --fa: "";
+  --fa: "\f882";
 }
 
 .fa-sort-alpha-up-alt {
-  --fa: "";
+  --fa: "\f882";
 }
 
 .fa-fire-flame-curved {
-  --fa: "";
+  --fa: "\f7e4";
 }
 
 .fa-fire-alt {
-  --fa: "";
+  --fa: "\f7e4";
 }
 
 .fa-tornado {
-  --fa: "";
+  --fa: "\f76f";
 }
 
 .fa-file-circle-plus {
-  --fa: "";
+  --fa: "\e494";
 }
 
 .fa-book-quran {
-  --fa: "";
+  --fa: "\f687";
 }
 
 .fa-quran {
-  --fa: "";
+  --fa: "\f687";
 }
 
 .fa-anchor {
-  --fa: "";
+  --fa: "\f13d";
 }
 
 .fa-border-all {
-  --fa: "";
+  --fa: "\f84c";
 }
 
 .fa-face-angry {
-  --fa: "";
+  --fa: "\f556";
 }
 
 .fa-angry {
-  --fa: "";
+  --fa: "\f556";
 }
 
 .fa-cookie-bite {
-  --fa: "";
+  --fa: "\f564";
 }
 
 .fa-arrow-trend-down {
-  --fa: "";
+  --fa: "\e097";
 }
 
 .fa-rss {
-  --fa: "";
+  --fa: "\f09e";
 }
 
 .fa-feed {
-  --fa: "";
+  --fa: "\f09e";
 }
 
 .fa-draw-polygon {
-  --fa: "";
+  --fa: "\f5ee";
 }
 
 .fa-scale-balanced {
-  --fa: "";
+  --fa: "\f24e";
 }
 
 .fa-balance-scale {
-  --fa: "";
+  --fa: "\f24e";
 }
 
 .fa-gauge-simple-high {
-  --fa: "";
+  --fa: "\f62a";
 }
 
 .fa-tachometer {
-  --fa: "";
+  --fa: "\f62a";
 }
 
 .fa-tachometer-fast {
-  --fa: "";
+  --fa: "\f62a";
 }
 
 .fa-shower {
-  --fa: "";
+  --fa: "\f2cc";
 }
 
 .fa-desktop {
-  --fa: "";
+  --fa: "\f390";
 }
 
 .fa-desktop-alt {
-  --fa: "";
+  --fa: "\f390";
 }
 
 .fa-m {
@@ -9748,535 +9746,535 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-table-list {
-  --fa: "";
+  --fa: "\f00b";
 }
 
 .fa-th-list {
-  --fa: "";
+  --fa: "\f00b";
 }
 
 .fa-comment-sms {
-  --fa: "";
+  --fa: "\f7cd";
 }
 
 .fa-sms {
-  --fa: "";
+  --fa: "\f7cd";
 }
 
 .fa-book {
-  --fa: "";
+  --fa: "\f02d";
 }
 
 .fa-user-plus {
-  --fa: "";
+  --fa: "\f234";
 }
 
 .fa-check {
-  --fa: "";
+  --fa: "\f00c";
 }
 
 .fa-battery-three-quarters {
-  --fa: "";
+  --fa: "\f241";
 }
 
 .fa-battery-4 {
-  --fa: "";
+  --fa: "\f241";
 }
 
 .fa-house-circle-check {
-  --fa: "";
+  --fa: "\e509";
 }
 
 .fa-angle-left {
-  --fa: "";
+  --fa: "\f104";
 }
 
 .fa-diagram-successor {
-  --fa: "";
+  --fa: "\e47a";
 }
 
 .fa-truck-arrow-right {
-  --fa: "";
+  --fa: "\e58b";
 }
 
 .fa-arrows-split-up-and-left {
-  --fa: "";
+  --fa: "\e4bc";
 }
 
 .fa-hand-fist {
-  --fa: "";
+  --fa: "\f6de";
 }
 
 .fa-fist-raised {
-  --fa: "";
+  --fa: "\f6de";
 }
 
 .fa-cloud-moon {
-  --fa: "";
+  --fa: "\f6c3";
 }
 
 .fa-briefcase {
-  --fa: "";
+  --fa: "\f0b1";
 }
 
 .fa-person-falling {
-  --fa: "";
+  --fa: "\e546";
 }
 
 .fa-image-portrait {
-  --fa: "";
+  --fa: "\f3e0";
 }
 
 .fa-portrait {
-  --fa: "";
+  --fa: "\f3e0";
 }
 
 .fa-user-tag {
-  --fa: "";
+  --fa: "\f507";
 }
 
 .fa-rug {
-  --fa: "";
+  --fa: "\e569";
 }
 
 .fa-earth-europe {
-  --fa: "";
+  --fa: "\f7a2";
 }
 
 .fa-globe-europe {
-  --fa: "";
+  --fa: "\f7a2";
 }
 
 .fa-cart-flatbed-suitcase {
-  --fa: "";
+  --fa: "\f59d";
 }
 
 .fa-luggage-cart {
-  --fa: "";
+  --fa: "\f59d";
 }
 
 .fa-rectangle-xmark {
-  --fa: "";
+  --fa: "\f410";
 }
 
 .fa-rectangle-times {
-  --fa: "";
+  --fa: "\f410";
 }
 
 .fa-times-rectangle {
-  --fa: "";
+  --fa: "\f410";
 }
 
 .fa-window-close {
-  --fa: "";
+  --fa: "\f410";
 }
 
 .fa-baht-sign {
-  --fa: "";
+  --fa: "\e0ac";
 }
 
 .fa-book-open {
-  --fa: "";
+  --fa: "\f518";
 }
 
 .fa-book-journal-whills {
-  --fa: "";
+  --fa: "\f66a";
 }
 
 .fa-journal-whills {
-  --fa: "";
+  --fa: "\f66a";
 }
 
 .fa-handcuffs {
-  --fa: "";
+  --fa: "\e4f8";
 }
 
 .fa-triangle-exclamation {
-  --fa: "";
+  --fa: "\f071";
 }
 
 .fa-exclamation-triangle {
-  --fa: "";
+  --fa: "\f071";
 }
 
 .fa-warning {
-  --fa: "";
+  --fa: "\f071";
 }
 
 .fa-database {
-  --fa: "";
+  --fa: "\f1c0";
 }
 
 .fa-share {
-  --fa: "";
+  --fa: "\f064";
 }
 
 .fa-mail-forward {
-  --fa: "";
+  --fa: "\f064";
 }
 
 .fa-bottle-droplet {
-  --fa: "";
+  --fa: "\e4c4";
 }
 
 .fa-mask-face {
-  --fa: "";
+  --fa: "\e1d7";
 }
 
 .fa-hill-rockslide {
-  --fa: "";
+  --fa: "\e508";
 }
 
 .fa-right-left {
-  --fa: "";
+  --fa: "\f362";
 }
 
 .fa-exchange-alt {
-  --fa: "";
+  --fa: "\f362";
 }
 
 .fa-paper-plane {
-  --fa: "";
+  --fa: "\f1d8";
 }
 
 .fa-road-circle-exclamation {
-  --fa: "";
+  --fa: "\e565";
 }
 
 .fa-dungeon {
-  --fa: "";
+  --fa: "\f6d9";
 }
 
 .fa-align-right {
-  --fa: "";
+  --fa: "\f038";
 }
 
 .fa-money-bill-1-wave {
-  --fa: "";
+  --fa: "\f53b";
 }
 
 .fa-money-bill-wave-alt {
-  --fa: "";
+  --fa: "\f53b";
 }
 
 .fa-life-ring {
-  --fa: "";
+  --fa: "\f1cd";
 }
 
 .fa-hands {
-  --fa: "";
+  --fa: "\f2a7";
 }
 
 .fa-sign-language {
-  --fa: "";
+  --fa: "\f2a7";
 }
 
 .fa-signing {
-  --fa: "";
+  --fa: "\f2a7";
 }
 
 .fa-calendar-day {
-  --fa: "";
+  --fa: "\f783";
 }
 
 .fa-water-ladder {
-  --fa: "";
+  --fa: "\f5c5";
 }
 
 .fa-ladder-water {
-  --fa: "";
+  --fa: "\f5c5";
 }
 
 .fa-swimming-pool {
-  --fa: "";
+  --fa: "\f5c5";
 }
 
 .fa-arrows-up-down {
-  --fa: "";
+  --fa: "\f07d";
 }
 
 .fa-arrows-v {
-  --fa: "";
+  --fa: "\f07d";
 }
 
 .fa-face-grimace {
-  --fa: "";
+  --fa: "\f57f";
 }
 
 .fa-grimace {
-  --fa: "";
+  --fa: "\f57f";
 }
 
 .fa-wheelchair-move {
-  --fa: "";
+  --fa: "\e2ce";
 }
 
 .fa-wheelchair-alt {
-  --fa: "";
+  --fa: "\e2ce";
 }
 
 .fa-turn-down {
-  --fa: "";
+  --fa: "\f3be";
 }
 
 .fa-level-down-alt {
-  --fa: "";
+  --fa: "\f3be";
 }
 
 .fa-person-walking-arrow-right {
-  --fa: "";
+  --fa: "\e552";
 }
 
 .fa-square-envelope {
-  --fa: "";
+  --fa: "\f199";
 }
 
 .fa-envelope-square {
-  --fa: "";
+  --fa: "\f199";
 }
 
 .fa-dice {
-  --fa: "";
+  --fa: "\f522";
 }
 
 .fa-bowling-ball {
-  --fa: "";
+  --fa: "\f436";
 }
 
 .fa-brain {
-  --fa: "";
+  --fa: "\f5dc";
 }
 
 .fa-bandage {
-  --fa: "";
+  --fa: "\f462";
 }
 
 .fa-band-aid {
-  --fa: "";
+  --fa: "\f462";
 }
 
 .fa-calendar-minus {
-  --fa: "";
+  --fa: "\f272";
 }
 
 .fa-circle-xmark {
-  --fa: "";
+  --fa: "\f057";
 }
 
 .fa-times-circle {
-  --fa: "";
+  --fa: "\f057";
 }
 
 .fa-xmark-circle {
-  --fa: "";
+  --fa: "\f057";
 }
 
 .fa-gifts {
-  --fa: "";
+  --fa: "\f79c";
 }
 
 .fa-hotel {
-  --fa: "";
+  --fa: "\f594";
 }
 
 .fa-earth-asia {
-  --fa: "";
+  --fa: "\f57e";
 }
 
 .fa-globe-asia {
-  --fa: "";
+  --fa: "\f57e";
 }
 
 .fa-id-card-clip {
-  --fa: "";
+  --fa: "\f47f";
 }
 
 .fa-id-card-alt {
-  --fa: "";
+  --fa: "\f47f";
 }
 
 .fa-magnifying-glass-plus {
-  --fa: "";
+  --fa: "\f00e";
 }
 
 .fa-search-plus {
-  --fa: "";
+  --fa: "\f00e";
 }
 
 .fa-thumbs-up {
-  --fa: "";
+  --fa: "\f164";
 }
 
 .fa-user-clock {
-  --fa: "";
+  --fa: "\f4fd";
 }
 
 .fa-hand-dots {
-  --fa: "";
+  --fa: "\f461";
 }
 
 .fa-allergies {
-  --fa: "";
+  --fa: "\f461";
 }
 
 .fa-file-invoice {
-  --fa: "";
+  --fa: "\f570";
 }
 
 .fa-window-minimize {
-  --fa: "";
+  --fa: "\f2d1";
 }
 
 .fa-mug-saucer {
-  --fa: "";
+  --fa: "\f0f4";
 }
 
 .fa-coffee {
-  --fa: "";
+  --fa: "\f0f4";
 }
 
 .fa-brush {
-  --fa: "";
+  --fa: "\f55d";
 }
 
 .fa-file-half-dashed {
-  --fa: "";
+  --fa: "\e698";
 }
 
 .fa-mask {
-  --fa: "";
+  --fa: "\f6fa";
 }
 
 .fa-magnifying-glass-minus {
-  --fa: "";
+  --fa: "\f010";
 }
 
 .fa-search-minus {
-  --fa: "";
+  --fa: "\f010";
 }
 
 .fa-ruler-vertical {
-  --fa: "";
+  --fa: "\f548";
 }
 
 .fa-user-large {
-  --fa: "";
+  --fa: "\f406";
 }
 
 .fa-user-alt {
-  --fa: "";
+  --fa: "\f406";
 }
 
 .fa-train-tram {
-  --fa: "";
+  --fa: "\e5b4";
 }
 
 .fa-user-nurse {
-  --fa: "";
+  --fa: "\f82f";
 }
 
 .fa-syringe {
-  --fa: "";
+  --fa: "\f48e";
 }
 
 .fa-cloud-sun {
-  --fa: "";
+  --fa: "\f6c4";
 }
 
 .fa-stopwatch-20 {
-  --fa: "";
+  --fa: "\e06f";
 }
 
 .fa-square-full {
-  --fa: "";
+  --fa: "\f45c";
 }
 
 .fa-magnet {
-  --fa: "";
+  --fa: "\f076";
 }
 
 .fa-jar {
-  --fa: "";
+  --fa: "\e516";
 }
 
 .fa-note-sticky {
-  --fa: "";
+  --fa: "\f249";
 }
 
 .fa-sticky-note {
-  --fa: "";
+  --fa: "\f249";
 }
 
 .fa-bug-slash {
-  --fa: "";
+  --fa: "\e490";
 }
 
 .fa-arrow-up-from-water-pump {
-  --fa: "";
+  --fa: "\e4b6";
 }
 
 .fa-bone {
-  --fa: "";
+  --fa: "\f5d7";
 }
 
 .fa-table-cells-row-unlock {
-  --fa: "";
+  --fa: "\e691";
 }
 
 .fa-user-injured {
-  --fa: "";
+  --fa: "\f728";
 }
 
 .fa-face-sad-tear {
-  --fa: "";
+  --fa: "\f5b4";
 }
 
 .fa-sad-tear {
-  --fa: "";
+  --fa: "\f5b4";
 }
 
 .fa-plane {
-  --fa: "";
+  --fa: "\f072";
 }
 
 .fa-tent-arrows-down {
-  --fa: "";
+  --fa: "\e581";
 }
 
 .fa-exclamation {
-  --fa: "!";
+  --fa: "\!";
 }
 
 .fa-arrows-spin {
-  --fa: "";
+  --fa: "\e4bb";
 }
 
 .fa-print {
-  --fa: "";
+  --fa: "\f02f";
 }
 
 .fa-turkish-lira-sign {
-  --fa: "";
+  --fa: "\e2bb";
 }
 
 .fa-try {
-  --fa: "";
+  --fa: "\e2bb";
 }
 
 .fa-turkish-lira {
-  --fa: "";
+  --fa: "\e2bb";
 }
 
 .fa-dollar-sign {
-  --fa: "$";
+  --fa: "\$";
 }
 
 .fa-dollar {
-  --fa: "$";
+  --fa: "\$";
 }
 
 .fa-usd {
-  --fa: "$";
+  --fa: "\$";
 }
 
 .fa-x {
@@ -10284,51 +10282,51 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-magnifying-glass-dollar {
-  --fa: "";
+  --fa: "\f688";
 }
 
 .fa-search-dollar {
-  --fa: "";
+  --fa: "\f688";
 }
 
 .fa-users-gear {
-  --fa: "";
+  --fa: "\f509";
 }
 
 .fa-users-cog {
-  --fa: "";
+  --fa: "\f509";
 }
 
 .fa-person-military-pointing {
-  --fa: "";
+  --fa: "\e54a";
 }
 
 .fa-building-columns {
-  --fa: "";
+  --fa: "\f19c";
 }
 
 .fa-bank {
-  --fa: "";
+  --fa: "\f19c";
 }
 
 .fa-institution {
-  --fa: "";
+  --fa: "\f19c";
 }
 
 .fa-museum {
-  --fa: "";
+  --fa: "\f19c";
 }
 
 .fa-university {
-  --fa: "";
+  --fa: "\f19c";
 }
 
 .fa-umbrella {
-  --fa: "";
+  --fa: "\f0e9";
 }
 
 .fa-trowel {
-  --fa: "";
+  --fa: "\e589";
 }
 
 .fa-d {
@@ -10336,87 +10334,87 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-stapler {
-  --fa: "";
+  --fa: "\e5af";
 }
 
 .fa-masks-theater {
-  --fa: "";
+  --fa: "\f630";
 }
 
 .fa-theater-masks {
-  --fa: "";
+  --fa: "\f630";
 }
 
 .fa-kip-sign {
-  --fa: "";
+  --fa: "\e1c4";
 }
 
 .fa-hand-point-left {
-  --fa: "";
+  --fa: "\f0a5";
 }
 
 .fa-handshake-simple {
-  --fa: "";
+  --fa: "\f4c6";
 }
 
 .fa-handshake-alt {
-  --fa: "";
+  --fa: "\f4c6";
 }
 
 .fa-jet-fighter {
-  --fa: "";
+  --fa: "\f0fb";
 }
 
 .fa-fighter-jet {
-  --fa: "";
+  --fa: "\f0fb";
 }
 
 .fa-square-share-nodes {
-  --fa: "";
+  --fa: "\f1e1";
 }
 
 .fa-share-alt-square {
-  --fa: "";
+  --fa: "\f1e1";
 }
 
 .fa-barcode {
-  --fa: "";
+  --fa: "\f02a";
 }
 
 .fa-plus-minus {
-  --fa: "";
+  --fa: "\e43c";
 }
 
 .fa-video {
-  --fa: "";
+  --fa: "\f03d";
 }
 
 .fa-video-camera {
-  --fa: "";
+  --fa: "\f03d";
 }
 
 .fa-graduation-cap {
-  --fa: "";
+  --fa: "\f19d";
 }
 
 .fa-mortar-board {
-  --fa: "";
+  --fa: "\f19d";
 }
 
 .fa-hand-holding-medical {
-  --fa: "";
+  --fa: "\e05c";
 }
 
 .fa-person-circle-check {
-  --fa: "";
+  --fa: "\e53e";
 }
 
 .fa-turn-up {
-  --fa: "";
+  --fa: "\f3bf";
 }
 
 .fa-level-up-alt {
-  --fa: "";
+  --fa: "\f3bf";
 }
 
 .sr-only,
@@ -10465,6 +10463,4 @@ readers do not read off random characters that represent icons */
 .far,
 .fa-regular {
   font-weight: 400;
-} 
-
-/*# sourceMappingURL=fontawesome.css.map */
+}/*# sourceMappingURL=fontawesome.css.map */

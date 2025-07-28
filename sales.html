@@ -14,7 +14,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-primary navbar-dark shadow fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand text-white" href="#">Poultry Management</a>
 
@@ -32,7 +32,7 @@
               <!-- Center nav -->
               <div class="navbar-nav mx-auto text-center nav-colors">
                 <a class="nav-link active me-lg-3" href="#">Home</a>
-                <a class="nav-link me-lg-3" href="mortality.html">Take record</a>
+                <a class="nav-link me-lg-3" href="#">Take record</a>
                 <a class="nav-link" href="#">View record</a>
               </div>
 
@@ -63,66 +63,126 @@
     <section class="editdatabase pt-5 background-dark">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-2 border-right">
-            <h5 class="pt-5 text-center text-color-light">Edit details</h5>
-            <p class="text-center text-color-light">section B | batch A</p>
+          <!-- Sidebar: 2 Columns -->
+          <div class="col-md-2 border-right position-fixed bg-primary-reduced vh-100 display-0" style="z-index: 1;">
+            <h5 class="pt-5 text-center">Edit details</h5>
+            <p class="text-center">section B | batch A</p>
+
             <div class="buttons">
-              <span class="text-center text-color-light d-block span-button text-size" type="button">
-                <span><img class="flip-image" src="https://i.ibb.co/N4qbNH8/chick-img.png" width="25" height="25" alt="chicks"></span>
-                chickens bought
+              <span class="text-center d-flex align-items-center span-button text-size" type="button">
+                <img class="flip-image flex-shrink-1" src="https://i.ibb.co/N4qbNH8/chick-img.png" width="25" height="25" alt="chicks"> chickens bought
               </span>
             </div>
+
             <div class="buttons mt-3">
-              <span class="text-center text-color-light d-block span-button text-size" type="button">
-                <span><img class="flip-image flips me-1" src="https://i.ibb.co/KcrBNThw/chick-fed-removebg-preview.png" width="25" height="25" alt="chicks feed"></span>
-                feeds
+              <span class="text-center d-flex align-items-center span-button text-size" type="button">
+                <img class="flip-image flex-shrink-1 flips me-1" src="https://i.ibb.co/KcrBNThw/chick-fed-removebg-preview.png" width="25" height="25" alt="feeds"> feeds
               </span>
             </div>
+
             <div class="buttons mt-3">
-              <span class="text-center text-color-light d-block span-button text-size" type="button">
-                <span><img class="flip-image flips me-1" src="https://i.ibb.co/B2qXVTN2/deadchick1.png" width="25" height="25" alt="chicks feed"></span>
-                mortality
+              <span class="text-center d-flex align-items-center span-button text-size" type="button">
+                <img class="flip-image flex-shrink-1 flips me-1" src="https://i.ibb.co/B2qXVTN2/deadchick1.png" width="25" height="25" alt="mortality"> mortality
+              </span>
+            </div>
+
+            <div class="buttons mt-3">
+              <span class="text-center d-flex span-button text-size" type="button">
+                <img class="flip-image flex-shrink-0 flips me-1" src="https://i.ibb.co/3mpT5psw/vaccines.png" width="25" height="25" alt="vaccines"> vaccines
+              </span>
+            </div>
+
+            <div class="buttons mt-3">
+              <span class="text-center d-flex span-button text-size" type="button">
+                <img class="flip-image flex-shrink-0 flips me-1" src="https://i.ibb.co/C3z1czw8/money.jpg" width="25" height="25" alt="sales"> sales
               </span>
             </div>
           </div>
-          <div class="col-md-10 mx-auto">
-            <h3 class="text-center pt-md-5 text-color-light">Admin database</h3>
-            <p class="text-center text-color-light">Edit your poultry farm records here.</p>
-            <div class="inputs d-flex align-items-center justify-content-center">
-              <form class="row g-3 needs-validation d-flex justify-content-md-center" novalidate>
-                <div class="col-md-6">
-                  <h4 class="pt-5">Add feeds</h4>
+
+          <!-- Main Content Area: 10 Columns, offset to avoid fixed sidebar overlap -->
+          <div class="col-md-10 offset-md-2 padding-small-screen">
+            <div class="mx-auto" style="max-width: 800px;">
+              <div class="small-screen-display d-flex align-items-center justify-content-between">
+                <span data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                  <img src="assets/images/sidebar-icon.svg" alt="sidebar icon" class="sidebar-fixed-icon">
+                </span>
+                <h3 class="flex-grow-1 text-center text-dark mb-0">Admin database</h3>
+              </div>
+              <p class="text-center text-muted">Edit your poultry farm records here.</p>
+
+              <!-- //////// off canvas for small screens  -->
+              <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas-header align-items-right justify-content-end">
+                  <h5 class="offcanvas-title ms-auto" id="offcanvasWithBothOptionsLabel">Edit details</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <div class="col-md-6">
-                  <!-- empty column just to keep spacing symmetrical (optional) -->
-                </div>
-                <div class="col-md-6">
-                  <label for="validationCustom01" class="form-label">Number of feed</label>
-                  <input type="number" class="form-control" id="validationCustom01" value="" placeholder="0" required>
-                  <div class="invalid-feedback">
-                    Bad credentials!
+                <div class="offcanvas-body">
+                  <p class="text-center">section B | batch A</p>
+                  <div class="buttons">
+                    <span class="text-center d-flex align-items-center span-button text-size" type="button">
+                      <img class="flip-image flex-shrink-1" src="https://i.ibb.co/N4qbNH8/chick-img.png" width="25" height="25" alt="chicks"> chickens bought
+                    </span>
+                  </div>
+                  <div class="buttons mt-3">
+                    <span class="text-center d-flex align-items-center span-button text-size" type="button">
+                      <img class="flip-image flex-shrink-1 flips me-1" src="https://i.ibb.co/KcrBNThw/chick-fed-removebg-preview.png" width="25" height="25" alt="feeds"> feeds
+                    </span>
+                  </div>
+
+                  <div class="buttons mt-3">
+                    <span class="text-center d-flex align-items-center span-button text-size" type="button">
+                      <img class="flip-image flex-shrink-1 flips me-1" src="https://i.ibb.co/B2qXVTN2/deadchick1.png" width="25" height="25" alt="mortality"> mortality
+                    </span>
+                  </div>
+
+                  <div class="buttons mt-3">
+                    <span class="text-center d-flex span-button text-size" type="button">
+                      <img class="flip-image flex-shrink-0 flips me-1" src="https://i.ibb.co/3mpT5psw/vaccines.png" width="25" height="25" alt="vaccines"> vaccines
+                    </span>
+                  </div>
+
+                  <div class="buttons mt-3">
+                    <span class="text-center d-flex span-button text-size" type="button">
+                      <img class="flip-image flex-shrink-0 flips me-1" src="https://i.ibb.co/C3z1czw8/money.jpg" width="25" height="25" alt="sales"> sales
+                    </span>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <label for="validationCustom02" class="form-label">Price NGN</label>
-                  <input type="number" class="form-control" id="validationCustom02" placeholder="0" required>
-                  <div class="invalid-feedback">
-                    Bad credentials!
+              </div>
+              <!-- //////// end of off canvas for small screens  -->
+
+              <div class="inputs d-flex align-items-center justify-content-center">
+                <form class="row g-3 needs-validation justify-content-md-center" novalidate>
+                  <div class="col-md-6">
+                    <h4 class="pt-5">Record sales</h4>
                   </div>
-                </div>
-                <div class="col-md-6">
-                  <!-- <label for="disabledTextInput" class="form-label">Amount per chick</label>
-                  <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input" disabled value="NGN 0.00"> -->
-                </div>
-                <div class="col-md-6"></div>
-                <div class="col-md-12 mb-sm-3">
-                  <button class="btn btn-primary" type="submit">Submit data</button>
-                </div>
-              </form>
+
+                  <div class="col-md-6"></div>
+
+                  <div class="col-md-6">
+                    <label for="validationCustom01" class="form-label">Name of vaccine</label>
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="name1, name2, name3..." required>
+                    <div class="invalid-feedback">Bad credentials!</div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="validationCustom02" class="form-label">Price: NGN</label>
+                    <input type="number" class="form-control" id="validationCustom02" placeholder="NGN 0.00" required>
+                    <div class="invalid-feedback">Bad credentials!</div>
+                  </div>
+                  <div class="col-md-6"></div>
+                  <div class="col-md-6"></div>
+
+                  <div class="col-md-12 mb-sm-3">
+                    <button class="btn btn-primary" type="submit">Submit data</button>
+                  </div>
+                </form>
+              </div>
             </div>
+            
           </div>
         </div>
       </div>
+
     </section>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script> -->
      <script src="assets/js/bootstrap.bundle.min.js"></script>
