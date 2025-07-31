@@ -1,0 +1,6 @@
+@use "../custom" as *;
+@use "../component/mixins" as *;
+
+.big-font{
+    font-size: 1.5rem;
+}
