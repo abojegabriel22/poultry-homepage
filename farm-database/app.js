@@ -8,7 +8,7 @@ import dotenv from "dotenv"
 import dbConnect from "./controller/dbController"
 import chalk from "chalk"
 // import * as emoji from 'node-emoji';
-// import feedsRoute from "./routes/feeds.route"
+import feedsRoute from "./routes/feeds.route"
 // import mortalityRoute from "./routes/mortality.route"
 import purchaseRoute from "./routes/purchase.route"
 // import salesRoute from "./routes/sales.route"
@@ -25,7 +25,7 @@ app.use(bodyParser.urlencoded({ extended: true}))
 app.use(bodyParser.json())
 app.use("/chicken-api/swagger-ui", swaggerUi.serve, swaggerUi.setup(swaggerDocument))
 // routes
-// app.use("/chicken-api/feeds", feedsRoute)
+app.use("/chicken-api/feeds", feedsRoute)
 // app.use("/chicken-api/mortality", mortalityRoute)
 app.use("/chicken-api/purchase", purchaseRoute)
 // app.use("/chicken-api/sales", salesRoute)
