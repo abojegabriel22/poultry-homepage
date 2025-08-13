@@ -1,0 +1,34 @@
+openapi: 3.0.0
+info:
+  title: Farm database API
+  version: 1.0.0
+  description: API for managing farm records and calculations
+
+servers:
+  - url: http://localhost:1960
+    description: Local development server
+
+paths: 
+  /chicken-api/purchase:
+    $ref: './paths/purchase.yaml'
+  /chicken-api/feeds:
+    $ref: './paths/feeds.yaml'
+  /chicken-api/vaccine:
+    $ref: './paths/vaccine.yaml'
+  
+components: 
+  schemas: 
+    purchaseInput:
+      $ref: './components/schemas/purchase.yaml#/purchaseInput'
+    purchaseOutput:
+      $ref: './components/schemas/purchase.yaml#/purchaseOutput'
+    feedsInput: 
+      $ref: './components/schemas/feeds.yaml#/feedsInput'
+    feedsOutput: 
+      $ref: './components/schemas/feeds.yaml#/feedsOutput'
+    vaccineInput: 
+      $ref: './components/schemas/vaccine.yaml#/vaccineInput'
+    vaccineOutput: 
+      $ref: './components/schemas/vaccine.yaml#/vaccineOutput'
+    errorResponse: 
+      $ref: './components/schemas/error.yaml#/errorResponse'

@@ -1,0 +1,51 @@
+
+purchaseInput:
+  type: object
+  required: ["quantity", "price", "batchNumber"]
+  properties:
+    quantity:
+      type: integer
+      description: Number of chicks bought
+      example: 300
+    price: 
+      type: number
+      description: Price of chicks in NGN
+      example: 150000.00
+    batchNumber:
+      type: integer
+      description: Batch number for the purchase
+      example: 1
+
+purchaseOutput:
+  type: object
+  properties:
+    _id: 
+      type: string
+      description: Unique identifier for the purchase
+      example: 60c72b2f9b1e8d3f4c8b4567
+    quantity:
+      type: integer
+      description: Number of chicks bought
+      example: 300
+    price: 
+      type: number
+      description: Price of chicks in NGN
+      example: 150000.00
+    batchNumber:
+      type: integer
+      description: Batch number for the purchase
+      example: 1
+    pricePerChick: 
+      type: number
+      description: Price per chick in NGN automatically calculated
+      example: 500.00
+    dateOfPurchase: 
+      type: string
+      format: date-time
+      description: Date and time when the purchase happened
+      example: 10/08/2025, 22:38:10
+    daysSincePurchase: 
+      type: interger
+      description: Number of days since the purchase was made
+      example: 5
+    

@@ -1,0 +1,35 @@
+post: 
+  summary: Create purchase
+  description: Adds a new purchase record and calculates pricePerChick automatically
+  requestBody: 
+    required: true
+    content: 
+      application/json:
+        schema: 
+          $ref: '../components/schemas/purchase.yaml#/purchaseInput'
+  responses:
+    '201':
+      description: Purchase created successfully
+      content: 
+        application/json: 
+          schema:
+            $ref: '../components/schemas/purchase.yaml#/purchaseOutput'
+    '400':
+      description: Invalid input data for purchase
+      content:
+        application/json: 
+          schema: 
+            $ref: '../components/schemas/error.yaml#/errorResponse'   # FIXED HERE
+
+get: 
+  summary: Get all purchases
+  description: Retrieves all purchase records
+  responses: 
+    '200': 
+      description: List of purchases retrieved successfully
+      content: 
+        application/json: 
+          schema: 
+            type: array
+            items: 
+              $ref: '../components/schemas/purchase.yaml#/purchaseOutput'

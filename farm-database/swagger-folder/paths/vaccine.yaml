@@ -1,0 +1,36 @@
+post:
+  summary: vaccine input section
+  description: Adds a new vaccine record
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: '../components/schemas/vaccine.yaml#/vaccineInput'
+  responses:
+    '201':
+      description: adds a new vaccine successfully
+      content:
+        application/json:
+        schema:
+          $ref: '../components/schemas/vaccine.yaml#/vaccineInput'
+    '400':
+      description: Invalid input vaccine data
+      content: 
+        application/json:
+          schema:
+            $ref: '../components/schemas/error.yaml#/errorResponse'
+
+get:
+  summary: Gets all vaccine record
+  description: Retrieves all vaccine records
+  responses:
+    '200': 
+      description: List of vaccine records retrieved successfully
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '../components/schemas/vaccine.yaml#/vaccineOutput'
+        

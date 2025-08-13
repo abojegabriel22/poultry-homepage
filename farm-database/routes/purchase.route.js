@@ -17,7 +17,7 @@ router.post("/", async (req, res) => {
             batchNumber
         })
         const savedPurchase = await newPurchase.save()
-        console.log(savedPurchase)
+        console.log(chalk.green("Record created and saved success"))
          // Send success response
         return res.status(201).json({
             message: "Purchase record created successfully",

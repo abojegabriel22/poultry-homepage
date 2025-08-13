@@ -127,6 +127,63 @@
           }
         }
       }
+    },
+    "/chicken-api/vaccine": {
+      "post": {
+        "summary": "vaccine input section",
+        "description": "Adds a new vaccine record",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/vaccineInput"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "adds a new vaccine successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/vaccineOutput"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid input vaccine data",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/errorResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "summary": "Gets all vaccine record",
+        "description": "Retrieves all vaccine record",
+        "responses": {
+          "200": {
+            "description": "List of vaccine records retrieved successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/vaccineOutput"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
@@ -236,6 +293,62 @@
             "type": "string",
             "description": "Date when feeds were bought",
             "example": "11/08/2025, 23:38:46"
+          }
+        }
+      },
+      "vaccineInput": {
+        "type": "object",
+        "required": ["vaccineName", "vaccinePrice", "quantity"],
+        "properties": {
+          "quantity": {
+            "type": "integer",
+            "description": "Quantity of vaccines bought",
+            "example": 3
+          },
+          "vaccineName": {
+            "type": "string",
+            "description": "Name of the vaccine bought",
+            "example": "Lasota"
+          },
+          "vaccinePrice": {
+            "type": "number",
+            "description": "Price of the vaccine",
+            "example": 3000
+          }
+        }
+      },
+      "vaccineOutput": {
+        "type": "object",
+        "properties": {
+          "_id": {
+            "type": "string",
+            "description": "auto generated id from database",
+            "example": "60c72b2f9b1e8d3f4c8b4567"
+          },
+          "quantity": {
+            "type": "integer",
+            "description": "Quantity of vaccines bought",
+            "example": 3
+          },
+          "vaccineName": {
+            "type": "string",
+            "description": "Name of the vaccine bought",
+            "example": "Lasota"
+          },
+          "vaccinePrice": {
+            "type": "number",
+            "description": "Price of the vaccine",
+            "example": 3000
+          },
+          "totalAmount": {
+            "type": "number",
+            "description": "Price of the vaccine in total auto calculated",
+            "example": 9000
+          },
+          "date": {
+            "type": "string",
+            "description": "Date when record was taken",
+            "example": "12/08/2025, 09:19:20"
           }
         }
       },

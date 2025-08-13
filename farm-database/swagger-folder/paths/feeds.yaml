@@ -1,0 +1,37 @@
+
+post: 
+  summary: Create feed record
+  description: Adds a new feed record and calculates pricePerFeed automatically
+  requestBody: 
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: '../components/schemas/feeds.yaml#/feedsInput'
+  responses:
+    '201':
+      description: Adds a new feed record successfully
+      content:
+        application/json:
+          schema:
+            $ref: '../components/schemas/feeds.yaml#/feedsOutput'
+    '400':
+      description: Invalid feeds input data
+      content:
+        application/json:
+          schema:
+            $ref: '../components/schemas/error.yaml#/errorResponse'
+
+get:
+  summary: Get all feeds records
+  description: Retrieves all feed records
+  responses:
+    '200':
+      description: List of feeds records retrieved successfully
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '../components/schemas/feeds.yaml#/feedsOutput'
+    
