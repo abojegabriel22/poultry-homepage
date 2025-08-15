@@ -1,0 +1,43 @@
+salesInput:
+  type: object
+  required: ["numberSold", "totalPrice", "purchaseId"]
+  properties:
+    numberSold:
+      type: integer,
+      description: This is the total number of chickens sold at the moment
+      example: 15
+    totalPrice:
+      type: integer
+      description: This is the total amount from the recent sales
+      example: 75000
+    purchaseId:
+      type: string
+      description: This is the purchase id from purchase route in order to get their age when they were sold
+      example: 689863aaff2dac9c62754c1e
+
+salesOutput:
+  type: object
+  properties:
+    _id: 
+      type: string
+      description: auto generated id from database. it is unique
+      example: 689eb82d529f6769cb3a9f93
+    numberSold: 
+      type: integer
+      description: This is the total number of chickens sold at the moment
+      example: 15
+    totalPrice:
+      type: number
+      example: 75000
+    pricePerSale:
+      type: number
+      description: This is the totalPrice / numberSold
+      example: 75000/15 = 5000
+    date: 
+      type: string
+      description: date in which it was recorded
+      example: 15/08/2025, 05:09:10
+    age: 
+      type: interger
+      description: age before sale
+      example: 4

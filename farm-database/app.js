@@ -12,10 +12,12 @@ import feedsRoute from "./routes/feeds.route.js";
 import mortalityRoute from "./routes/mortality.route.js";
 import purchaseRoute from "./routes/purchase.route.js";
 import vaccinationRoute from "./routes/vaccine.route.js";
+import salesRoute from "./routes/sales.route.js"
+import summaryRoute from "./routes/summary.route.js"
 
 dotenv.config();
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT
 
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -26,6 +28,8 @@ app.use("/chicken-api/feeds", feedsRoute);
 app.use("/chicken-api/mortality", mortalityRoute);
 app.use("/chicken-api/purchase", purchaseRoute);
 app.use("/chicken-api/vaccine", vaccinationRoute);
+app.use("/chicken-api/sales", salesRoute)
+// app.use("/chicken-api/summary", summaryRoute)
 
 // Example route
 app.get("/", (req, res) => {

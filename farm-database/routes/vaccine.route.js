@@ -33,6 +33,12 @@ router.post("/", async (req, res) => {
 router.get("/", async (req, res) => {
     try{
         const vaccineR = await vaccineModel.find()
+        if(vaccineR.length === 0){
+            return res.status(404).json({
+                message: "No records found",
+                data: []
+            })
+        }
         console.log(chalk.hex("#2325ff")(`fetched vaccine records successfully`))
         return res.status(200).json({
             message: "Vaccine records fetched successfully",

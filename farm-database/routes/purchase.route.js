@@ -34,6 +34,12 @@ router.post("/", async (req, res) => {
 router.get("/", async (req, res) => {
     try {
         const purchases = await purchaseModel.find()
+        if(purchases.length === 0){
+            return res.status(404).json({
+                message: "No record found",
+                data: []
+            })
+        }
         return res.status(200).json({
             message: "Purchases fetched successfully",
             data: purchases

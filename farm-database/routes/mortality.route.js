@@ -26,6 +26,12 @@ router.post("/", async (req, res) => {
 router.get("/", async (req, res) => {
     try {
         const mortalityRecords = await mortalityModel.find()
+        if(mortalityRecords.length === 0){
+            return res.status(404).json({
+                message: "No records found",
+                data: []
+            })
+        }
         return res.status(200).json({ message: "Mortality records fetched successfully", data: mortalityRecords })
 
     } catch(err){

@@ -15,6 +15,10 @@ paths:
     $ref: './paths/feeds.yaml'
   /chicken-api/vaccine:
     $ref: './paths/vaccine.yaml'
+  /chicken-api/mortality:
+    $ref: './paths/mortality.yaml'
+  /chicken-api/sales:
+    $ref: './paths/sales.yaml'
   
 components: 
   schemas: 
@@ -32,3 +36,11 @@ components:
       $ref: './components/schemas/vaccine.yaml#/vaccineOutput'
     errorResponse: 
       $ref: './components/schemas/error.yaml#/errorResponse'
+    mortalityInput:
+      $ref: './components/schemas/mortality.yaml#/mortalityInput'
+    mortalityOutput:
+      $ref: './components/schemas/mortality.yaml#/mortalityOutput'
+    salesInput:
+      $ref: './components/schemas/sales.yaml#/salesInput'
+    salesOutput:
+      $ref: './components/schemas/sales.yaml#/salesOutput'

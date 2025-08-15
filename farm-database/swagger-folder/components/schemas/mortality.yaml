@@ -1,0 +1,34 @@
+
+mortalityInput:
+  type: object
+  required: ["mortalityRate", "mortalityAge"]
+  properties:
+    mortalityRate:
+      type: integer
+      description: This is the total number of mortality taken for the day
+      example: 4
+    mortalityAge: 
+      type: interger
+      description: This is the age of mortality. Number is in days, not weeks or months
+      example: 14
+
+mortalityOutput: 
+  type: object
+  properties:
+    _id: 
+      type: string
+      description: Auto generated from database. A unique identifier
+      example: 689ae68bcce7405547a2317e
+    mortalityRate:
+      type: interger
+      description: This is the total number of mortality taken for the day
+      example: 4
+    mortalityAge:
+      type: integer
+      description: This is the age of mortality. Number is in days, not weeks or months
+      example: 14
+    date:
+      type: string
+      description: Date at which the record was taken. Auto generated from database
+      example: 12/08/2025, 08:14:19
+    
