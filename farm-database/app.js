@@ -14,6 +14,8 @@ import purchaseRoute from "./routes/purchase.route.js";
 import vaccinationRoute from "./routes/vaccine.route.js";
 import salesRoute from "./routes/sales.route.js"
 import summaryRoute from "./routes/summary.route.js"
+import batchRoute from "./routes/batch.route.js"
+import batchData from "./routes/allRecords.route.js"
 
 dotenv.config();
 const app = express();
@@ -29,7 +31,9 @@ app.use("/chicken-api/mortality", mortalityRoute);
 app.use("/chicken-api/purchase", purchaseRoute);
 app.use("/chicken-api/vaccine", vaccinationRoute);
 app.use("/chicken-api/sales", salesRoute)
-// app.use("/chicken-api/summary", summaryRoute)
+app.use("/chicken-api/summary", summaryRoute)
+app.use("/chicken-api/batch", batchRoute)
+app.use("/chicken-api/batchdata", batchData)
 
 // Example route
 app.get("/", (req, res) => {

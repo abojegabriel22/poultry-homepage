@@ -1,7 +1,14 @@
 
 import mongoose from "mongoose"
+import { updateSummary } from "../utils/updateSummary"
+import chalk from "chalk"
 
 const purchaseSchema = new mongoose.Schema({
+  batchId: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "batch",
+    required: true
+  },
     quantity: {
         type: Number,
         required: true,
@@ -14,10 +21,11 @@ const purchaseSchema = new mongoose.Schema({
         type: Number,
         default: 0,
     },
-    batchNumber: {
-        type: Number,
-        required: true
-    },
+    // batchNumber: {
+    //     type: Number,
+    //     required: true,
+    //     unique: true
+    // },
     dateOfPurchase: {
         type: Date,
         default: Date.now,
@@ -58,6 +66,39 @@ purchaseSchema.virtual("daysSincePurchase").get(function () {
 
     return Math.floor(diffTime / (1000 * 60 * 60 * 24))
 })
+
+// post save and post delete hooks to update summary before saving 
+// purchaseSchema.post("save", async function () {
+//     try {
+//         await updateSummary()
+//     } catch(err){
+//         console.error(chalk.hex("#ff2435")("Error updating summary after purchase save: ", err.message))
+//     }
+// })
+
+// purchaseSchema.post("findOneAndUpdate", async function () {
+//     try {
+//         await updateSummary()
+//     } catch(err){
+//         console.error(chalk.hex("#ff2435")("Error updating summary after purchase update: ", err.message))
+//     }
+// })
+
+// purchaseSchema.post("findOneAndDelete", async function(){
+//     try {
+//         await updateSummary()
+//     } catch(erro){
+//         console.error(chalk.hex("#ff2435")("Error updating summary after purchase delete: ", err.message))
+//     }
+// })
+
+purchaseSchema.post("save", async function () {
+  try {
+    await updateSummary(this._id); // Pass the purchaseId
+  } catch (err) {
+    console.error(chalk.red("Error updating summary after purchase save: ", err.message));
+  }
+});
 
 const purchaseModel = mongoose.model("purchase", purchaseSchema)
 export default purchaseModel

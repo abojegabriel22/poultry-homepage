@@ -2,6 +2,16 @@
 import mongoose from "mongoose"
 
 const feedSchema = new mongoose.Schema({
+    batchId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "batch",
+        required: true
+    },
+    // purchaseId: {
+    //     type: mongoose.Schema.Types.ObjectId,
+    //     ref: "purchase",
+    //     required: true
+    // },
     quantity: {
         type: Number,
         required: true

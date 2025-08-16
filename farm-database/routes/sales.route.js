@@ -2,17 +2,26 @@
 import express from "express"
 import salesModel from "../models/sales.model"
 import chalk from "chalk"
+import batchModel from "../models/batch.model"
 
 const router = express.Router()
 
 // take record of sales
 router.post("/", async (req, res) => {
-    const { numberSold, totalPrice, purchaseId } = req.body
+    const { numberSold, totalPrice, batchId } = req.body
     try{
+        if(!batchId){
+            return res.status(400).json({message: "BatchId is required"})
+        }
+        const batchExist = await batchModel.findById(batchId)
+        if(!batchExist){
+            return res.status(404).json({message: "Batch does not exist"})
+        }
         const newSale = new salesModel({
             numberSold,
             totalPrice,
-            purchaseId,
+            batchId,
+            // purchaseId,
             date: new Date()
         })
         const saveNewSale = await newSale.save()
@@ -30,9 +39,11 @@ router.post("/", async (req, res) => {
     }
 })
 
-router.get("/", async (req, res) => {
+router.get("/:batchId", async (req, res) => {
+    // res.send("route works")
     try{
-        const sales = await salesModel.find()
+        const sales = await salesModel.find({batchId: req.params.batchId}).populate("batchId", "name startDate")
+        // const sales = await salesModel.find()
         if(sales.length === 0){
             return res.status(404).json({
                 message: "No record found",

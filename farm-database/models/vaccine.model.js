@@ -2,6 +2,16 @@
 import mongoose from "mongoose"
 
 const vaccineSchema = new mongoose.Schema({
+    batchId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "batch",
+        required: true
+    },
+    // purchaseId: {
+    //     type: mongoose.Schema.Types.ObjectId,
+    //     ref: "purchase",
+    //     required: true
+    // },
     vaccineName: {
         type: String,
         required: true

@@ -3,6 +3,16 @@ import mongoose from "mongoose"
 import purchaseModel from "./purchase.model"
 
 const salesSchema = new mongoose.Schema({
+    batchId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "batch",
+        required: true
+    },
+    // purchaseId: {
+    //     type: mongoose.Schema.Types.ObjectId,
+    //     ref: "purchase",
+    //     required: true
+    // },
     numberSold: {
         type: Number,
         required: true
@@ -18,11 +28,6 @@ const salesSchema = new mongoose.Schema({
     date: {
         type: Date,
         default: Date.now()
-    },
-    purchaseId: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "purchase",
-        required: true
     },
     age: {
         type: Number,

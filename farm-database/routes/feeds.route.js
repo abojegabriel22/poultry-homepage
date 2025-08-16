@@ -1,20 +1,32 @@
 import express from 'express'
 import feedsModel from "../models/feeds.model"
 import chalk from 'chalk'
+import batchModel from '../models/batch.model'
 
 const router = express.Router()
 
 // Create a new feed record
 router.post("/", async (req, res) => {
-    const {quantity, totalPrice} = req.body
+    const {quantity, totalPrice, batchId} = req.body
     try{
+        // check for batchId
+        if(!batchId){
+            return res.status(400).json({message: "BatchId is required"})
+        }
+        const batchExists = await batchModel.findById(batchId)
+        if(!batchExists){
+            return res.status(404).json({message: "Batch does not exists"})
+        }
+
         const newFeed = new feedsModel({
             quantity,
-            totalPrice
+            totalPrice,
+            batchId
+            // purchaseId
         })
 
         const savedFeed = await newFeed.save()
-        console.log(chalk.hex("#00ff00")(savedFeed))
+        console.log(chalk.hex("#00ff00")("savedFeed with batchId linked to batch"))
         return res.status(201).json({ message: "Feed record created successfully", data: savedFeed })
     } catch(err) {
         console.log(chalk.hex("#ff2314")(`Error creating feed record: ${err.message}`))
@@ -23,9 +35,10 @@ router.post("/", async (req, res) => {
 })
 
 // get all feed records
-router.get("/", async (req, res) => {
+router.get("/:batchId", async (req, res) => {
     try {
-        const feedsData = await feedsModel.find()
+        const feedsData = await feedsModel.find({batchId: req.params.batchId}).populate("batchId", "name, startDate")
+        // const feedsData = await feedsModel.find()
         if(feedsData.length === 0){
             return res.status(404).json({
                 message: "No records found",

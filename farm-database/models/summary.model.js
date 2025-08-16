@@ -3,6 +3,17 @@ import mongoose from "mongoose"
 import router from "../routes/feeds.route"
 
 const summarySchema = new mongoose.Schema({
+    batchId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "batch",
+        required: true
+    },
+    purchaseId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "purchase",
+        required: true,
+        unique: true
+    },
     totalSales: {
         type: Number,
         default: 0
@@ -37,4 +48,5 @@ const summarySchema = new mongoose.Schema({
     }
 })
 
-export default router
+const summaryModel = mongoose.model("summary", summarySchema)
+export default summaryModel
