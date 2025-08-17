@@ -7,11 +7,11 @@ const mortalitySchema = new mongoose.Schema({
         ref: "batch",
         required: true
     },
-    // purchaseId: {
-    //     type: mongoose.Schema.Types.ObjectId,
-    //     ref: "purchase",
-    //     required: true
-    // },
+    purchaseId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "purchase",
+        required: true
+    },
     mortalityRate: {
         type: Number,
         required: true

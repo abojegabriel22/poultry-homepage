@@ -17,6 +17,7 @@ import summaryRoute from "./routes/summary.route.js"
 import batchRoute from "./routes/batch.route.js"
 import batchData from "./routes/allRecords.route.js"
 import saleSummaryRoute from "./routes/saleSummary.route.js"
+import mortalitySummaryRoute from "./routes/mortSummary.route.js"
 
 dotenv.config();
 const app = express();
@@ -36,6 +37,7 @@ app.use("/chicken-api/summary", summaryRoute)
 app.use("/chicken-api/batch", batchRoute)
 app.use("/chicken-api/batchdata", batchData)
 app.use("/chicken-api/sale-summary", saleSummaryRoute)
+app.use("/chicken-api/mortality-sum", mortalitySummaryRoute)
 
 // Example route
 app.get("/", (req, res) => {
