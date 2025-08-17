@@ -8,7 +8,7 @@ const router = express.Router()
 
 // take record of sales
 router.post("/", async (req, res) => {
-    const { numberSold, totalPrice, batchId } = req.body
+    const { numberSold, totalPrice, batchId, purchaseId } = req.body
     try{
         if(!batchId){
             return res.status(400).json({message: "BatchId is required"})
@@ -21,7 +21,7 @@ router.post("/", async (req, res) => {
             numberSold,
             totalPrice,
             batchId,
-            // purchaseId,
+            purchaseId,
             date: new Date()
         })
         const saveNewSale = await newSale.save()

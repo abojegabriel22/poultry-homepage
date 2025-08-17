@@ -35,7 +35,7 @@ const purchaseSchema = new mongoose.Schema({
       delete ret.id // remove duplicate id
       if(ret.dateOfPurchase){
         // convert dateOfPurchase to local time
-        ret.dateOfPurchase = new Date(ret.dateOfPurchase).toLocaleString("en-NG", {timeZone: "Africa/Lagos"})
+        ret.dateOfPurchaseFormatted = new Date(ret.dateOfPurchase).toLocaleString("en-NG", {timeZone: "Africa/Lagos"})
       }
       return ret
   }},
@@ -59,10 +59,10 @@ purchaseSchema.virtual("daysSincePurchase").get(function () {
     const purchaseDate = new Date(this.dateOfPurchase)
 
     // Adjust to system's local timezone by using toLocaleString and then back to Date
-    const localNow = new Date(now.toLocaleString())
-    const localPurchaseDate = new Date(purchaseDate.toLocaleString())
+    // const localNow = new Date(now.toLocaleString())
+    // const localPurchaseDate = new Date(purchaseDate.toLocaleString())
 
-    const diffTime = localNow - localPurchaseDate
+    const diffTime = now.getTime() - purchaseDate.getTime()
 
     return Math.floor(diffTime / (1000 * 60 * 60 * 24))
 })

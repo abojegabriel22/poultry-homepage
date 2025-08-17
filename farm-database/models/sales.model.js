@@ -8,11 +8,11 @@ const salesSchema = new mongoose.Schema({
         ref: "batch",
         required: true
     },
-    // purchaseId: {
-    //     type: mongoose.Schema.Types.ObjectId,
-    //     ref: "purchase",
-    //     required: true
-    // },
+    purchaseId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "purchase",
+        required: true
+    },
     numberSold: {
         type: Number,
         required: true
@@ -58,7 +58,7 @@ salesSchema.pre("save", async function(next){
     // calculate age in days from purchase date
     if(this.purchaseId){
         const purchase = await mongoose.model("purchase").findById(this.purchaseId)
-        if(purchase && purchase.dateOfPurchase){
+        if(purchase?.dateOfPurchase){
             const diffTime = this.date - purchase.dateOfPurchase
             this.age = Math.floor(diffTime / (1000 * 60 * 60 * 24))
         }
