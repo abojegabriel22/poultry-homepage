@@ -1,35 +1,49 @@
+import express from "express";
+import mongoose from "mongoose";
+import chalk from "chalk";
 
-import express from "express"
-import chalk from "chalk"
-import salesModel from "../models/sales.model"
-import feedsModel from "../models/feeds.model"
-import mortalityModel from "../models/mortality.model"
-import purchaseModel from "../models/purchase.model"
-import vaccineModel from "../models/vaccine.model"
-const router = express.Router()
+import saleSummaryModel from "../models/saleSummary.model.js";
+import feedSumModel from "../models/feedSummary.model.js";
+import mortModel from "../models/mortSummary.model.js";
+import totalVaccineModel from "../models/totalVaccine.model.js";
+import purchaseModel from "../models/purchase.model.js";
 
+const router = express.Router();
+
+// get all summaries (sales, feeds, mortalities) by batchId
 router.get("/:batchId", async (req, res) => {
-  try{
-      const {batchId} = req.params
+  try {
+    const { batchId } = req.params;
 
-      const sales = await salesModel.find({batchId})
-      const feeds = await feedsModel.find({batchId})
-      const mortalities = await mortalityModel.find({batchId})
-      const vaccine = await vaccineModel.find({batchId})
-      const purchase = await purchaseModel.find({batchId})
-      // const feeds = await feedsModel.find({batchId})
+    // ensure ObjectId is valid
+    if (!mongoose.Types.ObjectId.isValid(batchId)) {
+      return res.status(400).json({ message: "Invalid batchId" });
+    }
 
-      res.json({
-        sales,
-        feeds,
-        mortalities,
-        vaccine,
-        purchase
-      })
-  } catch(err){
-    return res.status(500).json({message: "Error fetching batch data", error: err.message})
+    // fetch all summaries directly
+    const [salesSummary, feedSummary, mortalitySummary, totalVaccineSummary, purchaseSummary] = await Promise.all([
+      saleSummaryModel.findOne({ batchId }).populate("batchId", "name startDate"),
+      feedSumModel.findOne({ batchId }).populate("batchId", "name startDate"),
+      mortModel.findOne({ batchId }).populate("batchId", "name startDate"),
+      totalVaccineModel.findOne({ batchId}).populate("batchId", "name startDate"),
+      purchaseModel.findOne({ batchId }).populate("batchId", "name startDate")
+    ]);
+
+    // respond with combined data
+    return res.status(200).json({
+      message: "Batch summaries fetched successfully",
+      data: {
+        salesSummary,
+        feedSummary,
+        mortalitySummary,
+        totalVaccineSummary,
+        purchaseSummary
+      }
+    });
+  } catch (err) {
+    console.error(chalk.hex("#ff2435")("Error fetching summaries:", err.message));
+    return res.status(500).json({ message: "Failed to fetch batch summaries", error: err.message });
   }
-})
+});
 
-
-export default router
+export default router;

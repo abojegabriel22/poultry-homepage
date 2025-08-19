@@ -9,6 +9,11 @@ const batchSchema = new mongoose.Schema({
     startDate: {
         type: Date,
         required: true,
+        default: () => {
+            const date = new Date();
+            date.setHours(date.getHours() + 1); // add +1 hour
+            return date;
+        }
     },
     description: {
         type: String,
@@ -21,7 +26,11 @@ const batchSchema = new mongoose.Schema({
     },
     createAt: {
         type: Date,
-        default: Date.now()
+        default: () => {
+            const date = new Date();
+            date.setHours(date.getHours() + 1); // add +1 hour
+            return date;
+        }
     }
 }, {
     toJSON: {

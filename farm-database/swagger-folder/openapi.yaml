@@ -10,15 +10,35 @@ servers:
 
 paths: 
   /chicken-api/purchase:
-    $ref: './paths/purchase.yaml'
+    post:
+      $ref: './paths/purchase.yaml#/post'
+  /chicken-api/purchase/{batchId}:
+    get:
+      $ref: './paths/purchase.yaml#/get'
   /chicken-api/feeds:
-    $ref: './paths/feeds.yaml'
+    post:
+      $ref: './paths/feeds.yaml#/post'
+  /chicken-api/feeds/{batchId}:
+    get:
+      $ref: './paths/feeds.yaml#/get'
   /chicken-api/vaccine:
-    $ref: './paths/vaccine.yaml'
+    post:
+      $ref: './paths/vaccine.yaml#/post'
+  /chicken-api/vaccine/{batchId}:
+    get:
+      $ref: './paths/vaccine.yaml#/get'
   /chicken-api/mortality:
-    $ref: './paths/mortality.yaml'
+    post:
+      $ref: './paths/mortality.yaml#/post'
+  /chicken-api/mortality/{batchId}:
+    get:
+      $ref: './paths/mortality.yaml#/get'
   /chicken-api/sales:
-    $ref: './paths/sales.yaml'
+    post:
+      $ref: './paths/sales.yaml#/post'
+  /chicken-api/sales/{batchId}:
+    get:
+      $ref: './paths/sales.yaml#/get'
   
 components: 
   schemas: 

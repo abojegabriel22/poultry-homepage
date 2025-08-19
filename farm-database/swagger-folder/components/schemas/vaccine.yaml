@@ -1,6 +1,6 @@
 vaccineInput:
   type: object
-  required: ["vaccineName", "vaccinePrice", "quantity"]
+  required: ["vaccineName", "vaccinePrice", "quantity", "batchId", "purchaseId"]
   properties:
     quantity: 
       type: integer
@@ -8,20 +8,31 @@ vaccineInput:
       example: 3
     vaccineName:
       type: string
-      description: Name of the vaccing bought
+      description: Name of the vaccine bought
       example: Lasota
     vaccinePrice: 
       type: number
-      description: Price of the vaccine
+      description: Price of the vaccine (per unit)
       example: 3000
+    batchId:
+      type: string
+      format: objectId
+      description: The ObjectId of the batch linked to this vaccine purchase
+      example: "68a3b06d617178ea6af73d4e"
+    purchaseId:
+      type: string
+      format: objectId
+      description: The ObjectId of the purchase record linked to this vaccine
+      example: "68a3b876a9f9531abca7561c"
 
 vaccineOutput:
   type: object
   properties:
     _id:
       type: string
-      description: auto generated id from database
-      example: 60c72b2f9b1e8d3f4c8b4567
+      format: objectId
+      description: Auto-generated ID from the database
+      example: "60c72b2f9b1e8d3f4c8b4567"
     quantity:
       type: integer
       description: Quantity of vaccines bought
@@ -32,13 +43,29 @@ vaccineOutput:
       example: Lasota
     vaccinePrice:
       type: number
-      description: Price of the vaccine
+      description: Price of the vaccine (per unit)
       example: 3000
     totalAmount: 
       type: number
-      description: Price of the vaccine in total auto calculated
+      description: Auto-calculated total price (`vaccinePrice * quantity`)
       example: 9000
     date: 
       type: string
       description: Date when record was taken for vaccine
-      example: 12/08/2025, 09:19:20
+      example: "2025-08-12T09:19:20.000Z"
+    batchId:
+      type: string
+      format: objectId
+      description: The ObjectId of the batch linked to this vaccine purchase
+      example: "68a3b06d617178ea6af73d4e"
+    purchaseId:
+      type: string
+      format: objectId
+      description: The ObjectId of the purchase record linked to this vaccine
+      example: "68a3b876a9f9531abca7561c"
+    createdAt:
+      type: string
+      format: date-time
+    updatedAt:
+      type: string
+      format: date-time

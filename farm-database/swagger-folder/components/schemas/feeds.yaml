@@ -1,6 +1,6 @@
 feedsInput:
   type: object
-  required: ["quantity", "totalPrice"]
+  required: ["quantity", "totalPrice", "batchId", "purchaseId"]
   properties:
     quantity:
       type: integer
@@ -10,6 +10,14 @@ feedsInput:
       type: number
       description: Total price of feeds
       example: 248500
+    batchId:
+      type: string
+      description: The ID of the batch linked to this feed purchase
+      example: "68a3b06d617178ea6af73d4e"
+    purchaseId:
+      type: string
+      description: The ID of the purchase record linked to this feed
+      example: "68a3b876a9f9531abca7561c"
 
 feedsOutput:
   type: object
@@ -34,3 +42,11 @@ feedsOutput:
       type: string
       description: Date when feeds were bought
       example: 11/08/2025, 23:38:46
+    batchId:
+      type: string
+      description: The ID of the batch linked to this feed purchase
+      example: "68a3b06d617178ea6af73d4e"
+    purchaseId:
+      type: string
+      description: The ID of the purchase record linked to this feed
+      example: "68a3b876a9f9531abca7561c"

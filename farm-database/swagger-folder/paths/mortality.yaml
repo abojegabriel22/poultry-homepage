@@ -1,7 +1,8 @@
-
-post: 
+post:
   summary: Record mortality
   description: Add mortality record to the database
+  tags:
+    - Mortality
   requestBody:
     required: true
     content:
@@ -23,14 +24,30 @@ post:
             $ref: '../components/schemas/error.yaml#/errorResponse'
 
 get:
-  summary: Mortality records fetched successfully
-  description: Shows and display all the mortality records available in the database
+  summary: Get all mortality records for a batch
+  description: Retrieves all mortality records linked to a given batchId
+  tags:
+    - Mortality
+  parameters:
+    - name: batchId
+      in: path
+      required: true
+      description: The ID of the batch whose mortality records are being requested
+      schema:
+        type: string
+        example: "689fb79565c1f388a6192dcc"
   responses:
     '200':
-      description: List of all mortality records
+      description: List of all mortality records for the batch
       content:
         application/json:
           schema:
             type: array
             items:
               $ref: '../components/schemas/mortality.yaml#/mortalityOutput'
+    '404':
+      description: No mortality records found
+      content:
+        application/json:
+          schema:
+            $ref: '../components/schemas/error.yaml#/errorResponse'

@@ -18,6 +18,9 @@ import batchRoute from "./routes/batch.route.js"
 import batchData from "./routes/allRecords.route.js"
 import saleSummaryRoute from "./routes/saleSummary.route.js"
 import mortalitySummaryRoute from "./routes/mortSummary.route.js"
+import feedSumRoute from "./routes/feedsTotal.route.js";
+import allRecordsRoute from "./routes/allRecords.route.js";
+import totalVaccineRoute from "./routes/totalVaccineRoute.js";
 
 dotenv.config();
 const app = express();
@@ -33,11 +36,14 @@ app.use("/chicken-api/mortality", mortalityRoute);
 app.use("/chicken-api/purchase", purchaseRoute);
 app.use("/chicken-api/vaccine", vaccinationRoute);
 app.use("/chicken-api/sales", salesRoute)
-app.use("/chicken-api/summary", summaryRoute)
+// app.use("/chicken-api/summary", summaryRoute)
 app.use("/chicken-api/batch", batchRoute)
 app.use("/chicken-api/batchdata", batchData)
 app.use("/chicken-api/sale-summary", saleSummaryRoute)
 app.use("/chicken-api/mortality-sum", mortalitySummaryRoute)
+app.use("/chicken-api/feeds-total", feedSumRoute)
+app.use("/chicken-api/all-records", allRecordsRoute);
+app.use("/chicken-api/total-vaccine", totalVaccineRoute);
 
 // Example route
 app.get("/", (req, res) => {
@@ -49,14 +55,20 @@ app.get("/", (req, res) => {
     try {
         await dbConnect();
 
-        const swaggerDocument = await SwaggerParser.bundle(
-            path.resolve("./swagger-folder/openapi.yaml")
-        );
-
+        // Swagger UI with dynamic reload
         app.use(
-            "/chicken-api/swagger-ui",
-            swaggerUi.serve,
-            swaggerUi.setup(swaggerDocument)
+        "/chicken-api/swagger-ui",
+        swaggerUi.serve,
+        async (req, res, next) => {
+            try {
+            const swaggerDocument = await SwaggerParser.bundle(
+                path.resolve("./swagger-folder/openapi.yaml")
+            );
+            return swaggerUi.setup(swaggerDocument)(req, res, next);
+            } catch (err) {
+            next(err);
+            }
+        }
         );
 
         app.listen(port, () => {

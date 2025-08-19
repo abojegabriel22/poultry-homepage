@@ -7,12 +7,13 @@ const router = express.Router()
 
 // Create a new feed record
 router.post("/", async (req, res) => {
-    const {quantity, totalPrice, batchId} = req.body
+    const {quantity, totalPrice, batchId, purchaseId} = req.body
     try{
         // check for batchId
-        if(!batchId){
-            return res.status(400).json({message: "BatchId is required"})
+        if(!batchId || !purchaseId){
+            return res.status(400).json({message: "BatchId and purchaseId is required"})
         }
+
         const batchExists = await batchModel.findById(batchId)
         if(!batchExists){
             return res.status(404).json({message: "Batch does not exists"})
@@ -21,8 +22,8 @@ router.post("/", async (req, res) => {
         const newFeed = new feedsModel({
             quantity,
             totalPrice,
-            batchId
-            // purchaseId
+            batchId,
+            purchaseId
         })
 
         const savedFeed = await newFeed.save()
@@ -37,7 +38,7 @@ router.post("/", async (req, res) => {
 // get all feed records
 router.get("/:batchId", async (req, res) => {
     try {
-        const feedsData = await feedsModel.find({batchId: req.params.batchId}).populate("batchId", "name, startDate")
+        const feedsData = await feedsModel.find({batchId: req.params.batchId}).populate("batchId", "name, startDate").populate("purchaseId", "purchaseDate" )
         // const feedsData = await feedsModel.find()
         if(feedsData.length === 0){
             return res.status(404).json({

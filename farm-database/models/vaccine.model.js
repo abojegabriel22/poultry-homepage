@@ -7,11 +7,11 @@ const vaccineSchema = new mongoose.Schema({
         ref: "batch",
         required: true
     },
-    // purchaseId: {
-    //     type: mongoose.Schema.Types.ObjectId,
-    //     ref: "purchase",
-    //     required: true
-    // },
+    purchaseId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "purchase",
+        required: true
+    },
     vaccineName: {
         type: String,
         required: true
