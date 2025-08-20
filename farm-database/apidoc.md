@@ -1,4 +1,8 @@
 
+* [dev-server]
+# https://farm-database.onrender.com/
+* [local-server]
+# http://localhost:1960/
 <!-- /////////////////post ////////////////// -->
 
 (post)
