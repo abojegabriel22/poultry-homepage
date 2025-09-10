@@ -1,0 +1,65 @@
+<div class="home">
+  <div class="overlay"></div>
+  <div class="container">
+    <h1 class="text-center">Welcome to Poultry Management</h1>
+    <p class="text-center pb-5">Manage your poultry farm efficiently with our comprehensive tools.</p>
+    <!-- ///////form //////// -->
+    <div class="d-flex justify-content-center align-items-center vh-50">
+
+      <form #form="ngForm" (ngSubmit)="submitForm(form)" class="needs-validation w-100" style="max-width: 500px;" novalidate>
+
+        <div *ngIf="successMessage" class="alert alert-success text-center">
+          {{ successMessage }}
+        </div>
+
+        <div *ngIf="errorMessage" class="alert alert-danger text-center">
+          {{ errorMessage }}
+        </div>
+
+        <div class="mb-3">
+          <label for="validationCustomUsername" class="form-label">Username</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text">@</span>
+            <input
+             type="text"
+             class="form-control"
+             name="username"
+             [(ngModel)]="user.username"
+             #username="ngModel"
+             [ngClass]="{ 'is-invalid': username.invalid && username.touched, 'is-valid': username.valid}"
+             required
+            />
+            <div *ngIf="username.invalid && username.touched" class="invalid-feedback">Invalid username.</div>
+          </div>
+        </div>
+        <!-- ----password ---  -->
+        <div class="mb-3">
+          <label for="validationCustom02" class="form-label">password</label>
+          <input
+           type="password"
+           class="form-control"
+           placeholder="abcdAb12"
+           name="password"
+           [(ngModel)]="user.password"
+           #password="ngModel"
+           pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+           [ngClass]="{ 'is-invalid': password.invalid && password.touched, 'is-valid': password.valid}"
+           required
+          />
+          <div *ngIf="password.errors?.['pattern'] || password.invalid && password.touched" class="invalid-feedback">Invalid password!</div>
+        </div>
+
+        <button class="btn btn-primary w-100" type="submit" [disabled]="form.invalid">
+          <!-- {{ isLoading ? 'Validating...' : 'Login form'}} -->
+          <ng-container *ngIf="!isLoading; else loginTpl">Login form</ng-container>
+          <ng-template #loginTpl>
+              <span class="spinner-grow spinner-grow-sm me-2" aria-hidden="true"></span>
+              Validating...
+          </ng-template>
+        </button>
+      </form>
+
+    </div>
+
+  </div>
+</div>

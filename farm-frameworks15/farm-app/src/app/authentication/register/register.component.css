@@ -1,0 +1,13 @@
+
+.home {
+  height: auto !important;
+  
+}
+@media screen and (min-width: 1000px){
+    .mb-bottom {
+        margin-bottom: 10rem;
+    }
+    .pb-bottom {
+        padding-bottom: 3.5rem;
+    }
+}

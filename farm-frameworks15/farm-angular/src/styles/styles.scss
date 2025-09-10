@@ -1,0 +1,13 @@
+// 1. Custom overrides before Bootstrap
+@use "./custom" as *;
+
+// 2. Bootstrap core
+@use "bootstrap/scss/bootstrap";
+
+// 3. Project globals & mixins
+@use "./globals";
+@use "./mixins";
+
+// 4. Section-specific styles
+@use "./sections/input-section";
+@use "./sections/header-section";

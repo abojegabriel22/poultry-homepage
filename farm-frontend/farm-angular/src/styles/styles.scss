@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+// 1. Variables (override Bootstrap defaults before importing it)
+@use "variables";
+
+// 2. Bootstrap (compiled with your variables)
+@use "custom-bootstrap";
+
+// 3. Mixins and utilities
+@use "mixins";
+@use "utilities";
+
+// 4. Custom components
+@use "components";
