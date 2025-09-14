@@ -24,18 +24,18 @@ export class LoginComponent {
         this.errorMessage = ""
         this.successMessage = ""
         this.isLoading = true
-        console.log("Submitting form...")
+        // console.log("Submitting form...")
 
         if(form.invalid){
             this.isLoading = false
             console.error("Form is invalid")
             return
         }
-        console.log("form submitted: ", this.user)
+        // console.log("form submitted: ", this.user.username)
         this.registerService.loginUser(this.user).subscribe({
             next: (res: LoginResponse) => {
                 this.isLoading = false
-                console.log("Login successful: ", res)
+                // console.log("Login successful: ", res)
                 this.successMessage = res.message
 
                 // store token in local storage

@@ -18,6 +18,19 @@
     transform: scale(1.3);
   }
 }
+.link-to-batch {
+  /* display: inline-block; required for transform */
+  transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+  text-decoration: underline !important;
+}
+.link-to-batch:hover{
+  cursor: pointer;
+  color: var(--white);
+  transform: scale(1.2);
+  text-shadow: 0 8px 20px rgba(0, 0, 0, 0.3) !important; /* subtle glow */
+  text-decoration-color: var(--white);
+  text-decoration-thickness: 10px;
+}
 .span-button:hover, .span-button.active{
   background-color: var(--primary);
   font-weight: 800;

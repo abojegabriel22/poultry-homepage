@@ -15,6 +15,12 @@ import { RegisterComponent } from './authentication/register/register.component'
 import { RegisterService } from './services/register.service';
 import { AdminDashboardComponent } from './dashboards/admin-dashboard/admin-dashboard.component';
 import { UserDashboardComponent } from './dashboards/user-dashboard/user-dashboard.component';
+import { PurchaseRecordComponent } from './dashboards/admin-dashboard/record-purchase/record-purchase.component';
+import { CreateBatchRecords } from './dashboards/admin-dashboard/creat-batch/create-batch.component';
+import { BatchService } from './services/batch.service';
+import { BatchSelectionService } from './services/batch-selection.service';
+import { FormSelectionService } from './services/form-selection.service';
+import { PurchaseService } from './services/purchase.service';
 
 
 
@@ -30,7 +36,9 @@ import { UserDashboardComponent } from './dashboards/user-dashboard/user-dashboa
     LoginComponent,
     RegisterComponent,
     AdminDashboardComponent,
-    UserDashboardComponent
+    UserDashboardComponent,
+    PurchaseRecordComponent,
+    CreateBatchRecords
   ],
   imports: [
     BrowserModule,
@@ -39,7 +47,11 @@ import { UserDashboardComponent } from './dashboards/user-dashboard/user-dashboa
     HttpClientModule
   ],
   providers: [
-    RegisterService
+    RegisterService,
+    BatchService,
+    BatchSelectionService,
+    FormSelectionService,
+    PurchaseService
   ],
   bootstrap: [AppComponent]
 })

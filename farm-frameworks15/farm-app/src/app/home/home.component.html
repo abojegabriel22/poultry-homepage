@@ -57,7 +57,7 @@
             </div>
           </div>
           <!-- //////// end of off canvas for small screens  -->
-          <div class="inputs d-flex align-items-center justify-content-center">
+          <!-- <div class="inputs d-flex align-items-center justify-content-center">
             <form class="row g-3 needs-validation justify-content-md-center" novalidate>
               <div class="col-md-6">
                 <h4 class="pt-5">Summary of every records</h4>
@@ -172,6 +172,258 @@
               <div class="col-md-6"></div>
               <div class="col-md-6"></div>
             </form>
+          </div> -->
+          <div class="inputs d-flex align-items-center justify-content-center">
+             <!-- switch form based on formTitle  -->
+              <ng-container [ngSwitch]="formTitle">
+
+                <!-- -- add purchase form --  -->
+                <form *ngSwitchCase="'Add purchase'" class="row g-3 needs-validation d-flex justify-content-md-center" novalidate #form="ngForm" (ngSubmit)="submitForm(form)">
+                  <div class="col-md-5">
+                    <h4 class="pt-5">{{formTitle}}</h4>
+                    <div *ngIf="successMessage" class="alert alert-success mt-2">
+                      {{ successMessage }}
+                    </div>
+                    <div *ngIf="errorMessage" class="alert alert-danger mt-2">
+                      {{ errorMessage }}
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <!-- empty column just to keep spacing symmetrical (optional) -->
+                  </div>
+                  <div class="col-md-5">
+                    <label for="validationCustom01" class="form-label">Quantity</label>
+                    <input
+                     type="number"
+                     class="form-control"
+                     placeholder="100"
+                     id="quantity"
+                     name="quantity"
+                     [(ngModel)]="purchaseUser.quantity"
+                     required
+                     min="1"
+                     #quantity="ngModel"
+                     [ngClass]="{'is-invalid': quantity.invalid && quantity.touched, 'is-valid': quantity.valid}"
+                    />
+                    <div *ngIf="quantity.invalid && (quantity.dirty || quantity.touched)" class="invalid-feedback">
+                      <small *ngIf="quantity.errors?.['required']">Quantity is required</small>
+                      <small *ngIf="quantity.errors?.['min']">Must be at least 1</small>
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <label for="validationCustom02" class="form-label">Price: NGN</label>
+                    <input
+                     type="number"
+                     class="form-control"
+                     id="price"
+                     name="price"
+                     placeholder="100000"
+                     [(ngModel)]="purchaseUser.price"
+                     #price="ngModel"
+                     required
+                     min="10"
+                     [ngClass]="{'is-invalid': price.invalid && price.touched, 'is-valid': price.valid}"
+                    />
+                    <div *ngIf="price.invalid && (price.dirty || price.touched)" class="invalid-feedback">
+                      <small *ngIf="price.errors?.['required']">Price is required</small>
+                      <small *ngIf="price.errors?.['min']">Must be greater than 10 naira</small>
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <label for="validationCustom02" class="form-label">Batch</label>
+                    <input
+                     type="text"
+                     class="form-control"
+                     id="batchId"
+                     value="Name of batch..."
+                     placeholder="Name of batch..."
+                     name="batchId"
+                     #batchId="ngModel"
+                     [(ngModel)]="purchaseUser.batchId"
+                     readonly
+                    />
+                    <div class="invalid-feedback">
+                      Bad credentials!
+                    </div>
+                  </div>
+                  <!-- <div class="col-md-5">
+                    <label for="disabledTextInput" class="form-label">Amount per chick</label>
+                    <input type="text" id="disabledTextInput" class="form-control" disabled value="NGN 0.00">
+                  </div> -->
+                  <div class="col-md-5"></div>
+                  <div class="col-md-10">
+                    <button class="btn btn-primary" type="submit" [disabled]="form.invalid || isLoading">
+                      <ng-container *ngIf="!isLoading; else submitform">Submit form</ng-container>
+                      <ng-template #submitform>
+                        <span class="spinner-grow spinner-grow-sm me-2" aria-hidden="true"></span>
+                        Processing...
+                      </ng-template>
+                    </button>
+                  </div>
+                </form>
+                <!-- -- end of add purchase form --  -->
+                <!-- -- add feeds form --  -->
+                <form *ngSwitchCase="'Add feeds'" class="row g-3 needs-validation d-flex justify-content-md-center" novalidate>
+                  <div class="col-md-5">
+                    <h4 class="pt-5">{{formTitle}}</h4>
+                  </div>
+                  <div class="col-md-5">
+                    <!-- empty column just to keep spacing symmetrical (optional) -->
+                  </div>
+                  <div class="col-md-5">
+                    <label for="validationCustom01" class="form-label">Numbers of feed</label>
+                    <input type="number" class="form-control" id="validationCustom01" value="" placeholder="0" required>
+                    <div class="invalid-feedback">
+                      Bad credentials!
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <label for="validationCustom02" class="form-label">Price NGN</label>
+                    <input type="number" class="form-control" id="validationCustom02" value="" placeholder="0" required>
+                    <div class="invalid-feedback">
+                      Bad credentials!
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <label for="validationCustom02" class="form-label">Batch</label>
+                    <input type="text" class="form-control" id="validationCustom02" value="jesus-0" placeholder="jesus-0" required>
+                    <div class="invalid-feedback">
+                      Bad credentials!
+                    </div>
+                  </div>
+                  <!-- <div class="col-md-5">
+                    <label for="disabledTextInput" class="form-label">Amount per bag of feed</label>
+                    <input type="text" id="disabledTextInput" class="form-control" disabled value="NGN 0.00">
+                  </div> -->
+                  <div class="col-md-5"></div>
+                  <div class="col-md-10">
+                    <button class="btn btn-primary" type="submit">Submit form</button>
+                  </div>
+                </form>
+                <!-- -- end of form --  -->
+                <!-- -- add mortality form --  -->
+                <form *ngSwitchCase="'Add mortality'" class="row g-3 needs-validation d-flex justify-content-md-center" novalidate>
+                  <div class="col-md-5">
+                    <h4 class="pt-5">{{formTitle}}</h4>
+                  </div>
+                  <div class="col-md-5">
+                    <!-- empty column just to keep spacing symmetrical (optional) -->
+                  </div>
+                  <div class="col-md-5">
+                    <label for="validationCustom01" class="form-label">Numbers of mortality</label>
+                    <input type="number" class="form-control" id="validationCustom01" value="" placeholder="0" required>
+                    <div class="invalid-feedback">
+                      Bad credentials!
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <label for="validationCustom02" class="form-label">How many days old?</label>
+                    <input type="number" class="form-control" id="validationCustom02" value="" placeholder="0" required>
+                    <div class="invalid-feedback">
+                      Bad credentials!
+                    </div>
+                  </div>
+                  <!-- <div class="col-md-5">
+                    <label for="validationCustom02" class="form-label">Batch</label>
+                    <input type="text" class="form-control" id="validationCustom02" value="jesus-0" placeholder="jesus-0" required>
+                    <div class="invalid-feedback">
+                      Bad credentials!
+                    </div>
+                  </div> -->
+                  <!-- <div class="col-md-5">
+                    <label for="disabledTextInput" class="form-label">Amount per chick</label>
+                    <input type="text" id="disabledTextInput" class="form-control" disabled value="NGN 0.00">
+                  </div> -->
+                  <div class="col-md-5"></div>
+                  <div class="col-md-10">
+                    <button class="btn btn-primary" type="submit">Submit form</button>
+                  </div>
+                </form>
+                <!-- -- end of add mortality form --  -->
+                <!-- -- add vaccines form --  -->
+                <form *ngSwitchCase="'Add vaccines'" class="row g-3 needs-validation d-flex justify-content-md-center" novalidate>
+                  <div class="col-md-5">
+                    <h4 class="pt-5">{{formTitle}}</h4>
+                  </div>
+                  <div class="col-md-5">
+                    <!-- empty column just to keep spacing symmetrical (optional) -->
+                  </div>
+                  <div class="col-md-5">
+                    <label for="validationCustom01" class="form-label">Vaccine name</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="" placeholder="lasota" required>
+                    <div class="invalid-feedback">
+                      Bad credentials!
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <label for="validationCustom02" class="form-label">price per vaccine NGN</label>
+                    <input type="number" class="form-control" id="validationCustom02" value="" placeholder="0" required>
+                    <div class="invalid-feedback">
+                      Bad credentials!
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <label for="validationCustom02" class="form-label">Quantity</label>
+                    <input type="number" class="form-control" id="validationCustom02" value="" placeholder="2" required>
+                    <div class="invalid-feedback">
+                      Bad credentials!
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <label for="disabledTextInput" class="form-label">PurchaseId</label>
+                    <input type="text" id="disabledTextInput" class="form-control" disabled value="1234567...">
+                  </div>
+                  <div class="col-md-5">
+                    <label for="disabledTextInput" class="form-label">Batch</label>
+                    <input type="text" id="disabledTextInput" class="form-control" disabled value="batch A">
+                  </div>
+                  <div class="col-md-5"></div>
+                  <div class="col-md-10">
+                    <button class="btn btn-primary" type="submit">Submit form</button>
+                  </div>
+                </form>
+                <!-- -- end of add vaccines form --  -->
+                <!-- -- add sales form --  -->
+                <form *ngSwitchCase="'Record sales'" class="row g-3 needs-validation d-flex justify-content-md-center" novalidate>
+                  <div class="col-md-5">
+                    <h4 class="pt-5">{{formTitle}}</h4>
+                  </div>
+                  <div class="col-md-5">
+                    <!-- empty column just to keep spacing symmetrical (optional) -->
+                  </div>
+                  <div class="col-md-5">
+                    <label for="validationCustom01" class="form-label">Quantity sold</label>
+                    <input type="number" class="form-control" id="validationCustom01" value="" placeholder="0" required>
+                    <div class="invalid-feedback">
+                      Bad credentials!
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <label for="validationCustom02" class="form-label">Total price: NGN</label>
+                    <input type="number" class="form-control" id="validationCustom02" value="" placeholder="0.00" required>
+                    <div class="invalid-feedback">
+                      Bad credentials!
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <label for="validationCustom02" class="form-label">Batch</label>
+                    <input type="text" class="form-control" id="validationCustom02" value="jesus-0" placeholder="jesus-0" required>
+                    <div class="invalid-feedback">
+                      Bad credentials!
+                    </div>
+                  </div>
+                  <!-- <div class="col-md-5">
+                    <label for="disabledTextInput" class="form-label">PurchaseId</label>
+                    <input type="text" id="disabledTextInput" class="form-control" disabled value="">
+                  </div> -->
+                  <div class="col-md-5"></div>
+                  <div class="col-md-10">
+                    <button class="btn btn-primary" type="submit">Submit form</button>
+                  </div>
+                </form>
+                <!-- -- end of add vaccines form --  -->
+              </ng-container>
+            
           </div>
         </div>
       </div>

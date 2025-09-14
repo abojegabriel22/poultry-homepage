@@ -1,0 +1,120 @@
+
+<section class="admin pb-5">
+  <div class="container">
+    <div class="row pt-3">
+      <div class="col-md-7">
+        <!-- Display admin's restaurants for selection -->
+        <div class="col-12 pinkColor p-3">
+          <h4 class="smallH4 text-white">Your Poultry Batches</h4>
+          <!-- Loader -->
+          <div *ngIf="loader" class="text-center my-3">
+            <div class="spinner-border text-primary" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <p class="mt-2 text-white">Fetching batches...</p>
+          </div>
+
+          <!-- Error -->
+          <div *ngIf="batchErrorMessage && !loader" class="alert alert-danger text-center">
+            {{ batchErrorMessage }}
+          </div>
+          <ul *ngIf="!loader && batches.length > 0" class="list-group">
+            <div class="row">
+              <div *ngIf="batchErrorMessage" class="alert alert-danger text-center">{{batchErrorMessage}}</div>
+              <li 
+                *ngFor="let batch of batches"
+                class="list-group-item d-flex justify-content-between align-items-center borderListing">
+                <div class="col-md-10">
+                  <strong class="smallText d-block">{{batch.name}}</strong><br>
+                  <small class="smallText"><strong>userId:</strong> {{batch.userId}}</small><br>
+                  <small class="smallText"><strong>Batch Id:</strong> {{batch._id}}</small><br>
+                  <small class="smallText"><strong>Batch Info:</strong> {{batch.description}}</small><br>
+                  <small class="smallText"><strong>startDate:</strong> {{batch.startDate}}</small><br>
+                  <small class="smallText"><strong>createAt:</strong> {{batch.createAt}}</small><br>
+                </div>
+                <div class="col-md-3">
+                  <button class="btn btn-sm btn-primary smallText" (click)="selectBatch(batch)">
+                    Select
+                  </button> &nbsp;
+                  <button class="btn btn-sm btn-danger smallText marginTop">Delete</button>
+                </div>
+                
+              </li>
+            </div>
+          </ul>
+          <div>
+            <span class="text-white">{{ currentDate | date: "medium" }}</span>
+          </div>
+          <!-- <div *ngIf="loader" class="mt-2" class="loader">
+            Loading...
+          </div>
+          <div *ngIf="errorMessage" class="text-warning mt-2">
+            {{ errorMessage }}
+          </div> -->
+        </div>
+      </div>
+      <div class="col-md-5 padding-form">
+        <form #form="ngForm" (ngSubmit)="submitForm(form)" class="needs-validation">
+          <div *ngIf="successMessage" class="alert alert-success text-center">
+            {{ successMessage }}
+          </div>
+
+          <div *ngIf="errorMessage" class="alert alert-danger text-center">
+            {{ errorMessage }}
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Batch Name</label>
+            <input
+              type="text"
+              class="form-control"
+              name="name"
+              [(ngModel)]="batchInput.name"
+              #name="ngModel"
+              [ngClass]="{'is-invalid': name.invalid && name.touched, 'is-valid': name.valid}"
+              required
+            />
+            <div *ngIf="name.invalid && name.touched" class="invalid-feedback">Batch name is required to create a batch</div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Description</label>
+            <input
+              type="text"
+              class="form-control"
+              name="description"
+              [(ngModel)]="batchInput.description"
+              #description="ngModel"
+              [ngClass]="{'is-invalid': description.invalid && description.touched, 'is-valid': description.valid}"
+              required
+            />
+            <div *ngIf="description.invalid && description.touched" class="invalid-feedback">Describe your poultry batch</div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">User ID</label>
+            <input
+              type="text"
+              class="form-control"
+              name="userId"
+              [(ngModel)]="batchInput.userId"
+              #userId="ngModel"
+              [ngClass]="{'is-invalid': userId.invalid && userId.touched, 'is-valid': userId.valid}"
+              readonly
+            />
+            <div *ngIf="userId.invalid && userId.touched" class="invalid-feedback">userId is auto provided</div>
+          </div>
+
+          <button class="btn btn-primary w-100" type="submit" [disabled]="form.invalid">
+            <ng-container *ngIf="!isLoading; else processing">Create Batch</ng-container>
+            <ng-template #processing>
+              <span class="spinner-grow spinner-grow-sm me-2" aria-hidden="true"></span>
+              Validating...
+            </ng-template>
+          </button>
+        </form><br/>
+        <button class="btn btn-info w-100" (click)="goBack()">Go back</button>
+      </div>
+    </div>
+  </div>
+</section>
+  
