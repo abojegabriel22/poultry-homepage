@@ -24,8 +24,16 @@
 
           <!-- Right nav -->
           <div class="navbar-nav ms-lg-auto text-center mt-2 mt-lg-0 nav-colors d-flex justify-content-center align-items-center">
-            <a class="nav-link" [routerLink]="['/login']">Login</a>
-            <a class="nav-link me-lg-3" [routerLink]="['/register']">Register</a>
+            <!-- when not logged in  -->
+            <ng-container *ngIf="!isLoggedIn">
+              <a class="nav-link" [routerLink]="['/login']">Login</a>
+              <a class="nav-link me-lg-3" [routerLink]="['/register']">Register</a>
+            </ng-container>
+            <!-- when logged in  -->
+             <ng-container *ngIf="isLoggedIn">
+              <a class="nav-link username">{{username}} <i class="bi bi-house-check-fill"></i></a>
+              <a class="nav-link me-lg-3" (click)="logOut()" style="color: red !important; cursor: pointer;">Logout</a>
+             </ng-container>
             <!-- Toggle button -->
             <span class="theme-toggle mt-1 d-inline-block" id="themeToggle" role="button" aria-label="Toggle Theme">
               <!-- Moon (outline) -->

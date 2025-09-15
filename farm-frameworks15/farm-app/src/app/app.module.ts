@@ -21,6 +21,7 @@ import { BatchService } from './services/batch.service';
 import { BatchSelectionService } from './services/batch-selection.service';
 import { FormSelectionService } from './services/form-selection.service';
 import { PurchaseService } from './services/purchase.service';
+import { AuthService } from './services/auth.service';
 
 
 
@@ -51,7 +52,8 @@ import { PurchaseService } from './services/purchase.service';
     BatchService,
     BatchSelectionService,
     FormSelectionService,
-    PurchaseService
+    PurchaseService,
+    AuthService
   ],
   bootstrap: [AppComponent]
 })

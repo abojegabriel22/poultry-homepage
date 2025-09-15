@@ -9,7 +9,7 @@ import { FormSelectionService } from "../services/form-selection.service"
     styleUrls: ['./side-panel.component.css']
 })
 export class SidePanelComponent implements OnInit {
-    side_panel_batch = 'batch Name'
+    side_panel_batch = 'Name'
 
     constructor(
         private batchSelectionService: BatchSelectionService,

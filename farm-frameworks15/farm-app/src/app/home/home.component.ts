@@ -4,6 +4,7 @@ import { FormSelectionService } from "../services/form-selection.service";
 import { NgForm } from "@angular/forms";
 import { PurchaseInputs } from "../models/purchase.model";
 import { PurchaseService } from "../services/purchase.service";
+import { feedsData, feedsInput, feedsResponse } from "../models/feeds.model";
 @Component({
     selector: 'app-admin-home',
     templateUrl: './home.component.html',
@@ -20,6 +21,7 @@ export class HomeComponent implements OnInit {
     ){}
 
     purchaseUser: PurchaseInputs = new PurchaseInputs(0,0,"")
+    feedsUser: feedsInput = new feedsInput(0,0,'','')
     isLoading: boolean = false
     successMessage: string = ''
     errorMessage: string = ''
@@ -34,6 +36,7 @@ export class HomeComponent implements OnInit {
             try{
                 const parsedBatch = JSON.parse(setSelectedBatch)
                 this.purchaseUser.batchId = parsedBatch._id
+                this.feedsUser.batchId = parsedBatch._id
             } catch(err){
                 console.error("Error passing selectedBatch id from localstorage: ", err)
             }
@@ -47,10 +50,10 @@ export class HomeComponent implements OnInit {
         if(form.invalid){
             this.isLoading = false
             this.errorMessage = "Invalid form"
-            console.log("form is invalid: ", this.purchaseUser)
+            console.log("form is invalid: ", this.purchaseUser || this.feedsUser)
             return
         }
-        console.log("form is valid: ", this.purchaseUser)
+        console.log("form is valid: ", this.purchaseUser || this.feedsUser)
         this.purchaseService.registerPurchase(this.purchaseUser).subscribe({
             next: (res) => {
                 this.isLoading = false
@@ -65,8 +68,22 @@ export class HomeComponent implements OnInit {
                 console.log("Unable to save purchase record: ", err.error?.message)
             }
         })
+        // feeds record
+        this.purchaseService.registerFeed(this.feedsUser).subscribe({
+            next: (res: feedsResponse) => {
+                this.isLoading = false
+                this.showAlert(res.message || "Feeds data saved successfully ✅", "success")
+                this.errorMessage = ''
+                console.info("Feeds record taken: ", res)
+            }, error: (err) => {
+                this.isLoading = false
+                this.showAlert(err.error?.message || "Unable to save feeds record ❌", "error")
+                console.error("Unable to save feeds record: ", err.error?.message)
+            }
+        })
         form.resetForm({
             batchId: this.purchaseUser.batchId
+            // purchaseId: this.purchaseId
         })
     }
     showAlert(message: string, type: "success" | "error") {
@@ -83,6 +100,10 @@ export class HomeComponent implements OnInit {
             this.successMessage = "";
             this.errorMessage = "";
         }, 3000);
+    }
+
+    selectedForm(name: string){
+        this.formSelectionService.setSelectedForm(name)
     }
 
 }

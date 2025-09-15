@@ -19,31 +19,31 @@
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-              <p class="text-center">section B | batch A</p>
-              <div class="buttons">
+              <p class="text-center">Batch | {{formTitle}}</p>
+              <div class="buttons" (click)="selectedForm('Add purchase')">
                 <span class="text-center d-flex align-items-center span-button text-size" type="button">
                   <img class="flip-image flex-shrink-1" src="https://i.ibb.co/N4qbNH8/chick-img.png" width="25" height="25" alt="chicks"> chickens bought
                 </span>
               </div>
-              <div class="buttons mt-3">
+              <div class="buttons mt-3" (click)="selectedForm('Add feeds')">
                 <span class="text-center d-flex align-items-center span-button text-size" type="button">
                   <img class="flip-image flex-shrink-1 flips me-1" src="https://i.ibb.co/KcrBNThw/chick-fed-removebg-preview.png" width="25" height="25" alt="feeds"> feeds
                 </span>
               </div>
 
-              <div class="buttons mt-3">
+              <div class="buttons mt-3" (click)="selectedForm('Add mortality')">
                 <span class="text-center d-flex align-items-center span-button text-size" type="button">
                   <img class="flip-image flex-shrink-1 flips me-1" src="https://i.ibb.co/B2qXVTN2/deadchick1.png" width="25" height="25" alt="mortality"> mortality
                 </span>
               </div>
 
-              <div class="buttons mt-3">
+              <div class="buttons mt-3" (click)="selectedForm('Add vaccines')">
                 <span class="text-center d-flex span-button text-size" type="button">
                   <img class="flip-image flex-shrink-0 flips me-1" src="https://i.ibb.co/3mpT5psw/vaccines.png" width="25" height="25" alt="vaccines"> vaccines
                 </span>
               </div>
 
-              <div class="buttons mt-3">
+              <div class="buttons mt-3" (click)="selectedForm('Record sales')">
                 <span class="text-center d-flex span-button text-size" type="button">
                   <img class="flip-image flex-shrink-0 flips me-1" src="https://i.ibb.co/HfXYvsNt/money-removebg-preview.png" width="25" height="25" alt="sales"> sales
                 </span>
@@ -236,15 +236,12 @@
                      class="form-control"
                      id="batchId"
                      value="Name of batch..."
-                     placeholder="Name of batch..."
+                     placeholder="ID of batch..."
                      name="batchId"
                      #batchId="ngModel"
                      [(ngModel)]="purchaseUser.batchId"
                      readonly
                     />
-                    <div class="invalid-feedback">
-                      Bad credentials!
-                    </div>
                   </div>
                   <!-- <div class="col-md-5">
                     <label for="disabledTextInput" class="form-label">Amount per chick</label>
@@ -262,34 +259,79 @@
                   </div>
                 </form>
                 <!-- -- end of add purchase form --  -->
+
                 <!-- -- add feeds form --  -->
-                <form *ngSwitchCase="'Add feeds'" class="row g-3 needs-validation d-flex justify-content-md-center" novalidate>
+                <form *ngSwitchCase="'Add feeds'" class="row g-3 needs-validation d-flex justify-content-md-center" novalidate #form="ngForm" (ngSubmit)="submitForm(form)">
                   <div class="col-md-5">
                     <h4 class="pt-5">{{formTitle}}</h4>
+                    <div *ngIf="successMessage" class="alert alert-success mt-2">{{successMessage}}</div>
+                    <div *ngIf="errorMessage" class="alert alert-danger mt-2">{{errorMessage}}</div>
                   </div>
                   <div class="col-md-5">
                     <!-- empty column just to keep spacing symmetrical (optional) -->
                   </div>
                   <div class="col-md-5">
                     <label for="validationCustom01" class="form-label">Numbers of feed</label>
-                    <input type="number" class="form-control" id="validationCustom01" value="" placeholder="0" required>
-                    <div class="invalid-feedback">
-                      Bad credentials!
+                    <input
+                     type="number"
+                     class="form-control"
+                     id="quantity"
+                     name="quantity"
+                     #quantity="ngModel"
+                     [(ngModel)]="feedsUser.quantity"
+                     placeholder="5 bags"
+                     required
+                     min="0.5"
+                     [ngClass]="{'is-invalid': quantity.invalid && quantity.touched, 'is-valid': quantity.valid}"
+                    />
+                    <div *ngIf="quantity.invalid && (quantity.dirty || quantity.touched)" class="invalid-feedback">
+                      <small *ngIf="quantity.errors?.['required']">Feed is required</small>
+                      <small *ngIf="quantity.errors?.['min']">Must be at least 1 bags or more</small>
                     </div>
                   </div>
                   <div class="col-md-5">
                     <label for="validationCustom02" class="form-label">Price NGN</label>
-                    <input type="number" class="form-control" id="validationCustom02" value="" placeholder="0" required>
-                    <div class="invalid-feedback">
-                      Bad credentials!
+                    <input
+                     type="number"
+                     class="form-control"
+                     placeholder="100"
+                     name="totalPrice"
+                     #totalPrice="ngModel"
+                     [(ngModel)]="feedsUser.totalPrice"
+                     required
+                     min="100"
+                     [ngClass]="{'is-invalid': totalPrice.invalid && totalPrice.touched, 'is-valid': totalPrice.valid}"
+                    />
+                    <div *ngIf="totalPrice.invalid && (totalPrice.dirty || totalPrice.touched)" class="invalid-feedback">
+                      <small *ngIf="totalPrice.errors?.['required']">Total price of feed bought right now is required</small>
+                      <small *ngIf="totalPrice.errors?.['min']">Price must at least be at the range starting from 100 naira</small>
                     </div>
                   </div>
                   <div class="col-md-5">
-                    <label for="validationCustom02" class="form-label">Batch</label>
-                    <input type="text" class="form-control" id="validationCustom02" value="jesus-0" placeholder="jesus-0" required>
-                    <div class="invalid-feedback">
-                      Bad credentials!
-                    </div>
+                    <label for="validationCustom03" class="form-label">Batch</label>
+                    <input
+                     type="text"
+                     class="form-control"
+                     name="batchId"
+                     id="batchId"
+                     #batchId="ngModel"
+                     [(ngModel)]="feedsUser.batchId"
+                     placeholder="ID of Batch..."
+                     readonly
+                    />
+                  </div>
+                  <div class="col-md-5">
+                    <label for="validationCustom04" class="form-label">PurchaseId</label>
+                    <input
+                     type="text"
+                     class="form-control"
+                     name="PurchaseId"
+                     id="purchaseId"
+                     #purchaseId="ngModel"
+                     [(ngModel)]="feedsUser.purchaseId"
+                     placeholder="ID of Purchase..."
+                     readonly
+                    />
                   </div>
                   <!-- <div class="col-md-5">
                     <label for="disabledTextInput" class="form-label">Amount per bag of feed</label>
@@ -297,7 +339,13 @@
                   </div> -->
                   <div class="col-md-5"></div>
                   <div class="col-md-10">
-                    <button class="btn btn-primary" type="submit">Submit form</button>
+                    <button class="btn btn-primary" type="submit" [disabled]="form.invalid || isLoading">
+                      <ng-container *ngIf="!isLoading; else submitForm1">Submit form</ng-container>
+                      <ng-template #submitForm1>
+                        <span class="spinner-grow spinner-grow-sm me-2" aria-hidden="true"></span>
+                        Processing...
+                      </ng-template>
+                    </button>
                   </div>
                 </form>
                 <!-- -- end of form --  -->
