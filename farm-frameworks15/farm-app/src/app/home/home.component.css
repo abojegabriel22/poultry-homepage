@@ -39,6 +39,12 @@
     margin-left: 0.5rem;
     margin-right: 0.8rem;
 }
+thead tr th {
+    font-size: 0.653rem;
+}
+tbody tr td {
+    font-size: 0.698rem;
+}
 
 @media (max-width: 800px) {
     .span-button {

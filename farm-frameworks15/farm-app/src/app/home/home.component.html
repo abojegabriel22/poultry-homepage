@@ -178,7 +178,9 @@
               <ng-container [ngSwitch]="formTitle">
 
                 <!-- -- add purchase form --  -->
-                <form *ngSwitchCase="'Add purchase'" class="row g-3 needs-validation d-flex justify-content-md-center" novalidate #form="ngForm" (ngSubmit)="submitForm(form)">
+              <ng-container *ngSwitchCase="'Add purchase'">
+              <div *ngIf="!currentPurchase; else showPurchaseRecords">
+                <form class="row g-3 needs-validation d-flex justify-content-md-center" novalidate #form="ngForm" (ngSubmit)="submitForm(form)">
                   <div class="col-md-5">
                     <h4 class="pt-5">{{formTitle}}</h4>
                     <div *ngIf="successMessage" class="alert alert-success mt-2">
@@ -258,6 +260,41 @@
                     </button>
                   </div>
                 </form>
+              </div>
+              <ng-template #showPurchaseRecords>
+                <div class="col-md-10">
+                  <p class="pt-5"><i><strong>Purchase record already taken for this batch</strong></i></p>
+                  <div class="card">
+                    <div class="table table-striped table-hover table-bordered">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Quantity</th>
+                          <th>Price: NGN</th>
+                          <th>Price Per Chick</th>
+                          <th>Date of Purchase</th>
+                          <th>Batch Id</th>
+                          <th>Batch Name</th>
+                          <th>Batch Start Date</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let purchases of currentPurchase; let i = index">
+                          <th scope="row">{{i + 1}}</th>
+                          <td>{{purchases.quantity}}</td>
+                          <td>{{purchases.price | number}}</td>
+                          <td>{{purchases.pricePerChick | number: '1.0-2'}}</td>
+                          <td>{{purchases.dateOfPurchaseFormatted}}</td>
+                          <td>{{ purchases.batchId?._id | slice:0:6 }}</td>
+                          <td>{{ purchases.batchId?.name }}</td>
+                          <td>{{ purchases.batchId?.startDate | date:'mediumDate' }}</td>
+                        </tr>
+                      </tbody>
+                    </div>
+                  </div>
+                </div>
+              </ng-template>
+              </ng-container>
                 <!-- -- end of add purchase form --  -->
 
                 <!-- -- add feeds form --  -->
