@@ -1,0 +1,26 @@
+.footer {
+  background-color: var(--primary) !important;
+  color: #ffffff;
+}
+
+.footer-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #f1c40f; /* yellow highlight */
+}
+
+.footer-heading {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #1abc9c; /* green highlight */
+}
+
+.footer-link {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #f1c40f;
+}

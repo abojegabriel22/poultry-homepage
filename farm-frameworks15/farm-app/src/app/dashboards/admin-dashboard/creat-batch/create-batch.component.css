@@ -32,11 +32,19 @@
         margin-top: .5rem;
     }
 }
+@media screen and (max-width: 800px){
+    .button-size{
+        font-size: 10px;
+    }
+}
 @media screen and (max-width: 500px){
     .smallH4{
         font-size: 12px;
     }
     .smallText{
         font-size: 12px;
+    }
+    .margin-small-sc{
+        margin-top: 2rem !important;
     }
 }

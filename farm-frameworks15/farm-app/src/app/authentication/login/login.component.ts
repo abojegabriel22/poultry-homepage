@@ -94,6 +94,7 @@ export class LoginComponent implements OnInit {
         localStorage.removeItem("token")
         localStorage.removeItem("user")
         localStorage.removeItem("token_expire")
+        localStorage.removeItem("purchaseId")
 
         this.router.navigate(["/login"])
     }

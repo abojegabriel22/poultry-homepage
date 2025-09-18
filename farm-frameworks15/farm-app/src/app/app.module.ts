@@ -8,8 +8,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { SidePanelComponent } from './side-panel-lg/side-panel.component';
-import { PurchaseComponent } from './purchase/purchase.component';
-import { BodyComponent } from './body/body.component';
 import { LoginComponent } from './authentication/login/login.component';
 import { RegisterComponent } from './authentication/register/register.component';
 import { RegisterService } from './services/register.service';
@@ -22,6 +20,7 @@ import { BatchSelectionService } from './services/batch-selection.service';
 import { FormSelectionService } from './services/form-selection.service';
 import { PurchaseService } from './services/purchase.service';
 import { AuthService } from './services/auth.service';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -32,14 +31,13 @@ import { AuthService } from './services/auth.service';
     HeaderComponent,
     HomeComponent,
     SidePanelComponent,
-    PurchaseComponent,
-    BodyComponent,
     LoginComponent,
     RegisterComponent,
     AdminDashboardComponent,
     UserDashboardComponent,
     PurchaseRecordComponent,
-    CreateBatchRecords
+    CreateBatchRecords,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

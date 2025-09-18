@@ -4,7 +4,7 @@
       <app-side-panel-lg></app-side-panel-lg>
       <!-- //////// body content ////////// -->
       <div class="col-md-10 offset-md-2 padding-small-screen">
-        <div class="mx-auto" style="max-width: 800px;">
+        <div class="mx-auto mb-5" style="max-width: 800px;">
           <div class="d-flex align-items-center justify-content-between">
             <span class="small-screen-display" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
               <img src="../../assets/images/sidebar-icon.svg" alt="sidebar icon" class="sidebar-fixed-icon">
@@ -19,7 +19,7 @@
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-              <p class="text-center">Batch | {{formTitle}}</p>
+              <p [routerLink]="['/batch-record']" class="text-center link-to-batch"><strong>Batch | </strong>{{side_panel_batch}}</p>
               <div class="buttons" (click)="selectedForm('Add purchase')">
                 <span class="text-center d-flex align-items-center span-button text-size" type="button">
                   <img class="flip-image flex-shrink-1" src="https://i.ibb.co/N4qbNH8/chick-img.png" width="25" height="25" alt="chicks"> chickens bought
@@ -56,216 +56,95 @@
               </div>
             </div>
           </div>
-          <!-- //////// end of off canvas for small screens  -->
-          <!-- <div class="inputs d-flex align-items-center justify-content-center">
-            <form class="row g-3 needs-validation justify-content-md-center" novalidate>
-              <div class="col-md-6">
-                <h4 class="pt-5">Summary of every records</h4>
-              </div>
-
-              <div class="col-md-6"></div>
-
-              <div class="col-md-6">
-                <div class="card">
-                  <div class="card-body">
-                    <h6 class="card-title">Total number of sales:</h6>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">
-                      <span>
-                        <input type="number" class="form-control big-font mt-3 py-2" id="chicksBought" placeholder="0" disabled>
-                      </span>
-                    </h6>
-                    <p class="card-text pt-3">This is the total number of chickens sold.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="card">
-                  <div class="card-body">
-                    <h6 class="card-title">Total bags of feed consumed:</h6>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">
-                      <span>
-                        <input type="number" class="form-control big-font mt-3 py-2" id="chicksBought" placeholder="0" disabled>
-                      </span>
-                    </h6>
-                    <p class="card-text pt-3">This is the total number of feeds bought.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="card">
-                  <div class="card-body">
-                    <h6 class="card-title">capital:</h6>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">
-                      <span>
-                        <input type="number" class="form-control big-font mt-3 py-2" id="chicksBought" placeholder="NGN 0.00" disabled>
-                      </span>
-                    </h6>
-                    <p class="card-text pt-3">Amount spent in total.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="card">
-                  <div class="card-body">
-                    <h6 class="card-title">Revenue:</h6>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">
-                      <span>
-                        <input type="number" class="form-control big-font mt-3 py-2" id="chicksBought" placeholder="NGN 0.00" disabled>
-                      </span>
-                    </h6>
-                    <p class="card-text pt-3">Total amount of income.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="card">
-                  <div class="card-body">
-                    <h6 class="card-title">Total mortality:</h6>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">
-                      <span>
-                        <input type="number" class="form-control big-font mt-3 py-2" id="chicksBought" placeholder="0" disabled>
-                      </span>
-                    </h6>
-                    <p class="card-text pt-3">All deaths recorded from begining till current.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="card">
-                  <div class="card-body">
-                    <h6 class="card-title">Net profit:</h6>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">
-                      <span>
-                        <input type="number" class="form-control big-font mt-3 py-2" id="chicksBought" placeholder="NGN 0.00" disabled>
-                      </span>
-                    </h6>
-                    <p class="card-text pt-3">Total profits after subtracting all expenses.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="card">
-                  <div class="card-body">
-                    <h6 class="card-title">Start date:</h6>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">
-                      <span>
-                        <input type="date" class="form-control big-font mt-3 py-2" id="chicksBought" placeholder="dd/mm/yyyy" disabled>
-                      </span>
-                    </h6>
-                    <p class="card-text pt-3">Date of purchase</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="card">
-                  <div class="card-body">
-                    <h6 class="card-title">Date:</h6>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">
-                      <span>
-                        <input type="date" class="form-control big-font mt-3 py-2" id="chicksBought" placeholder="dd/mm/yyyy" disabled>
-                      </span>
-                    </h6>
-                    <p class="card-text pt-3">Current date</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6"></div>
-              <div class="col-md-6"></div>
-            </form>
-          </div> -->
           <div class="inputs d-flex align-items-center justify-content-center">
              <!-- switch form based on formTitle  -->
-              <ng-container [ngSwitch]="formTitle">
+            <ng-container [ngSwitch]="formTitle">
 
-                <!-- -- add purchase form --  -->
-              <ng-container *ngSwitchCase="'Add purchase'">
-              <div *ngIf="!currentPurchase; else showPurchaseRecords">
-                <form class="row g-3 needs-validation d-flex justify-content-md-center" novalidate #form="ngForm" (ngSubmit)="submitForm(form)">
-                  <div class="col-md-5">
-                    <h4 class="pt-5">{{formTitle}}</h4>
-                    <div *ngIf="successMessage" class="alert alert-success mt-2">
-                      {{ successMessage }}
-                    </div>
-                    <div *ngIf="errorMessage" class="alert alert-danger mt-2">
-                      {{ errorMessage }}
-                    </div>
+              <!-- -- add purchase form --  -->
+            <ng-container *ngSwitchCase="'Add purchase'">
+            <div *ngIf="!currentPurchase; else showPurchaseRecords">
+              <form class="row g-3 needs-validation d-flex justify-content-md-center" novalidate #form="ngForm" (ngSubmit)="submitForm(form)">
+                <div class="col-md-5">
+                  <h4 class="pt-5">{{formTitle}}</h4>
+                  <div *ngIf="successMessage" class="alert alert-success mt-2">
+                    {{ successMessage }}
                   </div>
-                  <div class="col-md-5">
-                    <!-- empty column just to keep spacing symmetrical (optional) -->
+                  <div *ngIf="errorMessage" class="alert alert-danger mt-2">
+                    {{ errorMessage }}
                   </div>
-                  <div class="col-md-5">
-                    <label for="validationCustom01" class="form-label">Quantity</label>
-                    <input
-                     type="number"
-                     class="form-control"
-                     placeholder="100"
-                     id="quantity"
-                     name="quantity"
-                     [(ngModel)]="purchaseUser.quantity"
-                     required
-                     min="1"
-                     #quantity="ngModel"
-                     [ngClass]="{'is-invalid': quantity.invalid && quantity.touched, 'is-valid': quantity.valid}"
-                    />
-                    <div *ngIf="quantity.invalid && (quantity.dirty || quantity.touched)" class="invalid-feedback">
-                      <small *ngIf="quantity.errors?.['required']">Quantity is required</small>
-                      <small *ngIf="quantity.errors?.['min']">Must be at least 1</small>
-                    </div>
+                </div>
+                <div class="col-md-5">
+                </div>
+                <div class="col-md-5">
+                  <label for="validationCustom01" class="form-label">Quantity</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder="100"
+                    id="quantity"
+                    name="quantity"
+                    [(ngModel)]="purchaseUser.quantity"
+                    required
+                    min="1"
+                    #quantity="ngModel"
+                    [ngClass]="{'is-invalid': quantity.invalid && quantity.touched, 'is-valid': quantity.valid}"
+                  />
+                  <div *ngIf="quantity.invalid && (quantity.dirty || quantity.touched)" class="invalid-feedback">
+                    <small *ngIf="quantity.errors?.['required']">Quantity is required</small>
+                    <small *ngIf="quantity.errors?.['min']">Must be at least 1</small>
                   </div>
-                  <div class="col-md-5">
-                    <label for="validationCustom02" class="form-label">Price: NGN</label>
-                    <input
-                     type="number"
-                     class="form-control"
-                     id="price"
-                     name="price"
-                     placeholder="100000"
-                     [(ngModel)]="purchaseUser.price"
-                     #price="ngModel"
-                     required
-                     min="10"
-                     [ngClass]="{'is-invalid': price.invalid && price.touched, 'is-valid': price.valid}"
-                    />
-                    <div *ngIf="price.invalid && (price.dirty || price.touched)" class="invalid-feedback">
-                      <small *ngIf="price.errors?.['required']">Price is required</small>
-                      <small *ngIf="price.errors?.['min']">Must be greater than 10 naira</small>
-                    </div>
+                </div>
+                <div class="col-md-5">
+                  <label for="validationCustom02" class="form-label">Price: NGN</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="price"
+                    name="price"
+                    placeholder="100000"
+                    [(ngModel)]="purchaseUser.price"
+                    #price="ngModel"
+                    required
+                    min="10"
+                    [ngClass]="{'is-invalid': price.invalid && price.touched, 'is-valid': price.valid}"
+                  />
+                  <div *ngIf="price.invalid && (price.dirty || price.touched)" class="invalid-feedback">
+                    <small *ngIf="price.errors?.['required']">Price is required</small>
+                    <small *ngIf="price.errors?.['min']">Must be greater than 10 naira</small>
                   </div>
-                  <div class="col-md-5">
-                    <label for="validationCustom02" class="form-label">Batch</label>
-                    <input
-                     type="text"
-                     class="form-control"
-                     id="batchId"
-                     value="Name of batch..."
-                     placeholder="ID of batch..."
-                     name="batchId"
-                     #batchId="ngModel"
-                     [(ngModel)]="purchaseUser.batchId"
-                     readonly
-                    />
-                  </div>
-                  <!-- <div class="col-md-5">
-                    <label for="disabledTextInput" class="form-label">Amount per chick</label>
-                    <input type="text" id="disabledTextInput" class="form-control" disabled value="NGN 0.00">
-                  </div> -->
-                  <div class="col-md-5"></div>
-                  <div class="col-md-10">
-                    <button class="btn btn-primary" type="submit" [disabled]="form.invalid || isLoading">
-                      <ng-container *ngIf="!isLoading; else submitform">Submit form</ng-container>
-                      <ng-template #submitform>
-                        <span class="spinner-grow spinner-grow-sm me-2" aria-hidden="true"></span>
-                        Processing...
-                      </ng-template>
-                    </button>
-                  </div>
-                </form>
-              </div>
-              <ng-template #showPurchaseRecords>
+                </div>
+                <div class="col-md-5">
+                  <label for="validationCustom02" class="form-label">Batch</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="batchId"
+                    value="Name of batch..."
+                    placeholder="ID of batch..."
+                    name="batchId"
+                    #batchId="ngModel"
+                    [(ngModel)]="purchaseUser.batchId"
+                    readonly
+                  />
+                </div>
+                <div class="col-md-5"></div>
                 <div class="col-md-10">
-                  <p class="pt-5"><i><strong>Purchase record already taken for this batch</strong></i></p>
-                  <div class="card">
-                    <div class="table table-striped table-hover table-bordered">
+                  <button class="btn btn-primary" type="submit" [disabled]="form.invalid || isLoading">
+                    <ng-container *ngIf="!isLoading; else submitform">Submit form</ng-container>
+                    <ng-template #submitform>
+                      <span class="spinner-grow spinner-grow-sm me-2" aria-hidden="true"></span>
+                      Processing...
+                    </ng-template>
+                  </button>
+                </div>
+              </form>
+            </div>
+            <ng-template #showPurchaseRecords>
+              <div class="col-md-10 small-screen">
+                <p class="pt-5"><i><strong>Purchase record already taken for this batch</strong></i></p>
+                <div class="card">
+                  <div class="table-responsive d-none d-md-block">
+                    <table class="table table-striped table-hover table-bordered shadow">
                       <thead>
                         <tr>
                           <th>#</th>
@@ -276,6 +155,7 @@
                           <th>Batch Id</th>
                           <th>Batch Name</th>
                           <th>Batch Start Date</th>
+                          <th>Days since purchased</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -288,232 +168,379 @@
                           <td>{{ purchases.batchId?._id | slice:0:6 }}</td>
                           <td>{{ purchases.batchId?.name }}</td>
                           <td>{{ purchases.batchId?.startDate | date:'mediumDate' }}</td>
+                          <td>{{ purchases.daysSincePurchase | number: '1.0-2' }} days</td>
                         </tr>
                       </tbody>
+                    </table>
+                  </div>
+
+                  <!-- ✅ Card layout for small screens -->
+                  <div class="d-block d-md-none">
+                    <div *ngFor="let purchases of currentPurchase; let i = index" class="card mb-3 shadow-sm">
+                      <div class="card-body shadow">
+                        <h6 class="card-title text-danger">Purchase #{{ i + 1 }}</h6>
+                        <p><strong class="text-primary">Quantity:</strong> {{ purchases.quantity }}</p>
+                        <p><strong class="text-primary">Price (NGN):</strong> {{ purchases.price | number }}</p>
+                        <p><strong class="text-primary">Price Per Chick:</strong> {{ purchases.pricePerChick | number: '1.0-2' }}</p>
+                        <p><strong class="text-primary">Date of Purchase:</strong> {{ purchases.dateOfPurchaseFormatted }}</p>
+                        <p><strong class="text-primary">Batch Id:</strong> {{ purchases.batchId?._id | slice:0:6 }}</p>
+                        <p><strong class="text-primary">Batch Name:</strong> {{ purchases.batchId?.name }}</p>
+                        <p><strong class="text-primary">Batch Start Date:</strong> {{ purchases.batchId?.startDate | date: 'mediumDate' }}</p>
+                        <p><strong class="text-primary">Days Since Purchase:</strong> {{ purchases.daysSincePurchase | number: '1.0-2' }} days</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </ng-template>
-              </ng-container>
-                <!-- -- end of add purchase form --  -->
+              </div>
+            </ng-template>
+            </ng-container>
+              <!-- -- end of add purchase form --  -->
 
-                <!-- -- add feeds form --  -->
-                <form *ngSwitchCase="'Add feeds'" class="row g-3 needs-validation d-flex justify-content-md-center" novalidate #form="ngForm" (ngSubmit)="submitForm(form)">
-                  <div class="col-md-5">
-                    <h4 class="pt-5">{{formTitle}}</h4>
-                    <div *ngIf="successMessage" class="alert alert-success mt-2">{{successMessage}}</div>
-                    <div *ngIf="errorMessage" class="alert alert-danger mt-2">{{errorMessage}}</div>
+              <!-- -- add feeds form --  -->
+              <form *ngSwitchCase="'Add feeds'" class="row g-3 needs-validation d-flex justify-content-md-center" novalidate #form="ngForm" (ngSubmit)="submitForm(form)">
+                <div class="col-md-5">
+                  <h4 class="pt-5">{{formTitle}}</h4>
+                  <div *ngIf="successFeedsMessage" class="alert alert-success mt-2">{{successFeedsMessage}}</div>
+                  <div *ngIf="errorFeedsMessage" class="alert alert-danger mt-2">{{errorFeedsMessage}}</div>
+                </div>
+                <div class="col-md-5">
+                </div>
+                <div class="col-md-5">
+                  <label for="validationCustom01" class="form-label">Numbers of feed</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="quantity"
+                    name="quantity"
+                    #quantity="ngModel"
+                    [(ngModel)]="feedsUser.quantity"
+                    placeholder="5 bags"
+                    required
+                    min="0.5"
+                    [ngClass]="{'is-invalid': quantity.invalid && quantity.touched, 'is-valid': quantity.valid}"
+                  />
+                  <div *ngIf="quantity.invalid && (quantity.dirty || quantity.touched)" class="invalid-feedback">
+                    <small *ngIf="quantity.errors?.['required']">Feed is required</small>
+                    <small *ngIf="quantity.errors?.['min']">Must be at least 1 bags or more</small>
                   </div>
-                  <div class="col-md-5">
-                    <!-- empty column just to keep spacing symmetrical (optional) -->
+                </div>
+                <div class="col-md-5">
+                  <label for="validationCustom02" class="form-label">Price NGN</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder="100"
+                    name="totalPrice"
+                    #totalPrice="ngModel"
+                    [(ngModel)]="feedsUser.totalPrice"
+                    required
+                    min="100"
+                    [ngClass]="{'is-invalid': totalPrice.invalid && totalPrice.touched, 'is-valid': totalPrice.valid}"
+                  />
+                  <div *ngIf="totalPrice.invalid && (totalPrice.dirty || totalPrice.touched)" class="invalid-feedback">
+                    <small *ngIf="totalPrice.errors?.['required']">Total price of feed bought right now is required</small>
+                    <small *ngIf="totalPrice.errors?.['min']">Price must at least be at the range starting from 100 naira</small>
                   </div>
-                  <div class="col-md-5">
-                    <label for="validationCustom01" class="form-label">Numbers of feed</label>
-                    <input
-                     type="number"
-                     class="form-control"
-                     id="quantity"
-                     name="quantity"
-                     #quantity="ngModel"
-                     [(ngModel)]="feedsUser.quantity"
-                     placeholder="5 bags"
-                     required
-                     min="0.5"
-                     [ngClass]="{'is-invalid': quantity.invalid && quantity.touched, 'is-valid': quantity.valid}"
-                    />
-                    <div *ngIf="quantity.invalid && (quantity.dirty || quantity.touched)" class="invalid-feedback">
-                      <small *ngIf="quantity.errors?.['required']">Feed is required</small>
-                      <small *ngIf="quantity.errors?.['min']">Must be at least 1 bags or more</small>
-                    </div>
+                </div>
+                <div class="col-md-5">
+                  <label for="validationCustom03" class="form-label">Batch</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="batchId"
+                    id="batchId"
+                    #batchId="ngModel"
+                    [(ngModel)]="feedsUser.batchId"
+                    placeholder="ID of Batch..."
+                    readonly
+                  />
+                </div>
+                <div class="col-md-5">
+                  <label for="validationCustom04" class="form-label">PurchaseId</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="PurchaseId"
+                    id="purchaseId"
+                    #purchaseId="ngModel"
+                    [(ngModel)]="feedsUser.purchaseId"
+                    placeholder="ID of Purchase..."
+                    readonly
+                  />
+                </div>
+
+                <div class="col-md-5"></div>
+                <div class="col-md-10">
+                  <button class="btn btn-primary" type="submit" [disabled]="form.invalid || isLoading">
+                    <ng-container *ngIf="!isLoading; else submitForm1">Submit feeds</ng-container>
+                    <ng-template #submitForm1>
+                      <span class="spinner-grow spinner-grow-sm me-2" aria-hidden="true"></span>
+                      Processing...
+                    </ng-template>
+                  </button>
+                </div>
+              </form>
+              <!-- -- end of feed form --  -->
+              <!-- -- add mortality form --  -->
+              <form *ngSwitchCase="'Add mortality'" class="row g-3 needs-validation d-flex justify-content-md-center" novalidate #form="ngForm" (ngSubmit)="submitForm(form)">
+                <div class="col-md-5">
+                  <h4 class="pt-5">{{formTitle}}</h4>
+                  <div *ngIf="successMortalityMessage" class="alert alert-success mt-2">{{successMortalityMessage}}</div>
+                  <div *ngIf="errorMortalityMessage" class="alert alert-danger mt-2">{{errorMortalityMessage}}</div>
+                </div>
+                <div class="col-md-5">
+                  <!-- empty column just to keep spacing symmetrical (optional) -->
+                </div>
+                <div class="col-md-5">
+                  <label for="validationCustom01" class="form-label">Numbers of mortality</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="mortalityRate"
+                    placeholder="0"
+                    name="mortalityRate"
+                    [(ngModel)]="mortalityUser.mortalityRate"
+                    #mortalityRate="ngModel"
+                    [ngClass]="{'is-invalid': mortalityRate.invalid && mortalityRate.touched, 'is-valid': mortalityRate.valid}"
+                    required
+                    min="1"
+                  />
+                  <div *ngIf="mortalityRate.invalid && (mortalityRate.dirty || mortalityRate.touched)" class="invalid-feedback">
+                    <small *ngIf="mortalityRate.errors?.['required']">Number of mortality for the day is required!</small>
+                    <small *ngIf="mortalityRate.errors?.['min']">Input field must be greater than 0!</small>
                   </div>
-                  <div class="col-md-5">
-                    <label for="validationCustom02" class="form-label">Price NGN</label>
-                    <input
-                     type="number"
-                     class="form-control"
-                     placeholder="100"
-                     name="totalPrice"
-                     #totalPrice="ngModel"
-                     [(ngModel)]="feedsUser.totalPrice"
-                     required
-                     min="100"
-                     [ngClass]="{'is-invalid': totalPrice.invalid && totalPrice.touched, 'is-valid': totalPrice.valid}"
-                    />
-                    <div *ngIf="totalPrice.invalid && (totalPrice.dirty || totalPrice.touched)" class="invalid-feedback">
-                      <small *ngIf="totalPrice.errors?.['required']">Total price of feed bought right now is required</small>
-                      <small *ngIf="totalPrice.errors?.['min']">Price must at least be at the range starting from 100 naira</small>
-                    </div>
+                </div>
+                <div class="col-md-5">
+                  <label for="validationCustom02" class="form-label">Batch ID</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="batchId"
+                    placeholder="Id from your batch..."
+                    name="batchId"
+                    #batchId="ngModel"
+                    [(ngModel)]="mortalityUser.batchId"
+                    readonly
+                  />
+                </div>
+                <div class="col-md-5">
+                  <label for="validationCustom03" class="form-label">Purchase ID</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="purchaseId"
+                    name="purchaseId"
+                    placeholder="id from your purchase..."
+                    #purchaseId="ngModel"
+                    [(ngModel)]="mortalityUser.purchaseId"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-5"></div>
+                <div class="col-md-10">
+                  <button class="btn btn-primary" type="submit" [disabled]="form.invalid || isLoading">
+                    <ng-container *ngIf="!isLoading; else submitForm2">Submit mortality</ng-container>
+                    <ng-template #submitForm2>
+                      <span class="spinner-grow spinner-grow-sm me-2" aria-hidden="true"></span>
+                      Processing...
+                    </ng-template>
+                  </button>
+                </div>
+              </form>
+              <!-- -- end of add mortality form --  -->
+              <!-- -- add vaccines form --  -->
+              <form #form="ngForm" (ngSubmit)="submitForm(form)" *ngSwitchCase="'Add vaccines'" class="row g-3 needs-validation d-flex justify-content-md-center" novalidate>
+                <div class="col-md-5">
+                  <h4 class="pt-5">{{formTitle}}</h4>
+                  <div *ngIf="successVaccineMessage" class="alert alert-success mt-2">{{successVaccineMessage}}</div>
+                  <div *ngIf="errorVaccineMessage" class="alert alert-danger mt-2">{{errorVaccineMessage}}</div>
+                </div>
+                <div class="col-md-5">
+                </div>
+                <div class="col-md-5">
+                  <label for="validationCustom01" class="form-label">Vaccine name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="vaccineName"
+                    placeholder="lasota"
+                    name="vaccineName"
+                    #vaccineName="ngModel"
+                    [(ngModel)]="vaccineUser.vaccineName"
+                    [ngClass]="{'is-invalid': vaccineName.invalid && vaccineName.touched, 'is-valid': vaccineName.valid}"
+                    required
+                  />
+                  <div *ngIf="vaccineName.invalid && (vaccineName.dirty || vaccineName.touched)" class="invalid-feedback">
+                    <small *ngIf="vaccineName.errors?.['required']">Name of vaccine is required!</small>
                   </div>
-                  <div class="col-md-5">
-                    <label for="validationCustom03" class="form-label">Batch</label>
-                    <input
-                     type="text"
-                     class="form-control"
-                     name="batchId"
-                     id="batchId"
-                     #batchId="ngModel"
-                     [(ngModel)]="feedsUser.batchId"
-                     placeholder="ID of Batch..."
-                     readonly
-                    />
+                </div>
+                <div class="col-md-5">
+                  <label for="validationCustom02" class="form-label">price per vaccine NGN</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="vaccinePrice"
+                    placeholder="0"
+                    name="vaccinePrice"
+                    #vaccinePrice="ngModel"
+                    [(ngModel)]="vaccineUser.vaccinePrice"
+                    [ngClass]="{'is-invalid': vaccinePrice.invalid && vaccinePrice.touched, 'is-valid': vaccinePrice.valid}"
+                    required
+                    min=10
+                  />
+                  <div *ngIf="vaccinePrice.invalid && (vaccinePrice.dirty || vaccinePrice.touched)" class="invalid-feedback">
+                    <small *ngIf="vaccinePrice.errors?.['required']">Price of vaccine is required!</small>
+                    <small *ngIf="vaccinePrice.errors?.['min']">Price field must be greater than NGN10!</small>
                   </div>
-                  <div class="col-md-5">
-                    <label for="validationCustom04" class="form-label">PurchaseId</label>
-                    <input
-                     type="text"
-                     class="form-control"
-                     name="PurchaseId"
-                     id="purchaseId"
-                     #purchaseId="ngModel"
-                     [(ngModel)]="feedsUser.purchaseId"
-                     placeholder="ID of Purchase..."
-                     readonly
-                    />
+                </div>
+                <div class="col-md-5">
+                  <label for="validationCustom02" class="form-label">Quantity</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="quantity"
+                    name="quantity"
+                    placeholder="2"
+                    #quantity="ngModel"
+                    [(ngModel)]="vaccineUser.quantity"
+                    [ngClass]="{'is-invalid': quantity.invalid && quantity.touched, 'is-valid': quantity.valid}"
+                    min=1
+                    required
+                  />
+                  <div *ngIf="quantity.invalid && (quantity.dirty || quantity.touched)" class="invalid-feedback">
+                    <small *ngIf="quantity.errors?.['required']">Quantity is required!</small>
+                    <small *ngIf="quantity.errors?.['min']">Value must be greater than 0</small>
                   </div>
-                  <!-- <div class="col-md-5">
-                    <label for="disabledTextInput" class="form-label">Amount per bag of feed</label>
-                    <input type="text" id="disabledTextInput" class="form-control" disabled value="NGN 0.00">
-                  </div> -->
-                  <div class="col-md-5"></div>
-                  <div class="col-md-10">
-                    <button class="btn btn-primary" type="submit" [disabled]="form.invalid || isLoading">
-                      <ng-container *ngIf="!isLoading; else submitForm1">Submit form</ng-container>
-                      <ng-template #submitForm1>
-                        <span class="spinner-grow spinner-grow-sm me-2" aria-hidden="true"></span>
-                        Processing...
-                      </ng-template>
-                    </button>
+                </div>
+                <div class="col-md-5">
+                  <label for="disabledTextInput" class="form-label">PurchaseId</label>
+                  <input
+                    type="text"
+                    id="purchaseId"
+                    class="form-control"
+                    name="purchaseId"
+                    #purchaseId="ngModel"
+                    [(ngModel)]="vaccineUser.purchaseId"
+                    disabled
+                  />
+                </div>
+                <div class="col-md-5">
+                  <label for="disabledTextInput" class="form-label">Batch</label>
+                  <input
+                    type="text"
+                    id="batchId"
+                    class="form-control"
+                    name="batchId"
+                    #batchId="ngModel"
+                    [(ngModel)]="vaccineUser.batchId"
+                    disabled
+                  />
+                </div>
+                <div class="col-md-5"></div>
+                <div class="col-md-10">
+                  <button class="btn btn-primary" type="submit" [disabled]="form.invalid || isLoading">
+                    <ng-container *ngIf="!isLoading; else submitForm3">Submit sales</ng-container>
+                    <ng-template #submitForm3>
+                      <span class="spinner-grow spinner-grow-sm me-2" aria-hidden="true"></span>
+                      Processing...
+                    </ng-template>
+                  </button>
+                </div>
+              </form>
+              <!-- -- end of add vaccines form --  -->
+              <!-- -- add sales form --  -->
+              <form #form="ngForm" (ngSubmit)="submitForm(form)" *ngSwitchCase="'Record sales'" class="row g-3 needs-validation d-flex justify-content-md-center" novalidate>
+                <div class="col-md-5">
+                  <h4 class="pt-5">{{formTitle}}</h4>
+                  <div *ngIf="successSalesMessage" class="alert alert-success mt-2">{{successSalesMessage}}</div>
+                  <div *ngIf="errorSalesMessage" class="alert alert-danger mt-2">{{errorSalesMessage}}</div>
+                </div>
+                <div class="col-md-5">
+                </div>
+                <div class="col-md-5">
+                  <label for="validationCustom01" class="form-label">Quantity sold</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="numberSold"
+                    name="numberSold"
+                    #numberSold="ngModel"
+                    [(ngModel)]="salesUser.numberSold"
+                    [ngClass]="{'is-invalid': numberSold.invalid && numberSold.touched, 'is-valid': numberSold.valid}"
+                    placeholder="0"
+                    required
+                    min=1
+                  />
+                  <div *ngIf="numberSold.invalid && (numberSold.dirty || numberSold.touched)" class="invalid-feedback">
+                    <small *ngIf="numberSold.errors?.['required']">Quantity sold is required</small>
+                    <small *ngIf="numberSold.errors?.['min']">Sale record must be greater than 0!</small>
                   </div>
-                </form>
-                <!-- -- end of form --  -->
-                <!-- -- add mortality form --  -->
-                <form *ngSwitchCase="'Add mortality'" class="row g-3 needs-validation d-flex justify-content-md-center" novalidate>
-                  <div class="col-md-5">
-                    <h4 class="pt-5">{{formTitle}}</h4>
+                </div>
+                <div class="col-md-5">
+                  <label for="validationCustom02" class="form-label">Total price: NGN</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="totalPrice"
+                    placeholder="0.00"
+                    name="totalPrice"
+                    #totalPrice="ngModel"
+                    [(ngModel)]="salesUser.totalPrice"
+                    [ngClass]="{'is-invalid': totalPrice.invalid && totalPrice.touched, 'is-valid': totalPrice.valid}"
+                    required
+                    min=100
+                  />
+                  <div *ngIf="totalPrice.invalid && (totalPrice.dirty || totalPrice.touched)" class="invalid-feedback">
+                    <small *ngIf="totalPrice.errors?.['required']">total price is required</small>
+                    <small *ngIf="totalPrice.errors?.['min']">price must be greater than 100 naira</small>
                   </div>
-                  <div class="col-md-5">
-                    <!-- empty column just to keep spacing symmetrical (optional) -->
-                  </div>
-                  <div class="col-md-5">
-                    <label for="validationCustom01" class="form-label">Numbers of mortality</label>
-                    <input type="number" class="form-control" id="validationCustom01" value="" placeholder="0" required>
-                    <div class="invalid-feedback">
-                      Bad credentials!
-                    </div>
-                  </div>
-                  <div class="col-md-5">
-                    <label for="validationCustom02" class="form-label">How many days old?</label>
-                    <input type="number" class="form-control" id="validationCustom02" value="" placeholder="0" required>
-                    <div class="invalid-feedback">
-                      Bad credentials!
-                    </div>
-                  </div>
-                  <!-- <div class="col-md-5">
-                    <label for="validationCustom02" class="form-label">Batch</label>
-                    <input type="text" class="form-control" id="validationCustom02" value="jesus-0" placeholder="jesus-0" required>
-                    <div class="invalid-feedback">
-                      Bad credentials!
-                    </div>
-                  </div> -->
-                  <!-- <div class="col-md-5">
-                    <label for="disabledTextInput" class="form-label">Amount per chick</label>
-                    <input type="text" id="disabledTextInput" class="form-control" disabled value="NGN 0.00">
-                  </div> -->
-                  <div class="col-md-5"></div>
-                  <div class="col-md-10">
-                    <button class="btn btn-primary" type="submit">Submit form</button>
-                  </div>
-                </form>
-                <!-- -- end of add mortality form --  -->
-                <!-- -- add vaccines form --  -->
-                <form *ngSwitchCase="'Add vaccines'" class="row g-3 needs-validation d-flex justify-content-md-center" novalidate>
-                  <div class="col-md-5">
-                    <h4 class="pt-5">{{formTitle}}</h4>
-                  </div>
-                  <div class="col-md-5">
-                    <!-- empty column just to keep spacing symmetrical (optional) -->
-                  </div>
-                  <div class="col-md-5">
-                    <label for="validationCustom01" class="form-label">Vaccine name</label>
-                    <input type="text" class="form-control" id="validationCustom01" value="" placeholder="lasota" required>
-                    <div class="invalid-feedback">
-                      Bad credentials!
-                    </div>
-                  </div>
-                  <div class="col-md-5">
-                    <label for="validationCustom02" class="form-label">price per vaccine NGN</label>
-                    <input type="number" class="form-control" id="validationCustom02" value="" placeholder="0" required>
-                    <div class="invalid-feedback">
-                      Bad credentials!
-                    </div>
-                  </div>
-                  <div class="col-md-5">
-                    <label for="validationCustom02" class="form-label">Quantity</label>
-                    <input type="number" class="form-control" id="validationCustom02" value="" placeholder="2" required>
-                    <div class="invalid-feedback">
-                      Bad credentials!
-                    </div>
-                  </div>
-                  <div class="col-md-5">
-                    <label for="disabledTextInput" class="form-label">PurchaseId</label>
-                    <input type="text" id="disabledTextInput" class="form-control" disabled value="1234567...">
-                  </div>
-                  <div class="col-md-5">
-                    <label for="disabledTextInput" class="form-label">Batch</label>
-                    <input type="text" id="disabledTextInput" class="form-control" disabled value="batch A">
-                  </div>
-                  <div class="col-md-5"></div>
-                  <div class="col-md-10">
-                    <button class="btn btn-primary" type="submit">Submit form</button>
-                  </div>
-                </form>
-                <!-- -- end of add vaccines form --  -->
-                <!-- -- add sales form --  -->
-                <form *ngSwitchCase="'Record sales'" class="row g-3 needs-validation d-flex justify-content-md-center" novalidate>
-                  <div class="col-md-5">
-                    <h4 class="pt-5">{{formTitle}}</h4>
-                  </div>
-                  <div class="col-md-5">
-                    <!-- empty column just to keep spacing symmetrical (optional) -->
-                  </div>
-                  <div class="col-md-5">
-                    <label for="validationCustom01" class="form-label">Quantity sold</label>
-                    <input type="number" class="form-control" id="validationCustom01" value="" placeholder="0" required>
-                    <div class="invalid-feedback">
-                      Bad credentials!
-                    </div>
-                  </div>
-                  <div class="col-md-5">
-                    <label for="validationCustom02" class="form-label">Total price: NGN</label>
-                    <input type="number" class="form-control" id="validationCustom02" value="" placeholder="0.00" required>
-                    <div class="invalid-feedback">
-                      Bad credentials!
-                    </div>
-                  </div>
-                  <div class="col-md-5">
-                    <label for="validationCustom02" class="form-label">Batch</label>
-                    <input type="text" class="form-control" id="validationCustom02" value="jesus-0" placeholder="jesus-0" required>
-                    <div class="invalid-feedback">
-                      Bad credentials!
-                    </div>
-                  </div>
-                  <!-- <div class="col-md-5">
-                    <label for="disabledTextInput" class="form-label">PurchaseId</label>
-                    <input type="text" id="disabledTextInput" class="form-control" disabled value="">
-                  </div> -->
-                  <div class="col-md-5"></div>
-                  <div class="col-md-10">
-                    <button class="btn btn-primary" type="submit">Submit form</button>
-                  </div>
-                </form>
-                <!-- -- end of add vaccines form --  -->
-              </ng-container>
+                </div>
+                <div class="col-md-5">
+                  <label for="disabledTextInput" class="form-label">Batch</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="batchId"
+                    placeholder="batchId..."
+                    name="batchId"
+                    #batchId="ngModel"
+                    [(ngModel)]="salesUser.batchId"
+                    readonly
+                  />
+                </div>
+                <div class="col-md-5">
+                  <label for="disabledTextInput" class="form-label">PurchaseId</label>
+                  <input
+                    type="text"
+                    id="purchaseId"
+                    class="form-control"
+                    name="purchaseId"
+                    #purchaseId="ngModel"
+                    [(ngModel)]="salesUser.purchaseId"
+                    readonly
+                  />
+                </div>
+                <div class="col-md-5"></div>
+                <div class="col-md-10">
+                  <button class="btn btn-primary" type="submit" [disabled]="form.invalid || isLoading">
+                    <ng-container *ngIf="!isLoading; else submitForm4">Submit sales</ng-container>
+                    <ng-template #submitForm4>
+                      <span class="spinner-grow spinner-grow-sm me-2" aria-hidden="true"></span>
+                      Processing...
+                    </ng-template>
+                  </button>
+                </div>
+              </form>
+              <!-- -- end of add vaccines form --  -->
+            </ng-container>
             
           </div>
+        </div>
+        <div class="pt-5 text-center">
+          <app-footer></app-footer>
         </div>
       </div>
     </div>
   </div>
 </section>
-
-<!-- <h2 class="pt-5 text-center">hello from home</h2> -->

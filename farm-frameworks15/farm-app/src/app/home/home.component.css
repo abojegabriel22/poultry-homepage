@@ -71,3 +71,9 @@ tbody tr td {
         padding-right: 2.3rem;
     }
 }
+
+@media (max-width: 450px){
+    .small-screen{
+        margin-inline: 0.5rem;
+    }
+}

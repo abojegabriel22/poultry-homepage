@@ -65,6 +65,7 @@ export class AuthService{
         localStorage.removeItem("token")
         localStorage.removeItem("selectedBatch")
         localStorage.removeItem("token_expire")
+        localStorage.removeItem("purchaseId")
         this.loggedIn.next(false)
         this.username.next(null)
          // 👇 Redirect user back to login page
