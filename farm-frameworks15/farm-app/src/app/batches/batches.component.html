@@ -1,0 +1,60 @@
+<div class="container py-4 mt-5">
+
+  <h3 class="mb-3 text-primary text-shadow">All Batches</h3><hr/>
+
+  <!-- Loader -->
+  <div *ngIf="loading" class="text-center">
+    <div class="spinner-border text-primary" role="status"></div>
+    <p>Loading batches...</p>
+  </div>
+
+  <!-- Error -->
+  <div *ngIf="errorMessage && !loading" class="alert alert-danger">
+    {{ errorMessage }}
+  </div>
+
+  <!-- Same card design for all screens -->
+  <div class="row shadow">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 shadow" *ngFor="let batch of batches; let i = index">
+      <div class="card shadow-lg h-100">
+        <div class="card-body">
+          <h6 class="card-title text-danger">Batch #{{ i + 1 }}</h6>
+          <p><strong class="text-primary">Name:</strong> {{ batch.name }}</p>
+          <p><strong class="text-primary">Description:</strong> {{ batch.description }}</p>
+          <p><strong class="text-primary">Status:</strong> {{ batch.status }}</p>
+          <p><strong class="text-primary">Start Date:</strong> {{ batch.startDate | date: 'mediumDate' }}</p>
+          <p><strong class="text-primary">Created At:</strong> {{ batch.createAt | date: 'medium' }}</p>
+          <p><strong class="text-primary">Batch ID:</strong> {{ batch._id | slice:0:8 }}</p>
+          <p><strong class="text-primary">User ID:</strong> {{ batch.userId | slice:0:8 }}</p>
+        </div>
+        <div class="card-footer bg-white border-0 text-center">
+          <button class="btn btn-sm btn-primary w-100" (click)="selectedBatch(batch._id)" [disabled]="batchLoading[batch._id]">
+            <ng-container *ngIf="batchLoading[batch._id]; else selectText">
+              <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+              Loading...
+            </ng-container>
+            <ng-template #selectText>
+              Select
+            </ng-template>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- Purchases for selected batch -->
+<!-- <div *ngIf="purchases.length > 0 && !batchLoading" class="mt-4">
+  <h4 class="text-success">Purchases for Batch {{ selectedBatchId | slice:0:8 }}</h4>
+  <ul class="list-group">
+    <li *ngFor="let purchase of purchases" class="list-group-item">
+      <strong>Quantity:</strong> {{ purchase.quantity }} <br>
+      <strong>Price:</strong> ₦{{ purchase.price }} <br>
+      <strong>Price/Chick:</strong> ₦{{ purchase.pricePerChick }} <br>
+      <strong>Date:</strong> {{ purchase.dateOfPurchaseFormatted }}
+    </li>
+  </ul>
+</div> -->
+
+
+<app-footer></app-footer>

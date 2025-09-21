@@ -39,7 +39,16 @@
                   <button class="btn btn-sm btn-primary smallText flex-fill flex-md-grow-0 button-size" (click)="selectBatch(batch)">
                     Select
                   </button>
-                  <button class="btn btn-sm btn-danger smallText flex-fill flex-md-grow-0 button-size">
+                  <button
+                   class="btn btn-sm btn-danger
+                   smallText flex-fill flex-md-grow-0 button-size"
+                   nz-popconfirm
+                   nzPopconfirmTitle="Are you sure you want to delete this batch?"
+                   (nzOnConfirm)="confirm(batch._id)"
+                   (nzOnCancel)="cancel()"
+                   nzPopconfirmPlacement="top"
+                   nz-button
+                  >
                     Delete
                   </button>
                 </div>
@@ -116,4 +125,5 @@
     </div>
   </div>
 </section>
+<app-footer></app-footer>
   

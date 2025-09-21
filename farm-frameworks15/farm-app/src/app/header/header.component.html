@@ -2,7 +2,7 @@
 <header>
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand text-white" href="#">Poultry Management</a>
+      <a class="navbar-brand text-white" href="#" (click)="closeNavbar()">Poultry Management</a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -17,22 +17,34 @@
 
           <!-- Center nav -->
           <div class="navbar-nav mx-auto text-center nav-colors">
-            <a class="nav-link active me-lg-3">Home</a>
-            <a class="nav-link me-lg-3">Take record</a>
-            <a class="nav-link">View record</a>
+            <a class="nav-link active me-lg-3" (click)="closeNavbar()">Home</a>
+            <a class="nav-link me-lg-3" [routerLink]="['admin-dashboard']" (click)="closeNavbar()">Take record</a>
+            <a class="nav-link" [routerLink]="['/all-batches']" (click)="closeNavbar()">View record</a>
           </div>
 
           <!-- Right nav -->
           <div class="navbar-nav ms-lg-auto text-center mt-2 mt-lg-0 nav-colors d-flex justify-content-center align-items-center">
             <!-- when not logged in  -->
             <ng-container *ngIf="!isLoggedIn">
-              <a class="nav-link" [routerLink]="['/login']">Login</a>
-              <a class="nav-link me-lg-3" [routerLink]="['/register']">Register</a>
+              <a class="nav-link" [routerLink]="['/login']" (click)="closeNavbar()">Login</a>
+              <a class="nav-link me-lg-3" [routerLink]="['/register']" (click)="closeNavbar()">Register</a>
             </ng-container>
             <!-- when logged in  -->
              <ng-container *ngIf="isLoggedIn">
               <a class="nav-link username">{{username}} <i class="bi bi-house-check-fill"></i></a>
-              <a class="nav-link me-lg-3" (click)="logOut()" style="color: red !important; cursor: pointer;">Logout</a>
+              <a
+                class="nav-link me-lg-3"
+                
+                style="color: red !important; cursor: pointer;"
+                nz-popconfirm
+                nzPopconfirmTitle="Are you sure you want to Logout?"
+                (nzOnConfirm)="confirm()"
+                (nzOnCancel)="cancel()"
+                nzPopconfirmPlacement="bottom"
+                nzOverlayClassName="logout-popconfirm"
+                nz-button
+                (click)="closeNavbar()"
+              >Logout</a>
              </ng-container>
             <!-- Toggle button -->
             <span class="theme-toggle mt-1 d-inline-block" id="themeToggle" role="button" aria-label="Toggle Theme">

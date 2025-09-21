@@ -1,0 +1,8 @@
+
+.data-header{
+    text-shadow: 0px 1px 1px var(--primary, 0.6);
+}
+.no-margin {
+  margin-left: 0 !important;
+  /* margin-right: 0.8rem; */
+}

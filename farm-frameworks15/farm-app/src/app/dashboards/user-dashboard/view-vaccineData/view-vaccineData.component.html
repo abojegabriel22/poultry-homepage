@@ -1,0 +1,180 @@
+<!-- <h2 class="py-5">Vaccine route works!</h2> -->
+<section class="editdatabase pt-5 background-dark no-overflow">
+  <div class="container-fluid p-0">
+    <div class="row">
+      <!-- ------------ side-panel ------------- -->
+       
+      <div class="col-md-2 border-right position-fixed bg-primary-reduced vh-100 display-0" style="z-index: 1; margin-left: 10px;">
+        <h5 class="pt-5 text-center"><a>View Batch Records</a></h5>
+        <!-- <p class="text-center link-to-batch"><strong>Batch | </strong></p> -->
+
+        <div class="buttons mt-3 mx-1 mb-3" (click)="getVaccineData(batchId)">
+          <span class="text-center d-flex span-button text-size" type="button">
+            <img class="flip-image flex-shrink-0 flips me-1" src="https://i.ibb.co/3mpT5psw/vaccines.png" width="25" height="25" alt="vaccines"> vaccines
+          </span>
+        </div>
+
+        <div class="buttons mx-1">
+          <span class="text-center d-flex align-items-center span-button text-size" type="button">
+            <img class="flip-image flex-shrink-1" src="https://i.ibb.co/N4qbNH8/chick-img.png" width="25" height="25" alt="chicks"> chickens bought
+          </span>
+        </div>
+
+        <div class="buttons mt-3 mx-1">
+          <span class="text-center d-flex align-items-center span-button text-size" type="button">
+            <img class="flip-image flex-shrink-1 flips me-1" src="https://i.ibb.co/KcrBNThw/chick-fed-removebg-preview.png" width="25" height="25" alt="feeds"> feeds
+          </span>
+        </div>
+
+        <div class="buttons mt-3 mx-1">
+          <span class="text-center d-flex align-items-center span-button text-size" type="button">
+            <img class="flip-image flex-shrink-1 flips me-1" src="https://i.ibb.co/B2qXVTN2/deadchick1.png" width="25" height="25" alt="mortality"> mortality
+          </span>
+        </div>
+
+        <div class="buttons mt-3 mx-1">
+          <span class="text-center d-flex span-button text-size" type="button">
+            <img class="flip-image flex-shrink-0 flips me-1" src="https://i.ibb.co/HfXYvsNt/money-removebg-preview.png" width="25" height="25" alt="sales"> sales
+          </span>
+        </div>
+
+        <div class="buttons mt-3 mx-1">
+          <span class="text-center d-flex span-button text-size" type="button">
+            <img class="flip-image flex-shrink-0 flips me-1" src="https://i.ibb.co/SX5yZNN5/sum1.png" width="25" height="25" alt="sales"> summary
+          </span>
+        </div>
+      </div>
+       <!-- --------------- end of side panel -----------  -->
+
+       <!-- -------------- body content -----------  -->
+      <div class="col-md-10 offset-md-2 padding-small-screen">
+        <div class="mx-auto mb-5" style="max-width: 800px;">
+          <div class="d-flex align-items-center justify-content-between">
+            <span class="small-screen-display" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+              <img src="../../../../assets/images/sidebar-icon.svg" alt="sidebar icon" class="sidebar-fixed-icon">
+            </span>
+            <h3 class="flex-grow-1 text-center text-dark mb-0 padding-small-screens data-header">All vaccine data since Batch started</h3>
+          </div>
+        
+          <!-- ---------- small screen side-panel --------  -->
+          <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header align-items-right justify-content-end">
+              <h5 class="offcanvas-title ms-auto" id="offcanvasWithBothOptionsLabel">Select the options below to view their data</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <p class="text-center link-to-batch"><strong>Batch | </strong>NameBatch</p>
+              <div class="buttons">
+                <span class="text-center d-flex align-items-center span-button text-size" type="button">
+                  <img class="flip-image flex-shrink-1" src="https://i.ibb.co/N4qbNH8/chick-img.png" width="25" height="25" alt="chicks"> chickens bought
+                </span>
+              </div>
+              <div class="buttons mt-3">
+                <span class="text-center d-flex align-items-center span-button text-size" type="button">
+                  <img class="flip-image flex-shrink-1 flips me-1" src="https://i.ibb.co/KcrBNThw/chick-fed-removebg-preview.png" width="25" height="25" alt="feeds"> feeds
+                </span>
+              </div>
+
+              <div class="buttons mt-3">
+                <span class="text-center d-flex align-items-center span-button text-size" type="button">
+                  <img class="flip-image flex-shrink-1 flips me-1" src="https://i.ibb.co/B2qXVTN2/deadchick1.png" width="25" height="25" alt="mortality"> mortality
+                </span>
+              </div>
+
+              <div class="buttons mt-3">
+                <span class="text-center d-flex span-button text-size" type="button">
+                  <img class="flip-image flex-shrink-0 flips me-1" src="https://i.ibb.co/3mpT5psw/vaccines.png" width="25" height="25" alt="vaccines"> vaccines
+                </span>
+              </div>
+
+              <div class="buttons mt-3">
+                <span class="text-center d-flex span-button text-size" type="button">
+                  <img class="flip-image flex-shrink-0 flips me-1" src="https://i.ibb.co/HfXYvsNt/money-removebg-preview.png" width="25" height="25" alt="sales"> sales
+                </span>
+              </div>
+
+              <div class="buttons mt-3">
+                <span class="text-center d-flex span-button text-size" type="button">
+                  <img class="flip-image flex-shrink-0 flips me-1" src="https://i.ibb.co/HfXYvsNt/money-removebg-preview.png" width="25" height="25" alt="sales"> summary
+                </span>
+              </div>
+            </div>
+          </div>
+          <!-- ----------- end of small screen side-panel ------  -->
+          <div class="inputs no-margin d-flex align-items-center justify-content-center">
+            <div class="container-fluid py-4">
+              <!-- --- loader ---  -->
+              <div *ngIf="loading" class="text-center">
+                <div class="spinner-border text-primary" role="status"></div>
+                <p>Loading vaccines...</p>
+              </div>
+              <!-- Error -->
+              <div *ngIf="errorMessage && !loading" class="alert alert-danger">
+                {{ errorMessage }}
+              </div>
+              <!-- Table view for large screens -->
+              <div class="card w-100" *ngIf="!loading && vaccines.length > 0">
+                <div class="table-responsive d-none d-md-block">
+                  <table class="table table-striped table-hover table-bordered shadow">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>Vaccine Name</th>
+                        <th>Vaccine Quantity</th>
+                        <th>Vaccine Price (NGN)</th>
+                        <th>Total Amount</th>
+                        <th>Bought Date</th>
+                        <th>Batch Id</th>
+                        <th>Batch Name</th>
+                        <th>Batch Start Date</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let vaccine of vaccines; let i = index">
+                        <th scope="row">{{ i + 1 }}</th>
+                        <td>{{ vaccine.vaccineName }}</td>
+                        <td>{{ vaccine.quantity }}</td>
+                        <td>₦{{ vaccine.vaccinePrice | number }}</td>
+                        <td>₦{{ vaccine.totalAmount | number }}</td>
+                        <td>{{ vaccine.date }}</td>
+                        <td>{{vaccine.batchId._id | slice:0:6}}</td>
+                        <td>{{ vaccine.batchId.name }}</td>
+                        <td>{{ vaccine.batchId.startDate | date:'mediumDate' }}</td>
+
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <!-- Card layout for small screens -->
+                <div class="d-block d-md-none">
+                  <div *ngFor="let vaccine of vaccines; let i = index" class="card mb-3 shadow-sm">
+                    <div class="card-body shadow">
+                      <h6 class="card-title text-danger">Vaccine #{{ i + 1 }}</h6>
+                      <p><strong class="text-primary">Vaccine Name:</strong> {{ vaccine.vaccineName }}</p>
+                      <p><strong class="text-primary">Vaccine Quantity:</strong> {{ vaccine.quantity }}</p>
+                      <p><strong class="text-primary">Vaccine Price:</strong> ₦{{ vaccine.vaccinePrice | number }}</p>
+                      <p><strong class="text-primary">Vaccine Total:</strong> ₦{{ vaccine.totalAmount | number }}</p>
+                      <p><strong class="text-primary">Bought Date:</strong> {{ vaccine.date }}</p>
+                      <p><strong class="text-primary">Batch Id:</strong> {{ vaccine.batchId._id | slice:0:6 }}</p>
+                      <p><strong class="text-primary">Batch Name:</strong> {{ vaccine.batchId.name }}</p>
+                      <p><strong class="text-primary">Batch Start:</strong> {{ vaccine.batchId.startDate | date:'mediumDate' }}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- No records -->
+              <div *ngIf="!loading && vaccines.length === 0" class="alert alert-warning text-center">
+                No vaccine records found for this batch
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pt-5 text-center">
+          <app-footer></app-footer>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

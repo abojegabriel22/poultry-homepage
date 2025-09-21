@@ -1,23 +1,26 @@
-.navbar-brand{
-    font-weight: 900;
+.navbar-brand {
+  font-weight: 900;
 }
-.nav-colors {
-    .nav-link {
-        color: var(--white) !important;
-        font-size: 1.1rem;
-        font-weight: 600;
-        &:hover {
-            color: var(--black) !important;
-        }
-    }
+
+.nav-colors .nav-link {
+  color: var(--white) !important;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
-.navbar-toggler{
-    padding-top: 0.8rem;
-    padding-left: 1rem;
-    padding-right: 0.3rem;
-    padding-bottom: 0;
+
+.nav-colors .nav-link:hover {
+  color: var(--black) !important;
+  cursor: pointer;
 }
-.username{
-    text-shadow: 4px 2px 2px rgba(0, 0, 0, 0.6);
-    font-weight: 700;
+
+.navbar-toggler {
+  padding-top: 0.8rem;
+  padding-left: 1rem;
+  padding-right: 0.3rem;
+  padding-bottom: 0;
+}
+
+.username {
+  text-shadow: 4px 2px 2px rgba(0, 0, 0, 0.6);
+  font-weight: 700;
 }

@@ -6,7 +6,7 @@ import { getAllPurchaseData, purchaseArray, purchaseArrays, PurchaseInputs, Purc
 import { environment } from "src/environments/environment"
 import { feedsInput, feedsResponse } from "../models/feeds.model"
 import { MortalityInput, MortalityResponse } from "../models/mortality.model"
-import { VaccineInput, VaccineResponse } from "../models/vaccine.model"
+import { VaccineData, VaccineInput, VaccineResponse, VaccineResponses } from "../models/vaccine.model"
 import { SalesInput, SalesResponse } from "../models/sales.model"
 
 @Injectable()
@@ -36,6 +36,10 @@ export class PurchaseService{
 
     registerVaccine(vaccineRecord: VaccineInput):Observable<VaccineResponse>{
         return this.http.post<VaccineResponse>(`${environment.poultryApiUrl}/vaccine`, vaccineRecord)
+    }
+
+    getVaccineByBatchId(batchId: string):Observable<VaccineResponses>{
+        return this.http.get<VaccineResponses>(`${environment.poultryApiUrl}/vaccine/${batchId}`)
     }
 
     registerSales(saleRecord: SalesInput):Observable<SalesResponse>{

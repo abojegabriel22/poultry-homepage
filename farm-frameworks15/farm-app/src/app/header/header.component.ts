@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from '../services/auth.service';
+import { NzMessageService } from 'ng-zorro-antd/message';
 
 @Component({
   selector: 'app-header',
@@ -14,7 +15,8 @@ export class HeaderComponent implements OnInit {
 
   constructor(
     private router: Router,
-    private authService: AuthService
+    private authService: AuthService,
+    private message: NzMessageService
   ){}
 
   ngOnInit(): void {
@@ -25,6 +27,12 @@ export class HeaderComponent implements OnInit {
     this.authService.username$.subscribe(name => {
       this.username = name
     })
+  }
+  closeNavbar(){
+    const navbar = document.getElementById('navbarNavAltMarkup');
+    if (navbar && navbar.classList.contains('show')) {
+      navbar.classList.remove('show');
+    }
   }
 
   // checkAut(){
@@ -39,8 +47,16 @@ export class HeaderComponent implements OnInit {
   //   }
   // }
 
-  logOut(){
+  confirm(): void {
     this.authService.logOut()
     this.router.navigate(["/login"])
   }
+
+      cancel(): void {
+        this.message.info('Action cancelled');
+    }
+  // logOut(){
+  //   this.authService.logOut()
+  //   this.router.navigate(["/login"])
+  // }
 }

@@ -16,7 +16,7 @@ import { BatchSelectionService } from "../services/batch-selection.service";
 })
 export class HomeComponent implements OnInit {
   title = 'Admin & User database';
-  subtitle = 'view your poultry farm records only.';
+  subtitle = 'view and make changes to your poultry farm records.';
   formTitle = "Add purchase";
   side_panel_batch = "Name"
 
@@ -84,6 +84,7 @@ export class HomeComponent implements OnInit {
               this.feedsUser.purchaseId = this.currentPurchase[this.currentPurchase.length - 1]._id;
               this.mortalityUser.purchaseId = this.currentPurchase[this.currentPurchase.length - 1]._id;
               this.vaccineUser.purchaseId = this.currentPurchase[this.currentPurchase.length - 1]._id
+              this.salesUser.purchaseId = this.currentPurchase[this.currentPurchase.length - 1]._id
               localStorage.setItem("purchaseId", this.feedsUser.purchaseId);
               localStorage.setItem("purchaseId", this.mortalityUser.purchaseId);
               localStorage.setItem("purchaseId", this.vaccineUser.purchaseId)
@@ -262,6 +263,7 @@ export class HomeComponent implements OnInit {
         return
       }
       console.log("Form is valid (Vaccine): ", this.vaccineUser)
+      this.vaccineUser.purchaseId = this.vaccineUser.purchaseId || localStorage.getItem("purchaseId") || "";
       this.purchaseService.registerVaccine(this.vaccineUser).subscribe({
         next: (res: VaccineResponse) => {
           this.isLoading = false
@@ -290,6 +292,7 @@ export class HomeComponent implements OnInit {
         return
       }
       console.log("sales is valid")
+      this.salesUser.purchaseId = this.salesUser.purchaseId || localStorage.getItem("purchaseId") || "";
       this.purchaseService.registerSales(this.salesUser).subscribe({
         next: (res: SalesResponse) => {
           this.isLoading = false

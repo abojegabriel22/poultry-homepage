@@ -7,6 +7,7 @@ import { BatchService } from "src/app/services/batch.service"
 import { Location } from "@angular/common"
 import { BatchSelectionService } from "src/app/services/batch-selection.service"
 import { Router } from "@angular/router"
+import { NzMessageService } from 'ng-zorro-antd/message';
 
 @Component({
     selector: 'app-create-batch',
@@ -24,7 +25,8 @@ export class CreateBatchRecords implements OnInit {
         private batchService: BatchService,
         private location: Location,
         private batchSelectionService: BatchSelectionService,
-        private router: Router
+        private router: Router,
+        private message: NzMessageService
     ){}
 
 
@@ -120,6 +122,22 @@ export class CreateBatchRecords implements OnInit {
     }
     goBack():void{
         this.location.back()
+    }
+
+    confirm(batchId: string): void {
+        this.batchService.deleteBatchById(batchId).subscribe({
+            next: (res) => {
+                this.message.success(res.message || 'Batch Deleted!');
+                this.loadUserBatches(this.batchInput.userId)
+            }, error: (err) => {
+                this.message.error(err.error?.message || "Failed to delete batch");
+            }
+        })
+        
+    }
+
+    cancel(): void {
+        this.message.info('Action cancelled');
     }
 
 }

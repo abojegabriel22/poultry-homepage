@@ -23,7 +23,7 @@ export class PurchaseData{
         public _id: string,
         public dateOfPurchase: string,
         public daysSincePurchase: number,
-        public dateOfPurchaseFormatted: number
+        public dateOfPurchaseFormatted: string
     ){}
 }
 
@@ -50,7 +50,7 @@ export class purchaseArray{
         public _id: string,
         public dateOfPurchase: string,
         public daysSincePurchase: number,
-        public dateOfPurchaseFormatted: number
+        public dateOfPurchaseFormatted: string
 
     ){}
 }
