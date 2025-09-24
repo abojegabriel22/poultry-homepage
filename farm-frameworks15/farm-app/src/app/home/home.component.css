@@ -68,7 +68,11 @@ tbody tr td {
     font-weight: 500;
   }
 }
-
+@media screen and (min-width: 800px) {
+  .footer-class{
+    margin-top: 50vh;
+  }
+}
 @media (max-width: 767.98px) {
   .small-screen-display {
     display: block !important;

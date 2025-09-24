@@ -3,7 +3,8 @@ export class PurchaseInputs{
     constructor(
         public quantity: number,
         public price: number,
-        public batchId: string
+        public batchId: string,
+        public name: string
     ){}
 }
 
@@ -16,6 +17,7 @@ export class PurchaseResponse{
 
 export class PurchaseData{
     constructor(
+        public name: string,
         public quantity: number,
         public price: number,
         public batchId: string,
@@ -43,6 +45,7 @@ export class purchaseArrays{
 
 export class purchaseArray{
     constructor(
+        public name: string,
         public quantity: number,
         public price: number,
         public batchId: batchIdInfo,

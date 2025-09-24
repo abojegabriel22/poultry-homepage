@@ -6,3 +6,12 @@
   margin-left: 0 !important;
   /* margin-right: 0.8rem; */
 }
+.saleSumText{
+  font-size: 20px;
+  font-weight: 700;
+}
+@media screen and (min-width: 800px) {
+  .footer-class{
+    margin-top: 50vh;
+  }
+}

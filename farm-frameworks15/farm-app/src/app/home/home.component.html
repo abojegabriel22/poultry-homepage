@@ -76,6 +76,23 @@
                 <div class="col-md-5">
                 </div>
                 <div class="col-md-5">
+                  <label for="validationCustom01" class="form-label">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Broiler pellet"
+                    id="name"
+                    name="name"
+                    [(ngModel)]="purchaseUser.name"
+                    required
+                    #name="ngModel"
+                    [ngClass]="{'is-invalid': name.invalid && name.touched, 'is-valid': name.valid}"
+                  />
+                  <div *ngIf="name.invalid && (name.dirty || name.touched)" class="invalid-feedback">
+                    <small *ngIf="name.errors?.['required']">name is required</small>
+                  </div>
+                </div>
+                <div class="col-md-5">
                   <label for="validationCustom01" class="form-label">Quantity</label>
                   <input
                     type="number"
@@ -148,6 +165,7 @@
                       <thead>
                         <tr>
                           <th>#</th>
+                          <th>Name / Chicks</th>
                           <th>Quantity</th>
                           <th>Price: NGN</th>
                           <th>Price Per Chick</th>
@@ -161,14 +179,15 @@
                       <tbody>
                         <tr *ngFor="let purchases of currentPurchase; let i = index">
                           <th scope="row">{{i + 1}}</th>
-                          <td>{{purchases.quantity}}</td>
+                          <td>{{purchases.name}}</td>
+                          <td>{{purchases.quantity}} Chicks</td>
                           <td>{{purchases.price | number}}</td>
                           <td>{{purchases.pricePerChick | number: '1.0-2'}}</td>
                           <td>{{purchases.dateOfPurchaseFormatted}}</td>
                           <td>{{ purchases.batchId?._id | slice:0:6 }}</td>
                           <td>{{ purchases.batchId?.name }}</td>
                           <td>{{ purchases.batchId?.startDate | date:'mediumDate' }}</td>
-                          <td>{{ purchases.daysSincePurchase | number: '1.0-2' }} days</td>
+                          <td>{{ purchases.daysSincePurchase | number: '1.0-2' }} days ago</td>
                         </tr>
                       </tbody>
                     </table>
@@ -179,14 +198,15 @@
                     <div *ngFor="let purchases of currentPurchase; let i = index" class="card mb-3 shadow-sm">
                       <div class="card-body shadow">
                         <h6 class="card-title text-danger">Purchase #{{ i + 1 }}</h6>
-                        <p><strong class="text-primary">Quantity:</strong> {{ purchases.quantity }}</p>
+                        <p><strong class="text-primary">Name / Chicks:</strong> {{ purchases.name }}</p>
+                        <p><strong class="text-primary">Quantity:</strong> {{ purchases.quantity }} Chicks</p>
                         <p><strong class="text-primary">Price (NGN):</strong> {{ purchases.price | number }}</p>
                         <p><strong class="text-primary">Price Per Chick:</strong> {{ purchases.pricePerChick | number: '1.0-2' }}</p>
                         <p><strong class="text-primary">Date of Purchase:</strong> {{ purchases.dateOfPurchaseFormatted }}</p>
                         <p><strong class="text-primary">Batch Id:</strong> {{ purchases.batchId?._id | slice:0:6 }}</p>
                         <p><strong class="text-primary">Batch Name:</strong> {{ purchases.batchId?.name }}</p>
                         <p><strong class="text-primary">Batch Start Date:</strong> {{ purchases.batchId?.startDate | date: 'mediumDate' }}</p>
-                        <p><strong class="text-primary">Days Since Purchase:</strong> {{ purchases.daysSincePurchase | number: '1.0-2' }} days</p>
+                        <p><strong class="text-primary">Days Since Purchase:</strong> {{ purchases.daysSincePurchase | number: '1.0-2' }} days ago</p>
                       </div>
                     </div>
                   </div>
@@ -538,7 +558,7 @@
             
           </div>
         </div>
-        <div class="pt-5 text-center">
+        <div class="pt-5 text-center footer-class">
           <app-footer></app-footer>
         </div>
       </div>

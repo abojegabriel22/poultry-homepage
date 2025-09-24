@@ -32,6 +32,7 @@ import { FooterComponent } from './footer/footer.component';
 import { BatchesComponent } from './batches/batches.component';
 import { ViewBatchData } from './dashboards/user-dashboard/view-batchdata/view-batchdata.component';
 import { ViewVaccineComponent } from './dashboards/user-dashboard/view-vaccineData/view-vaccine.component';
+import { FeedsViewComponent } from './dashboards/user-dashboard/feeds-view/feeds-view.component';
 
 // import { NZ_MESSAGE_CONFIG } from 'ng-zorro-antd/message';
 
@@ -53,7 +54,8 @@ registerLocaleData(en);
     FooterComponent,
     BatchesComponent,
     ViewBatchData,
-    ViewVaccineComponent
+    ViewVaccineComponent,
+    FeedsViewComponent
   ],
   imports: [
     BrowserModule,

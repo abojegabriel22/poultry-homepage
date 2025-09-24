@@ -9,6 +9,7 @@ import { VaccineInput, VaccineResponse } from "../models/vaccine.model";
 import { SalesInput, SalesResponse } from "../models/sales.model";
 import { BatchSelectionService } from "../services/batch-selection.service";
 
+declare var bootstrap: any;
 @Component({
   selector: 'app-admin-home',
   templateUrl: './home.component.html',
@@ -27,7 +28,7 @@ export class HomeComponent implements OnInit {
     private batchSelectionService: BatchSelectionService
   ) {}
 
-  purchaseUser: PurchaseInputs = new PurchaseInputs(0, 0, "");
+  purchaseUser: PurchaseInputs = new PurchaseInputs(0, 0, "", "");
   feedsUser: feedsInput = new feedsInput(0, 0, '', '');
   mortalityUser: MortalityInput = new MortalityInput(0, '', '');
   vaccineUser: VaccineInput = new VaccineInput('',0,0,'','')
@@ -315,5 +316,10 @@ export class HomeComponent implements OnInit {
 
   selectedForm(name: string) {
     this.formSelectionService.setSelectedForm(name);
+    const bsOffcanvas = document.getElementById("offcanvasWithBothOptions")
+    if(bsOffcanvas){
+      const closeCanvas = bootstrap.Offcanvas.getInstance(bsOffcanvas)
+      closeCanvas?.hide()
+    }
   }
 }
