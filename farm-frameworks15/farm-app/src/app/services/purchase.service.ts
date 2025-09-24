@@ -4,8 +4,8 @@ import { Injectable } from "@angular/core"
 import { from, Observable } from "rxjs"
 import { getAllPurchaseData, purchaseArray, purchaseArrays, PurchaseInputs, PurchaseResponse } from "../models/purchase.model"
 import { environment } from "src/environments/environment"
-import { feedsInput, feedsResponse, feedsResponses } from "../models/feeds.model"
-import { MortalityInput, MortalityResponse, MortalityResponses } from "../models/mortality.model"
+import { feedsInput, feedsResponse, feedsResponses, FeedSummaryResponse } from "../models/feeds.model"
+import { MortalityInput, MortalityResponse, MortalityResponses, mortalitySum } from "../models/mortality.model"
 import { VaccineData, VaccineInput, VaccineResponse, VaccineResponses } from "../models/vaccine.model"
 import { SalesInput, SalesResponse, SalesResponses, saleSummary } from "../models/sales.model"
 
@@ -29,19 +29,23 @@ export class PurchaseService{
     registerFeed(feedRecord: feedsInput):Observable<feedsResponse>{
         return this.http.post<feedsResponse>(`${environment.poultryApiUrl}/feeds`, feedRecord)
     }
-
     // feeds registry 
     getFeedsByBatchId(batchId: string):Observable<feedsResponses>{
         return this.http.get<feedsResponses>(`${environment.poultryApiUrl}/feeds/${batchId}`)
+    }
+    getFeedSummary(batchId: string):Observable<FeedSummaryResponse>{
+        return this.http.get<FeedSummaryResponse>(`${environment.poultryApiUrl}/feeds-total/${batchId}`)
     }
 
     //  mortality registry 
     registerMortality(mortalityRecord: MortalityInput):Observable<MortalityResponse>{
         return this.http.post<MortalityResponse>(`${environment.poultryApiUrl}/mortality`, mortalityRecord)
     }
-
     getMortalityByBatchId(batchId: string): Observable<MortalityResponses>{
         return this.http.get<MortalityResponses>(`${environment.poultryApiUrl}/mortality/${batchId}`)
+    }
+    getMortalitySum(batchId: string):Observable<mortalitySum>{
+        return this.http.get<mortalitySum>(`${environment.poultryApiUrl}/mortality-sum/${batchId}`)
     }
 
     // vaccine registry 

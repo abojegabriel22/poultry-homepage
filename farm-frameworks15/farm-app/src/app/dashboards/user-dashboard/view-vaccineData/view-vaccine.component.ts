@@ -1,8 +1,8 @@
 import { Location } from "@angular/common";
 import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute, Router } from "@angular/router";
-import { feedsDatas, feedsResponses } from "src/app/models/feeds.model";
-import { MortalityDatas, MortalityResponses } from "src/app/models/mortality.model";
+import { feedsDatas, feedsResponses, FeedSummaryResponse } from "src/app/models/feeds.model";
+import { mortalityData, MortalityDatas, MortalityResponses, mortalitySum } from "src/app/models/mortality.model";
 import { SalesDatas, SalesResponses, saleSum, saleSummary } from "src/app/models/sales.model";
 import { VaccineDatas, VaccineResponses } from "src/app/models/vaccine.model";
 import { PurchaseService } from "src/app/services/purchase.service";
@@ -25,6 +25,8 @@ export class ViewVaccineComponent implements OnInit {
   sales: SalesDatas[] = [];
   saleSumData: saleSum | null = null
   mortalities: MortalityDatas[] = [];
+  mortSumData: mortalityData | null = null
+  feedSummary: FeedSummaryResponse | null = null;
   batchId: string = "";
   loading: boolean = false;
   errorMessage: string = "";
@@ -62,6 +64,8 @@ export class ViewVaccineComponent implements OnInit {
         break;
       case "summary":
         this.getSaleSummary(this.batchId);
+        this.getMortalitySum(this.batchId)
+        this.getFeedSummary(this.batchId)
         break;
       // case "purchases":
       //   this.getPurchaseData(this.batchId);
@@ -125,6 +129,21 @@ export class ViewVaccineComponent implements OnInit {
       }
     });
   }
+  // fetch method
+getFeedSummary(batchId: string): void {
+  this.loading = true;
+  this.purchaseService.getFeedSummary(batchId).subscribe({
+    next: (res: FeedSummaryResponse) => {
+      this.feedSummary = res;
+      this.loading = false;
+      console.log("Feed summary:", this.feedSummary);
+    },
+    error: (err) => {
+      this.errorMessage = err.error?.message || "Unable to fetch feed summary";
+      this.loading = false;
+    }
+  });
+}
 
   getSalesData(batchId: string): void {
     this.loading = true
@@ -177,6 +196,20 @@ export class ViewVaccineComponent implements OnInit {
         this.errorMessage = err.error?.message || "Unable to fetch mortalities"
         this.loading = false
       }
+    })
+  }
+  getMortalitySum(batchId: string): void {
+    this.loading = true
+    this.purchaseService.getMortalitySum(batchId).subscribe({
+      next: (res: mortalitySum) => {
+        this.mortSumData = res?.data || null
+        this.loading = false
+        console.log("mortality sum data: ", this.mortSumData)
+      },error: (err) => {
+      this.errorMessage =
+        err.error?.message || "Unable to fetch mortality summary!";
+      this.loading = false;
+    }
     })
   }
 

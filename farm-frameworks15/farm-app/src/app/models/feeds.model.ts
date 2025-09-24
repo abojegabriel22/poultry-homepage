@@ -60,3 +60,46 @@ export class purchaseInfo{
         public name: string
     ){}
 }
+
+// feed-summary.model.ts
+
+export class FeedSummaryResponse {
+  constructor(
+    public message: string,
+    public perPurchase: FeedPerPurchase[],
+    public grandTotal: FeedGrandTotal
+  ) {}
+}
+
+export class FeedPerPurchase {
+  constructor(
+    public _id: string,
+    public totalQuantity: number,
+    public totalPrice: number,
+    public purchaseDetails: PurchaseDetails
+  ) {}
+}
+
+export class PurchaseDetails {
+  constructor(
+    public _id: string,
+    public batchId: string,
+    public name: string,
+    public quantity: number,
+    public price: number,
+    public pricePerChick: number,
+    public dateOfPurchase: string,
+    public __v: number
+  ) {}
+}
+
+export class FeedGrandTotal {
+  constructor(
+    public _id: string,
+    public batchId: string,
+    public __v: number,
+    public totalPrices: number,
+    public totalQuantity: number,
+    public updatedAt: string
+  ) {}
+}

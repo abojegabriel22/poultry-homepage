@@ -59,3 +59,19 @@ export class purchaseId{
     ){}
 }
 
+export class mortalitySum{
+    constructor(
+        public message: string,
+        public data: mortalityData
+    ){}
+}
+
+export class mortalityData{
+    constructor(
+        public _id: string,
+        public batchId: string,
+        public __v: number,
+        public lastUpdated: string,
+        public totalMortalities: number
+    ){}
+}
