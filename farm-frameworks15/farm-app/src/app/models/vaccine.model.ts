@@ -54,3 +54,20 @@ export class batchIdInfo{
         public startDate: string
     ){}
 }
+
+// ✅ New: Vaccine Summary Response
+export class VaccineSummary {
+  constructor(
+    public _id: string,
+    public batchId: batchIdInfo,
+    public totalVaccineAmount: number,
+    public dateUpdated: string
+  ) {}
+}
+
+export class VaccineSummaryResponse {
+  constructor(
+    public message: string,
+    public data: VaccineSummary
+  ) {}
+}

@@ -29,4 +29,9 @@ export class BatchService {
         return this.http.delete<BatchResponse>(`${environment.poultryApiUrl}/batch/${batchId}`)
     }
 
+      // ✅ End a batch (mark completed + set endDate)
+    endBatch(batchId: string): Observable<BatchResponse> {
+        return this.http.put<BatchResponse>(`${environment.poultryApiUrl}/batch/${batchId}/terminate`, {});
+    }
+
 }

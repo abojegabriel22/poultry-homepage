@@ -18,7 +18,7 @@
           <!-- Center nav -->
           <div class="navbar-nav mx-auto text-center nav-colors">
             <a class="nav-link active me-lg-3" (click)="closeNavbar()">Home</a>
-            <a class="nav-link me-lg-3" [routerLink]="['admin-dashboard']" (click)="closeNavbar()">Take record</a>
+            <a *ngIf="role === 'admin'" class="nav-link me-lg-3" [routerLink]="['admin-dashboard']" (click)="closeNavbar()">Take record</a>
             <a class="nav-link" [routerLink]="['/all-batches']" (click)="closeNavbar()">View record</a>
           </div>
 
@@ -44,7 +44,15 @@
                 nzOverlayClassName="logout-popconfirm"
                 nz-button
                 (click)="closeNavbar()"
-              >Logout</a>
+              >
+                <ng-container *ngIf="!isLoggingOut; else loadingTpl">
+                  Logout
+                </ng-container>
+                <ng-template #loadingTpl>
+                  <span class="spinner-grow spinner-grow-sm me-2" aria-hidden="true"></span>
+                   Logging out...
+                </ng-template>
+              </a>
              </ng-container>
             <!-- Toggle button -->
             <span class="theme-toggle mt-1 d-inline-block" id="themeToggle" role="button" aria-label="Toggle Theme">

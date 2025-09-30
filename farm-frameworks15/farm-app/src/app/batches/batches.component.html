@@ -16,13 +16,19 @@
   <!-- Same card design for all screens -->
   <div class="row shadow">
     <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 shadow" *ngFor="let batch of batches; let i = index">
-      <div class="card shadow-lg h-100">
+      <div class="card shadow-lg h-100" [ngClass]="batch.status === 'Completed' ? 'bg-light border-secondary text-muted' : 'bg-white'">
         <div class="card-body">
-          <h6 class="card-title text-danger">Batch #{{ i + 1 }}</h6>
+          <h6 class="card-title text-danger" [ngClass]="batch.status === 'Completed' ? 'text-secondary' : 'text-danger'">Batch #{{ i + 1 }}</h6>
           <p><strong class="text-primary">Name:</strong> {{ batch.name }}</p>
           <p><strong class="text-primary">Description:</strong> {{ batch.description }}</p>
-          <p><strong class="text-primary">Status:</strong> {{ batch.status }}</p>
-          <p><strong class="text-primary">Start Date:</strong> {{ batch.startDate | date: 'mediumDate' }}</p>
+          <p>
+            <strong class="text-primary">Status: &nbsp;</strong>
+            <span *ngIf="batch.status === 'Active'" class="badge bg-success">Active</span>
+            <span *ngIf="batch.status === 'Completed'" class="badge bg-secondary">Completed</span>
+          </p>
+          <p><strong class="text-primary">Start Date:</strong> <span class="text-success"> {{ batch.startDate | date: 'mediumDate' }}</span></p>
+          <!-- Show End Date only if Completed -->
+          <p *ngIf="batch.endDate"><strong class="text-primary">End Date:</strong> <span class="text-danger"> {{ batch.endDate | date: 'mediumDate' }}</span></p>
           <p><strong class="text-primary">Created At:</strong> {{ batch.createAt | date: 'medium' }}</p>
           <p><strong class="text-primary">Batch ID:</strong> {{ batch._id | slice:0:8 }}</p>
           <p><strong class="text-primary">User ID:</strong> {{ batch.userId | slice:0:8 }}</p>
@@ -37,6 +43,10 @@
               Select
             </ng-template>
           </button>
+          <!-- Completed message -->
+          <div *ngIf="batch.status === 'Completed'" class="mt-2 text-secondary fw-bold small">
+            Batch has ended
+          </div>
         </div>
       </div>
     </div>

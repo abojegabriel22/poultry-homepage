@@ -11,9 +11,11 @@ import { Router } from "@angular/router"
 export class AuthService{
     private loggedIn = new BehaviorSubject<boolean>(false)
     private username = new BehaviorSubject<string | null>(null)
+    private role = new BehaviorSubject<string | null>(null)
 
     isLoggedIn$ = this.loggedIn.asObservable()
     username$ = this.username.asObservable()
+    role$ = this.role.asObservable()
 
     constructor(
         private http: HttpClient,
@@ -28,9 +30,11 @@ export class AuthService{
             const user = JSON.parse(userData)
             this.loggedIn.next(true)
             this.username.next(user?.username || user?.name || "User")
+            this.role.next(user?.role || "user")
         } else{
             this.loggedIn.next(false)
             this.username.next(null)
+            this.role.next(null)
         }
     }
 
@@ -39,28 +43,21 @@ export class AuthService{
         localStorage.setItem("token", token)
         this.loggedIn.next(true)
         this.username.next(user?.username || user?.name || "User")
+        this.role.next(user?.role || "user")
     }
 
-    logOut(){
-        const token = localStorage.getItem("token")
-        if(token){
-            const headers = new HttpHeaders().set("Authorization", `Bearer ${token}`)
-            this.http.post(`${environment.poultryApiUrl}/auth/logout`, {}, { headers }).subscribe({
-                next: ()=> {
-                    console.log("Logout successful from server")
-                },
-                error:(err)=>{
-                    console.error("Error calling logout API ", err.message)
-                },
-                complete: () => {
-                    this.clearAuth()
-                }
-            })
-        } else{
-            this.clearAuth()
+    logOut() {
+        const token = localStorage.getItem("token");
+        if (token) {
+            const headers = new HttpHeaders().set("Authorization", `Bearer ${token}`);
+            return this.http.post(`${environment.poultryApiUrl}/auth/logout`, {}, { headers });
+        } else {
+            // return an empty observable if no token
+            return this.http.post(`${environment.poultryApiUrl}/auth/logout`, {});
         }
     }
-    private clearAuth(){
+
+    clearAuth(){
         localStorage.removeItem("user")
         localStorage.removeItem("token")
         localStorage.removeItem("selectedBatch")
@@ -68,6 +65,7 @@ export class AuthService{
         localStorage.removeItem("purchaseId")
         this.loggedIn.next(false)
         this.username.next(null)
+        this.role.next(null)
          // 👇 Redirect user back to login page
         this.router.navigate(["/login"]);
     }

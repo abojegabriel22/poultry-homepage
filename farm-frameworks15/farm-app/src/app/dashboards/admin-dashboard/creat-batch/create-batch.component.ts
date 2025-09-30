@@ -140,4 +140,22 @@ export class CreateBatchRecords implements OnInit {
         this.message.info('Action cancelled');
     }
 
+    endBatch(batch: BatchData): void {
+        if (!batch || !batch._id) {
+            this.message.error("Invalid batch selected");
+            return;
+        }
+        this.batchService.endBatch(batch._id).subscribe({
+            next: (res: BatchResponse) => {
+            this.message.success(res.message || "Batch ended successfully!");
+            // refresh user batches so status + endDate show up
+            this.loadUserBatches(this.batchInput.userId); // refresh list
+            },
+            error: (err) => {
+                this.message.error(err.error?.message || "Failed to end batch");
+                console.error("Error ending batch:", err);
+                }
+        })
+    }
+
 }

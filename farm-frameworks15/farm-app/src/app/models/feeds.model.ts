@@ -1,6 +1,7 @@
 
 export class feedsInput{
     constructor(
+        public name: string,
         public quantity: number,
         public totalPrice: number,
         public batchId: string,
@@ -35,6 +36,7 @@ export class feedsDatas{
 }
 export class feedsData{
     constructor(
+        public name: string,
         public quantity: number,
         public totalPrice: number,
         public pricePerFeed: number,

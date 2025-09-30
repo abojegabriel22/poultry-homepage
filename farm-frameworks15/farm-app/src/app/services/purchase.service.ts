@@ -1,13 +1,14 @@
 
 import { HttpClient } from "@angular/common/http"
 import { Injectable } from "@angular/core"
-import { from, Observable } from "rxjs"
+import { from, map, Observable } from "rxjs"
 import { getAllPurchaseData, purchaseArray, purchaseArrays, PurchaseInputs, PurchaseResponse } from "../models/purchase.model"
 import { environment } from "src/environments/environment"
 import { feedsInput, feedsResponse, feedsResponses, FeedSummaryResponse } from "../models/feeds.model"
 import { MortalityInput, MortalityResponse, MortalityResponses, mortalitySum } from "../models/mortality.model"
-import { VaccineData, VaccineInput, VaccineResponse, VaccineResponses } from "../models/vaccine.model"
+import { VaccineData, VaccineInput, VaccineResponse, VaccineResponses, VaccineSummaryResponse } from "../models/vaccine.model"
 import { SalesInput, SalesResponse, SalesResponses, saleSummary } from "../models/sales.model"
+import { AllSummaries } from "../models/allrecords.model";
 
 @Injectable()
 
@@ -52,9 +53,11 @@ export class PurchaseService{
     registerVaccine(vaccineRecord: VaccineInput):Observable<VaccineResponse>{
         return this.http.post<VaccineResponse>(`${environment.poultryApiUrl}/vaccine`, vaccineRecord)
     }
-
     getVaccineByBatchId(batchId: string):Observable<VaccineResponses>{
         return this.http.get<VaccineResponses>(`${environment.poultryApiUrl}/vaccine/${batchId}`)
+    }
+    getVaccineSummaryByBatchId(batchId: string):Observable<VaccineSummaryResponse>{
+        return this.http.get<VaccineSummaryResponse>(`${environment.poultryApiUrl}/total-vaccine/${batchId}`)
     }
 
     // sales registry 
@@ -66,5 +69,13 @@ export class PurchaseService{
     }
     getSaleSummary(batchId: string):Observable<saleSummary>{
         return this.http.get<saleSummary>(`${environment.poultryApiUrl}/sale-summary/${batchId}`)
+    }
+
+    getAllSummaries(batchId: string): Observable<AllSummaries> {
+        return this.http.get<{ data: AllSummaries }>(
+            `${environment.poultryApiUrl}/all-records/${batchId}`
+        ).pipe(
+            map((res) => res.data)
+        );
     }
 }

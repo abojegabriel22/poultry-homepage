@@ -10,6 +10,8 @@ import { BatchesComponent } from './batches/batches.component';
 import { ViewBatchData } from './dashboards/user-dashboard/view-batchdata/view-batchdata.component';
 import { ViewVaccineComponent } from './dashboards/user-dashboard/view-vaccineData/view-vaccine.component';
 import { FeedsViewComponent } from './dashboards/user-dashboard/feeds-view/feeds-view.component';
+import { ProfileGuardService } from './guards/profileGuard.service';
+import { UserGuardService } from './guards/userGuard.service';
 
 const routes: Routes = [
     {path: 'feeds/:batchId', component: FeedsViewComponent},
@@ -18,8 +20,8 @@ const routes: Routes = [
     {path: 'all-batches', component: BatchesComponent},
     {path: 'batch-record', component: CreateBatchRecords},
     {path: 'record-purchase', component: PurchaseRecordComponent},
-    {path: 'user-dashboard', component: UserDashboardComponent},
-    {path: 'admin-dashboard', component: AdminDashboardComponent},
+    {path: 'user-dashboard', canActivate:[ProfileGuardService], component: UserDashboardComponent},
+    {path: 'admin-dashboard', canActivate:[ProfileGuardService, UserGuardService], component: AdminDashboardComponent},
     {path: 'register', component: RegisterComponent},
     {path: 'login', component: LoginComponent},
     {path: '', component: RegisterComponent},
@@ -29,6 +31,10 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, { onSameUrlNavigation: 'reload' })],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  providers: [
+    ProfileGuardService,
+    UserGuardService
+  ]
 })
 export class AppRoutingModule { }

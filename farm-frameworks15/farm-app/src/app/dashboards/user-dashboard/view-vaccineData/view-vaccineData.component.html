@@ -5,7 +5,7 @@
       <!-- ------------ side-panel ------------- -->
        
       <div class="col-md-2 border-right position-fixed bg-primary-reduced vh-100 display-0" style="z-index: 1; margin-left: 10px;">
-        <h5 class="pt-5 text-center"><a>View Batch Records</a></h5>
+        <h5 class="pt-5 text-center"><a>View {{batchName}} Records</a></h5>
         <!-- <p class="text-center link-to-batch"><strong>Batch | </strong></p> -->
 
         <div class="buttons mt-3 mx-1 mb-3" (click)="setSelectedSection('vaccines')">
@@ -43,6 +43,12 @@
             <img class="flip-image flex-shrink-0 flips me-1" src="https://i.ibb.co/SX5yZNN5/sum1.png" width="25" height="25" alt="sales"> summary
           </span>
         </div>
+
+        <div class="buttons mt-3 mx-1" (click)="setSelectedSection('all-summaries')">
+          <span class="text-center d-flex span-button text-size" type="button">
+             all records
+          </span>
+        </div>
       </div>
        <!-- --------------- end of side panel -----------  -->
 
@@ -63,7 +69,7 @@
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-              <p class="text-center link-to-batch"><strong>Batch | </strong>NameBatch</p>
+              <p class="text-center link-to-batch"><strong>Batch | </strong>{{batchName}}</p>
 
               <div class="buttons mt-3 mb-3" (click)="setSelectedSection('vaccines')">
                 <span class="text-center d-flex span-button text-size" type="button">
@@ -71,7 +77,7 @@
                 </span>
               </div>
 
-              <div class="buttons" (click)="setSelectedSection('purchases')">
+              <div class="buttons" (click)="goback()">
                 <span class="text-center d-flex align-items-center span-button text-size" type="button">
                   <img class="flip-image flex-shrink-1" src="https://i.ibb.co/N4qbNH8/chick-img.png" width="25" height="25" alt="chicks"> chickens bought
                 </span>
@@ -97,6 +103,12 @@
               <div class="buttons mt-3" (click)="setSelectedSection('summary')">
                 <span class="text-center d-flex span-button text-size" type="button">
                   <img class="flip-image flex-shrink-0 flips me-1" src="https://i.ibb.co/HfXYvsNt/money-removebg-preview.png" width="25" height="25" alt="sales"> summary
+                </span>
+              </div>
+              
+              <div class="buttons mt-3" (click)="setSelectedSection('all-summaries')">
+                <span class="text-center d-flex span-button text-size" type="button">
+                   all records
                 </span>
               </div>
             </div>
@@ -344,7 +356,7 @@
                 <!-- ✅ Sale Summary Section -->
                 <div class="card mb-3 shadow" *ngIf="saleSumData">
                   <div class="card-body">
-                    <h5 class="card-title smallH4 text-white">Sales Summary</h5>
+                    <h5 class="card-title smallH4 text-white">💰 Sales Summary</h5>
                     <p class="smallText"><strong>Total Quantity Sold:</strong> 
                       <small class="text-primary saleSumText">
                         {{ saleSumData.totalNumSold }}
@@ -364,7 +376,7 @@
                 </div>
                 <div class="card mb-3 shadow" *ngIf="mortSumData">
                   <div class="card-body">
-                    <h5 class="card-title smallH4 text-white">Mortality Summary</h5>
+                    <h5 class="card-title smallH4 text-white">⚰️ Mortality Summary</h5>
                     <p class="smallText"><strong>Total Mortality for this Batch:</strong> 
                       <small class="text-primary saleSumText">
                         {{ mortSumData.totalMortalities }}
@@ -382,10 +394,30 @@
                     </p> -->
                   </div>
                 </div>
+                <div class="card mb-3 shadow" *ngIf="vaccineSummary">
+                  <div class="card-body">
+                    <h5 class="card-title smallH4 text-white">💉 Vaccine Total Summary</h5>
+                    <p class="smallText"><strong>Total Amount:</strong> 
+                      <small class="text-primary saleSumText">
+                        ₦{{ vaccineSummary.totalVaccineAmount }}
+                      </small>
+                    </p>
+                    <p class="smallText"><strong>Last Updated:</strong> 
+                      <small class="text-primary saleSumText">
+                        {{ vaccineSummary.dateUpdated | date:'mediumDate' }}
+                      </small>
+                    </p>
+                    <p class="smallText"><strong>Batch:</strong> 
+                      <small class="text-primary saleSumText">
+                        {{ vaccineSummary.batchId.name }}
+                      </small>
+                    </p>
+                  </div>
+                </div>
                 <!-- show grand total -->
                 <div class="card mb-3 shadow" *ngIf="feedSummary">
                   <div class="card-body">
-                    <h5 class="card-title smallH4 text-white">Feed Grand Total</h5>
+                    <h5 class="card-title smallH4 text-white">🥣 Feed Grand Total</h5>
                     <p class="smallText"><strong>Total Quantity:</strong> 
                       <small class="text-primary saleSumText">
                         {{ feedSummary.grandTotal.totalQuantity }}
@@ -426,6 +458,94 @@
                     </div>
                   </div>
                 </div>
+              </ng-container>
+              <ng-container *ngIf="selectedSection === 'all-summaries'">
+                <!-- Loader -->
+              <div *ngIf="loading" class="text-center p-3">
+                <p>⏳ Loading summaries...</p>
+              </div>
+
+              <!-- Error -->
+              <div *ngIf="errorMessage" class="alert alert-danger">
+                {{ errorMessage }}
+              </div>
+
+              <!-- Summaries Section -->
+              <div *ngIf="allSummaries">
+
+                <!-- 🐥 Purchase Summary -->
+                <div class="card my-3" *ngIf="allSummaries.purchaseSummary">
+                  <div class="card-body bg-light">
+                    <h5 class="card-title">🐥 Purchase Summary</h5>
+                    <p><strong>Batch:</strong> {{ allSummaries.purchaseSummary.batchId.name }}</p>
+                    <p><strong>Total Chicks:</strong> {{ allSummaries.purchaseSummary.quantity }}</p>
+                    <p><strong>Total Cost:</strong> ₦{{ allSummaries.purchaseSummary.price }}</p>
+                    <p><strong>Cost per chick:</strong> ₦{{ allSummaries.purchaseSummary.pricePerChick }}</p>
+                    <p><strong>Date:</strong> {{ allSummaries.purchaseSummary.dateOfPurchase | date:'short' }}</p>
+                  </div>
+                </div>
+
+                <!-- 🌾 Feed Summary -->
+                <div class="card my-3" *ngIf="allSummaries.feedSummary">
+                  <div class="card-body bg-light">
+                    <h5 class="card-title">🌾 Feed Summary</h5>
+                    <p><strong>Total Quantity:</strong> {{ allSummaries.feedSummary.totalQuantity }} bags</p>
+                    <p><strong>Total Cost:</strong> ₦{{ allSummaries.feedSummary.totalPrices }}</p>
+                    <p><strong>Last Updated:</strong> {{ allSummaries.feedSummary.updatedAt | date:'short' }}</p>
+                  </div>
+                </div>
+
+                <!-- 💉 Vaccine Summary -->
+                <div class="card my-3" *ngIf="allSummaries.totalVaccineSummary">
+                  <div class="card-body bg-light">
+                    <h5 class="card-title">💉 Vaccine Summary</h5>
+                    <p><strong>Total Vaccine Cost:</strong> ₦{{ allSummaries.totalVaccineSummary.totalVaccineAmount }}</p>
+                    <p><strong>Last Updated:</strong> {{ allSummaries.totalVaccineSummary.dateUpdated | date:'short' }}</p>
+                  </div>
+                </div>
+
+                <!-- ⚰ Mortality Summary -->
+                <div class="card my-3" *ngIf="allSummaries.mortalitySummary">
+                  <div class="card-body bg-light">
+                    <h5 class="card-title">⚰ Mortality Summary</h5>
+                    <p><strong>Total Deaths:</strong> {{ allSummaries.mortalitySummary.totalDeaths }}</p>
+                    <p><strong>Last Updated:</strong> {{ allSummaries.mortalitySummary.dateUpdated | date:'short' }}</p>
+                  </div>
+                </div>
+
+                <!-- 💰 Sales Summary -->
+                <div class="card my-3" *ngIf="allSummaries.salesSummary">
+                  <div class="card-body bg-light">
+                    <h5 class="card-title">💰 Sales Summary</h5>
+                    <p><strong>Total Sold:</strong> {{ allSummaries.salesSummary.totalNumSold }} chickens</p>
+                    <p><strong>Total Revenue:</strong> ₦{{ allSummaries.salesSummary.totalSaleAmount }}</p>
+                    <p><strong>Last Updated:</strong> {{ allSummaries.salesSummary.lastUpdated | date:'short' }}</p>
+                  </div>
+                </div>
+
+                <!-- 📊 Computed Summary -->
+                <div class="card my-3" *ngIf="allSummaries.computedSummary">
+                  <div class="card-body bg-light">
+                    <h5 class="card-title">📊 Computed Summary</h5>
+                    <p><strong>Total Chicks:</strong> {{ allSummaries.computedSummary.purchasedChicks }}</p>
+                    <p><strong>Total Deaths:</strong> {{ allSummaries.computedSummary.totalMortality }}</p>
+                    <p><strong>Total Sold:</strong> {{ allSummaries.computedSummary.totalNumSold }}</p>
+                    <p><strong>Remaining Chicks:</strong> {{ allSummaries.computedSummary.remainingChicks }}</p>
+                    <p><strong>Total Feeds Bags:</strong> {{ allSummaries.computedSummary.totalFeedsBag }} bags</p>
+                    <p><strong>Total Feeds Amount:</strong> ₦{{ allSummaries.computedSummary.totalFeeds }}</p>
+                    <p><strong>Total Expenses:</strong> ₦{{ allSummaries.computedSummary.totalExpenses }}</p>
+                    <p><strong>Revenue:</strong> ₦{{ allSummaries.computedSummary.revenue }}</p>
+                    <p><strong>Capital:</strong> ₦{{ allSummaries.computedSummary.capital }}</p>
+                    <p><strong>Net Profit:</strong> ₦{{ allSummaries.computedSummary.netProfit }}</p>
+                    <p><strong>Start Date:</strong> {{ allSummaries.computedSummary.startDate | date:'mediumDate' }}</p>
+                    <p *ngIf="allSummaries.computedSummary.batchId?.endDate">
+                      <strong>End Date:</strong> {{ allSummaries.computedSummary.batchId.endDate | date:'mediumDate' }}
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
               </ng-container>
 
 

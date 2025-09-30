@@ -26,12 +26,42 @@
                 class="list-group-item d-flex flex-column flex-md-row justify-content-between align-items-start borderListing shadow mb-3"
               >
                 <div class="col-md-9">
-                  <strong class="smallText d-block">{{ batch.name }}</strong><br>
+                  <strong class="smallText d-block">
+                    {{ batch.name }} 
+                    <span *ngIf="batch.status === 'Completed'" class="badge bg-danger ms-2">Ended</span>
+                    <span *ngIf="batch.status === 'Active'" class="badge bg-success ms-2">Active</span>
+                  </strong><br>
                   <small class="smallText"><strong>userId:</strong><span class="text-primary"> {{ batch.userId }}</span></small><br>
                   <small class="smallText"><strong>Batch Id:</strong><span class="text-primary"> {{ batch._id }}</span></small><br>
                   <small class="smallText"><strong>Batch Info:</strong><span class="text-primary"> {{ batch.description }}</span></small><br>
-                  <small class="smallText"><strong>startDate:</strong><span class="text-primary"> {{ batch.startDate }}</span></small><br>
-                  <small class="smallText"><strong>createAt:</strong><span class="text-primary"> {{ batch.createAt }}</span></small><br>
+                  <small class="smallText">
+                    <strong>startDate:</strong>
+                    <span class="text-primary"> {{ batch.startDate | date: "longDate" }}</span>
+                  </small><br/>
+
+                  <!-- ✅ End Date only shows if batch is completed -->
+                  <ng-container *ngIf="batch.status === 'Completed'">
+                    <small class="smallText">
+                      <strong>End Date:</strong>
+                      <span class="text-danger"> {{ batch.endDate | date:'dd/MM/yyyy, HH:mm:ss' }}</span>
+                    </small><br/>
+                  </ng-container>
+
+                  <small class="smallText">
+                    <strong>createAt:</strong>
+                    <span class="text-primary"> {{ batch.createAt | date:'dd/MM/yyyy, HH:mm:ss' }}</span>
+                  </small><br/><br/>
+
+                  <button
+                    *ngIf="batch.status !== 'Completed'"
+                    class="btn btn-sm btn-warning smallText button-size"
+                    nz-popconfirm
+                    nzPopconfirmTitle="Are you sure you want to end this batch? This action cannot be undone."
+                    (nzOnConfirm)="endBatch(batch)"
+                    nzPopconfirmPlacement="top"
+                    nz-button
+                  >End Batch!
+                </button>
                 </div>
 
                 <!-- ✅ Buttons: inline on desktop, stacked at bottom on mobile -->

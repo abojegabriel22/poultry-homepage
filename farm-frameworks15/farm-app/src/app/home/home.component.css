@@ -60,7 +60,7 @@ tbody tr td {
     font-weight: 100;
     gap: 0.4rem;
     padding: 0.5rem 0.5rem;
-    font-size: 14px;
+    font-size: 20px !important;
   }
 
   .span-button:hover,

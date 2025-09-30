@@ -1,10 +1,11 @@
 import { Location } from "@angular/common";
 import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute, Router } from "@angular/router";
+import { AllSummaries } from "src/app/models/allrecords.model";
 import { feedsDatas, feedsResponses, FeedSummaryResponse } from "src/app/models/feeds.model";
 import { mortalityData, MortalityDatas, MortalityResponses, mortalitySum } from "src/app/models/mortality.model";
 import { SalesDatas, SalesResponses, saleSum, saleSummary } from "src/app/models/sales.model";
-import { VaccineDatas, VaccineResponses } from "src/app/models/vaccine.model";
+import { VaccineDatas, VaccineResponses, VaccineSummary, VaccineSummaryResponse } from "src/app/models/vaccine.model";
 import { PurchaseService } from "src/app/services/purchase.service";
 
 declare var bootstrap: any;
@@ -27,10 +28,14 @@ export class ViewVaccineComponent implements OnInit {
   mortalities: MortalityDatas[] = [];
   mortSumData: mortalityData | null = null
   feedSummary: FeedSummaryResponse | null = null;
+  vaccineSummary: VaccineSummary | null = null;
+  allSummaries: AllSummaries | null = null;
   batchId: string = "";
   loading: boolean = false;
   errorMessage: string = "";
   selectedSection: string = "vaccines"; // default
+  batchName: string = "";
+
 
   constructor(
     private purchaseService: PurchaseService,
@@ -66,10 +71,11 @@ export class ViewVaccineComponent implements OnInit {
         this.getSaleSummary(this.batchId);
         this.getMortalitySum(this.batchId)
         this.getFeedSummary(this.batchId)
+        this.getVaccineSummary(this.batchId);
         break;
-      // case "purchases":
-      //   this.getPurchaseData(this.batchId);
-      //   break;
+      case "all-summaries":
+        this.getAllSummaries(this.batchId);
+        break;
     }
   }
 
@@ -88,6 +94,10 @@ export class ViewVaccineComponent implements OnInit {
               ? { _id: v.batchId, name: "N/A", startDate: "" }
               : v.batchId
         }));
+        // ✅ set batchName (use the first vaccine’s batch info)
+        if (this.vaccines.length > 0 && this.vaccines[0].batchId) {
+          this.batchName = this.vaccines[0].batchId.name || "N/A";
+        }
 
         this.loading = false;
         console.log("Normalized vaccine data: ", this.vaccines);
@@ -98,6 +108,18 @@ export class ViewVaccineComponent implements OnInit {
         this.loading = false;
       }
     });
+  }
+  getVaccineSummary(batchId: string): void {
+    this.loading = true
+    this.purchaseService.getVaccineSummaryByBatchId(batchId).subscribe({
+      next: (res: VaccineSummaryResponse) => {
+        this.vaccineSummary = res.data;
+        console.log("Vaccine summary: ", this.vaccineSummary);
+      },
+      error: err => {
+        console.error("Error fetching vaccine summary", err);
+      }
+    })
   }
 
   // ✅ Feeds API
@@ -210,6 +232,21 @@ getFeedSummary(batchId: string): void {
         err.error?.message || "Unable to fetch mortality summary!";
       this.loading = false;
     }
+    })
+  }
+
+  getAllSummaries(batchId: string): void {
+    this.loading = true
+    this.purchaseService.getAllSummaries(batchId).subscribe({
+      next: (summaries: AllSummaries)=>{
+        this.allSummaries = summaries;
+        this.loading = false;
+        console.log("All summaries:", this.allSummaries);
+      },
+      error: (err) => {
+        this.errorMessage = err.error?.message || "Unable to fetch summaries!";
+        this.loading = false;
+      }
     })
   }
 

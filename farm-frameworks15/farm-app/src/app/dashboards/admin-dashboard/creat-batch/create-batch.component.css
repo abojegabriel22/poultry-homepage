@@ -7,6 +7,9 @@
     background: var(--pink-color);
     color: var(--bright-color);
 }
+/* .bg-pinkColor{
+    background-color: var(--pink-color) !important;
+} */
 .borderListing{
     transition: all .50s ease;
     box-shadow: 0 0 45px rgba(229, 7, 7, 0.884);
