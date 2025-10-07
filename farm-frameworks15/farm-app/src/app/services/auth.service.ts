@@ -24,6 +24,14 @@ export class AuthService{
         this.checkAut()
     }
 
+    getAuthHeaders(): HttpHeaders {
+        const token = localStorage.getItem("token")
+        return new HttpHeaders({
+            Authorization: token ? `Bearer ${token}` : "",
+            "Content-Type": "application/json"
+        })
+    }
+
     checkAut(){
         const userData = localStorage.getItem("user")
         if(userData){
@@ -47,14 +55,15 @@ export class AuthService{
     }
 
     logOut() {
-        const token = localStorage.getItem("token");
-        if (token) {
-            const headers = new HttpHeaders().set("Authorization", `Bearer ${token}`);
-            return this.http.post(`${environment.poultryApiUrl}/auth/logout`, {}, { headers });
-        } else {
+        const headers = this.getAuthHeaders()
+        // const token = localStorage.getItem("token");
+        // if (token) {
+        //     const headers = new HttpHeaders().set("Authorization", `Bearer ${token}`);
+        //     return this.http.post(`${environment.poultryApiUrl}/auth/logout`, {}, { headers });
+        // } else {
             // return an empty observable if no token
-            return this.http.post(`${environment.poultryApiUrl}/auth/logout`, {});
-        }
+            return this.http.post(`${environment.poultryApiUrl}/auth/logout`, {}, {headers});
+        // }
     }
 
     clearAuth(){

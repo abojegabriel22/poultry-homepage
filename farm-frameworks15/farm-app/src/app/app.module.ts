@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NzMessageModule } from 'ng-zorro-antd/message';
 import { NzPopconfirmModule } from 'ng-zorro-antd/popconfirm';
@@ -33,6 +33,7 @@ import { BatchesComponent } from './batches/batches.component';
 import { ViewBatchData } from './dashboards/user-dashboard/view-batchdata/view-batchdata.component';
 import { ViewVaccineComponent } from './dashboards/user-dashboard/view-vaccineData/view-vaccine.component';
 import { FeedsViewComponent } from './dashboards/user-dashboard/feeds-view/feeds-view.component';
+import { AuthInterceptor } from './interceptors/auth.interceptor';
 
 // import { NZ_MESSAGE_CONFIG } from 'ng-zorro-antd/message';
 
@@ -74,6 +75,7 @@ registerLocaleData(en);
     FormSelectionService,
     PurchaseService,
     AuthService,
+    { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },
     { provide: NZ_I18N, useValue: en_US }
     // { provide: NZ_MESSAGE_CONFIG, useValue: { nzTop: 80, nzDuration: 3000 } }
   ],

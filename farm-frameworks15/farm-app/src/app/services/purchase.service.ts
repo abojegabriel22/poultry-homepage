@@ -9,17 +9,20 @@ import { MortalityInput, MortalityResponse, MortalityResponses, mortalitySum } f
 import { VaccineData, VaccineInput, VaccineResponse, VaccineResponses, VaccineSummaryResponse } from "../models/vaccine.model"
 import { SalesInput, SalesResponse, SalesResponses, saleSummary } from "../models/sales.model"
 import { AllSummaries } from "../models/allrecords.model";
+import { AuthService } from "./auth.service"
+ 
 
 @Injectable()
 
 export class PurchaseService{
     constructor(
-        private http: HttpClient
+        private http: HttpClient,
+        private authService: AuthService
     ){}
 
     // register a new purchase
     registerPurchase(takeRecord: PurchaseInputs):Observable<PurchaseResponse>{
-        return this.http.post<PurchaseResponse>(`${environment.poultryApiUrl}/purchase`, takeRecord)
+        return this.http.post<PurchaseResponse>(`${environment.poultryApiUrl}/purchase`, takeRecord, { headers: this.authService["getAuthHeaders"]()})
     }
 
     // get purchase by batch id
@@ -28,7 +31,7 @@ export class PurchaseService{
     }
 
     registerFeed(feedRecord: feedsInput):Observable<feedsResponse>{
-        return this.http.post<feedsResponse>(`${environment.poultryApiUrl}/feeds`, feedRecord)
+        return this.http.post<feedsResponse>(`${environment.poultryApiUrl}/feeds`, feedRecord, { headers: this.authService["getAuthHeaders"]()})
     }
     // feeds registry 
     getFeedsByBatchId(batchId: string):Observable<feedsResponses>{
@@ -40,7 +43,7 @@ export class PurchaseService{
 
     //  mortality registry 
     registerMortality(mortalityRecord: MortalityInput):Observable<MortalityResponse>{
-        return this.http.post<MortalityResponse>(`${environment.poultryApiUrl}/mortality`, mortalityRecord)
+        return this.http.post<MortalityResponse>(`${environment.poultryApiUrl}/mortality`, mortalityRecord, { headers: this.authService["getAuthHeaders"]()})
     }
     getMortalityByBatchId(batchId: string): Observable<MortalityResponses>{
         return this.http.get<MortalityResponses>(`${environment.poultryApiUrl}/mortality/${batchId}`)
@@ -51,7 +54,7 @@ export class PurchaseService{
 
     // vaccine registry 
     registerVaccine(vaccineRecord: VaccineInput):Observable<VaccineResponse>{
-        return this.http.post<VaccineResponse>(`${environment.poultryApiUrl}/vaccine`, vaccineRecord)
+        return this.http.post<VaccineResponse>(`${environment.poultryApiUrl}/vaccine`, vaccineRecord, { headers: this.authService["getAuthHeaders"]()})
     }
     getVaccineByBatchId(batchId: string):Observable<VaccineResponses>{
         return this.http.get<VaccineResponses>(`${environment.poultryApiUrl}/vaccine/${batchId}`)
@@ -62,7 +65,7 @@ export class PurchaseService{
 
     // sales registry 
     registerSales(saleRecord: SalesInput):Observable<SalesResponse>{
-        return this.http.post<SalesResponse>(`${environment.poultryApiUrl}/sales`, saleRecord)
+        return this.http.post<SalesResponse>(`${environment.poultryApiUrl}/sales`, saleRecord, { headers: this.authService["getAuthHeaders"]()})
     }
     getSalesByBatchId(batchId: string):Observable<SalesResponses>{
         return this.http.get<SalesResponses>(`${environment.poultryApiUrl}/sales/${batchId}`)
