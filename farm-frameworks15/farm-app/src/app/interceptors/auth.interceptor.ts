@@ -29,7 +29,7 @@ export class AuthInterceptor implements HttpInterceptor{
         return next.handle(clonedReq).pipe(
             catchError((error: HttpErrorResponse) => {
                 // if token is expired or invvalid (401 / 403) 
-                if(error.status === 401 || error.status === 403){
+                if(error.status === 401 || error.status === 403 || error.status === 500){
                     this.message.warning("Session expired. Please login again!")
                     this.authService.clearAuth()
                 } return throwError(() => error)
