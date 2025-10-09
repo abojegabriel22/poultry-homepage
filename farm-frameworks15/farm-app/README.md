@@ -26,3 +26,43 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 "# poultry-desktop" 
+
+
+# 🐔 FarmApp — Poultry Management System
+
+FarmApp is a **modern poultry management system** built with **Angular 15**, **Node.js**, and **MongoDB**.  
+It helps poultry farmers track and manage all key farm operations — from chicken purchases and feed usage to mortality, vaccinations, sales, and overall performance summaries.
+
+---
+
+## 🚀 Features
+
+- 🐣 **Batch Management** — Create, view, and monitor poultry batches.  
+- 🌾 **Feed Tracking** — Record daily feed consumption per batch.  
+- 💉 **Vaccination Records** — Log vaccine schedules and dosages.  
+- ⚰️ **Mortality Tracking** — Keep records of losses and mortality causes.  
+- 💰 **Sales Management** — Track sales, customers, and total revenue.  
+- 📊 **Summary Reports** — Automatically calculate totals and performance metrics.  
+- 🔐 **User Authentication** — Register, log in, and manage user access.  
+- 🎨 **Responsive UI** — Built with Angular 15 and styled using Bootstrap + AOS animations.  
+
+---
+
+## 🧩 Tech Stack
+
+| Layer | Technology |
+|--------|-------------|
+| Frontend | Angular 15, TypeScript, Bootstrap, AOS |
+| Backend | Node.js, Express.js |
+| Database | MongoDB (Mongoose ODM) |
+| Hosting | Go24 or FTP-based deployment |
+| CI/CD | GitHub Actions (for automated builds & deployments) |
+
+---
+
+## ⚙️ Development Setup
+
+### Development Server
+Run:
+```bash
+ng serve

@@ -49,6 +49,17 @@
   transform: rotateY(180deg);
 }
 
+/* Continuous spin animation */
+.continuous-spin {
+  display: inline-block;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
 @media (max-width: 800px) {
   .text-size {
     font-size: 0.765rem;

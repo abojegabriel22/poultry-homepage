@@ -4,17 +4,19 @@ import { Injectable } from "@angular/core"
 import { Observable } from "rxjs";
 import { BatchArray, BatchData, BatchModel, BatchResponse } from "../models/batch.model";
 import { environment } from "src/environments/environment";
+import { AuthService } from "./auth.service"
 
 @Injectable()
 
 export class BatchService {
     constructor(
-        private http: HttpClient
+        private http: HttpClient,
+        private authService: AuthService
     ){}
 
     // create a batch record
     createBatch(batch: BatchModel):Observable<BatchResponse>{
-        return this.http.post<BatchResponse>(`${environment.poultryApiUrl}/batch`, batch)
+        return this.http.post<BatchResponse>(`${environment.poultryApiUrl}/batch`, batch, {headers: this.authService["getAuthHeaders"]()})
     }
 
     getallbatchbyuser(userId: string):Observable<BatchData[]>{

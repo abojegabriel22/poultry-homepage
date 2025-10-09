@@ -1,6 +1,28 @@
 <div class="container py-4 mt-5">
+  <h2 class="text-center pt-5 text-shadow-view" data-aos="fade-down" data-aos-duration="800">Welcome to user dashboard</h2>
+  <h5 class="text-primary text-center text-shadow" data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">You can select any batch from here and view their details</h5>
 
-  <h3 class="mb-3 text-primary text-shadow">All Batches</h3><hr/>
+  <!-- <h3 class="mb-3 text-primary text-shadow" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300">All Batches</h3><hr/> -->
+   <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap">
+    <!-- Left side: Title -->
+    <h3 class="text-primary text-shadow mb-2 mb-md-0" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300">
+      All Batches
+    </h3>
+
+    <!-- Right side: Search Input -->
+    <div class="search-box" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
+      <input 
+        type="text" 
+        class="form-control form-control-sm" 
+        placeholder="Search batch by name..." 
+        [(ngModel)]="searchTerm" 
+        (input)="filterBatches()"
+        style="min-width: 230px;"
+      />
+    </div>
+  </div>
+  <hr />
+
 
   <!-- Loader -->
   <div *ngIf="loading" class="text-center">
@@ -14,8 +36,8 @@
   </div>
 
   <!-- Same card design for all screens -->
-  <div class="row shadow">
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 shadow" *ngFor="let batch of batches; let i = index">
+  <div *ngIf="!loading" class="row shadow overflow-hidden">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 shadow" *ngFor="let batch of filteredBatches.length ? filteredBatches : batches; let i = index" [attr.data-aos]="getAosEffect(i)" [attr.data-aos-delay]="getAosDelay(i)">
       <div class="card shadow-lg h-100" [ngClass]="batch.status === 'Completed' ? 'bg-light border-secondary text-muted' : 'bg-white'">
         <div class="card-body">
           <h6 class="card-title text-danger" [ngClass]="batch.status === 'Completed' ? 'text-secondary' : 'text-danger'">Batch #{{ i + 1 }}</h6>

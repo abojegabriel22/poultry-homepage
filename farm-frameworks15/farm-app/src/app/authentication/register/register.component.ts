@@ -48,9 +48,10 @@ export class RegisterComponent implements OnInit {
                 this.isLoading = false
                 this.successMessage = res.message
                 console.log("User registered successfully ", res)
+                // navigate to email verification page
                 setTimeout(() => {
-                    this.router.navigate(["/login"])
-                }, 2500)
+                    this.router.navigate(["/verify"], {queryParams: {email: this.user.email}})
+                }, 2000)
             }, error: (err) => {
                 this.isLoading = false
                 console.error("Error registering user: ", err)

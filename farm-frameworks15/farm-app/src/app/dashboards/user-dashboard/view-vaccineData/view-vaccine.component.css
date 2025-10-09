@@ -10,8 +10,9 @@
   font-size: 20px;
   font-weight: 700;
 }
+
 @media screen and (min-width: 800px) {
   .footer-class{
-    margin-top: 50vh;
+    margin-top: 31vh !important;
   }
 }

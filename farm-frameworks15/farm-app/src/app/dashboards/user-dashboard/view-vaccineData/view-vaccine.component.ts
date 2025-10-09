@@ -1,5 +1,5 @@
 import { Location } from "@angular/common";
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, AfterViewInit } from "@angular/core";
 import { ActivatedRoute, Router } from "@angular/router";
 import { AllSummaries } from "src/app/models/allrecords.model";
 import { feedsDatas, feedsResponses, FeedSummaryResponse } from "src/app/models/feeds.model";
@@ -7,6 +7,7 @@ import { mortalityData, MortalityDatas, MortalityResponses, mortalitySum } from 
 import { SalesDatas, SalesResponses, saleSum, saleSummary } from "src/app/models/sales.model";
 import { VaccineDatas, VaccineResponses, VaccineSummary, VaccineSummaryResponse } from "src/app/models/vaccine.model";
 import { PurchaseService } from "src/app/services/purchase.service";
+import AOS from 'aos';
 
 declare var bootstrap: any;
 
@@ -20,7 +21,7 @@ declare var bootstrap: any;
     "../view-batchdata/view-batchdata.component.css"
   ]
 })
-export class ViewVaccineComponent implements OnInit {
+export class ViewVaccineComponent implements OnInit, AfterViewInit {
   vaccines: VaccineDatas[] = [];
   feeds: feedsDatas[] = [];
   sales: SalesDatas[] = [];
@@ -50,6 +51,14 @@ export class ViewVaccineComponent implements OnInit {
     if (this.batchId) {
       this.loadSectionData(this.selectedSection);
     }
+  }
+  ngAfterViewInit(): void {
+      AOS.init({
+      duration: 800,      // animation duration
+      easing: 'ease-in-out',
+      once: false,         // whether animation should happen only once
+      mirror: false       // animate elements while scrolling past them
+    });
   }
 
   // ✅ Centralized loader for each section
@@ -268,5 +277,14 @@ getFeedSummary(batchId: string): void {
 
   goback():void{
     this.location.back()
+  }
+
+  getAosDelay(index: number): number {
+    return (index % 4) * 150; // delays 0, 150, 300, 450ms
+  }
+
+  getAosEffect(index: number): string {
+    const effects = ['fade-up', 'zoom-in', 'flip-left', 'fade-right', 'fade-down', 'zoom-out', 'flip-up'];
+    return effects[index % effects.length];
   }
 }

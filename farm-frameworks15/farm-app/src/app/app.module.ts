@@ -34,6 +34,7 @@ import { ViewBatchData } from './dashboards/user-dashboard/view-batchdata/view-b
 import { ViewVaccineComponent } from './dashboards/user-dashboard/view-vaccineData/view-vaccine.component';
 import { FeedsViewComponent } from './dashboards/user-dashboard/feeds-view/feeds-view.component';
 import { AuthInterceptor } from './interceptors/auth.interceptor';
+import { VerifyMailComponent } from './authentication/verifymail/verify.component';
 
 // import { NZ_MESSAGE_CONFIG } from 'ng-zorro-antd/message';
 
@@ -56,7 +57,8 @@ registerLocaleData(en);
     BatchesComponent,
     ViewBatchData,
     ViewVaccineComponent,
-    FeedsViewComponent
+    FeedsViewComponent,
+    VerifyMailComponent
   ],
   imports: [
     BrowserModule,

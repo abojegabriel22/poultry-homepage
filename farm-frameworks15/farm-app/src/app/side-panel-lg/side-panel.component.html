@@ -1,41 +1,45 @@
+<div class="col-md-2 border-right position-fixed bg-primary-reduced vh-100 display-0" style="z-index: 1;" data-aos="fade-right" data-aos-duration="600">
+  <h5 class="pt-5 text-center" data-aos="fade-down" data-aos-duration="600" data-aos-delay="100">
+    <a>Take Records</a>
+  </h5>
+  
+  <p [routerLink]="['/batch-record']" class="text-center link-to-batch" data-aos="fade-up" data-aos-duration="600" data-aos-delay="150">
+    <strong>Batch | </strong>{{side_panel_batch}}
+  </p>
 
-<div class="col-md-2 border-right position-fixed bg-primary-reduced vh-100 display-0" style="z-index: 1;">
-  <h5 class="pt-5 text-center"><a>Take Records</a></h5>
-  <p [routerLink]="['/batch-record']" class="text-center link-to-batch"><strong>Batch | </strong>{{side_panel_batch}}</p>
-
-  <div class="buttons mx-1" (click)="selectedForm('Add purchase')">
+  <div class="buttons mx-1" (click)="selectedForm('Add purchase')" data-aos="fade-right" data-aos-duration="600" data-aos-delay="200">
     <span class="text-center d-flex align-items-center span-button text-size" type="button">
-      <img class="flip-image flex-shrink-1" src="https://i.ibb.co/N4qbNH8/chick-img.png" width="25" height="25" alt="chicks"> chickens bought
+      <img class="flip-image continuous-spin flex-shrink-1" src="https://i.ibb.co/N4qbNH8/chick-img.png" width="25" height="25" alt="chicks"> chickens bought
     </span>
   </div>
 
-  <div class="buttons mt-3 mx-1" (click)="selectedForm('Add feeds')">
+  <div class="buttons mt-3 mx-1" (click)="selectedForm('Add feeds')" data-aos="fade-right" data-aos-duration="600" data-aos-delay="250">
     <span class="text-center d-flex align-items-center span-button text-size" type="button">
-      <img class="flip-image flex-shrink-1 flips me-1" src="https://i.ibb.co/KcrBNThw/chick-fed-removebg-preview.png" width="25" height="25" alt="feeds"> feeds
+      <img class="flip-image continuous-spin flex-shrink-1 me-1" src="https://i.ibb.co/KcrBNThw/chick-fed-removebg-preview.png" width="25" height="25" alt="feeds"> feeds
     </span>
   </div>
 
-  <div class="buttons mt-3 mx-1" (click)="selectedForm('Add mortality')">
+  <div class="buttons mt-3 mx-1" (click)="selectedForm('Add mortality')" data-aos="fade-right" data-aos-duration="600" data-aos-delay="300">
     <span class="text-center d-flex align-items-center span-button text-size" type="button">
-      <img class="flip-image flex-shrink-1 flips me-1" src="https://i.ibb.co/B2qXVTN2/deadchick1.png" width="25" height="25" alt="mortality"> mortality
+      <img class="flip-image continuous-spin flex-shrink-1 me-1" src="https://i.ibb.co/B2qXVTN2/deadchick1.png" width="25" height="25" alt="mortality"> mortality
     </span>
   </div>
 
-  <div class="buttons mt-3 mx-1" (click)="selectedForm('Add vaccines')">
+  <div class="buttons mt-3 mx-1" (click)="selectedForm('Add vaccines')" data-aos="fade-right" data-aos-duration="600" data-aos-delay="350">
     <span class="text-center d-flex span-button text-size" type="button">
-      <img class="flip-image flex-shrink-0 flips me-1" src="https://i.ibb.co/3mpT5psw/vaccines.png" width="25" height="25" alt="vaccines"> vaccines
+      <img class="flip-image continuous-spin flex-shrink-0 me-1" src="https://i.ibb.co/3mpT5psw/vaccines.png" width="25" height="25" alt="vaccines"> vaccines
     </span>
   </div>
 
-  <div class="buttons mt-3 mx-1" (click)="selectedForm('Record sales')">
+  <div class="buttons mt-3 mx-1" (click)="selectedForm('Record sales')" data-aos="fade-right" data-aos-duration="600" data-aos-delay="400">
     <span class="text-center d-flex span-button text-size" type="button">
-      <img class="flip-image flex-shrink-0 flips me-1" src="https://i.ibb.co/HfXYvsNt/money-removebg-preview.png" width="25" height="25" alt="sales"> sales
+      <img class="flip-image continuous-spin flex-shrink-0 me-1" src="https://i.ibb.co/HfXYvsNt/money-removebg-preview.png" width="25" height="25" alt="sales"> sales
     </span>
   </div>
 
-  <div class="buttons mt-3 mx-1">
+  <div class="buttons mt-3 mx-1" data-aos="fade-right" data-aos-duration="600" data-aos-delay="450">
     <span class="text-center d-flex span-button text-size" type="button">
-      <img class="flip-image flex-shrink-0 flips me-1" src="https://i.ibb.co/SX5yZNN5/sum1.png" width="25" height="25" alt="sales"> summary
+      <img class="flip-image continuous-spin flex-shrink-0 me-1" src="https://i.ibb.co/SX5yZNN5/sum1.png" width="25" height="25" alt="summary"> summary
     </span>
   </div>
 </div>

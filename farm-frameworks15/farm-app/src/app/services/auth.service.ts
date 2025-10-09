@@ -1,6 +1,6 @@
 
 import { Injectable } from "@angular/core"
-import { BehaviorSubject } from "rxjs"
+import { BehaviorSubject, Observable } from "rxjs"
 import { UserInfo } from "../models/login.model"
 import { HttpClient, HttpHeaders } from "@angular/common/http"
 import { environment } from "src/environments/environment"
@@ -54,19 +54,24 @@ export class AuthService{
         this.role.next(user?.role || "user")
     }
 
-    logOut() {
-        const headers = this.getAuthHeaders()
-        // const token = localStorage.getItem("token");
-        // if (token) {
-        //     const headers = new HttpHeaders().set("Authorization", `Bearer ${token}`);
-        //     return this.http.post(`${environment.poultryApiUrl}/auth/logout`, {}, { headers });
-        // } else {
-            // return an empty observable if no token
-            return this.http.post(`${environment.poultryApiUrl}/auth/logout`, {}, {headers});
-        // }
+    logOut():Observable<any> {
+        // const headers = this.getAuthHeaders()
+        const token = localStorage.getItem("token");
+        if (token) {
+            const headers = new HttpHeaders().set("Authorization", `Bearer ${token}`);
+            return this.http.post(`${environment.poultryApiUrl}/auth/logout`, {}, { headers });
+        }  else {
+            // no token — clear locally
+            this.clearAuth();
+            // return dummy observable
+            return new Observable(observer => {
+                observer.next(null);
+                observer.complete();
+            });
+        }
     }
 
-    clearAuth(){
+    public clearAuth(){
         localStorage.removeItem("user")
         localStorage.removeItem("token")
         localStorage.removeItem("selectedBatch")

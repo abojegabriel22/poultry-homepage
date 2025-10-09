@@ -12,6 +12,7 @@ import { ViewVaccineComponent } from './dashboards/user-dashboard/view-vaccineDa
 import { FeedsViewComponent } from './dashboards/user-dashboard/feeds-view/feeds-view.component';
 import { ProfileGuardService } from './guards/profileGuard.service';
 import { UserGuardService } from './guards/userGuard.service';
+import { VerifyMailComponent } from './authentication/verifymail/verify.component';
 
 const routes: Routes = [
     {path: 'feeds/:batchId', component: FeedsViewComponent},
@@ -23,6 +24,7 @@ const routes: Routes = [
     {path: 'user-dashboard', canActivate:[ProfileGuardService], component: UserDashboardComponent},
     {path: 'admin-dashboard', canActivate:[ProfileGuardService, UserGuardService], component: AdminDashboardComponent},
     {path: 'register', component: RegisterComponent},
+    {path: 'verify', component: VerifyMailComponent},
     {path: 'login', component: LoginComponent},
     {path: '', component: RegisterComponent},
     { path: '**', redirectTo: 'login', pathMatch: 'full' }

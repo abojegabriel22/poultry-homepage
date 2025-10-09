@@ -1,4 +1,4 @@
-import { ChangeDetectorRef, Component, OnInit } from "@angular/core";
+import { ChangeDetectorRef, Component, OnInit, AfterViewInit } from "@angular/core";
 import { FormSelectionService } from "../services/form-selection.service";
 import { NgForm } from "@angular/forms";
 import { purchaseArrays, PurchaseInputs, PurchaseResponse } from "../models/purchase.model";
@@ -8,6 +8,7 @@ import { MortalityInput, MortalityResponse } from "../models/mortality.model";
 import { VaccineInput, VaccineResponse } from "../models/vaccine.model";
 import { SalesInput, SalesResponse } from "../models/sales.model";
 import { BatchSelectionService } from "../services/batch-selection.service";
+import * as AOS from 'aos';
 
 declare var bootstrap: any;
 @Component({
@@ -15,7 +16,7 @@ declare var bootstrap: any;
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, AfterViewInit {
   title = 'Admin & User database';
   subtitle = 'view and make changes to your poultry farm records.';
   formTitle = "Add purchase";
@@ -115,6 +116,14 @@ export class HomeComponent implements OnInit {
       this.vaccineUser.purchaseId = savedPurchaseId
       this.salesUser.purchaseId = savedPurchaseId
     }
+  }
+  ngAfterViewInit(): void {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+      offset: 100,
+    });
   }
 
   // 🔧 Utility to auto-clear messages
@@ -327,5 +336,14 @@ export class HomeComponent implements OnInit {
       const closeCanvas = bootstrap.Offcanvas.getInstance(bsOffcanvas)
       closeCanvas?.hide()
     }
+  }
+
+  getAosEffect(index: number): string {
+    const effects = ["fade-up", "fade-right", "fade-left", "zoom-in-up"];
+    return effects[index % effects.length];
+  }
+
+  getAosDelay(index: number): number {
+    return index * 100; // 100ms stagger between elements
   }
 }

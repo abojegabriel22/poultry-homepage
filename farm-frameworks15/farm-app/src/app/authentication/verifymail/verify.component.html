@@ -1,0 +1,32 @@
+<div class="container d-flex justify-content-center align-items-center min-vh-100 fade-in-container">
+  <div class="verify-container fade-item" style="animation-delay: 0.1s">
+    <h2 class="text-center mb-4 fade-item" style="animation-delay: 0.2s">Email Verification</h2>
+    <p class="text-center fade-item" style="animation-delay: 0.3s">A 6-digit code was sent to your email: <strong>{{ email }}</strong></p>
+
+    <div class="form-group text-center mt-4 fade-item" style="animation-delay: 0.4s">
+      <input
+      type="text"
+      maxlength="6"
+      class="form-control text-center"
+      placeholder="Enter 6-digit code"
+      [(ngModel)]="code"
+      />
+    </div>
+
+    <div class="text-center mt-3 fade-item" style="animation-delay: 0.5s">
+      <button class="btn btn-primary w-50" (click)="verifyCode()" [disabled]="isLoading">
+        <ng-container *ngIf="!isLoading; else loadingTpl">Verify</ng-container>
+        <ng-template #loadingTpl>
+          <span class="spinner-grow spinner-grow-sm"></span> Verifying...
+        </ng-template>
+      </button>
+    </div>
+
+    <div class="text-center mt-3 fade-item" style="animation-delay: 0.6s">
+      <button class="btn btn-link" (click)="resendCode()">Resend Code</button>
+    </div>
+
+    <div *ngIf="errorMessage" class="alert alert-danger text-center mt-3">{{ errorMessage }}</div>
+    <div *ngIf="successMessage" class="alert alert-success text-center mt-3">{{ successMessage }}</div>
+  </div>
+</div>

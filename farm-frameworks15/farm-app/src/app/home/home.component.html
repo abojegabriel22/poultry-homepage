@@ -6,12 +6,36 @@
       <div class="col-md-10 offset-md-2 padding-small-screen">
         <div class="mx-auto mb-5" style="max-width: 800px;">
           <div class="d-flex align-items-center justify-content-between">
-            <span class="small-screen-display" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+            <span 
+              class="small-screen-display" 
+              data-bs-toggle="offcanvas" 
+              data-bs-target="#offcanvasWithBothOptions" 
+              aria-controls="offcanvasWithBothOptions"
+              data-aos="fade-right" 
+              data-aos-duration="600"
+            >
               <img src="../../assets/images/sidebar-icon.svg" alt="sidebar icon" class="sidebar-fixed-icon">
             </span>
-            <h3 class="flex-grow-1 text-center text-dark mb-0 padding-small-screens">{{title}}</h3>
+
+            <h3 
+              class="flex-grow-1 text-center text-dark mb-0 padding-small-screens"
+              data-aos="fade-down" 
+              data-aos-duration="600"
+              data-aos-delay="100"
+            >
+              {{title}}
+            </h3>
           </div>
-          <p class="text-center text-muted">{{subtitle}}</p>
+
+          <p 
+            class="text-center text-muted"
+            data-aos="fade-up" 
+            data-aos-duration="600"
+            data-aos-delay="200"
+          >
+            {{subtitle}}
+          </p>
+
           <!-- //////// off canvas for small screens  -->
           <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
             <div class="offcanvas-header align-items-right justify-content-end">
@@ -20,42 +44,58 @@
             </div>
             <div class="offcanvas-body">
               <p [routerLink]="['/batch-record']" class="text-center link-to-batch"><strong>Batch | </strong><span class="btn btn-info">{{side_panel_batch}}</span></p>
+
               <div class="buttons" (click)="selectedForm('Add purchase')">
                 <span class="text-center d-flex align-items-center span-button text-size" type="button">
-                  <img class="flip-image flex-shrink-1" src="https://i.ibb.co/N4qbNH8/chick-img.png" width="25" height="25" alt="chicks"> chickens bought
+                  <img class="flip-image continuous-spin flex-shrink-1" src="https://i.ibb.co/N4qbNH8/chick-img.png" width="25" height="25" alt="chicks"> chickens bought
                 </span>
               </div>
+
               <div class="buttons mt-3" (click)="selectedForm('Add feeds')">
                 <span class="text-center d-flex align-items-center span-button text-size" type="button">
-                  <img class="flip-image flex-shrink-1 flips me-1" src="https://i.ibb.co/KcrBNThw/chick-fed-removebg-preview.png" width="25" height="25" alt="feeds"> feeds
+                  <img class="flip-image continuous-spin flex-shrink-1 me-1" src="https://i.ibb.co/KcrBNThw/chick-fed-removebg-preview.png" width="25" height="25" alt="feeds"> feeds
                 </span>
               </div>
 
               <div class="buttons mt-3" (click)="selectedForm('Add mortality')">
                 <span class="text-center d-flex align-items-center span-button text-size" type="button">
-                  <img class="flip-image flex-shrink-1 flips me-1" src="https://i.ibb.co/B2qXVTN2/deadchick1.png" width="25" height="25" alt="mortality"> mortality
+                  <img class="flip-image continuous-spin flex-shrink-1 me-1" src="https://i.ibb.co/B2qXVTN2/deadchick1.png" width="25" height="25" alt="mortality"> mortality
                 </span>
               </div>
 
               <div class="buttons mt-3" (click)="selectedForm('Add vaccines')">
                 <span class="text-center d-flex span-button text-size" type="button">
-                  <img class="flip-image flex-shrink-0 flips me-1" src="https://i.ibb.co/3mpT5psw/vaccines.png" width="25" height="25" alt="vaccines"> vaccines
+                  <img class="flip-image continuous-spin flex-shrink-0 me-1" src="https://i.ibb.co/3mpT5psw/vaccines.png" width="25" height="25" alt="vaccines"> vaccines
                 </span>
               </div>
 
               <div class="buttons mt-3" (click)="selectedForm('Record sales')">
                 <span class="text-center d-flex span-button text-size" type="button">
-                  <img class="flip-image flex-shrink-0 flips me-1" src="https://i.ibb.co/HfXYvsNt/money-removebg-preview.png" width="25" height="25" alt="sales"> sales
+                  <img class="flip-image continuous-spin flex-shrink-0 me-1" src="https://i.ibb.co/HfXYvsNt/money-removebg-preview.png" width="25" height="25" alt="sales"> sales
                 </span>
               </div>
 
               <div class="buttons mt-3">
                 <span class="text-center d-flex span-button text-size" type="button">
-                  <img class="flip-image flex-shrink-0 flips me-1" src="https://i.ibb.co/HfXYvsNt/money-removebg-preview.png" width="25" height="25" alt="sales"> summary
+                  <img class="flip-image continuous-spin flex-shrink-0 me-1" src="https://i.ibb.co/HfXYvsNt/money-removebg-preview.png" width="25" height="25" alt="summary"> summary
                 </span>
               </div>
             </div>
           </div>
+
+          <style>
+          /* Continuous spin animation */
+          .continuous-spin {
+            display: inline-block;
+            animation: spin 2s linear infinite;
+          }
+
+          @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+          }
+          </style>
+
           <div class="inputs d-flex align-items-center justify-content-center">
              <!-- switch form based on formTitle  -->
             <ng-container [ngSwitch]="formTitle">
@@ -69,19 +109,27 @@
                 </div>
               </div>
               <div *ngIf="!isLoading && !currentPurchase; else showPurchaseRecords">
-                <form class="row g-3 needs-validation d-flex justify-content-md-center" novalidate #form="ngForm" (ngSubmit)="submitForm(form)">
-                  <div class="col-md-5">
+                <form
+                  class="row g-3 needs-validation d-flex justify-content-md-center"
+                  novalidate
+                  #form="ngForm"
+                  (ngSubmit)="submitForm(form)"
+                  data-aos="fade-up"
+                  data-aos-duration="800"
+                >
+                  <div class="col-md-5" data-aos="fade-up" data-aos-delay="100">
                     <h4 class="pt-5">{{formTitle}}</h4>
-                    <div *ngIf="successMessage" class="alert alert-success mt-2">
+                    <div *ngIf="successMessage" class="alert alert-success mt-2" data-aos="fade-down" data-aos-delay="150">
                       {{ successMessage }}
                     </div>
-                    <div *ngIf="errorMessage" class="alert alert-danger mt-2">
+                    <div *ngIf="errorMessage" class="alert alert-danger mt-2" data-aos="fade-down" data-aos-delay="200">
                       {{ errorMessage }}
                     </div>
                   </div>
-                  <div class="col-md-5">
-                  </div>
-                  <div class="col-md-5">
+
+                  <div class="col-md-5" data-aos="fade-up" data-aos-delay="250"></div>
+
+                  <div class="col-md-5" data-aos="fade-right" data-aos-delay="300">
                     <label for="validationCustom01" class="form-label">Name</label>
                     <input
                       type="text"
@@ -98,7 +146,8 @@
                       <small *ngIf="name.errors?.['required']">name is required</small>
                     </div>
                   </div>
-                  <div class="col-md-5">
+
+                  <div class="col-md-5" data-aos="fade-right" data-aos-delay="400">
                     <label for="validationCustom01" class="form-label">Quantity</label>
                     <input
                       type="number"
@@ -117,7 +166,8 @@
                       <small *ngIf="quantity.errors?.['min']">Must be at least 1</small>
                     </div>
                   </div>
-                  <div class="col-md-5">
+
+                  <div class="col-md-5" data-aos="fade-right" data-aos-delay="500">
                     <label for="validationCustom02" class="form-label">Price: NGN</label>
                     <input
                       type="number"
@@ -136,7 +186,8 @@
                       <small *ngIf="price.errors?.['min']">Must be greater than 10 naira</small>
                     </div>
                   </div>
-                  <div class="col-md-5">
+
+                  <div class="col-md-5" data-aos="fade-right" data-aos-delay="600">
                     <label for="validationCustom02" class="form-label">Batch</label>
                     <input
                       type="text"
@@ -150,8 +201,10 @@
                       readonly
                     />
                   </div>
-                  <div class="col-md-5"></div>
-                  <div class="col-md-10">
+
+                  <div class="col-md-5" data-aos="fade-up" data-aos-delay="650"></div>
+
+                  <div class="col-md-10" data-aos="zoom-in" data-aos-delay="700">
                     <button class="btn btn-primary" type="submit" [disabled]="form.invalid || isLoading">
                       <ng-container *ngIf="!isLoading; else submitform">Submit form</ng-container>
                       <ng-template #submitform>
@@ -161,14 +214,17 @@
                     </button>
                   </div>
                 </form>
+
               </div>
               <ng-template #showPurchaseRecords>
-                <div class="col-md-10 small-screen">
-                  <p class="pt-5"><i><strong>Purchase record already taken for this batch</strong></i></p>
-                  <div class="card">
+                <div class="col-md-10 small-screen" data-aos="fade-in" data-aos-duration="800">
+                  <p class="pt-5">
+                    <i><strong>Purchase record already taken for this batch</strong></i>
+                  </p>
+                  <div class="card" data-aos="fade-up" data-aos-duration="800">
                     <div class="table-responsive d-none d-md-block">
                       <table class="table table-striped table-hover table-bordered shadow">
-                        <thead>
+                        <thead data-aos="fade-down" data-aos-duration="800">
                           <tr>
                             <th>#</th>
                             <th>Name / Chicks</th>
@@ -183,16 +239,20 @@
                           </tr>
                         </thead>
                         <tbody>
-                          <tr *ngFor="let purchases of currentPurchase; let i = index">
-                            <th scope="row">{{i + 1}}</th>
-                            <td>{{purchases.name}}</td>
-                            <td>{{purchases.quantity}} Chicks</td>
-                            <td>{{purchases.price | number}}</td>
-                            <td>{{purchases.pricePerChick | number: '1.0-2'}}</td>
-                            <td>{{purchases.dateOfPurchaseFormatted}}</td>
-                            <td>{{ purchases.batchId?._id | slice:0:6 }}</td>
+                          <tr
+                            *ngFor="let purchases of currentPurchase; let i = index"
+                            [attr.data-aos]="getAosEffect(i)"
+                            [attr.data-aos-delay]="getAosDelay(i)"
+                          >
+                            <th scope="row">{{ i + 1 }}</th>
+                            <td>{{ purchases.name }}</td>
+                            <td>{{ purchases.quantity }} Chicks</td>
+                            <td>{{ purchases.price | number }}</td>
+                            <td>{{ purchases.pricePerChick | number: '1.0-2' }}</td>
+                            <td>{{ purchases.dateOfPurchaseFormatted }}</td>
+                            <td>{{ purchases.batchId?._id | slice: 0:6 }}</td>
                             <td>{{ purchases.batchId?.name }}</td>
-                            <td>{{ purchases.batchId?.startDate | date:'mediumDate' }}</td>
+                            <td>{{ purchases.batchId?.startDate | date: 'mediumDate' }}</td>
                             <td>{{ purchases.daysSincePurchase | number: '1.0-2' }} days ago</td>
                           </tr>
                         </tbody>
@@ -201,37 +261,78 @@
 
                     <!-- ✅ Card layout for small screens -->
                     <div class="d-block d-md-none">
-                      <div *ngFor="let purchases of currentPurchase; let i = index" class="card mb-3 shadow-sm">
+                      <div
+                        *ngFor="let purchases of currentPurchase; let i = index"
+                        class="card mb-3 shadow-sm"
+                        data-aos="zoom-in-up"
+                        [attr.data-aos-delay]="getAosDelay(i)"
+                      >
                         <div class="card-body shadow">
-                          <h6 class="card-title text-danger">Purchase #{{ i + 1 }}</h6>
-                          <p><strong class="text-primary">Name / Chicks:</strong> {{ purchases.name }}</p>
-                          <p><strong class="text-primary">Quantity:</strong> {{ purchases.quantity }} Chicks</p>
-                          <p><strong class="text-primary">Price (NGN):</strong> {{ purchases.price | number }}</p>
-                          <p><strong class="text-primary">Price Per Chick:</strong> {{ purchases.pricePerChick | number: '1.0-2' }}</p>
-                          <p><strong class="text-primary">Date of Purchase:</strong> {{ purchases.dateOfPurchaseFormatted }}</p>
-                          <p><strong class="text-primary">Batch Id:</strong> {{ purchases.batchId?._id | slice:0:6 }}</p>
-                          <p><strong class="text-primary">Batch Name:</strong> {{ purchases.batchId?.name }}</p>
-                          <p><strong class="text-primary">Batch Start Date:</strong> {{ purchases.batchId?.startDate | date: 'mediumDate' }}</p>
-                          <p><strong class="text-primary">Days Since Purchase:</strong> {{ purchases.daysSincePurchase | number: '1.0-2' }} days ago</p>
+                          <h6 class="card-title text-danger" data-aos="fade-down" data-aos-duration="600" [attr.data-aos-delay]="100">
+                            Purchase #{{ i + 1 }}
+                          </h6>
+
+                          <p data-aos="fade-up" data-aos-duration="600" [attr.data-aos-delay]="200">
+                            <strong class="text-primary">Name / Chicks:</strong> {{ purchases.name }}
+                          </p>
+                          <p data-aos="fade-up" data-aos-duration="600" [attr.data-aos-delay]="300">
+                            <strong class="text-primary">Quantity:</strong> {{ purchases.quantity }} Chicks
+                          </p>
+                          <p data-aos="fade-up" data-aos-duration="600" [attr.data-aos-delay]="400">
+                            <strong class="text-primary">Price (NGN):</strong> {{ purchases.price | number }}
+                          </p>
+                          <p data-aos="fade-up" data-aos-duration="600" [attr.data-aos-delay]="500">
+                            <strong class="text-primary">Price Per Chick:</strong> {{ purchases.pricePerChick | number: '1.0-2' }}
+                          </p>
+                          <p data-aos="fade-up" data-aos-duration="600" [attr.data-aos-delay]="600">
+                            <strong class="text-primary">Date of Purchase:</strong> {{ purchases.dateOfPurchaseFormatted }}
+                          </p>
+                          <p data-aos="fade-up" data-aos-duration="600" [attr.data-aos-delay]="700">
+                            <strong class="text-primary">Batch Id:</strong> {{ purchases.batchId?._id | slice: 0:6 }}
+                          </p>
+                          <p data-aos="fade-up" data-aos-duration="600" [attr.data-aos-delay]="800">
+                            <strong class="text-primary">Batch Name:</strong> {{ purchases.batchId?.name }}
+                          </p>
+                          <p data-aos="fade-up" data-aos-duration="600" [attr.data-aos-delay]="900">
+                            <strong class="text-primary">Batch Start Date:</strong> {{ purchases.batchId?.startDate | date: 'mediumDate' }}
+                          </p>
+                          <p data-aos="fade-up" data-aos-duration="600" [attr.data-aos-delay]="1000">
+                            <strong class="text-primary">Days Since Purchase:</strong> {{ purchases.daysSincePurchase | number: '1.0-2' }} days ago
+                          </p>
                         </div>
+
                       </div>
                     </div>
                   </div>
                 </div>
               </ng-template>
+
             </ng-container>
               <!-- -- end of add purchase form --  -->
 
               <!-- -- add feeds form --  -->
-              <form *ngSwitchCase="'Add feeds'" class="row g-3 needs-validation d-flex justify-content-md-center" novalidate #form="ngForm" (ngSubmit)="submitForm(form)">
-                <div class="col-md-5">
+              <form
+                *ngSwitchCase="'Add feeds'"
+                class="row g-3 needs-validation d-flex justify-content-md-center"
+                novalidate
+                #form="ngForm"
+                (ngSubmit)="submitForm(form)"
+                data-aos="fade-right"
+                data-aos-duration="800"
+              >
+                <div class="col-md-5" data-aos="fade-down" data-aos-delay="100">
                   <h4 class="pt-5">{{formTitle}}</h4>
-                  <div *ngIf="successFeedsMessage" class="alert alert-success mt-2">{{successFeedsMessage}}</div>
-                  <div *ngIf="errorFeedsMessage" class="alert alert-danger mt-2">{{errorFeedsMessage}}</div>
+                  <div *ngIf="successFeedsMessage" class="alert alert-success mt-2" data-aos="fade-up" data-aos-delay="150">
+                    {{successFeedsMessage}}
+                  </div>
+                  <div *ngIf="errorFeedsMessage" class="alert alert-danger mt-2" data-aos="fade-up" data-aos-delay="200">
+                    {{errorFeedsMessage}}
+                  </div>
                 </div>
-                <div class="col-md-5">
-                </div>
-                <div class="col-md-5">
+
+                <div class="col-md-5" data-aos="fade-left" data-aos-delay="100"></div>
+
+                <div class="col-md-5" data-aos="fade-up" data-aos-delay="200">
                   <label for="validationCustom01" class="form-label">Feeds name</label>
                   <input
                     type="text"
@@ -246,10 +347,10 @@
                   />
                   <div *ngIf="name.invalid && (name.dirty || name.touched)" class="invalid-feedback">
                     <small *ngIf="name.errors?.['required']">Feed name is required</small>
-                    <!-- <small *ngIf="quantity.errors?.['min']">Must be at least 1 bags or more</small> -->
                   </div>
                 </div>
-                <div class="col-md-5">
+
+                <div class="col-md-5" data-aos="fade-up" data-aos-delay="300">
                   <label for="validationCustom01" class="form-label">Numbers of feed</label>
                   <input
                     type="number"
@@ -268,7 +369,8 @@
                     <small *ngIf="quantity.errors?.['min']">Must be at least 1 bags or more</small>
                   </div>
                 </div>
-                <div class="col-md-5">
+
+                <div class="col-md-5" data-aos="fade-up" data-aos-delay="400">
                   <label for="validationCustom02" class="form-label">Price NGN</label>
                   <input
                     type="number"
@@ -286,7 +388,8 @@
                     <small *ngIf="totalPrice.errors?.['min']">Price must at least be at the range starting from 100 naira</small>
                   </div>
                 </div>
-                <div class="col-md-5">
+
+                <div class="col-md-5" data-aos="fade-up" data-aos-delay="500">
                   <label for="validationCustom03" class="form-label">Batch</label>
                   <input
                     type="text"
@@ -299,7 +402,8 @@
                     readonly
                   />
                 </div>
-                <div class="col-md-5">
+
+                <div class="col-md-5" data-aos="fade-up" data-aos-delay="600">
                   <label for="validationCustom04" class="form-label">PurchaseId</label>
                   <input
                     type="text"
@@ -313,8 +417,9 @@
                   />
                 </div>
 
-                <div class="col-md-5"></div>
-                <div class="col-md-10">
+                <div class="col-md-5" data-aos="fade-up" data-aos-delay="700"></div>
+
+                <div class="col-md-10" data-aos="zoom-in" data-aos-delay="800">
                   <button class="btn btn-primary" type="submit" [disabled]="form.invalid || isLoading">
                     <ng-container *ngIf="!isLoading; else submitForm1">Submit feeds</ng-container>
                     <ng-template #submitForm1>
@@ -324,18 +429,33 @@
                   </button>
                 </div>
               </form>
+
               <!-- -- end of feed form --  -->
               <!-- -- add mortality form --  -->
-              <form *ngSwitchCase="'Add mortality'" class="row g-3 needs-validation d-flex justify-content-md-center" novalidate #form="ngForm" (ngSubmit)="submitForm(form)">
-                <div class="col-md-5">
+              <form
+                *ngSwitchCase="'Add mortality'"
+                class="row g-3 needs-validation d-flex justify-content-md-center"
+                novalidate
+                #form="ngForm"
+                (ngSubmit)="submitForm(form)"
+                data-aos="fade-up"
+                data-aos-duration="800"
+              >
+                <div class="col-md-5" data-aos="fade-right" data-aos-delay="100">
                   <h4 class="pt-5">{{formTitle}}</h4>
-                  <div *ngIf="successMortalityMessage" class="alert alert-success mt-2">{{successMortalityMessage}}</div>
-                  <div *ngIf="errorMortalityMessage" class="alert alert-danger mt-2">{{errorMortalityMessage}}</div>
+                  <div *ngIf="successMortalityMessage" class="alert alert-success mt-2" data-aos="fade-down" data-aos-delay="150">
+                    {{successMortalityMessage}}
+                  </div>
+                  <div *ngIf="errorMortalityMessage" class="alert alert-danger mt-2" data-aos="fade-down" data-aos-delay="200">
+                    {{errorMortalityMessage}}
+                  </div>
                 </div>
-                <div class="col-md-5">
+
+                <div class="col-md-5" data-aos="fade-left" data-aos-delay="100">
                   <!-- empty column just to keep spacing symmetrical (optional) -->
                 </div>
-                <div class="col-md-5">
+
+                <div class="col-md-5" data-aos="fade-up" data-aos-delay="200">
                   <label for="validationCustom01" class="form-label">Numbers of mortality</label>
                   <input
                     type="number"
@@ -354,7 +474,8 @@
                     <small *ngIf="mortalityRate.errors?.['min']">Input field must be greater than 0!</small>
                   </div>
                 </div>
-                <div class="col-md-5">
+
+                <div class="col-md-5" data-aos="fade-up" data-aos-delay="300">
                   <label for="validationCustom02" class="form-label">Batch ID</label>
                   <input
                     type="text"
@@ -367,7 +488,8 @@
                     readonly
                   />
                 </div>
-                <div class="col-md-5">
+
+                <div class="col-md-5" data-aos="fade-up" data-aos-delay="400">
                   <label for="validationCustom03" class="form-label">Purchase ID</label>
                   <input
                     type="text"
@@ -381,8 +503,9 @@
                   />
                 </div>
 
-                <div class="col-md-5"></div>
-                <div class="col-md-10">
+                <div class="col-md-5" data-aos="fade-up" data-aos-delay="500"></div>
+
+                <div class="col-md-10" data-aos="zoom-in-up" data-aos-delay="600">
                   <button class="btn btn-primary" type="submit" [disabled]="form.invalid || isLoading">
                     <ng-container *ngIf="!isLoading; else submitForm2">Submit mortality</ng-container>
                     <ng-template #submitForm2>
@@ -392,17 +515,32 @@
                   </button>
                 </div>
               </form>
+
               <!-- -- end of add mortality form --  -->
               <!-- -- add vaccines form --  -->
-              <form #form="ngForm" (ngSubmit)="submitForm(form)" *ngSwitchCase="'Add vaccines'" class="row g-3 needs-validation d-flex justify-content-md-center" novalidate>
-                <div class="col-md-5">
+              <form
+                #form="ngForm"
+                (ngSubmit)="submitForm(form)"
+                *ngSwitchCase="'Add vaccines'"
+                class="row g-3 needs-validation d-flex justify-content-md-center"
+                novalidate
+                data-aos="fade-down"
+                data-aos-duration="800"
+              >
+                <div class="col-md-5" data-aos="fade-down" data-aos-delay="100">
                   <h4 class="pt-5">{{formTitle}}</h4>
-                  <div *ngIf="successVaccineMessage" class="alert alert-success mt-2">{{successVaccineMessage}}</div>
-                  <div *ngIf="errorVaccineMessage" class="alert alert-danger mt-2">{{errorVaccineMessage}}</div>
+                  <div *ngIf="successVaccineMessage" class="alert alert-success mt-2" data-aos="fade-up" data-aos-delay="150">
+                    {{successVaccineMessage}}
+                  </div>
+                  <div *ngIf="errorVaccineMessage" class="alert alert-danger mt-2" data-aos="fade-up" data-aos-delay="200">
+                    {{errorVaccineMessage}}
+                  </div>
                 </div>
-                <div class="col-md-5">
+
+                <div class="col-md-5" data-aos="fade-left" data-aos-delay="100">
                 </div>
-                <div class="col-md-5">
+
+                <div class="col-md-5" data-aos="fade-right" data-aos-delay="200">
                   <label for="validationCustom01" class="form-label">Vaccine name</label>
                   <input
                     type="text"
@@ -419,8 +557,9 @@
                     <small *ngIf="vaccineName.errors?.['required']">Name of vaccine is required!</small>
                   </div>
                 </div>
-                <div class="col-md-5">
-                  <label for="validationCustom02" class="form-label">price per vaccine NGN</label>
+
+                <div class="col-md-5" data-aos="fade-right" data-aos-delay="300">
+                  <label for="validationCustom02" class="form-label">Price per vaccine NGN</label>
                   <input
                     type="number"
                     class="form-control"
@@ -431,14 +570,15 @@
                     [(ngModel)]="vaccineUser.vaccinePrice"
                     [ngClass]="{'is-invalid': vaccinePrice.invalid && vaccinePrice.touched, 'is-valid': vaccinePrice.valid}"
                     required
-                    min=10
+                    min="10"
                   />
                   <div *ngIf="vaccinePrice.invalid && (vaccinePrice.dirty || vaccinePrice.touched)" class="invalid-feedback">
                     <small *ngIf="vaccinePrice.errors?.['required']">Price of vaccine is required!</small>
                     <small *ngIf="vaccinePrice.errors?.['min']">Price field must be greater than NGN10!</small>
                   </div>
                 </div>
-                <div class="col-md-5">
+
+                <div class="col-md-5" data-aos="fade-right" data-aos-delay="400">
                   <label for="validationCustom02" class="form-label">Quantity</label>
                   <input
                     type="number"
@@ -449,7 +589,7 @@
                     #quantity="ngModel"
                     [(ngModel)]="vaccineUser.quantity"
                     [ngClass]="{'is-invalid': quantity.invalid && quantity.touched, 'is-valid': quantity.valid}"
-                    min=1
+                    min="1"
                     required
                   />
                   <div *ngIf="quantity.invalid && (quantity.dirty || quantity.touched)" class="invalid-feedback">
@@ -457,7 +597,8 @@
                     <small *ngIf="quantity.errors?.['min']">Value must be greater than 0</small>
                   </div>
                 </div>
-                <div class="col-md-5">
+
+                <div class="col-md-5" data-aos="fade-right" data-aos-delay="500">
                   <label for="disabledTextInput" class="form-label">PurchaseId</label>
                   <input
                     type="text"
@@ -469,7 +610,8 @@
                     disabled
                   />
                 </div>
-                <div class="col-md-5">
+
+                <div class="col-md-5" data-aos="fade-right" data-aos-delay="600">
                   <label for="disabledTextInput" class="form-label">Batch</label>
                   <input
                     type="text"
@@ -481,8 +623,10 @@
                     disabled
                   />
                 </div>
-                <div class="col-md-5"></div>
-                <div class="col-md-10">
+
+                <div class="col-md-5" data-aos="fade-up" data-aos-delay="700"></div>
+
+                <div class="col-md-10" data-aos="zoom-in" data-aos-delay="800">
                   <button class="btn btn-primary" type="submit" [disabled]="form.invalid || isLoading">
                     <ng-container *ngIf="!isLoading; else submitForm3">Submit sales</ng-container>
                     <ng-template #submitForm3>
@@ -492,91 +636,114 @@
                   </button>
                 </div>
               </form>
+
+
               <!-- -- end of add vaccines form --  -->
               <!-- -- add sales form --  -->
-              <form #form="ngForm" (ngSubmit)="submitForm(form)" *ngSwitchCase="'Record sales'" class="row g-3 needs-validation d-flex justify-content-md-center" novalidate>
-                <div class="col-md-5">
-                  <h4 class="pt-5">{{formTitle}}</h4>
-                  <div *ngIf="successSalesMessage" class="alert alert-success mt-2">{{successSalesMessage}}</div>
-                  <div *ngIf="errorSalesMessage" class="alert alert-danger mt-2">{{errorSalesMessage}}</div>
-                </div>
-                <div class="col-md-5">
-                </div>
-                <div class="col-md-5">
-                  <label for="validationCustom01" class="form-label">Quantity sold</label>
-                  <input
-                    type="number"
-                    class="form-control"
-                    id="numberSold"
-                    name="numberSold"
-                    #numberSold="ngModel"
-                    [(ngModel)]="salesUser.numberSold"
-                    [ngClass]="{'is-invalid': numberSold.invalid && numberSold.touched, 'is-valid': numberSold.valid}"
-                    placeholder="0"
-                    required
-                    min=1
-                  />
-                  <div *ngIf="numberSold.invalid && (numberSold.dirty || numberSold.touched)" class="invalid-feedback">
-                    <small *ngIf="numberSold.errors?.['required']">Quantity sold is required</small>
-                    <small *ngIf="numberSold.errors?.['min']">Sale record must be greater than 0!</small>
+                <form
+                  #form="ngForm"
+                  (ngSubmit)="submitForm(form)"
+                  *ngSwitchCase="'Record sales'"
+                  class="row g-3 needs-validation d-flex justify-content-md-center"
+                  novalidate
+                  data-aos="fade-up-right"
+                  data-aos-duration="800"
+                >
+                  <div class="col-md-5" data-aos="fade-down" data-aos-delay="100">
+                    <h4 class="pt-5">{{formTitle}}</h4>
+                    <div *ngIf="successSalesMessage" class="alert alert-success mt-2" data-aos="fade-up" data-aos-delay="150">
+                      {{successSalesMessage}}
+                    </div>
+                    <div *ngIf="errorSalesMessage" class="alert alert-danger mt-2" data-aos="fade-up" data-aos-delay="200">
+                      {{errorSalesMessage}}
+                    </div>
                   </div>
-                </div>
-                <div class="col-md-5">
-                  <label for="validationCustom02" class="form-label">Total price: NGN</label>
-                  <input
-                    type="number"
-                    class="form-control"
-                    id="totalPrice"
-                    placeholder="0.00"
-                    name="totalPrice"
-                    #totalPrice="ngModel"
-                    [(ngModel)]="salesUser.totalPrice"
-                    [ngClass]="{'is-invalid': totalPrice.invalid && totalPrice.touched, 'is-valid': totalPrice.valid}"
-                    required
-                    min=100
-                  />
-                  <div *ngIf="totalPrice.invalid && (totalPrice.dirty || totalPrice.touched)" class="invalid-feedback">
-                    <small *ngIf="totalPrice.errors?.['required']">total price is required</small>
-                    <small *ngIf="totalPrice.errors?.['min']">price must be greater than 100 naira</small>
+
+                  <div class="col-md-5" data-aos="fade-left" data-aos-delay="100">
                   </div>
-                </div>
-                <div class="col-md-5">
-                  <label for="disabledTextInput" class="form-label">Batch</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="batchId"
-                    placeholder="batchId..."
-                    name="batchId"
-                    #batchId="ngModel"
-                    [(ngModel)]="salesUser.batchId"
-                    readonly
-                  />
-                </div>
-                <div class="col-md-5">
-                  <label for="disabledTextInput" class="form-label">PurchaseId</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="PurchaseId"
-                    id="purchaseId"
-                    #purchaseId="ngModel"
-                    [(ngModel)]="salesUser.purchaseId"
-                    placeholder="ID of Purchase..."
-                    readonly
-                  />
-                </div>
-                <div class="col-md-5"></div>
-                <div class="col-md-10">
-                  <button class="btn btn-primary" type="submit" [disabled]="form.invalid || isLoading">
-                    <ng-container *ngIf="!isLoading; else submitForm4">Submit sales</ng-container>
-                    <ng-template #submitForm4>
-                      <span class="spinner-grow spinner-grow-sm me-2" aria-hidden="true"></span>
-                      Processing...
-                    </ng-template>
-                  </button>
-                </div>
-              </form>
+
+                  <div class="col-md-5" data-aos="fade-up" data-aos-delay="200">
+                    <label for="validationCustom01" class="form-label">Quantity sold</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="numberSold"
+                      name="numberSold"
+                      #numberSold="ngModel"
+                      [(ngModel)]="salesUser.numberSold"
+                      [ngClass]="{'is-invalid': numberSold.invalid && numberSold.touched, 'is-valid': numberSold.valid}"
+                      placeholder="0"
+                      required
+                      min="1"
+                    />
+                    <div *ngIf="numberSold.invalid && (numberSold.dirty || numberSold.touched)" class="invalid-feedback">
+                      <small *ngIf="numberSold.errors?.['required']">Quantity sold is required</small>
+                      <small *ngIf="numberSold.errors?.['min']">Sale record must be greater than 0!</small>
+                    </div>
+                  </div>
+
+                  <div class="col-md-5" data-aos="fade-up" data-aos-delay="300">
+                    <label for="validationCustom02" class="form-label">Total price: NGN</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="totalPrice"
+                      placeholder="0.00"
+                      name="totalPrice"
+                      #totalPrice="ngModel"
+                      [(ngModel)]="salesUser.totalPrice"
+                      [ngClass]="{'is-invalid': totalPrice.invalid && totalPrice.touched, 'is-valid': totalPrice.valid}"
+                      required
+                      min="100"
+                    />
+                    <div *ngIf="totalPrice.invalid && (totalPrice.dirty || totalPrice.touched)" class="invalid-feedback">
+                      <small *ngIf="totalPrice.errors?.['required']">total price is required</small>
+                      <small *ngIf="totalPrice.errors?.['min']">price must be greater than 100 naira</small>
+                    </div>
+                  </div>
+
+                  <div class="col-md-5" data-aos="fade-up" data-aos-delay="400">
+                    <label for="disabledTextInput" class="form-label">Batch</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="batchId"
+                      placeholder="batchId..."
+                      name="batchId"
+                      #batchId="ngModel"
+                      [(ngModel)]="salesUser.batchId"
+                      readonly
+                    />
+                  </div>
+
+                  <div class="col-md-5" data-aos="fade-up" data-aos-delay="500">
+                    <label for="disabledTextInput" class="form-label">PurchaseId</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="PurchaseId"
+                      id="purchaseId"
+                      #purchaseId="ngModel"
+                      [(ngModel)]="salesUser.purchaseId"
+                      placeholder="ID of Purchase..."
+                      readonly
+                    />
+                  </div>
+
+                  <div class="col-md-5" data-aos="fade-up" data-aos-delay="600"></div>
+
+                  <div class="col-md-10" data-aos="zoom-in" data-aos-delay="700">
+                    <button class="btn btn-primary" type="submit" [disabled]="form.invalid || isLoading">
+                      <ng-container *ngIf="!isLoading; else submitForm4">Submit sales</ng-container>
+                      <ng-template #submitForm4>
+                        <span class="spinner-grow spinner-grow-sm me-2" aria-hidden="true"></span>
+                        Processing...
+                      </ng-template>
+                    </button>
+                  </div>
+                </form>
+
+
               <!-- -- end of add vaccines form --  -->
             </ng-container>
             

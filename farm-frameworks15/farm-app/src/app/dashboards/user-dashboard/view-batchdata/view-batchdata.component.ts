@@ -1,10 +1,11 @@
 
-import { Component, OnInit } from "@angular/core"
+import { Component, OnInit, AfterViewInit } from "@angular/core"
 import { purchaseArray } from "src/app/models/purchase.model"
 import { Location } from "@angular/common"
 import { PurchaseService } from "src/app/services/purchase.service"
 import { ActivatedRoute, Router } from "@angular/router"
 import { NzMessageService } from 'ng-zorro-antd/message';
+import * as AOS from 'aos';
 
 @Component({
     selector: "app-viewBatchdata",
@@ -12,7 +13,7 @@ import { NzMessageService } from 'ng-zorro-antd/message';
     styleUrls: ["./view-batchdata.component.css"]
 })
 
-export class ViewBatchData implements OnInit {
+export class ViewBatchData implements OnInit, AfterViewInit {
 
     currentDate: Date = new Date()
     intervalId: any
@@ -51,6 +52,14 @@ export class ViewBatchData implements OnInit {
             this.currentDate = new Date()
         },1000)
     }
+    ngAfterViewInit(): void {
+        AOS.init({
+          duration: 800, // animation duration (ms)
+          easing: 'ease-in-out-quart', // natural easing
+          once: false, // animate again when scrolling up
+          mirror: true // re-trigger when scrolling back up
+        });
+    }
     ngOnDestroy(): void {
         if(this.intervalId){
             clearInterval(this.intervalId)
@@ -68,5 +77,14 @@ export class ViewBatchData implements OnInit {
     }
     cancel(): void {
         this.message.info('Action cancelled');
+    }
+
+    getAosDelay(index: number): number {
+        return (index % 4) * 150; // delays 0, 150, 300, 450ms
+    }
+
+    getAosEffect(index: number): string {
+        const effects = ['fade-up', 'zoom-in', 'flip-left', 'fade-right', 'fade-down', 'zoom-out', 'flip-up'];
+        return effects[index % effects.length];
     }
 }

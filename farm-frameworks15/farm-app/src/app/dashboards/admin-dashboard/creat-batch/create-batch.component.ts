@@ -1,6 +1,6 @@
 
 import { HttpClient } from "@angular/common/http"
-import { Component, OnInit } from "@angular/core"
+import { Component, OnInit, AfterViewInit, OnDestroy } from "@angular/core"
 import { NgForm } from "@angular/forms"
 import { BatchModel, BatchData, BatchResponse } from "src/app/models/batch.model"
 import { BatchService } from "src/app/services/batch.service"
@@ -8,6 +8,7 @@ import { Location } from "@angular/common"
 import { BatchSelectionService } from "src/app/services/batch-selection.service"
 import { Router } from "@angular/router"
 import { NzMessageService } from 'ng-zorro-antd/message';
+import * as AOS from 'aos';
 
 @Component({
     selector: 'app-create-batch',
@@ -15,7 +16,7 @@ import { NzMessageService } from 'ng-zorro-antd/message';
     styleUrls: ['./create-batch.component.css']
 })
 
-export class CreateBatchRecords implements OnInit {
+export class CreateBatchRecords implements OnInit, AfterViewInit, OnDestroy {
     currentDate: Date = new Date()
     intervalId: any
     loader: boolean = true
@@ -51,6 +52,14 @@ export class CreateBatchRecords implements OnInit {
             this.currentDate = new Date()
         },1000)
     }
+    ngAfterViewInit(): void {
+        AOS.init({
+            duration: 800, // animation duration (ms)
+            easing: 'ease-in-out-quart', // natural easing
+            once: false, // animate again when scrolling up
+            mirror: true // re-trigger when scrolling back up
+        });
+    }
     ngOnDestroy(): void {
         if(this.intervalId){
             clearInterval(this.intervalId)
@@ -71,6 +80,7 @@ export class CreateBatchRecords implements OnInit {
             next: (res: BatchData[]) => {
                 this.batches = res
                 this.loader = false
+                setTimeout(() => AOS.refresh());
                 // console.info("batchdata fetched successfully: ", res)
             }, error:(err) => {
                 this.batchErrorMessage = err.error?.message || "Failed to fetch batches"
@@ -109,6 +119,7 @@ export class CreateBatchRecords implements OnInit {
                 const userId = this.batchInput.userId
                 form.resetForm()
                 this.batchInput = new BatchModel("","", userId)
+                setTimeout(() => AOS.refresh());
             },
 
 
@@ -156,6 +167,15 @@ export class CreateBatchRecords implements OnInit {
                 console.error("Error ending batch:", err);
                 }
         })
+    }
+
+    getAosDelay(index: number): number {
+        return (index % 4) * 150; // delays 0, 150, 300, 450ms
+    }
+
+    getAosEffect(index: number): string {
+        const effects = ['fade-up', 'zoom-in', 'flip-left', 'fade-right', 'fade-down', 'zoom-out', 'flip-up'];
+        return effects[index % effects.length];
     }
 
 }
