@@ -43,8 +43,8 @@ export interface MortalitySummary {
     _id: string;
     name: string;
   };
-  totalDeaths: number;
-  dateUpdated: string;
+  totalMortalities: number;
+  lastUpdated: string;
 }
 
 export interface ComputedSummary {

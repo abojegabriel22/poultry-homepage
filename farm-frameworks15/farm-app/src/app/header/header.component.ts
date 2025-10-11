@@ -14,6 +14,7 @@ export class HeaderComponent implements OnInit {
   username: string | null = null
   role: string | null = null; // 👈 track role
   isLoggingOut = false; // 👈 loader state
+  isDarkMode = false;
 
   constructor(
     private router: Router,
@@ -24,6 +25,10 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
     this.authService.isLoggedIn$.subscribe(status => {
       this.isLoggedIn = status
+
+      const savedTheme = localStorage.getItem('theme');
+      this.isDarkMode = savedTheme === 'dark';
+      this.applyTheme();
     })
 
     this.authService.username$.subscribe(name => {
@@ -91,4 +96,22 @@ confirm(): void {
   //   this.authService.logOut()
   //   this.router.navigate(["/login"])
   // }
+
+  toggleTheme(): void {
+    this.isDarkMode = !this.isDarkMode;
+    localStorage.setItem('theme', this.isDarkMode ? 'dark' : 'light');
+    this.applyTheme();
+  }
+
+  private applyTheme(): void {
+    if (this.isDarkMode) {
+      document.body.classList.add('dark-theme');
+      document.getElementById('iconLight')?.classList.add('d-none');
+      document.getElementById('iconDark')?.classList.remove('d-none');
+    } else {
+      document.body.classList.remove('dark-theme');
+      document.getElementById('iconLight')?.classList.remove('d-none');
+      document.getElementById('iconDark')?.classList.add('d-none');
+    }
+  }
 }

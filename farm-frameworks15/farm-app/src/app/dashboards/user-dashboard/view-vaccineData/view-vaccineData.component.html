@@ -83,7 +83,7 @@
             <span class="small-screen-display" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
               <img src="../../../../assets/images/sidebar-icon.svg" alt="sidebar icon" class="sidebar-fixed-icon">
             </span>
-            <h3 class="flex-grow-1 text-center text-dark mb-0 padding-small-screens data-header" data-aos="fade-up">All {{selectedSection}} data since Batch started</h3>
+            <h3 class="flex-grow-1 text-center mb-0 padding-small-screens data-header" data-aos="fade-up">All {{selectedSection}} data since Batch started</h3>
           </div>
         
           <!-- ---------- small screen side-panel --------  -->
@@ -523,7 +523,7 @@
 
                 <!-- 🐥 Purchase Summary -->
                 <div class="card my-3" *ngIf="allSummaries.purchaseSummary" data-aos="fade-up">
-                  <div class="card-body bg-light">
+                  <div class="card-body">
                     <h5 class="card-title" data-aos="fade-down" data-aos-delay="100">🐥 Purchase Summary</h5>
                     <p data-aos="fade-up" data-aos-delay="200"><strong>Batch:</strong> {{ allSummaries.purchaseSummary.batchId.name }}</p>
                     <p data-aos="fade-up" data-aos-delay="300"><strong>Total Chicks:</strong> {{ allSummaries.purchaseSummary.quantity }}</p>
@@ -536,7 +536,7 @@
 
                 <!-- 🌾 Feed Summary -->
                 <div class="card my-3" *ngIf="allSummaries.feedSummary" data-aos="fade-up">
-                  <div class="card-body bg-light">
+                  <div class="card-body">
                     <h5 class="card-title" data-aos="fade-down" data-aos-delay="100">🌾 Feed Summary</h5>
                     <p data-aos="fade-up" data-aos-delay="200"><strong>Total Quantity:</strong> {{ allSummaries.feedSummary.totalQuantity }} bags</p>
                     <p data-aos="fade-up" data-aos-delay="300"><strong>Total Cost:</strong> ₦{{ allSummaries.feedSummary.totalPrices }}</p>
@@ -546,7 +546,7 @@
 
                 <!-- 💉 Vaccine Summary -->
                 <div class="card my-3" *ngIf="allSummaries.totalVaccineSummary" data-aos="fade-up">
-                  <div class="card-body bg-light">
+                  <div class="card-body">
                     <h5 class="card-title" data-aos="fade-down" data-aos-delay="100">💉 Vaccine Summary</h5>
                     <p data-aos="fade-up" data-aos-delay="200"><strong>Total Vaccine Cost:</strong> ₦{{ allSummaries.totalVaccineSummary.totalVaccineAmount }}</p>
                     <p data-aos="fade-up" data-aos-delay="300"><strong>Last Updated:</strong> {{ allSummaries.totalVaccineSummary.dateUpdated | date:'short' }}</p>
@@ -555,16 +555,16 @@
 
                 <!-- ⚰ Mortality Summary -->
                 <div class="card my-3" *ngIf="allSummaries.mortalitySummary" data-aos="fade-up">
-                  <div class="card-body bg-light">
+                  <div class="card-body">
                     <h5 class="card-title" data-aos="fade-down" data-aos-delay="100">⚰ Mortality Summary</h5>
-                    <p data-aos="fade-up" data-aos-delay="200"><strong>Total Deaths:</strong> {{ allSummaries.mortalitySummary.totalDeaths }}</p>
-                    <p data-aos="fade-up" data-aos-delay="300"><strong>Last Updated:</strong> {{ allSummaries.mortalitySummary.dateUpdated | date:'short' }}</p>
+                    <p data-aos="fade-up" data-aos-delay="200"><strong>Total Deaths:</strong> {{ allSummaries.mortalitySummary.totalMortalities }}</p>
+                    <p data-aos="fade-up" data-aos-delay="300"><strong>Last Updated:</strong> {{ allSummaries.mortalitySummary.lastUpdated | date:'short' }}</p>
                   </div>
                 </div>
 
                 <!-- 💰 Sales Summary -->
                 <div class="card my-3" *ngIf="allSummaries.salesSummary" data-aos="fade-up">
-                  <div class="card-body bg-light">
+                  <div class="card-body">
                     <h5 class="card-title" data-aos="fade-down" data-aos-delay="100">💰 Sales Summary</h5>
                     <p data-aos="fade-up" data-aos-delay="200"><strong>Total Sold:</strong> {{ allSummaries.salesSummary.totalNumSold }} chickens</p>
                     <p data-aos="fade-up" data-aos-delay="300"><strong>Total Revenue:</strong> ₦{{ allSummaries.salesSummary.totalSaleAmount }}</p>
@@ -575,7 +575,7 @@
 
                 <!-- 📊 Computed Summary -->
                 <div class="card my-3" *ngIf="allSummaries.computedSummary" data-aos="fade-up">
-                  <div class="card-body bg-light">
+                  <div class="card-body">
                     <h5 class="card-title" data-aos="fade-down" data-aos-delay="100">📊 Computed Summary</h5>
                     <p data-aos="fade-up" data-aos-delay="200"><strong>Total Chicks:</strong> {{ allSummaries.computedSummary.purchasedChicks }}</p>
                     <p data-aos="fade-up" data-aos-delay="300"><strong>Total Deaths:</strong> {{ allSummaries.computedSummary.totalMortality }}</p>
@@ -586,9 +586,20 @@
                     <p data-aos="fade-up" data-aos-delay="800"><strong>Total Expenses:</strong> ₦{{ allSummaries.computedSummary.totalExpenses }}</p>
                     <p data-aos="fade-up" data-aos-delay="900"><strong>Revenue:</strong> ₦{{ allSummaries.computedSummary.revenue }}</p>
                     <p data-aos="fade-up" data-aos-delay="1000"><strong>Capital:</strong> ₦{{ allSummaries.computedSummary.capital }}</p>
-                    <p data-aos="fade-up" data-aos-delay="1100"><strong>Net Profit:</strong> ₦{{ allSummaries.computedSummary.netProfit }}</p>
-                    <p data-aos="fade-up" data-aos-delay="1200"><strong>Start Date:</strong> {{ allSummaries.computedSummary.startDate | date:'mediumDate' }}</p>
-                    <p *ngIf="allSummaries.computedSummary.batchId?.endDate" data-aos="fade-up" data-aos-delay="1300">
+                    <p data-aos="fade-up" data-aos-delay="1100">
+                      <strong class="text-warning">Net Profit:</strong>
+                      <strong>
+                        <i 
+                          [ngStyle]="{
+                            color: allSummaries.computedSummary.netProfit < 0 ? 'red' : 'green'
+                          }"
+                        >
+                          ₦{{ allSummaries.computedSummary.netProfit }}
+                        </i>
+                      </strong>
+                    </p>
+                    <p class="text-primary" data-aos="fade-up" data-aos-delay="1200"><strong>Start Date:</strong> {{ allSummaries.computedSummary.startDate | date:'mediumDate' }}</p>
+                    <p class="text-danger" *ngIf="allSummaries.computedSummary.batchId?.endDate" data-aos="fade-up" data-aos-delay="1300">
                       <strong>End Date:</strong> {{ allSummaries.computedSummary.batchId.endDate | date:'mediumDate' }}
                     </p>
                   </div>

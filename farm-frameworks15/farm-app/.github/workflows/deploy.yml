@@ -1,10 +1,9 @@
-
 name: 🚀 Deploy SmartPoultry to Go24 Hosting via FTP
 
 on:
   push:
     branches:
-      - master  # change to "master" if that's your main branch
+      - master  # or "main" if that’s your branch
 
 jobs:
   build-and-deploy:
@@ -20,12 +19,12 @@ jobs:
           node-version: '18'
 
       - name: 📦 Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: 🏗️ Build Angular app for production
         run: npm run build -- --configuration production
 
-      - name: 🚀 Deploy via FTP
+      - name: 🚀 Deploy to Go24 via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ${{ secrets.FTP_SERVER }}
@@ -33,3 +32,4 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           server-dir: ${{ secrets.FTP_PATH }}
           local-dir: dist/farm-app/
+          dangerous-clean-slate: true

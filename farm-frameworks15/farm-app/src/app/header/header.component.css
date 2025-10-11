@@ -24,3 +24,11 @@
   text-shadow: 4px 2px 2px rgba(0, 0, 0, 0.6);
   font-weight: 700;
 }
+
+.nav-colors .nav-link.username {
+  color: white !important; /* or any color you want it to stay */
+}
+
+.nav-colors .nav-link.username:hover {
+  color: black !important; /* prevents hover color from changing */
+}
